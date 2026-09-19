@@ -1,0 +1,106 @@
+# Cross-site Scripting (XSS) - Reflected
+
+_51 reports — High/Critical, disclosed_
+
+- **XSS on Amazon Aquisition:  elemental** — `AWS VDP` · `High` [↗](https://hackerone.com/reports/3205667)
+  - Hi Kasim, thank you for submitting this report and for validating that it was fully addressed.
+- **Reflected - XSS** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1779447)
+  - Hi, Team I'm Found Reflected XSS Cross site scripting attacks can have devastating consequences.
+- **Reflected XSS in https://nin.mtn.ng/nin/success?message=lol&nin=<VULNERABLE>** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2039384)
+  - Hello team, Found a reflected XSS on one your domains i believe https://nin.mtn.ng/nin/success?message=msg&nin= as the nin parameter is vulnerable.
+- **Reflected XSS on Pangle Endpoint ** — `TikTok` · `High` [↗](https://hackerone.com/reports/2352968)
+  - A cross-site scripting (XSS) vulnerability was found at the Pangle endpoint via the 'redirect' parameter.
+- **CRLF to XSS & Open Redirection** — `TikTok` · `High` [↗](https://hackerone.com/reports/2012519)
+  - Due to inadequate input validation, it could have been possible to inject CRLF (HTTP Response Splitting) into the parameter "__hack_redirect_now__ " on a TikTok seller endpoint.
+- **Reflected Cross-Site Scripting(CVE-2022-32770 )** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1844777)
+  - `CVE-2022-32770` The researcher has found a XSS vulnerability inside our https://video.rocket.chat.
+- **Reflected Cross-site Scripting (XSS) at https://www.tiktok.com/** — `TikTok` · `High` [↗](https://hackerone.com/reports/1915808)
+  - A Cross-Site Scripting (XSS) vulnerability was found on a TikTok.com endpoint via the 'link' parameter, which could have resulted in the ability to execute JavaScript code within a user's browser.
+- **XSS at TikTok Ads Endpoint** — `TikTok` · `High` [↗](https://hackerone.com/reports/1683129)
+  - A Cross-Site Scripting (XSS) vulnerability was found on a TikTok Ads endpoint, due to a lack of appropriate HTML escaping or output encoding on the reflection of user-supplied data, which was resolved on September 7, 2022.
+- **[hta3] Chain of ESI Injection & Reflected XSS leading to Account Takeover on [███]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1073780)
+  - There is an **ESI injection** vulnerability in the [https://████████/portal/page/portal/TOPLEVELSITE/SearchResults/PerspectiveResults](https://████/portal/page/portal/TOPLEVELSITE/SearchResults/PerspectiveResults) endpoint on the **ms** parameter.
+- **XSS Reflected on reddit.com via url path** — `Reddit` · `High` [↗](https://hackerone.com/reports/1051373)
+  - To reproduce the issue please click the poc link and then press the "verify email" button With the help of XSS an attacker can steal your cookies, in many cases steal sessions, download malware onto your system and send a custom request.
+- **Reflected xss on videostore.mtnonline.com** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1646248)
+  - Hi, I found reflected xss vuln on videostore.mtnonline.com We can run javascript code
+- **Shop - Reflected  XSS  With  Clickjacking Leads to Steal User's Cookie  In Two Domain** — `Meredith` · `High` [↗](https://hackerone.com/reports/1221942)
+  - I am S Rahul MCEH(Metaxone Certified Ethical Hacker) and a Security Researcher I just checked your website and found Reflected XSS to Good XSS Clickjacking In Two Domain Description:- As the search parameter is vulnerable to XSS and but the plus point is there is no X-Frame-Head
+- **cross site scripting in : mtn.bj** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1264834)
+  - Xss vulnerability in mtn.bj in file name 4-the payload will executed in the page .
+- **Corsa Site Scripting Vulnerability (XSS)** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/1650210)
+  - An XSS was found in Cactus, a project that is not part of the bounty program.
+- **[doc.rt.informaticacloud.com] Reflected XSS via Stack Strace** — `Informatica` · `High` [↗](https://hackerone.com/reports/232320)
+  - http://doc.rt.informaticacloud.com/infocenter/ActiveVOS/v92/nav/7_1_2_3_2_1<svg/onload=alert(document.domain)> at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) at java.lang.Integer.parseInt(Integer.java:492) at java.lang.Integer.parseInt(Integer.
+- **fix(cmd-socketio-server): mitigate cross site scripting attack #2068** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/1638984)
+  - Please refer this fix and approve Bounty.
+- **POST BASED REFLECTED XSS IN dailydeals.mtn.co.za** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1451394)
+  - Dear Team , I have found a post based reflected XSS in https://dailydeals.mtn.co.za/ .
+- **Reflected xss in https://sh.reddit.com** — `Reddit` · `High` [↗](https://hackerone.com/reports/1549206)
+  - Reflected cross-site scripting (or XSS) arises when an application receives data in an HTTP request and includes that data within the immediate response in an unsafe way.
+- **Reflected xss on ads.tiktok.com using `from` parameter.** — `TikTok` · `High` [↗](https://hackerone.com/reports/1452375)
+  - A XSS (cross-site scripting) vulnerability was found on a TikTok ads endpoint using the "from" parameter.
+- **Reflected xss в m.vk.com/chatjoin** — `VK.com` · `High` [↗](https://hackerone.com/reports/316475)
+  - XSS в мобильных сообщениях.
+- **Reflected Cross-Site scripting in : mtn.bj** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1264832)
+  - Hello Team I have found a Reflected XSS vulnerability in mtn.jb by file name [add details for how we can reproduce the issue]
+- **Mattermost Server OAuth Flow Cross-Site Scripting** — `Mattermost` · `High` [↗](https://hackerone.com/reports/1216203)
+  - `CVE-2021-37859` The vulnerability is a reflected Cross-Site Scripting (XSS) via the OAuth flow.
+- **Cross site scripting  ** — `Informatica` · `High` [↗](https://hackerone.com/reports/1095797)
+  - Researcher identified a XSS vulnerability in a service used by Informatica.
+- **Reflected/Stored XSS on duckduckgo.com** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/1110229)
+  - While browsing normally (since I use DuckDuckGo on a daily basis), I discovered an interesting stored XSS on the duckduckgo main search engine.
+- **Reflected XSS on transact.playstation.com using postMessage from the opening window** — `PlayStation` · `High` [↗](https://hackerone.com/reports/900619)
+  - When transact.playstation.com loads it handles messages received from postMessage in the _receiveMessageFromTransactClientService method.
+- **Download full backup and Cross site scripting ** — `ImpressCMS` · `High` [↗](https://hackerone.com/reports/1049040)
+  - A backup zip file was still left on the server, which was removed.
+- **Cross-Site-Scripting on www.tiktok.com and m.tiktok.com leading to Data Exfiltration** — `TikTok` · `High` [↗](https://hackerone.com/reports/968082)
+  - The researcher discovered a URL parameter reflecting its value without being properly sanitized and was able to achieve reflected XSS.
+- **Reflected XSS on a Atavist theme at external_import.php** — `Automattic` · `High` [↗](https://hackerone.com/reports/976657)
+  - Hi team, I found this php file https://magazine.atavist.com/static/external_import.php , and there is a parameter called scripts on this php file.
+- **SafeParamsHelper::safe_params is not so safe** — `GitLab` · `High` [↗](https://hackerone.com/reports/946728)
+  - GitLab uses [SafeParamsHelper](https://gitlab.com/gitlab-org/gitlab/-/blob/682a3c0134f2cfec9e5743aa97fbaf2a7d89e65f/app/helpers/safe_params_helper.rb#L8) to filter out some keys before passing them to url_for: def safe_params if params.respond_to?(:permit!) params.except(:host,
+- **Cross-site Scripting (XSS) - Reflected** — `8x8` · `High` [↗](https://hackerone.com/reports/503988)
+  - The password reset page of the managers portal of VCC reflected input of the **tenant** parameter without proper encoding considerations.
+- **Reflected cross-site scripting vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/774792)
+  - I'd like to report a 'XSS' vulnerability on a DoD website *https://███/unit/███ , Here in the search engine of the website please enter the following payloads <script>alert(document.domain)</script> & you can even use this payload to steal cookies <script>alert(document.cookie)</
+- **The URL in "Choose a data source'' at "https://bi.owox.com/ui/settings/connected-services/setup/" is not filtered => reflected XSS.** — `OWOX, Inc.` · `High` [↗](https://hackerone.com/reports/733051)
+  - Hi team, This is another report with #732987.
+- **Reflected XSS ** — `OWOX, Inc.` · `High` [↗](https://hackerone.com/reports/732987)
+  - I have found an XSS at https://bi.owox.com/ui/6177527534dc114eb07fa829e4ce4d28/dashboard/?trial=activated Because the input is not properly filtered, resulting in XSS being executed Vulnerable area: ----- 6177527534dc114eb07fa829e4ce4d28 The URL will now be: https://bi.owox.c
+- **Reflected XSS** — `Bumble` · `Critical` [↗](https://hackerone.com/reports/739601)
+  - The researcher has found an XSS when sending messages through our service.
+- **Reflective Cross-site Scripting via Newsletter Form** — `Shopify` · `High` [↗](https://hackerone.com/reports/709336)
+  - *.myshopify.com is vulnerable to a reflective cross-site scripting attack in the newsletter form.
+- **Reflected XSS on https://make.wordpress.org via 'channel' parameter** — `WordPress` · `High` [↗](https://hackerone.com/reports/659419)
+  - Hi there, I just found a reflected XSS on make.wordpress.org domain.
+- **Reflected XSS on $Any$.myshopify.com/admin** — `Shopify` · `High` [↗](https://hackerone.com/reports/422707)
+  - Hi, I have found a reflected cross site scripting vulnerability in <any>.myshopify.com/admin through return_url parameter .
+- **Reflected XSS on secure.chaturbate.com** — `Chaturbate` · `High` [↗](https://hackerone.com/reports/413412)
+  - The hacker found that an external asset used for fraud detection on secure.chaturbate.com was not sanitizing input parameters and could be used for reflected XSS.
+- **Reflected XSS** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/304175)
+  - Due to the lack of sanitisation in the commend area, with a especially crafted message, is possible to execute a XSS with the "preview" function.
+- **Reflected XSS в /al_audio.php** — `VK.com` · `High` [↗](https://hackerone.com/reports/334691)
+  - XSS в прикреплении аудиозаписи в виджете комментариев.
+- **[bracket-template] Reflected XSS possible when variable passed via GET parameter is used in template** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/317125)
+  - I would like to report Reflected XSS in bracket-template module.
+- **Reflected XSS in admin settings** — `Deconf` · `High` [↗](https://hackerone.com/reports/303480)
+  - The researcher and our team determined that actually there wasn't any applicable vulnerability.
+- **MediaElements XSS** — `WordPress` · `High` [↗](https://hackerone.com/reports/299112)
+  - The reporter disclosed a reflected XSS vulnerability in MediaElement's Flash files, which are bundled in WordPress.
+- **muber-id Query Parameter Can Generate SSL-protected Reflected XSS in https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js Endpoint** — `Uber` · `Critical` [↗](https://hackerone.com/reports/300102)
+  - The muber-id request parameter at the https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js mobile endpoint is copied into a javascript string encapsulated in double quotation marks, resulting in SSL-protected payloads being reflected unmodified in the application's response.
+- **lite:sess Query Parameter Can Generate SSL-protected Reflected XSS in https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js Endpoint** — `Uber` · `Critical` [↗](https://hackerone.com/reports/300101)
+  - The lite:sess request parameter at the https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js mobile endpoint is copied into a javascript string encapsulated in double quotation marks, resulting in SSL-protected payloads being reflected unmodified in the application's response.
+- **udi-id Query Parameter Can Generate SSL-protected Reflected XSS in https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js Endpoint** — `Uber` · `Critical` [↗](https://hackerone.com/reports/300103)
+  - The udi-id request parameter at the https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js mobile endpoint is copied into a javascript string encapsulated in double quotation marks, resulting in SSL-protected payloads being reflected unmodified in the application's response.
+- **SSL-protected Reflected XSS in https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js Endpoint** — `Uber` · `Critical` [↗](https://hackerone.com/reports/300081)
+  - The _ga request parameter at the https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js mobile endpoint is copied into a javascript string encapsulated in double quotation marks, resulting in SSL-protected payloads being reflected unmodified in the application's response.
+- **SSL-protected Reflected XSS in m.uber.com** — `Uber` · `Critical` [↗](https://hackerone.com/reports/296701)
+  - m.uber.com is susceptible to reflected XSS A malformed URL can be used to render arbitrary SSL-protected web pages from m.uber.com
+- **SSL-protected Reflected XSS in https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js Endpoint** — `Uber` · `Critical` [↗](https://hackerone.com/reports/300080)
+  - The _cc request parameter at the https://m.uber.com/0-dfffb25d2cf6ceeb0a27.js mobile endpoint is copied into a javascript string encapsulated in double quotation marks, resulting in SSL-protected payloads being reflected unmodified in the application's response.
+- **XSS в приглашении в группу** — `VK.com` · `High` [↗](https://hackerone.com/reports/269940)
+  - Отсутствие фильтрации параметров при приглашении в группу.
+- **The Custom Emoji Page has a Reflected XSS** — `Slack` · `High` [↗](https://hackerone.com/reports/258198)
+  - The Custom Emoji Page has a Reflected XSS in building flash message.

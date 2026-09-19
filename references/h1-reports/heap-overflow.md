@@ -1,0 +1,52 @@
+# Heap Overflow
+
+_24 reports — High/Critical, disclosed_
+
+- **Heap Buffer Overflow in TFTP** — `curl` · `Critical` [↗](https://hackerone.com/reports/3444904)
+  - A heap buffer overflow vulnerability exists in the TFTP implementation of libcurl.
+- **Heap Buffer Overflow in libcurl curl_slist_append via Unterminated String** — `curl` · `High` [↗](https://hackerone.com/reports/3229490)
+  - A heap buffer overflow vulnerability exists in libcurl's curl_slist_append() function in lib/slist.c:94.
+- **Heap‑based buffer overflow in curl -K <config_file> allows arbitrary write .** — `curl` · `High` [↗](https://hackerone.com/reports/3094406)
+  - A heap‑based buffer overflow in curl’s config‑file parser (parseconfig() --> getparameter()) allows an attacker supplying a crafted config file to overwrite internal pointers (via cleanarg()), leading to a write‑what‑where primitive and potential remote code execution.
+- **Buffer Overflow Vulnerability in WebSocket Handling** — `curl` · `High` [↗](https://hackerone.com/reports/2298307)
+  - Hello security team, Hope you are doing well :) I would like to report a potential security vulnerability in the WebSocket handling code of the curl library.
+- **CVE-2023-38545: socks5 heap buffer overflow** — `curl` · `High` [↗](https://hackerone.com/reports/2187833)
+  - `CVE-2023-38545` The SOCKS5 state machine can be manipulated by a remote attacker to overflow heap memory if four conditions are met: 4.
+- **Remote kernel heap overflow** — `PlayStation` · `High` [↗](https://hackerone.com/reports/1350653)
+  - `CVE-2022-29867` The PlayStation has a kernel PPPoE driver, that originates from NetBSD.
+- **Read and write beyond bounds in mod_sed** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1511619)
+  - `CVE-2022-23943` This CVE consists of several bugs in mod_sed, where overflows, truncation, uses after free and a logic error can allow a remote, unauthenticated attacker to read and/or write heap locations beyond bounds.
+- **Buffer overflow in req_parsebody method in lua_request.c** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1434056)
+  - `CVE-2021-44790` Software Versions ------------------- Ubuntu - 18.04 (32-bit) Apache 2.4.51 (32-bit) Description ------------- This bug is present in "req_parsebody" method of modules/lua/lua_request.c file.
+- **Basic Authentication Heap Overflow** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/641240)
+  - `CVE-2019-12527` An attacker can get arbitrary data overflowed in the heap via Basic Authorization base64 blob.
+- **CVE-2020-10938-buffer overflow/out-of-bounds write in compress.c:HuffmanDecodeImage()** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/816637)
+  - `CVE-2020-10938` There is an out-of-bounds write that is likely exploitable while performing Huffman decoding of Fax images.
+- **Heap buffer overflow vulnerability while processing a malformed TIFF file.** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1047086)
+  - `CVE-2020-27829` A heap buffer overflow vulnerability occurs in magick while processing of a malformed TIFF file.Following is the version/build details: $ magick -version Version: ImageMagick 7.0.10-45 Q16 x86_64 2020-11-30 https://imagemagick.org Copyright: © 1999-2020 ImageMagick Studio LLC Lic
+- **libcurl: SMTP end-of-response out-of-bounds read - CVE-2019-3823** — `curl` · `High` [↗](https://hackerone.com/reports/518097)
+  - `CVE-2019-3823` libcurl contains a heap out-of-bounds read in the code handling the end-of-response for SMTP.
+- **Heap overflow in utf32be_mbc_to_code** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/476168)
+  - `CVE-2019-9023` Buffer overflow in mbc_to_code functions for UTF32BE, UTF32LE, UTF16BE, and UTF16LE due to incorrect length assumptions of a buffer.
+- **Buffer over-write in finfo_open with malformed magic file.** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/476179)
+  - `CVE-2015-8865` This bug causes a segfault when running with environment variable USE_ZEND_ALLOC set to 0, and also when compiled with ASAN with USE_ZEND_ALLOC set and unset.
+- **Out of order TLS handshake / application data messages lead to segmentation fault** — `Node.js` · `High` [↗](https://hackerone.com/reports/335495)
+  - IMPORTANT NOTE: I have already been working with the NodeJS core security team on this issue and have provided core files, POC and many other pieces of information.
+- **PHP mbstring / Oniguruma multiple remote heap/stack corruptions** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/237915)
+  - `CVE-2017-9224` Oniguruma [1] by K.
+- **heap-buffer-overflow (read outside of buffer) in Sass::Prelexer::exactly<(char)92>(char const*) - libsass/src/lexer.hpp:92** — `LibSass` · `High` [↗](https://hackerone.com/reports/221163)
+  - Built with afl-clang-fast from git source 5909ba5.
+- **[CVE-2018-18313] regcomp: heap-buffer-overflow read in S_grok_bslash_N** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/510888)
+  - `CVE-2018-18313` See: https://rt.perl.org/Public/Bug/Display.html?id=133192 CVE ID: CVE-2018-18313 Potential information leak(ex: secret variables or source codes)
+- **[CVE-2018-18312] regcomp: heap-buffer-overflow write / reg_node overrun** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/510887)
+  - `CVE-2018-18312` See: https://rt.perl.org/Public/Bug/Display.html?id=133423 CVE ID: CVE-2018-18312
+- **Heap overflow happen when receiving short length key from ssh server using ssh protocol 1** — `PuTTY (European Commission - DIGIT)` · `High` [↗](https://hackerone.com/reports/630462)
+  - There's no check in ssh1_login_process_queue function when read servkey and hostkey length from packet which may cause heap overflow.
+- **CVE-2018-6797:  A crafted regular expression can cause a heap buffer write overflow in Perl 5 giving a remote attacker control over bytes written** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/337986)
+  - `CVE-2018-6797` An attacker supplies a regular expression containing one or more \xDF characters after an escape putting the regexp into unicode matching mode, such as a \N{} escape.
+- **Heap Overflow in fiber_switch triggered from Fiber.transfer** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/227762)
+  - It appears as if my recommendations were ignored in the GitHub issue, so I've repeated the issue here.
+- **heap-buffer-overflow (read outside of buffer) in mrb_vm_exec()** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/221251)
+  - Triggered in 3231219 (14 April 2017).
+- **Content-Length restriction bypass to heap overflow in gip.rocks.** — `Gratipay` · `High` [↗](https://hackerone.com/reports/214449)
+  - I started playing around with a0xnirudh's [Content-Length restriction bypass](https://hackerone.com/reports/203388) and noticed that when combined with a different vulnerability this could be leveraged to do a bit more than DoS.

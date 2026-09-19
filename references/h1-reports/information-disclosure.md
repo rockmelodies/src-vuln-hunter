@@ -1,0 +1,418 @@
+# Information Disclosure
+
+_207 reports — High/Critical, disclosed_
+
+- **IBM Aspera HTTP Gateway stores sensitive information in clear text in easily obtainable files which can be read by an unauthenticated user.** — `IBM` · `High` [↗](https://hackerone.com/reports/3340797)
+  - IBM Aspera HTTP Gateway stores sensitive information in clear text was submitted to IBM, analyzed and has been remediated.
+- **ASLR leak in Mario Kart World through LAN mode** — `Nintendo` · `High` [↗](https://hackerone.com/reports/3463719)
+  - Due to uninitialized data in a network packet, a memory address was leaked in Mario Kart World.
+- **Internal logs/info leaked via endpoint {https://203.137.128.240/server-status}** — `pixiv` · `High` [↗](https://hackerone.com/reports/2473173)
+  - Accessing the pixiv server via its direct IP address allows access to the administrative server-status endpoint.
+- **Exposed wp-config.php file in ███ National Guard website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3328408)
+  - I found a ██████████ National Guard website with the subdomain/domain ████████.
+- **Exposed wp-config.php file** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3252302)
+  - A copy of the WordPress config file wp-config.php has been found at █████████ endpoint.
+- **[███] .NET Framework ObjRefs Disclosure (CVE-2024-29059)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2471924)
+  - `CVE-2024-29059` Microsoft .NET Framework could allow a remote attacker to obtain sensitive information.
+- **Exposure of Sensitive Debug File Containing database dump with passwords in plain text** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3019290)
+  - A publicly accessible debug file (debug.txt) was discovered on the target web application, exposing sensitive database credentials, including usernames and passwords.
+- **Secret Access Key of AWS Firehose Disclosure** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2914739)
+  - The ███████ domain has the /error_docs/uat.js endpoint, which contains the secret access key of AWS Firehose encoded in base64.
+- **ASBS viewing other soldiers PII/Board/Board Voters/ETC** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2954320)
+  - An authenticated user, could run GraphQL queries that return sensitive information on other users.
+- **337k users and 1 employee leaked credentials** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/3250691)
+  - So there's this website called "https://leakradar.io" while surfing this site i came across your website "https://www.khanacademy.org/" i found out there was huge amount of accounts were leaked there, one of them was a employee account which is valid.
+- **Information Disclosure at : https://curl.se/.mailmap** — `curl` · `High` [↗](https://hackerone.com/reports/2853023)
+  - Exposing email addresses can lead to phishing attacks, spam, or social engineering attacks targeting the affected individuals.
+- **Git repository found** — `curl` · `High` [↗](https://hackerone.com/reports/2915426)
+  - Hello team , When i research I found domain vuln to downliad git repository and i will explain that.
+- **Netlify Authentication Token Exposed in Public Mozilla CI Logs** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2915647)
+  - A critical vulnerability was discovered involving the exposure of a Netlify authentication token within publicly accessible logs.
+- **Possible Sensitive Session Information Leak in Active Storage** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/3082917)
+  - Original report: https://hackerone.com/reports/2140554 Advisory: https://github.com/rails/rails/security/advisories/GHSA-8h22-8cf7-hq6g Active Storage, when serving files (blobs), incorrectly sends the Set-Cookie header containing the user's session cookie along with a Cache-Cont
+- **The /reports/:id.json endpoint discloses potentially sensitive user attributes when reporter summary is present** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/3000510)
+  - The.json endpoint of any disclosed report is leaking reporter's email, OTP backup codes, reporter's phone number, "graphql_secret_token", tshirt size all the reporter account's internal details etc.
+- **Wordpress users Disclosure** — `Autodesk` · `Critical` [↗](https://hackerone.com/reports/2981756)
+  - we can see all the WordPress users/author with some of their information.
+- **Public google drive link Exposes Military Orders Containing PII (Name, SSN etc..) and Operational Details** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2926447)
+  - I found google drive link https://drive.google.com/drive/folders/█████████ at https://████████.aspx?Mode=ReadOnly&Id=90dd0d3b-0ed1-e76b-128f-11ebc799ba55 contains pdfs at '/████ Internal/Orders' that discloses the following PII: Full Name: ███████ Social Security Number (SSN
+- **Mail auto configurator can be tricked into sending account information to wrong servers ** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/2508422)
+  - `CVE-2024-52508` Security advisory at https://github.com/nextcloud/security-advisories/security/advisories/GHSA-vmhx-hwph-q6mc
+- **Can see phone numbers of others by providing mail address** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/2534458)
+  - It is possible for an attacker to see anyone's phone numbers abusing bug in reset password functionality.
+- **Pull Any Automated Record Brief** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1541740)
+  - **Description:** With some simple URL manipulation, an authenticated user is able to request other soldiers ARB/ORBs.
+- **two aws access key and secret key and database username and password exposed ** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2401648)
+  - hello mozilla security team i found two aws access key and secret key and database username and password exposed in dockerhub image go to https://hub.docker.com/r/mozilla/commonvoice and do pull for this image you will find them in /code/scripts/test/config.json ███████ poc of
+- **User API Key leakage in Github commit leads to unauthorized access to sql.telemetry.mozilla.org** — `Mozilla` · `High` [↗](https://hackerone.com/reports/2735646)
+  - A Mozilla employee's API token for https://sql.telemetry.mozilla.org was leaked in one of our Github repos.
+- **Course Registration Form Allowing an attacker to dump all the candidate name who had enrolled for the course** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1100383)
+  - The given application has a form to fill in the details of the candidates in order to seek admission to various courses.
+- **Pinning leaks message content** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1062538)
+  - **Summary:** Improper input validation allows pinning of arbitrary messages (in private channels), leaking the message content back to the sender.
+- **Leaking usernames through endpoints Wordpress** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1785021)
+  - Hi first, some of my usernames have been leaked by endpoints https://alt.mtn.com/wp-json/wp/v2/users [The steps are as follows]
+- **https://srcds.valve.net/find/ is leaking server config / API keys** — `Valve` · `High` [↗](https://hackerone.com/reports/1168557)
+  - Insufficient access control allowed unauthenticated visitors to see sensitive configuration information about Source game servers.
+- **Two-factor authentication bypass lead to information disclosure about the program and all hackers participate** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2486086)
+  - Two-factor authentication bypass lead to information disclosure about the program and all hackers participate Hi dear when you have an invitation from a program and to accept that invitation to see the program content you need to have Two-factor authentication turned on , try to
+- **Jira Credential Disclosure within Mozilla Slack** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2467999)
+  - I was able to find Jira Admin API Keys disclosed within Mozilla's #███ Slack channel which was posted by a staff member of Mozilla.
+- **Docker Secret Disclosure via GitHub Actions Cache Poisoning** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/2410111)
+  - An issue was reported whereby GitHub secrets were leaked via GitHub Actions.
+- **View any user email using the Team's audit log section** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/2404415)
+  - Hello team, I decided to do some further testing, and I came across another endpoint that can be used to reveal user emails.
+- **Creation of bounties through Customer API leads to private email disclosure** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/2382120)
+  - Hello team, It is possible to reveal any user email using the BountiesHistoryQuery request.
+- **Full Access to sonarQube and Docker** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2312609)
+  - This vulnerability involves the exposure of sensitive credentials and IP addresses in a JavaScript file.
+- **Exposure of service tokens to webpack bundle** — `Semrush` · `High` [↗](https://hackerone.com/reports/1717210)
+  - During the build phase, not essential for the application's functionality environment variables were accidentally included in the webpack configuration file.
+- **Sensitive Information Exposed at █████** — `Mars` · `High` [↗](https://hackerone.com/reports/2308654)
+  - The issue involves a JavaScript file hosted at "█████" that exposes a configuration or environment variables object.
+- **Datadog api keys exposed can be used to do all the read and write access to the instance** — `Mars` · `Critical` [↗](https://hackerone.com/reports/2307933)
+  - The researcher identified DatadogHQ API keys and application keys embedded in a JavaScript (JS) file on the site █████.
+- **[Critical] Curl CVE-2023-38545 vulnerability code changes are disclosed on the internet** — `curl` · `Critical` [↗](https://hackerone.com/reports/2199174)
+  - Curl CVE-2023-38545 vulnerability code changes are disclosed on the internet To replicate the issue, I have searched in the Bard about this vulnerability.
+- **LinkedIn users primary email + full name visibilty** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/878724)
+  - The issue identified by the researcher allowed LinkedIn Recruiter seat holders to share data with those outside their contract.
+- **Access to resumes applied through LinkedIn Jobs** — `LinkedIn` · `Critical` [↗](https://hackerone.com/reports/560668)
+  - The security issue identified by the researcher allowed LinkedIn Recruiter seat holders to view data about job applicants that exceeded permissions.
+- **AWS keys and user cookie leakage via uninitialized memory leak in outdated librsvg version in Basecamp** — `Basecamp` · `High` [↗](https://hackerone.com/reports/2107680)
+  - Basecamp supports uploading SVG pictures as avatars.
+- **LDAP Anonymous Login enabled in ████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2081332)
+  - The host ██████████ has anonymous LDAP login enabled, which means that anyone can connect to the LDAP server without providing any authentication credentials.
+- **IDOR in channel ID leads to customer email disclosure on https://video.ibm.com** — `IBM` · `High` [↗](https://hackerone.com/reports/2083270)
+  - IDOR in channel ID led to email disclosure on https://video.ibm.com and was reported to IBM, analyzed and has been remediated.
+- **An attacker can can view any hacker email via  /SaveCollaboratorsMutation operation name ** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2032716)
+  - An attacker can view any attacker or normal user email after send invitation via dummy report , disclose their private email.
+- **Full access to InDrive jira panel via exposed API token ** — `inDrive` · `Critical` [↗](https://hackerone.com/reports/1785145)
+  - Browsing through GitHub I found the following repository: Looking for interesting keywords, the following file popped up:
+- **Security token and handler name leak from window.braveBlockRequests** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1668723)
+  - Brave for iOS protects privileged JS to native bridges by using random JavaScript handler names and security tokens.
+- **Sensitive Data Exposure via wp-config.php file** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1912671)
+  - Hi team, A copy of the WordPress config file wp-config.php has been found at █████████ endpoint.
+- **Moving private messages into vision with updateMessage method** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1406479)
+  - `CVE-2023-28325` A vulnerability has been discovered in the updateMessage Meteor Method, allowing adversaries to edit messages without proper authorization.
+- **Snowflake server: Leak of TLS packets from other clients** — `Tor` · `High` [↗](https://hackerone.com/reports/1880610)
+  - This issue is related to the Snowflake pluggable transport server.
+- **Sensitive Data Exposure at https://█████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1720278)
+  - I found in the endpoint https://███/api/getEnvVars, sensitive data of environment variables containing: AWS S3 credentials, PATH, IP and PORTs.
+- **Sensitive information disclosure [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1632104)
+  - Hi Team :) I found that the server status directory on your system is open, it displays server status and sensitive information by server [add details for how we can reproduce the issue]
+- **connect.8x8.com: Users with no permission can track/access restricted details/data via GET /api/v2/support/requests/<ticket number >HTTP/2** — `8x8` · `High` [↗](https://hackerone.com/reports/1499114)
+  - @emperor reported to us an issue where information about our internal support agents were visible via /api/v2/support/requests/<ticket number>.
+- **Critical sensitive information Disclosure. [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1626236)
+  - (Database user,Database password,Database name) on https://██████.edu/ I got sensitive information: view-source:https://██████████.edu/database.php.orig
+- **HEIC image preview can be used to invoke Imagick** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/1261413)
+  - `CVE-2021-32802` The HEIC image preview provider calls into Imagick at https://github.com/nextcloud/server/blob/5d097ddb4b99673f57b8c085dedd93880ee2539d/lib/private/Preview/HEIC.php#L98-L109.
+- **Wordpress users Disclosure [ /wp-json/wp/v2/users/ ]  Not Resolved () ** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1784999)
+  - On this report's #735586 You closed the report and changed the status to Resolved.
+- **Any organization's assets pending review can be downloaded** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1787644)
+  - This may leak sensitive data about an organization's attack surface.
+- **Wordpress users Disclosure [ /wp-json/wp/v2/users/ ]** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1735586)
+  - Using REST API, we can see all the WordPress users/author with some of their information.
+- **User information disclosed via API** — `U.S. General Services Administration` · `High` [↗](https://hackerone.com/reports/1218461)
+  - It appears that the requests for "system accounts" are fully available via an API endpoint that does not require authentication.
+- **.git folder exposed [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1624157)
+  - Heyy there, I have found a exposed .git folder on https://█████ [core] repositoryformatversion = 0 filemode = true bare = false logallrefupdates = true [remote "origin"] url = https://████ fetch = +refs/heads/*:refs/remotes/origin/*
+- **insecure gitlab repositories at ████████ [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1624152)
+  - **If you click the link https://███, you're redirected to https://██████/users/sign_in, where credentials have to be inserted.
+- **API route chat.getThreadsList leaks private message content** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1446767)
+  - `CVE-2022-32229` The /api/v1/chat.getThreadsList does not sanitize user inputs and can therefore leak private thread messages to unauthorized users via Mongo DB injection.
+- **getUserMentionsByChannel leaks messages with mention from private channel** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1410246)
+  - `CVE-2022-35249` The getUserMentionsByChannel meteor server method discloses messages from private channels and direct messages regardless of the users access permission to the room.
+- **springboot actuator is leaking internals at ██████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1662474)
+  - If you go to https://█████████/actuator you'll get a complete overview of all the endpoints that are accessable (Suggestion: Use a Firefox Browser if possible, its json representation is well formed and the links are clickable ) Displays a complete list of all the Spring beans in
+- **The dashboard is exposed in https://███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1566758)
+  - `CVE-2020-7130` At first, hello, after searching in sub-domains, the dashboard was accessed by Google Dorking Which is supposed to be protected https://█████████l/arsys/forms/arpcp/ARPC%3AWeb%3AHier%3ADashboard/Default+Admin+View/?F536871388=1&mode=Submit&cacheid=c66791da CWE-200 https://cwe.mit
+- **SSRF via Office file thumbnails** — `Slack` · `Critical` [↗](https://hackerone.com/reports/671935)
+  - On August 12, 2019, a group of researchers reported an exploit path for a vulnerability in LibreOffice.
+- **API docs expose an active token for the sample domain theburritobot.com** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/1507412)
+  - A screenshot featured on [API token creation](https://developers.cloudflare.com/api/tokens/create/#generating-the-token) documentation page exposed a valid API token with permissions sufficient to modify DNS records of one of Cloudflare’s demo zones.
+- **Registered users contact  information disclosure on salesforce lightning endpoint https://disposal.gsa.gov** — `U.S. General Services Administration` · `High` [↗](https://hackerone.com/reports/1443654)
+  - Sample of the Information Disclosure is below.
+- **Enumerate class codes via yahoo dork - Can access any course under teacher - Sensitive information leaked** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/1514356)
+  - Hello Team, I am quality researcher and I found some links using yahoo dorking techniques I used yahoo dork site:pl.khanacademy.org/join I used Firefox browser.
+- **Workspace configuration metadata disclosure** — `Slack` · `High` [↗](https://hackerone.com/reports/864489)
+  - Slack allows users to create a Workspace using the Get Started page, located at https://slack.com/get-started#/create.
+- **Identify the mobile number of a twitter user** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/1225164)
+  - By exploiting this security vulnerability we can detect the mobile number of a twitter user.
+- **Insecure crossdomain.xml on https://vdc.mtnonline.com/** — `MTN Group` · `High` [↗](https://hackerone.com/reports/838817)
+  - This will make any one able to receive content from https://vdc.mtnonline.com/ , attacker can steal CSRF tokens and user PII.
+- **PHP Info Exposing Secrets at https://radio.mtn.bj/info** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1049402)
+  - During recon I discovered a PHP Info file exposing environment variables such as; Laravel APP_KEY, Database username/password, SMTP username/password, etc.
+- **default ████ creds on https://████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/711662)
+  - I can log into https://███ using █████ as credentials Can do anything an ██████████ can do in this application, Server Now
+- **Information disclosure-Referer leak** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1337624)
+  - Assigned to: Brave Assigned by: Kirtikumar Anandrao Ramchandani Assigned on: 13/09/2021 Browser information used to test (Up to date): Brave 1.29.79 Chromium: 93.0.4577.63 (Official Build) (64-bit) Revision ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135} O
+- **The Return of the Grinch** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1433581)
+  - Read the full writeup here: https://github.com/tarifas90/CTF-Writeups-2021/blob/main/hackyholidasy2021.md
+- **Wrong settings in ADF Faces leads to information disclosure** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1422641)
+  - Found some interesting links which leads to information disclosure in █████ Link 1: [██████████]███ Link 2: [████████]██████████ Link 3: [██████████]███ Every link goes through https://██████to https://████
+- **Просмотр закрытых фотографий** — `VK.com` · `High` [↗](https://hackerone.com/reports/584582)
+  - Недостаточная валидация запросов.
+- **Endpoint without access control leads to order informations and status changes** — `Azbuka Vkusa` · `Critical` [↗](https://hackerone.com/reports/1050753)
+  - —
+- **Recaptcha Secret key Leaked** — `Paragon Initiative Enterprises` · `High` [↗](https://hackerone.com/reports/1416665)
+  - Greeting from @kashifinfo90, I hope **Paragonie Security Team** is doing great, Following **Secret Keys** are leaked:
+- **Corporate Jira credentials disclosed in public gist** — `Azbuka Vkusa` · `High` [↗](https://hackerone.com/reports/958432)
+  - —
+- **critical file found etc/passwd on www.reddit.com** — `Reddit` · `High` [↗](https://hackerone.com/reports/1187003)
+  - poc attched: HTTP/2 200 OK Content-Type: text/plain; charset=UTF-8 X-Ua-Compatible: IE=edge X-Frame-Options: SAMEORIGIN X-Content-Type-Options: nosniff X-Xss-Protection: 1; mode=block Cache-Control: max-age=0, must-revalidate X-Moose: majestic Accept-Ranges: bytes Date: Thu, 06 M
+- **Tor Browser using --log or --verbose logs the exact connection time a client connects to any v2 domains.** — `Tor` · `High` [↗](https://hackerone.com/reports/1250273)
+  - A vulnerability in the Tor Browser 78.11.0esr and below allows a local or physical attacker to view metadata about v2 domains, namely the exact timestamp that a user connected to a v2 onion address while using either the --log or --verbose command line options.
+- **Information disclosure** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1347249)
+  - Vulnerability tested on:- Brave 1.29.81 Chromium: 93.0.4577.82 (Official Build) (64-bit) Vulnerability description:- For security measures and for privacy purposes, Brave has the ability to open a normal tab of the Brave when we navigate to: chrome://wallet, chrome://history
+- **Big Picture web browser leaks login cookies and discloses sensitive information (may lead to account takeover)** — `Valve` · `High` [↗](https://hackerone.com/reports/1079561)
+  - Researcher reported an issue where certain secure cookies would be included in a web request initiated through Steam Big Picture mode that was initially to a trusted origin but subsequently forwarded to a site on a different origin.
+- **information discloure via logs files at ==> https://ihelp.mtnbusiness.com/logfiles/Log_21-06-2021.txt** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1239633)
+  - i got a 500 error show the full path of the windows server containing the log file of today i navigate to it ==> https://ihelp.mtnbusiness.com/logfiles/Log_21-06-2021.txt i saw all logins i made with user administrator as u see the logs files is a date Log_21-06-2021.txt you ca
+- **Leaked JFrog Artifactory  username and password exposed on GitHub - https://snapchat.jfrog.io** — `Snapchat` · `High` [↗](https://hackerone.com/reports/911606)
+  - Researcher found valid jFrog credentials which were committed to a public Github repository of a Snap employee.
+- **Internal Gitlab Ticket Disclosure via External Slack Channels** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1273292)
+  - @none_of_the_above was able to enumerate GitLab ticket titles and descriptions by posting links in a shared Slack channel.
+- **All private support requests to ███████ are being disclosed at https://███████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1004964)
+  - I have found out that all personal requests made to https://█████ form are being disclosed to the public at https://███████, which posses a critical privacy issue.
+- **Exfiltrating a victim's exact location (to within 5m)** — `Bumble` · `High` [↗](https://hackerone.com/reports/1234406)
+  - I used Bumble's distance feature to exfiltrate the exact location (to within approx 5m) of a victim.
+- **API on campus-vtc.com allows access to ~100 Uber users full names, email addresses and telephone numbers.** — `Uber` · `High` [↗](https://hackerone.com/reports/580268)
+  - There was an API endpoint on the Uber site campus-vtc.com that allows an attacker to view the full names, personal email addresses and phone numbers of 83 Uber France members.
+- **DNS Leaks when using any VPN Browser extension with Brave Shield enabled** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1203842)
+  - `CVE-2021-22916` If Brave Shield is enabled alongside with a VPN Chrome extension and adblocking is enabled, some DNS requests may not be forwarded through the VPN tunnel.
+- **Brave Browser Tor Window leaks user's real IP to the external DNS server** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1077022)
+  - `CVE-2021-22917` When a user navigates to a URL in Tor Window, the DNS requests are sent directly without using the Tor proxy, which leaks the user's real IP address and the requested domain name to the user's ISP and the DNS server.
+- **Cross-origin resource sharing misconfig | steal user information ** — `UPchieve` · `High` [↗](https://hackerone.com/reports/1183601)
+  - An HTML5 cross-origin resource sharing (CORS) policy controls whether and how content running on other domains can perform two-way interaction with the domain that publishes the policy.
+- **SNMP Community String Disclosure to ReadOnly Users on EdgeSwitch** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/797988)
+  - `CVE-2020-8232` Read only users could execute unauthorized tasks and through SNMP community string pages.
+- **Improper data update process on UpdatePhabricatorIntegration mutation leads to leak of Phabricator Conduit API token.** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/1161141)
+  - **Title**: Improper data update process on UpdatePhabricatorIntegration mutation leads to leak of Phabricator Conduit API token.
+- **Exposed█████████in apk file - devbuilds.uber.com** — `Uber` · `High` [↗](https://hackerone.com/reports/848905)
+  - Sensitive information was disclosed because of internal token leakage.
+- **Critical Information disclosure of rtapi token for any user via https://video-support-staging.uber.com/video/api/getPopulousUser** — `Uber` · `Critical` [↗](https://hackerone.com/reports/953649)
+  - The researcher has identified that the API endpoint can be leveraged to return a sensitivetoken that can be leveraged for access to rtapi endpoints.
+- **Duplicate Entry of email leads to 500 Server Error which disclosing the SQL Database table information** — `Kartpay` · `Critical` [↗](https://hackerone.com/reports/1082891)
+  - The Issue was with the process of Deletion of the merchant data from the admin Dashboard.
+- **critical information disclosure** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1106009)
+  - I have found critical information through this endpoint /██████; this endpoint contains all env vars used in a www.██████ such as server credentials, db ,mail , twitter client_id and client_secret , facebook client_id and client_secret, etc...
+- **critical information disclosure** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1106505)
+  - I have found critical information through this endpoint ████ on ███████ DB credentials such as DB_NAME,DB_USER,DB_PASSWORD,DB_HOST, etc..
+- **CRXDE Lite/CRX is on ██████ exposed that leads to PII disclosure** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1095830)
+  - hi team , i found that aem is running on ████████  and CRXDE Lite/CRX is exposed to unauthenticated user that can lead to information disclosure POC ==== 1-visit  https://██████//██████████  2-go to query and search for admin then execute 3-go to this endpoint to retr
+- **Information Disclosure(PHPINFO/Credentials) on DoD Asset** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/883693)
+  - A DoD leaks credentials on a phpinfo() page.
+- **Disclosure of Merchant_id into the source code without entered OTP code leads to Victims MID takeover.** — `Kartpay` · `Critical` [↗](https://hackerone.com/reports/1082288)
+  - The System Encryption for the merchant registration was revealing the details which can be further exploitable for the Registration of the merchant.
+- **Information disclosure via a misconfigured third-party product** — `Algolia` · `High` [↗](https://hackerone.com/reports/739251)
+  - The researcher identified a misconfiguration in a third party product that could have been used to retrieve information about Algolia users.
+- **Uber employees are sharing information on productforums.google.com** — `Uber` · `High` [↗](https://hackerone.com/reports/344086)
+  - @researcher found an exposed Google spreadsheet on productforums.google.com containing mostly test data.
+- **Access to requests and approvals via /█████ allows sensitive information gathering** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/904671)
+  - An adversary is able to view/modify requests and approvals via ████████/████████.
+- **PII Leak via /██████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/905688)
+  - An attacker is able to access ServiceNow e-mail notification modules via █████/██████████.
+- **PII Leak via /████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/905679)
+  - An attacker is able to view PII (Full name/address/e-mail/phone) of all website users via █████████/████████ Restrict access to this endpoint to administrative roles.
+- **PII Leak via /███████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/904659)
+  - The ██████████ website allows access to PII of all site users via faulty access control to the /██████ endpoint.
+- **Unexpected access to process open files via file:///proc/self/fd/n** — `curl` · `High` [↗](https://hackerone.com/reports/770190)
+  - file_connect() routine (https://github.com/curl/curl/blob/1b71bc532bde8621fd3260843f8197182a467ff2/lib/file.c#L134) does not prevent access to /proc/self/fd pseudo filesystem.
+- **Unauthenticated access to webmail at maildev.happytools.dev leading to compromised wordpress site api.happytools.dev [RCE]** — `Automattic` · `High` [↗](https://hackerone.com/reports/1067547)
+  - Today when I trying to find bugs on happy tools I have found 2 domains below for staging environment Two websites above ssl certificate was expired.
+- **h1-ctf : 12 days of hack holiday writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069175)
+  - This was a real fun CTF and I really enjoyed solving the challenges.
+- **Local File Disclosure on the ████████ (https://████/) leads to the source code disclosure & DB credentials leak** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/685344)
+  - I discovered another LFD on the https://████/ (virtual host on the █████ IP) Similarly, attacker able to get content of any server-side file, such as source code of application: https://███/file.ashx?path=index.aspx
+- **[H1 hackyholidays] CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069171)
+  - Hello team, Here is my CTF writeup for HackyHolidays.
+- **HackyHolidays 2020 Full Write-up: Information Disclosure of 12 Flags** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1068434)
+  - This is my report for the 2020 Hacky Holidays HackerOne CTF.
+- **How The Hackers Saved Christmas** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069335)
+  - "What are you doing?" I asked myself.
+- **exposed Git Repo at http://api.e2e-kops-aws-canary.test-cncf-aws.canary.k8s.io/.git/** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/970520)
+  - If this report is out of scope, please let me know and I will close the report myself I found a git repository on http://api.e2e-kops-aws-canary.test-cncf-aws.canary.k8s.io/.git/.git.
+- **Admin Reseller Account Disclosure** — `8x8` · `Critical` [↗](https://hackerone.com/reports/879562)
+  - The vendor that handles 8x8 Resellers had inadvertently exposed account credentials.
+- **Able to comment/view in others support ticket at https://en.instagram-brand.com/requests/dashboard** — `Automattic` · `High` [↗](https://hackerone.com/reports/1007988)
+  - I reported the vulnerability to Facebook, and they have said to report it here for the bounty.
+- **Leaked DB credentials on https://██████████.mil/███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/761790)
+  - Information disclosure with login credentials for ms-sql database exposed.
+- **Unauthorized user is able to access schedule pipeline variables and values** — `GitLab` · `High` [↗](https://hackerone.com/reports/962462)
+  - `CVE-2020-13351` The feature allows to add or overwrite variables that are passed to jobs in order to modify the behavior just for that specific instance.
+- **Access to multiple production Grafana dashboards** — `Snapchat` · `High` [↗](https://hackerone.com/reports/663628)
+  - @damian89 found a production Grafana instance which displayed confidential metrics inside various dashboards.
+- **External Service Interaction | https://█████████.mil** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/997988)
+  - I am able to trick web server ███████.mil into making DNS and HTTP requests to my vps server and burp collaborator.
+- **Uninitialized read in exif_process_IFD_in_MAKERNOTE** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/516237)
+  - `CVE-2019-9638` This bug is present in exif_process_IFD_in_MAKERNOTE method of ext/exif/exif.c file.
+- **Open SonarQube instance leaking internal source code** — `Equifax-vdp` · `Critical` [↗](https://hackerone.com/reports/947946)
+  - I came across an open SonarQube instance which can be found here: http://34.238.92.229:9000/ In this, there are 10 projects with a total of around 100k lines of code To identify the owner, I went to the Issues tab and expanded the list of authors.
+- **Sensitive Information Disclosure** — `Dropcontact` · `Critical` [↗](https://hackerone.com/reports/963352)
+  - we were displaying sensitive information.
+- **Dropcontact's disclosed report is exposing Private/Confidential information** — `Dropcontact` · `High` [↗](https://hackerone.com/reports/963327)
+  - Some other report was disclosed fully with confidential information !
+- **Default Creds Spring Boot Admin** — `8x8` · `High` [↗](https://hackerone.com/reports/954818)
+  - An instance hosting Spring Boot Admin was left exposed with default credentials set.
+- **S3 bucket data at http://rockset-support.s3-us-west-2.amazonaws.com/ reveals user addresses based on latitudes and longitudes.** — `Rockset` · `High` [↗](https://hackerone.com/reports/947725)
+  - At the s3 bucket located at http://rockset-support.s3-us-west-2.amazonaws.com/, a file was found called data.json.15that contains of interest latitudes and latitudes of user addresses.
+- **Hardcoded credentials in Android App** — `8x8` · `High` [↗](https://hackerone.com/reports/412772)
+  - The mobile applications contained a URL that included credentials to a third party bug capture API.
+- **Source code disclosure at ███** — `RATELIMITED` · `High` [↗](https://hackerone.com/reports/902322)
+  - Source code disclosure at ███████ POC: link download source code: ███████
+- **[h1-2006 CTF] Payments for May have been processed!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/894165)
+  - First off thanks for a great CTF!
+- **h1-ctf writeup , finally paid the payments by chaining multiple bugs** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/894110)
+  - Ultimate aim is to pay the payments of hackerone using bounty pay with no use privileges at starting.
+- **[H1-2006 2020] H1-2006 CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/887611)
+  - The challenges were really great.
+- **Sensitive data disclosure via exposed phpunit file** — `8x8` · `High` [↗](https://hackerone.com/reports/543775)
+  - Several domains with the development phpunit configuration files exposed without proper restrictions.
+- **gitlab-workhorse bypass in Gitlab::Middleware::Multipart allowing files in `allowed_paths` to be read** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/850447)
+  - Extracted from https://hackerone.com/reports/835455#activity-7672566 While testing and looking at the patch for the nuget package workhorse bypass (https://gitlab.com/gitlab-org/gitlab/issues/209080 I think) I came across a more widespread bypass:
+- **Customer private program can disclose email any users through invited via username** — `HackerOne` · `High` [↗](https://hackerone.com/reports/807448)
+  - Hey team,This bug could have been used by my calculations a long time ago 1)Go to https://hackerone.com/hackerone_h1p_bbp3/launch 2)Take invite via username 3)Input username , send invite
+- **Username&password is Disclosure in readme file in [https://█████████]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/804980)
+  - Username&password is Disclosure for login into dashboard in readme file in [https://███]
+- **Admin Login Credential Leak for DoD Gitlab EE instance** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/799898)
+  - A DoD employee/contractor exposed the ███ password in a GitHub repository ([█████████](https://█████)) leading to full ███ access in a DoD DISA-associated private Gitlab EE instance (███).
+- **Publicly accessible Grafana install allows pivoting to Prometheus datasource** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/764731)
+  - A publicly accessible Grafana install exposes semi sensitive Dashboards.
+- **PII of Users Disclosure using "/members/invite/" endpoint** — `Lab45` · `High` [↗](https://hackerone.com/reports/787955)
+  - I found PII Disclosue at https://connect.topcoder.com/projects/ 1) Go to https://connect.topcoder.com/projects 2) Select an existing project, or create a new one.
+- **China – Limited Partner PII Regarding Work Scheduling via Unauthenticated API Endpoint** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/659248)
+  - 0xpatrik discovered an unauthenticated API endpoint that allowed retrieval of specified work leave dates of designated Starbucks employees in China.
+- **sdrc.starbucks.com - Information Disclosure via unsecured attachment directory** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/769016)
+  - l00ph0le submitted a valid high severity XSS vulnerability report for sdrc.starbucks.com.
+- **[Partial] SSN & [PII] exposed through iPERMs Presentation Slide.** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/719631)
+  - Hello @deptofdefense, when performing reconnaissance, I came across a presentation slide that displayed live data since the data is blocked out & is formatted with XXX-XX with the last 4 digits.
+- **Information disclousure by clicking on the link shown in http://████████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/708019)
+  - Looking at some subdomains using aquatone I noticed  http://█████/ I clicked it and then started navigating the page, if I go to this link: https://█████████/██████████wireframes/admin/round12/tsp_0-awarded.html it is completely valid and shows some information that I'm uns
+- **PII leakage due to scrceenshot of health records** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/693933)
+  - Document shows a screenshot of a medical record for a soldier One of the slides describes the CIV# and PAD DSN# along with some information relating to the soldier such as their name, the information appears to be old but could be still be an issue if they're in service
+- **LFI through the MySQL connection** — `Infogram` · `High` [↗](https://hackerone.com/reports/719875)
+  - I've found a way to read Infogram's server local files through the MySQL connection.
+- **Access MoPub Reports Data even after Company removed you from their MoPub Account.** — `X / xAI` · `High` [↗](https://hackerone.com/reports/399174)
+  - ("administrators or Members" - it doesn't matter, which permission company gives you while invitation) or it might be already enabled by publisher.
+- **Information Disclosure (can access all ███s) within ███████ view █████████ Portal** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/484377)
+  - **Summary:** Once ███████ authenticated (I did not mess around to see if I could reproduce without authentication), any user can view any ██████████ simply by changing the offasgid HTTP GET parameter value in the ██████ view █████████ portal link.
+- **Publicly accessible Order confirmations leaking User Emails on ███** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/323992)
+  - I noticed that a user's order confirmation was publicly accessible leaking email information An attacker can gleam sensitive information that is stored in the order confirmation file
+- **SSRF on █████████ Allowing internal server data access** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/326040)
+  - `CVE-2017-9506` An end point on ██████ allows an internal access to the network thus revealing sensitive data and allowing internal tunneling OAuth Plugin allows you to provide a url that gives a snap shot of the web page.
+- **PII leakage due to caching of Order/Contract ID's on █████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/374007)
+  - I was able to discover contract numbers which leak out user names/emails/phone numbers nd other sensitive information.
+- **██████ Authenticated User Data Disclosure** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/587214)
+  - The Air Force’s ███ application is exposing members’ personal information to other users with access to the applocaton.
+- **[mena.starbucks.com] Laravel App Log & Configuration Disclosure.** — `Starbucks` · `High` [↗](https://hackerone.com/reports/401098)
+  - bobrov discovered a misconfiguration in a Laravel instance at mena.starbucks.com, which exposed log files and environment variables containing database management credentials.
+- **Starbucks China Android app cloud storage service leaks a credential.** — `Starbucks` · `High` [↗](https://hackerone.com/reports/440629)
+  - k3mlol found a credential encoded in the Starbucks China mobile application for Android phones, which provided access to a cloud-hosted service that was used to upload information for customer service requests.
+- **Github information leaked** — `Semrush` · `High` [↗](https://hackerone.com/reports/676212)
+  - Researcher has found the third-party repository with test data for internal services development.
+- **Sensitive user information disclosure at bonjour.uber.com/marketplace/_rpc via the 'userUuid' parameter** — `Uber` · `High` [↗](https://hackerone.com/reports/542340)
+  - It was possible for an attacker to insert another user’s UUID into the userUuid POST parameter when making a request to https://bonjour.uber.com/marketplace/_rpc?rpc=getConsentScreenDetails, allowing them to retrieve personal data from the victim user’s account, as well as the us
+- **SMTP Failure Leads to Chain of Internal System Failure** — `Kartpay` · `High` [↗](https://hackerone.com/reports/642488)
+  - Kartpay Application uses the third Party SMTP Service to send the Email and while using the same application was not coded properly to handle the failure of SMTP.
+- **Public Github Repo Leaking Internal Credentials Leading To DiscoveryIQ Docker Access** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/631348)
+  - Researcher has identified and reported public github repo leaking internal information.
+- **Nginx misconfiguration leading to direct PHP source code download** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/268382)
+  - Poc: https://www.data.gov/app/plugins/saml-20-single-sign-on/saml/config/config.php
+- **[https://life.informatica.com] - information disclose ** — `Informatica` · `High` [↗](https://hackerone.com/reports/312292)
+  - Researcher had discovered and reported an issues that leads to information disclosure.
+- **Просмотр любых статей по их айди.** — `VK.com` · `High` [↗](https://hackerone.com/reports/589400)
+  - —
+- **Wordpress Users Disclosure** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/625199)
+  - Using REST API, we can see all the WordPress users/author with some of their information.
+- **Employee's GitHub Token Found In Travis CI Build Logs** — `Superhuman (formerly Grammarly)` · `High` [↗](https://hackerone.com/reports/496937)
+  - Our Security Team was notified by researchers who identified a valid leaked Github token in Travis CI logs that allow accessing a limited number of Grammarly repositories.
+- **JSON serialization of any Project model results in all Runner tokens being exposed through Quick Actions** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/509924)
+  - The Quick Actions interpreter allows an attacker to reference a Project it does not have access to.
+- **Protected tweets exposure through the URL** — `X / xAI` · `High` [↗](https://hackerone.com/reports/491473)
+  - Leaking sensitive information from protected tweets via a prepared website.
+- **███ exposes sensitive shipment information to public web** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/389116)
+  - A subdomain of the ██████████ site exposes sensitive shipment information to the public web at ███/█████downloads/xfer_fak.
+- **AWS bucket leading to iOS test build code and configuration exposure** — `Slack` · `Critical` [↗](https://hackerone.com/reports/404822)
+  - @kiyell discovered an open AWS bucket which hosted the source code of the iOS test application, as well as some configuration information and test data relating to that test build.
+- **Confidential data of users and limited metadata of programs and reports accessible via GraphQL** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/489146)
+  - The GraphQL endpoint doesn't have access controls implemented properly.
+- **ActiveStorage service's signed URLs can be hijacked via AppCache+Cookie stuffing trick when using GCS or DiskService** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/407319)
+  - `CVE-2018-16477` ActiveStorage tries to force content-disposition: attachment for [a list of content-types](https://github.com/rails/rails/blob/2a470d73a75ebf8cd7975e469bd82586d9234442/activestorage/lib/active_storage/engine.rb#L33-L42), including text/html.
+- **[avito.ru] Утекают креды от платежных провайдеров** — `Avito` · `Critical` [↗](https://hackerone.com/reports/271360)
+  - Происходила утечка реквизитов от внешних систем в исходном коде страницы сайта.
+- **Exploiting Misconfigured CORS to Steal User Information** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/317391)
+  - In this report, the researcher demonstrated how a CORS misconfiguration was allowing user details, such as email addresses and IDs, to be shared inappropriately.
+- **Compromising the user ID** — `Bumble` · `High` [↗](https://hackerone.com/reports/358007)
+  - Vulnerability allows to compromise the user ID in the "Dating" menu.
+- **Leaking sensitive information on Github lead full access to all Grab Slack channels ** — `Grab` · `Critical` [↗](https://hackerone.com/reports/397527)
+  - Accidental leakage of secret keys in such code repositories is a real problem, after my report #387117, I decided to dig deeper than the previous report and looking to some random profiles in Github, and doing some dirty work I was able to access to the developer’s company’s inte
+- **Stealing Private Information in VK Android App through PlayerProxy Port Remotely** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/292761)
+  - Incorrect interaction with the network.
+- **Доступ к администраторским faq ** — `VK.com` · `High` [↗](https://hackerone.com/reports/370629)
+  - Просмотр некоторых закрытых статей FAQ.
+- **Information Leak - Github - JMS Information** — `Starbucks` · `High` [↗](https://hackerone.com/reports/360811)
+  - After some research, I found a leak on GitHub that might lead to accessing sensitive data of employees or clients (not sure based on the code).
+- **GitHub API Key for BrewTestBot is publicly exposed** — `Homebrew` · `Critical` [↗](https://hackerone.com/reports/388740)
+  - While browsing through some old reports, I found that https://jenkins.brew.sh was publicly accessible.
+- **De-anonymization by visiting specially crafted bookmark.** — `Tor` · `High` [↗](https://hackerone.com/reports/294364)
+  - There is a way to import logs in 'about:memory' from local disk, however, (tested on windows) you can pass a network url that may point to attack controlled server which logs IP's.
+- **Просмотр любых записей на стене** — `VK.com` · `High` [↗](https://hackerone.com/reports/341675)
+  - Отсутствие необходимых проверок при создании рекламного объявления.
+- **Leaking sensitive files on Github leads to internal files (python scripts,SQL files)** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/301831)
+  - @samidrif discovered a source repository containing sensitive and internal development information including Starbucks code and documentation.
+- **Смотрим фотографии из частных/закрытых групп.** — `VK.com` · `High` [↗](https://hackerone.com/reports/321594)
+  - Просмотр закрытых фотографий.
+- **SSRF+XSS** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/326043)
+  - I discovered that due to an outdated Jira instance, I was able to exploit an SSRF vulnerability in Jira and was able to perform several actions such as bypass any firewall/protection solutions, access AWS instance data, access Internal DoD Servers and internal services.
+- **Information Disclosure** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/330860)
+  - `CVE-2017-9506` I discovered that due to an outdated atlassian software instance, I was able to exploit an SSRF vulnerability in confluence and was able to perform several actions such as bypass any firewall/protection solutions, was able to perform XSPA through assessing the response times for
+- **[http://www.informatica.com]- info disclosure** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/311058)
+  - Researcher has identified and reported an sensitive information leakage in one of our domain.
+- **Backup Source Code Detected** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/309537)
+  - Который я увидел а также получил доступ к бд !
+- **Opcode Cache** — `VK.com` · `High` [↗](https://hackerone.com/reports/308355)
+  - Раскрытие имен некоторых файлов.
+- **Unauthenticated LFI revealing log information** — `Slack` · `High` [↗](https://hackerone.com/reports/272578)
+  - @juji found a bug which allowed the disclosure of local files on certain servers - this included PHP files and logs.
+- **Information Disclosure and Privilege Escalation in app.goodhire.com/member/developers/api-settings** — `Inflection` · `High` [↗](https://hackerone.com/reports/276976)
+  - Researcher reported a missing authorization check when purchasing a report.
+- **Development configuration file** — `Pushwoosh` · `Critical` [↗](https://hackerone.com/reports/231267)
+  - Hello, I found an **Sensitive Information Disclosure**.
+- **Uninitialized server memory disclosure via ImageMagick gif parser** — `Mavenlink` · `High` [↗](https://hackerone.com/reports/284155)
+  - A CVE in ImageMagick allowed an attacker to recover random server memory via GIF upload.
+- **Kovri: potential buffer over-read in garlic clove handling + I2NP message creation** — `Monero` · `High` [↗](https://hackerone.com/reports/291489)
+  - Brief ----- There is a lack of sanitation checks when handling Garlic messages in the kovri I2P router.
+- **Access Grab_Road BigData Database via Open Presto coordinator** — `Grab` · `Critical` [↗](https://hackerone.com/reports/266766)
+  - A publicly accessible analytics database instance was identified, due to a firewall misconfiguration.
+- **Linux TBB SFTP URI allows local IP disclosure** — `Tor` · `Critical` [↗](https://hackerone.com/reports/253429)
+  - Browsing to a simple URL to an sftp URI allows bypasses socks proxy for DNS and browsing.
+- **Disclosure of sensitive information through Google Cloud Storage bucket** — `Vimeo` · `High` [↗](https://hackerone.com/reports/176013)
+  - An insecure bucket was discovered on the GCP platform that had some debug information in it.
+- **Open prod Jenkins instance** — `Snapchat` · `High` [↗](https://hackerone.com/reports/231460)
+  - @preben_ve found a Jenkins instance where they could login with any valid Google account.
+- **Information disclosure vulnerability on a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/186530)
+  - A Department of Defense website was misconfigured in a manner that could have exposed sensitive information about the web application or system.
+- **Git repository found** — `Grab` · `High` [↗](https://hackerone.com/reports/248693)
+  - Git metadata directory (.git) was found in this folder.
+- **Open aws s3 bucket s3://rubyci** — `Ruby` · `Critical` [↗](https://hackerone.com/reports/257276)
+  - Ruby amazon aws bucket https://rubyci.s3.amazonaws.com is open with read only privilege which allows any authenticated aws user to read private files.
+- **Vine all registered user Private/sensitive information disclosure .[ Ip address/phone no/email and many other informations ]** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/202823)
+  - The reporter discovered a bug related to the Vine Archive which had the potential to expose the email address or phone number associated with a Vine account to a third party through the Vine API.
+- **Information disclosure vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/189458)
+  - A misconfigured Department of Defense webserver improperly disclosed application information.@babayaga_ was able to demonstrate this vulnerability by crafting specially formatted URLs.
+- **Arbitrary Local-File Read from Admin - Restore From Backup due to Symlinks** — `Discourse` · `High` [↗](https://hackerone.com/reports/213558)
+  - As an Admin user on Discourse there is a feature to create, upload, and restore backups.
+- **Subdomain Takeover** — `Paragon Initiative Enterprises` · `Critical` [↗](https://hackerone.com/reports/180393)
+  - Your Subdomain engineering.github.com/paragonie is Pointing to Tumblr.com You should immediately remove the DNS-entry for engineering.zomato.com is Pointing to Tumblr.com..
+- **Local File Inclusion vulnerability on an Army system allows downloading local files** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/183978)
+  - A misconfigured Army website may have allowed unauthorized users to remotely download local files, potentially revealing sensitive system or user information.
+- **Internal attachments can be exported via "Export as .zip" feature** — `HackerOne` · `High` [↗](https://hackerone.com/reports/186230)
+  - This newly disclosed report: #182358 __Partial disclosure of report activity through new "Export as .zip" feature__ was not completely fix.
+- **Partial disclosure of report activity through new "Export as .zip" feature** — `HackerOne` · `High` [↗](https://hackerone.com/reports/182358)
+  - Hello Team, I noticed a new feature has been launched, which allows to export report.
+- **Information disclosure of website** — `Brave Software` · `High` [↗](https://hackerone.com/reports/179121)
+  - Malicious application can see what the user is browsing [add summary of the vulnerability] BRave browser for android
+- **Read files on application server, leads to RCE** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/178152)
+  - `CVE-2016-9086` The GitLab export upload feature contains a vulnerability that allows an attacker to read arbitrary files on a GitLab instance.
+- **[Airship CMS] Local File Inclusion - RST Parser** — `Paragon Initiative Enterprises` · `High` [↗](https://hackerone.com/reports/179034)
+  - Airship uses the very useful RST Parser from Gregwar.

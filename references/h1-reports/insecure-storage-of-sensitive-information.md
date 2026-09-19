@@ -1,0 +1,48 @@
+# Insecure Storage of Sensitive Information
+
+_22 reports — High/Critical, disclosed_
+
+- **Exposed Extremely Sensitive Information in Public ZIP File** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2857082)
+  - An unprotected ZIP file (█████.zip) containing sensitive information is publicly accessible at http://██████/data/█████.zip.
+- **CVE-2010-1429 JBoss Insecure Storage of Sensitive Information on ips.mtn.co.ug** — `MTN Group` · `High` [↗](https://hackerone.com/reports/2375659)
+  - `CVE-2008-3273` Red Hat JBoss Enterprise Application Platform (aka JBoss EAP or JBEAP) 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 allows remote attackers to obtain sensitive information about "deployed web contexts" via a request to the status servlet, as demonstrated by a full=true query s
+- **Local File Disclosure on the █████ (https://████████.edu/) leads to the full source code disclosure and credentials leak** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/684836)
+  - During poking around ██████.00/24 range - ██████████ looking for the Cisco devices, I came across ███ which resolved to the https://███████.edu/ While it's a not .mil host, it's likely related to the DoD since it hosted in the DoD-controlled ASN.
+- **DBMS information getting exposed publicly on -- [ ██████████ ]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2370578)
+  - hi there, when i was working on your [domain](█████).
+- **Mozilla Mastodon Staging Instance Admin API Key Disclosure Through Slack** — `Mozilla` · `High` [↗](https://hackerone.com/reports/2137154)
+  - I was able to find Admin Maston API Keys disclosed within Mozilla's #trust-and-safety-eng channel which was posted by a staff member of Mozilla.
+- **Exposure Of Admin Username & Password** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1703733)
+  - Hello Team, Ther an exposure of your username and password on this subdomain █████ uid: "mtnng", passwd: "██████████",
+- **Firebase Database Takeover in https://pulseradio.mtn.co.ug/** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1447751)
+  - During my test , in one of the subdomain of mtn.co.ug I found firebase configuration disclosed in the source code along with apiKey and database URL .
+- **sensitive data exposure** — `Reddit` · `High` [↗](https://hackerone.com/reports/1716249)
+  - [A Password hash entry was found in /etc/passwd.
+- **Able to view hackerone reports attachments** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/979787)
+  - I accidentally found this bug.
+- **Insecure Storage of Sensitive Information on lonestarcell.com server** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1482830)
+  - Hello , i hope your doing well i found some sensitive information disclosure at those endpoint it is disclosure server status and some other stuff
+- **Military  name,email,phone,address,certdata Disclosure ** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1490133)
+  - A DoD public facing asset Military was misconfigured and disclosed name, email ,phone address , and certdata of users.
+- **[Pre-Submission][H1-4420-2019] API access to Phabricator on code.uberinternal.com from leaked certificate in git repo** — `Uber` · `Critical` [↗](https://hackerone.com/reports/591813)
+  - A username and certificate was found that allows API access to Phabricator on code.uberinternal.com.
+- **Directory Indexing on the ████ (https://████/) leads to the backups disclosure and credentials leak** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/684838)
+  - During poking around █████████/24 range - █████ looking for the Cisco devices, I came across █████ which resolved to the https://██████/ While it's a not .mil host, it's likely related to the DoD since it hosted in the DoD-controlled ASN.
+- **PulseSSL VPN Site with Compromised Creds @ ████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/854049)
+  - Back in 2019, I had reported that a pulseSSL VPN server owned by US DoD can be compromised by a publicly available exploit.
+- **[h1-2006 2020]  Chained vulnerabilities lead to account takeover** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895650)
+  - Mårten Mickos lost his account for BountyPay, the new service HackerOne is using to pay bug bounties.
+- **Previously Compromised PulseSSL VPN Hosts** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/852713)
+  - Back in 2019, I had reported that a pulseSSL VPN server owned by US DoD can be compromised by a publicly available exploit.
+- **SSN leak due to editable slides** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/693943)
+  - A presentation slide contains a screenshot of a records brief which contains an SSN The slides try to redact the PII of the records with a blue block but we can remove it by editing the slides to remove the offending blue block
+- **PII Leak via https://████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/808338)
+  - An attacker can create an account on https://████ and gain access to a wealth of PII for practically every member that is registered on the website.
+- **PII leakage-Full SSN on ███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/644358)
+  - I discovered a pdf file on ████████ that outlines various information corresponding to military members.
+- **Partial SSN exposed through Presentation slides on ██████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/665144)
+  - During a search of ████████ I discovered that one of the slides ina presentation contained a screen shot of live data.
+- **Online training material disclosing username and password** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/672629)
+  - A training document is revealing username and password details for what appears to be a DoD training system Using the google dork site:*.mil ext:ppt intext:password, I was able to find a number of powerpoint documents on .mil websites that include username and passwords.
+- **Leaking sensitive information lead to compromise employer API keys** — `Yelp` · `High` [↗](https://hackerone.com/reports/273630)
+  - The configuration file of an internal IRC bot (which included credentials to internal services and some external services used by Yelp developers) was inadvertently included by an employee in a personal public GitHub repository.

@@ -1,0 +1,402 @@
+# Uncategorized
+
+_199 reports — High/Critical, disclosed_
+
+- **Incomplete fix for CVE-2026-21637: loadSNI() in _tls_wrap.js lacks try/catch leading to Remote DoS** — `Node.js` · `High` [↗](https://hackerone.com/reports/3556769)
+  - `CVE-2026-21637` A flaw in Node.js TLS error handling leaves SNICallback invocations unprotected against synchronous exceptions, while the equivalent ALPN and PSK callbacks were already addressed in CVE-2026-21637.
+- **[Variation of #1554049] 1-Click Chaining of Self-XSS, Cookie Tossing and AntiCSRF Token Prediction leads to auto approval in Access Temp Auth** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/3321406)
+  - We have resolved an issue in Cloudflare Access where an exploit chain involving a SAML endpoint could allow for unauthorized approvals within the Temporary Auth workflow.
+- **SMB READ_ANDX DataOffset not validated** — `curl` · `High` [↗](https://hackerone.com/reports/3603300)
+  - in smb_request_state() case SMB_DOWNLOAD curl reads two server-controlled fields from a READ_ANDX response and uses them to decide where in the receive buffer file data starts.
+- **Path Traversal vulnerability identified on IBM endpoint. ** — `IBM` · `High` [↗](https://hackerone.com/reports/3432159)
+  - Path Traversal vulnerability identified on IBM endpoint was reported to IBM, analyzed and has been remediated.
+- **Remote Code Execution identified on IBM endpoint.** — `IBM` · `Critical` [↗](https://hackerone.com/reports/3463045)
+  - `CVE-2025-55182` Remote Code Execution identified on IBM endpoint was reported to IBM, analyzed and has been remediated.
+- **File URL UNC Path Access (Windows SSRF)** — `curl` · `High` [↗](https://hackerone.com/reports/3470649)
+  - // lib/urlapi.c:974-1030 if(ptr[0] != '/' && !STARTS_WITH_URL_DRIVE_PREFIX(ptr)) { /* the URL includes a hostname, it must match "localhost" or "127.0.0.1" to be valid */ if(checkprefix("localhost/", ptr) // checkprefix("127.0.0.1/", ptr)) { ptr += 9; /* now points to the slash a
+- **SMTP CRLF Injection in curl/libcurl via MAIL FROM/RCPT TO parameters** — `curl` · `Critical` [↗](https://hackerone.com/reports/3418616)
+  - SMTP CRLF Injection Vulnerability in curl/libcurl curl/libcurl contains a CRLF injection vulnerability in its SMTP implementation that allows attackers to inject arbitrary SMTP commands by including CR (\r) and LF (\n) characters in mailbox addresses.
+- **Unauthorized Password Reset Allows Account Takeover Across Tenant Boundaries** — `lemlist` · `High` [↗](https://hackerone.com/reports/3378635)
+  - We discovered an authorization issue in app.lemlist.com where a tenant admin could change the password of another user within the same tenant, including invited agency accounts.
+- **CURLX_SET_BINMODE(NULL) can call fileno(NULL) and cause undefined behavior / crash** — `curl` · `High` [↗](https://hackerone.com/reports/3400831)
+  - Summary ------- Calling the CURLX_SET_BINMODE(stream) macro with stream == NULL leads to an unguarded call to fileno(NULL) in tool_binmode.h, which is undefined behavior and may crash the process.
+- **Use of Deprecated strcpy() with User-Controlled Environment Variable in Memory Debug Initialization** — `curl` · `High` [↗](https://hackerone.com/reports/3395227)
+  - Discovery Method Step 1: Initial Security Scan find src/ -name "*.c" -exec grep -l "strcpy\/strcat\/sprintf\/gets" {} \;
+- **Mutation Based Stored XSS on Trix Editor version latest (2.1.8)** — `Basecamp` · `Critical` [↗](https://hackerone.com/reports/2819573)
+  - Heyy there, I have found a bypass for the sanitizer used in Trix Editor https://github.com/basecamp/trix , the bypass is kind a of mutation based , using copy paste vector it's possible to perform the xss.
+- **Missing ^ Line Beginner Leads to Origin Spoofing** — `MetaMask` · `High` [↗](https://hackerone.com/reports/2818009)
+  - @pkkr identified a vulnerability in MetaMask’s regex-based origin validation for endowments.
+- **Weak Rate Limiting Controls in the (LOGIN) page Expose System to Brute Force and DoS Attacks** — `Lichess` · `Critical` [↗](https://hackerone.com/reports/3085889)
+  - The login page lacks proper rate limiting, allowing an attacker to easily perform a brute-force attack.
+- **Groups module can halt chain when handling a proposal with malicious group weights ** — `Cosmos` · `High` [↗](https://hackerone.com/reports/3018307)
+  - After having a look into the patch for https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-x5vx-95h7-rv4p I discovered a very similar bug.
+- **low-level p2p ping + tcp flooding leads to a remote crash in monerod** — `Monero` · `Critical` [↗](https://hackerone.com/reports/2858802)
+  - P2P daemon remote crash exploit that could have been scaled up to attack the whole network.
+- **Direct IP Access to Website** — `Lichess` · `Critical` [↗](https://hackerone.com/reports/3068485)
+  - The website is accessible directly via its IP address (37.187.205.99), which may bypass domain-based security policies and expose potential misconfigurations.
+- **Broken Access Control leads to disclosure of transaction history via /v2/rechargeTransactionHistory endpoint** — `MTN Group` · `High` [↗](https://hackerone.com/reports/2746709)
+  - An API endpoint discovered on the MyMTN NG mobile app fails to adequately enforce authorization and authentication mechanisms.
+- **Burp Suite extensions can execute arbitrary code** — `PortSwigger Web Security` · `High` [↗](https://hackerone.com/reports/3014158)
+  - I hope you’re doing well.
+- **Clickjacking in main domain https://topechelon.com/** — `Top Echelon Software` · `High` [↗](https://hackerone.com/reports/2964441)
+  - The target website is vulnerable to Clickjacking, a web-based attack that tricks users into interacting with a hidden or disguised iframe.
+- **Weak credentials found in Jenkins endpoint** — `IBM` · `Critical` [↗](https://hackerone.com/reports/2954547)
+  - Weak credentials found in Jenkins endpoint was reported to IBM, analyzed and have been remediated.
+- **Disclosing  PolicyPageAssetGroup in Private Programs via /graphql `gid://hackerone/PolicyPageAssetGroupsIndex::PolicyPageAssetGroup/{id}`** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/1618347)
+  - Hi team, I understand what's going on Just a recent update gives the results of private programs
+- **IDOR in backup recovery functionality** — `Acronis` · `High` [↗](https://hackerone.com/reports/1901713)
+  - Hi team I hope you are well, there is an issue let me to takeover any backup via recover it to my machine.
+- **Remote code execution [CVE-2023-36845]** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2182202)
+  - `CVE-2023-36845` A PHP External Variable Modification vulnerability in J-Web of Juniper Networks Junos OS on EX Series and SRX Series allows an unauthenticated, network-based attacker to control certain, important environments variables.
+- **Possible DoS Vulnerability with Range Header in Rack** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2520679)
+  - `CVE-2024-26141` I made a report and patch at https://hackerone.com/reports/2307813.
+- **Privilege Escalation to Root SSH Access via Pre-Receive Hook Environment in GitHub Enterprise Server** — `GitHub` · `High` [↗](https://hackerone.com/reports/2336236)
+  - `CVE-2024-2469` An attacker with an Administrator role in GitHub Enterprise Server could gain SSH root access via remote code execution.
+- **[CVE-2021-44228] Arbitrary Code Execution on ng01-cloud.acronis.com** — `Acronis` · `Critical` [↗](https://hackerone.com/reports/1459714)
+  - `CVE-2021-44228` The application is using a vulnerable version of Log4j which allows arbitrary remote command execution.
+- **important: Apache HTTP Server: SSRF with mod_rewrite in server/vhost context on Windows (CVE-2024-40898)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2612028)
+  - `CVE-2024-40898` I reported this vulnerability through the official Apache HTTP Server security email on 2024-07-12, and received a CVE number on 2024-07-17.
+- **CVE-2024-42005: Potential SQL injection in QuerySet.values() and values_list()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2646493)
+  - `CVE-2024-42005` I found SQL injection in django.
+- **FULL ACCOUNT TAKEOVER** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2542372)
+  - Using the selfservice portal @ https://mymtn.com.ng/ an attacker can easily takeover any nigerian mtn phone number, and get access to some information, like date of birth, full name, etc.
+- **Subdomain takeover in GitLab Pages [george.ratelimited.me]** — `RATELIMITED` · `High` [↗](https://hackerone.com/reports/2523677)
+  - It's possible to take over subdomains that point to GitLab Pages.
+- **Content-Security Policy bypass with File Uploads** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1380157)
+  - The current default CSP header in Rocket.Chat prevents inline script execution, which can be bypassed by importing a script file uploaded via the Rocket.Chat file upload.
+- **DoS with crafted "Range" header** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/2307813)
+  - I have crafted a request header for "range" against proxy url in Active Storage and confirmed that it will be a DoS.
+- **CVE-2024-27281: RCE vulnerability with .rdoc_options in RDoc** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2438265)
+  - `CVE-2024-27281` I made a report at https://hackerone.com/reports/1187477 RCE is possible when the rdoc command is executed for a repository received from the external.
+- **CVE-2022-21371:  Oracle WebLogic Server Local File Inclusion** — `Mars` · `High` [↗](https://hackerone.com/reports/2387600)
+  - `CVE-2022-21371` A vulnerability was identified in Oracle WebLogic Server, specifically in its Web Container component.
+- **Authentication bypass in Global Site Selector allows an attacker to log in as any user** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/2248689)
+  - `CVE-2024-22212` Security advisory at https://github.com/nextcloud/security-advisories/security/advisories/GHSA-vj5q-f63m-wp77
+- **Authentication bypass on JetPack SSO manager - Allows to access the administration panel of wordpress without user interaction** — `Automattic` · `High` [↗](https://hackerone.com/reports/2037902)
+  - The JetPack SSO manager is plugin that allows any user to log into their wordpress using the same log-in credentials you use for WordPress.com, then they’ll now be able to register for and sign in to self-hosted WordPress.org sites quickly, example : User creates their wordpress
+- **Unrestricted Access to Celery Flower Instance** — `EXNESS` · `High` [↗](https://hackerone.com/reports/2264960)
+  - The Celery Flower instance is running and publicly accessible via the PIM mobile route /pim/flower/*.
+- **Yet Another CASB Integration Takeover of Active Integrations** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/2094346)
+  - Cloudflare CASB on the Microsoft integration, was vulnerable to the confused deputy problem.
+- ** Cargo not respecting umask when extracting crate archives** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2094785)
+  - `CVE-2023-38497` Cargo did not properly protect files in the cargo registry.
+- **Steam Deck Single Click Root Remote Code Execution ** — `Valve` · `High` [↗](https://hackerone.com/reports/1974296)
+  - The version of Chromium Embedded Framework included in the Linux client was susceptible to a v8 exploit that allowed modification of local files.
+- **ReDoS in Rack::Multipart** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/1489141)
+  - `CVE-2022-30122` Hello, I found ReDoS on Rack.
+- **Cloudflare CASB Confused Deputy Problem** — `Cloudflare Public Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/1952124)
+  - Cloudflare CASB on a select number of integrations, Microsoft and GitHub, was vulnerable to the confused deputy problem.
+- **download file type warning on Windows does not appear if "ask where to save file before downloading" setting is enabled** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1848062)
+  - `CVE-2023-28360` It was discovered that the "Ask where to save each file before downloading" setting disables the potentially-malicious file type warning for downloads in Brave.
+- **Ruby's CGI library has HTTP response splitting (HTTP header injection), leaking confidential information** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1889474)
+  - `CVE-2021-33621` CVE-2021-33621: HTTP response splitting in CGI Posted by mame on 22 Nov 2022 We have released the cgi gem version 0.3.5, 0.2.2, and 0.1.0.2 that has a security fix for a HTTP response splitting vulnerability.
+- **Use of Cryptographically Weak Pseudo-Random Number Generator in WebCrypto keygen** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1888803)
+  - `CVE-2022-35255` Description A weak randomness in WebCrypto keygen vulnerability exists in Node.js 18 due to a change with EntropySource() in SecretKeyGenTraits::DoKeyGen() in src/crypto/crypto_keygen.cc.
+- **Fraudulent claim of business.** — `Yelp` · `High` [↗](https://hackerone.com/reports/1422227)
+  - Report states that one could claim any business by just substituting the business' phone number with theirs during the claim flow.
+- **Using special IPv4-mapped IPv6 addresses to bypass local IP ban** — `Cloudflare Public Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/1785260)
+  - By using IPv4-mapped IPv6 addresses there was a way to bypass Cloudflare server's network protections and start connections to ports on the loopback (127.0.0.1) or internal IP addresses (such as 10.0.0.1).
+- **S3 bucket takeover [learn2.khanacademy.org]** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/1777077)
+  - The subdomain learn2.khanacademy.org was pointed to Amazon S3, but no bucket with that name was registered [learn2.khanacademy.org].
+- **ReDoS (Rails::Html::PermitScrubber.scrub_attribute)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1804128)
+  - `CVE-2022-23514` I reported at https://hackerone.com/reports/1684163 It seems that the same problem existed on the Loofah side, so it was fixed as well.
+- **Double evaluation in .bash_prompt of dotfiles allows a malicious repository to execute arbitrary commands** — `Ian Dunn` · `High` [↗](https://hackerone.com/reports/1785378)
+  - Due to the improper usage of the PS1 environment variable in [.bash_prompt of dotfiles](https://github.com/iandunn/dotfiles/blob/16a432681077362f263cb926737ad5cca5df6307/.bash_prompt), a malicious repository can execute arbitrary commands when changed the current directory to
+- **Public Github Repo Leaking Internal Credentials ** — `Yelp` · `Critical` [↗](https://hackerone.com/reports/1763266)
+  - In Github I found some credentials to use in a mesos.apache.org Github: https://github.com/Yelp/Tron/blob/master/yelp_package/itest_dockerfiles/mesos/mesos-secrets https://github.com/Yelp/Tron/blob/master/yelp_package/itest_dockerfiles/mesos/mesos-slave-secret Login documentation
+- **IDOR  [mtnmobad.mtnbusiness.com.ng]** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1698006)
+  - If you already know account's email and id you can skip step 1 and 2 An attacker can change every user's account information
+- **No password length restriction in reset password endpoint at http://suppliers.mtn.cm** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1285694)
+  - I found no password length restriction in reset password endpoint at http://suppliers.mtn.cm when resetting new password 4.
+- **path traversal vulnerability in Grafana 8.x allows " local file read "** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1427086)
+  - Hi team, I've found a path traversal issue in the Grafana instances hosted on the MTN platforms.
+- **Default Admin Username and Password on remedysso.mtncameroon.net** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1397786)
+  - A Remedy Single Sign-On (Remedy SSO) Server is running at https://remedysso.mtncameroon.net/rsso/admin/#/.
+- **HTTP PUT method is enabled downloader.ratelimited.me** — `RATELIMITED` · `High` [↗](https://hackerone.com/reports/545136)
+  - Found on HTTP PUT sites enabled on web servers.
+- **Race condition in faucet when using starport** — `Cosmos` · `Critical` [↗](https://hackerone.com/reports/1438052)
+  - Hi team, I and Aditya sent this bug over email on Wed, 29 Dec, 17:45 IST.
+- **June 2022 Incident Report** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/1622449)
+  - Since the founding of HackerOne, we have kept a steadfast commitment to disclosing security incidents because we believe that sharing security information far and wide is essential to building a safer internet.
+- **Unauthorized Access - downgraded admin roles to none can still edit projects through brupsuite** — `Omise` · `High` [↗](https://hackerone.com/reports/1607756)
+  - hi team, I found that your site is vulnerable to Unauthorized Access lead to privilege escalation, where when the owner invites a user with admin roles, the user can still edit anything with admin access, via brupsuite, it should get an error message because the admin role has b
+- **Browser is not following proper flow for redirection cause open redirect ** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1579374)
+  - `CVE-2023-22798` Brave browser is not following proper flow for redirection.
+- **Several Subdomains Takeover** — `Reddit` · `High` [↗](https://hackerone.com/reports/1591085)
+  - there are some subdomains in reddit.com those are vulnerable to takeover subdomain attack.
+- **Misconfigurated login page able to lock login action for any account without user interaction** — `Reddit` · `Critical` [↗](https://hackerone.com/reports/1582778)
+  - While observing a few things about the login feature, I found that the account was locked after a certain number of requests.
+- **2 Cache Poisoning Attack Methods Affect Core Functionality www.exodus.com** — `Exodus` · `High` [↗](https://hackerone.com/reports/1581454)
+  - www.exodus.com hosts static js and css files on Server: cloudflare .
+- **8ybhy85kld9zp9xf84x6.imgur.com Subdomain Takeover** — `Imgur` · `High` [↗](https://hackerone.com/reports/1527405)
+  - Hello Gents, + While testing ** Imgur ** I found an unclaimed subdomain which is; “8ybhy85kld9zp9xf84x6.imgur.com”, and I was able to claim it!
+- **Download full backup  [Mtn.co.rw]** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1516520)
+  - I discovered few critical vulnerabilities here, one of them is exposed backup files via directory listing.
+- **An attacker can archive and unarchive any structured scope object on HackerOne** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1501611)
+  - Hello, I have discovered an IDOR vulnerability that allows the scope of any program to be archived.
+- **OTP reflecting in response sensitive data exposure leads to account take over** — `UPchieve` · `Critical` [↗](https://hackerone.com/reports/1318087)
+  - Sensitive data that is otp is reflecting in the response of phone number otp verification in https://app.upchieve.org 4.Now otp is exposing in the response.
+- **Application level DOS at Login Page ( Accepts Long Password )** — `Reddit` · `High` [↗](https://hackerone.com/reports/1168804)
+  - Application-level Denial of Service (DOS) It is an emerging class of security attacks on sites.
+- **Bug Report : [ No Valid SPF Records ]** — `Ruby` · `High` [↗](https://hackerone.com/reports/1301696)
+  - Hope you are doing well.
+- **Missing ownership check in 2FA for secondary client login** — `LY Corporation` · `Critical` [↗](https://hackerone.com/reports/1250474)
+  - Secondary clients such as LINE for Windows/Mac require 2FA at first login.
+- **LINE Profile ID leaks in OpenChat** — `LY Corporation` · `High` [↗](https://hackerone.com/reports/927338)
+  - Users can participate in OpenChat using a new OpenChat profile that is distinct from the LINE profile.
+- **Authentication Bypass - Email Verification code bypass in account registration process.** — `UPchieve` · `Critical` [↗](https://hackerone.com/reports/1406471)
+  - I was able to bypass Email Verification code in account registration process.
+- **Загружаем видеозаписи в основной альбом любой открытой группе/паблику.** — `VK.com` · `High` [↗](https://hackerone.com/reports/508506)
+  - Недостаточные проверки при загрузке видеозаписей.
+- **Reflected XSS в m.vk.com** — `VK.com` · `High` [↗](https://hackerone.com/reports/311913)
+  - —
+- **Unauthorized Kubernetes to RCE (root) and found TEAMTNT Crypto Miner on it** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1317236)
+  - This report revealed a vulnerable server running an unauthorized Kubernetes which allowed un_kn0wn to gain remote code execution.
+- **[Zomato Order] Insecure deeplink leads to sensitive information disclosure** — `Eternal` · `High` [↗](https://hackerone.com/reports/532225)
+  - Hello, i want to report the vulnerability found, Since the following activity com.application.zomato.activities.DeepLinkRouter has exported="true" it can be exploited by another application.
+- **SSH server due to Improper Signature Verification** — `Sifchain` · `High` [↗](https://hackerone.com/reports/1294043)
+  - `CVE-2020-9283` I found that you are using golang.org/x/crypto@v0.0.0-20201016220609-9e8e0b390897 which has a vulnerability that was fixed in this version golang.org/x/crypto@0.0.0-20201203163018-be400aefbc4c but that vulnerability is: golang.org/x/crypto/ssh is an SSH client and server Version
+- **Two-factor authentication enforcement bypass** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1050244)
+  - the attacker could bypass the two-factor authentication enforcement 4.
+- **Post-Auth Blind NoSQL Injection in the users.list API leads to Remote Code Execution** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1130874)
+  - `CVE-2021-22910` The users.list API endpoint is vulnerable to NoSQL injection attacks.
+- **Github access token exposure** — `Shopify` · `Critical` [↗](https://hackerone.com/reports/1087489)
+  - While dissecting an application made by one of your employees I found his GitHub Personal Access Token (PAT), he's a member of the org with pull and push access to all of your repositories.
+- **Prototype Pollution Vulnerability in noble Package** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/390857)
+  - I would like to report prototype pollution vulnerability in noble.
+- **Denial of service via cache poisoning on https://www.data.gov/** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/942629)
+  - An attacker can persistently block access to any on https://www.data.gov/ by using cache poisoning with the h0st headers to cause 502 response code。
+- **Pre-Auth Blind NoSQL Injection leading to Remote Code Execution** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/1130721)
+  - `CVE-2021-22911` The getPasswordPolicy method is vulnerable to NoSQL injection attacks and does not require authentication/authorization.
+- **User enumeration through forget password** — `UPchieve` · `High` [↗](https://hackerone.com/reports/1166054)
+  - Vulnerability:- ->User enumeration is possible through forgot password feature.
+- **Broken parsing of Git diff allows an attacker to inject arbitrary Ruby scripts to Casks on official taps** — `Homebrew` · `Critical` [↗](https://hackerone.com/reports/1167608)
+  - Due to improper parsing of Git diff in [Homebrew/actions/review-cask-pr](https://github.com/Homebrew/actions/tree/336bd2aae5314f8c17c66a8319adeba99f13c093/review-cask-pr), it's possible to confuse parser to ignore additional lines.
+- **Reflected XSS on https://www.uber.com ** — `Uber` · `High` [↗](https://hackerone.com/reports/390386)
+  - By getting an authenticated victim to visit a malicious website, an attacker can cause that victim to execute arbitrary JavaScript in the context of the uber.com domain.
+- **hackyholidays CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069080)
+  - As per [the referenced blog entry](https://www.hackerone.com/blog/12-days-hacky-holidays-ctf), the Grinch has gone hi-tech this year with the intentions of ruining the holidays.
+- **Found multiple SAP NetWeaver vulnerable services** — `Acronis` · `High` [↗](https://hackerone.com/reports/1103212)
+  - `CVE-2020-6286` Hello Team, I found two (**redapi.acronis.com** and **redapi2.acronis.com**) sap Netweaver vulnerable services.
+- **It's just a man on a mission** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069388)
+  - Preface --------------------- Like any other good stories, this adventure has also begun with a few (long) days of preparation leading up to the start of the challenge.
+- **Wholesome Hacky Holidays: A Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066135)
+  - Checking the robots.txt the flag can be found.
+- **Writeup Hackyholiday CTF** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1065731)
+  - Find my writeup on attached :) Thanks adam for making the CTF, Really PAIN for my head!
+- **[hacky-holidays] Grinch network is down** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066206)
+  - As always CTF begins with a tweet: So we are supposed to start from https://hackyholidays.h1ctf.com/ .
+- **[hackyholidays] CTF write-up** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069376)
+  - hi, this is my write-up for hackyholidays CTF.
+- **Hacky Holidays Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1067835)
+  - On December 12th, 2020, the CTF became live and the scope that we are allowed to attack was In Scope Domain - **hackyholidays.h1ctf.com**
+- **Invading Grinch Network and Saving Christmas** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1065829)
+  - As usual with H1 CTF challenges we are provided with a target URL.
+- **Successfully took down the Grinch and saved the holidays from being ruined** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1067530)
+  - Beginning ---------- HackerOne's official twitter account posted a tweet on 11th December announcing 12 days of hacky holidays where we have to take down the grinch and prevent him from ruining the Christmas holidays.
+- **SSRF on image renderer** — `PlayStation` · `High` [↗](https://hackerone.com/reports/811136)
+  - image.api.np.km.playstation.net allows image urls to be passed via the image parameter It is possible to use this endpoint to send Gopher requests that result in SMTP messages being sent
+- **[h1ctf-Grinch Networks] MrR3b00t Saving the Christmas** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1068934)
+  - █▀▄▀█ █▀█ ░ █▀█ █▄▄ █▀█ █▀█ ▀█▀ █░▀░█ █▀▄ ▄ █▀▄ █▄█ █▄█ █▄█ ░█░ saves the Christmas It was a gloomy clear night, Mr.R3b00t was sitting in front of the "Computer" in his Hacker Den, sound of the keyboard clicks can be heard all around and suddenly Mr.R3b00t receives a message fro
+- **H1 Hackyholidays CTF - The Grinch was defeated** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069467)
+  - The following writeup will underline all the steps and tools used to solve the 12 challenges of the H1 Holidays CTF.
+- **Grinch Networks compromised!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066504)
+  - For fast triage/validation and inspired by @manoelt in other CTF, I made a bash script to find and print all the 12 flags of this CTF.
+- **Writeup Submission** — `h1-ctf` · `High` [↗](https://hackerone.com/reports/1068880)
+  - The Write-Up will be published within the next hours latest till Dec.
+- **SQL Injection Union Based** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/1046084)
+  - I have found a SQL Injection Union Based on https://intensedebate.com/commenthistory/$YourSiteId  The $YourSiteId into the url is vulnerable to SQL Injection.
+- **Site-wide CSRF at Atavist ** — `Automattic` · `High` [↗](https://hackerone.com/reports/951292)
+  - Hi team, I have a Atavist Magazine account.
+- **[@firebase/util] Prototype pollution** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/1001218)
+  - **module name:** @firebase/util **version:** 0.3.2 **npm page:** https://www.npmjs.com/package/@firebase/util NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a member of the Firebase team, please avoid using this package
+- **Remote Code Execution in Rocket.Chat-Desktop** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/943725)
+  - **Description:** Rocket.Chat-Desktop is vulnerable to remote code execution.
+- **xss triggered in "myshopify.com/admin/product"** — `Shopify` · `High` [↗](https://hackerone.com/reports/978125)
+  - I tried to make a product description and add the xss script in the paragraph.
+- **Takeover an account that doesn't have a Shopify ID and more** — `Shopify` · `Critical` [↗](https://hackerone.com/reports/867513)
+  - The https://pos-channel.shopifycloud.com/graphql-proxy/admin can be exploited to update a staff member email without any email confirmation.
+- **@shakedko H1-2006 CTF writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/894623)
+  - Flag is: ^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$.
+- **[h1-2006 CTF] Multiple vulnerabilities leading to account takeover and two-factor authentication bypass allows to send pending bounty payments** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895722)
+  - First things first, the flag of the CTF challenge.
+- **[H1-2006 2020] CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/893395)
+  - The CTF's objective could be found in the following Twitter post: As outlined on https://hackerone.com/h1-ctf, all subdomains of bountypay.h1ctf.com are in scope.
+- **[H1-2006 2020] I made the CEO's bounty payment!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/887816)
+  - ^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$ I will write the details in comment.
+- **[H1-2006 2020] CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/888939)
+  - I'll try to have the writeup ready in the following days here: It will be password protected and I will post a comment here when it is ready.
+- **[H1-2006 2020]  ^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/888331)
+  - Still working on the report figured I should turn it in though :D
+- **[H1-2006 2020] [Multiple Vulnerability] CTF Writeup - @abdilahrf_** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/888484)
+  - As there is a private invite for the first 10 solver, i send only the flag now {F851115} will complete my writeup on the next comment.
+- **[H1-2006 2020] I successfully solved it!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/887818)
+  - Hello, I'll get post there the write-up soon.
+- **[h1-2006 2020] Write up for H1-2006 CTF** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895772)
+  - I huffed and puffed my way up a flight of stairs into a dimly lit, dusty room, looking for Sherlock.
+- **[H1-2006 2020] CTF Writeup!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/889293)
+  - The Beginning ===================== The scope of the H1-2006 CTF was *.bountypay.h1ctf.com.
+- **unpermitted user can change the device name of admin account** — `Helium` · `High` [↗](https://hackerone.com/reports/865115)
+  - Invited user with only the read-only permission can change the device name in admin account 4.Then in account 'B' add the device name and click on it and update the name which you want to display in the admin account(victim account) 5.And intercept the request while clicking the
+- **DOM XSS on duckduckgo.com search** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/868934)
+  - Hello, The is a DOM XSS vulnerability on https://duckduckgo.com search through the norw parameter.
+- **Subdomain Takeover to Authentication bypass ** — `Roblox` · `Critical` [↗](https://hackerone.com/reports/335330)
+  - ----------- Subdomain Takeover ----------- Due to unclaimed or expired Hubspot instance an attacker is able to claim and serve content from devrel.roblox.com and perform different kind of attacks which i shared in impact section.
+- **HTTP Request Smuggling on my.stripo.email** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/777651)
+  - HTTP request smuggling vulnerabilities arise when websites route HTTP requests through webservers with inconsistent HTTP parsing.
+- **Information Leak (Github)** — `Equifax-vdp` · `Critical` [↗](https://hackerone.com/reports/694931)
+  - In Github I found some credentials to use in a webservice that exposes very sensitive information of people, family group, financial situation, and more.
+- **[Part II] Email Confirmation Bypass in myshop.myshopify.com that Leads to Full Privilege Escalation** — `Shopify` · `Critical` [↗](https://hackerone.com/reports/796808)
+  - In #791775, I submitted a bug at Sunday 5pm Canada time, it was triaged two hours later, and I got the **temp** fix message at around 3am the next day in Canada time.
+- **Email Confirmation Bypass in myshop.myshopify.com that Leads to Full Privilege Escalation to Any Shop Owner by Taking Advantage of the Shopify SSO** — `Shopify` · `Critical` [↗](https://hackerone.com/reports/791775)
+  - I told Pete I would take a look at Spotify, hi Pete.
+- **xss** — `Stellar.org` · `High` [↗](https://hackerone.com/reports/281387)
+  - content on a server is including Javascript content from an unrelated domain.
+- **[h1-415 2020] Multiple chained vulnerabilities lead to leaking secret document** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/777241)
+  - Multiple chained vulnerabilities lead to leaking secret documents.
+- **https://help.nextcloud.com::: Web cache poisoning attack** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/429747)
+  - Hi there, I just found the website: https://help.nextcloud.com is infected with "Web cache poisoning" Abuse this bug, Attacker can: How to reproduce the issue:
+- **[klona] Prototype pollution** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/778414)
+  - `CVE-2020-8125` I would like to report Prototype pollution in klona It allows adding arbitrary property to Prototype while deep cloning an object **module name:** klona **version:** <1.1.1 **npm page:** https://www.npmjs.com/package/klona
+- **Bypass email verification and create email template with the editor** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/737169)
+  - The vulnerability has been fixed
+- **Хранимая XSS в личных сообщениях новое место** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/310339)
+  - Stored XSS in chat title at https://ok.ru/messages
+- **4 severe remote + several minor OpenVPN vulnerabilities** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/242579)
+  - `CVE-2017-7521` CVE-2017-7521 Remote server crashes/double-free/memory leaks in certificate processing CVE-2017-7520 Remote (including MITM) client crash, data leak CVE-2017-7508 Remote server crash (forced assertion failure) CVE-2017-7522 Crash mbed TLS/PolarSSL-based server (no cve) Remote/mit
+- **Administrator access to staging.railto.com** — `Railto LLC` · `High` [↗](https://hackerone.com/reports/686015)
+  - While doing some recon for railto sub-domains.
+- **User-assisted RCE in Slack for macOS (from official site) due to improper quarantine meta-attribute handling for downloaded files** — `Slack` · `High` [↗](https://hackerone.com/reports/470637)
+  - Lack of com.apple.quarantine meta-attribute for downloaded files allows a remote attacker to send an executable file that won't be checked by Gatekeeper .
+- **User Editable nextcloud Wiki pages of Public Repositories** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/498878)
+  - I have found that the "Edit" Permissions of WIKI pages are NOT disabled on the public repositories of nextcloud.
+- **Handling of `tracking` command allows making arbitrary blind requests with user's cookies from Grammarly Extension's origin** — `Superhuman (formerly Grammarly)` · `Critical` [↗](https://hackerone.com/reports/389108)
+  - Attacker could trigger Grammarly extension's gnar._fetch command using a crafted page to perform XHR with cookies and any configurational params to any cross-origin resource.
+- **`socket` command allows sending data over WebSockets to arbitrary origins from Grammarly Extension** — `Superhuman (formerly Grammarly)` · `High` [↗](https://hackerone.com/reports/395729)
+  - Next snippet handles "socket" commands received from window.addEventListener('message').
+- **Locked_Transfer functional burning** — `Monero` · `High` [↗](https://hackerone.com/reports/417515)
+  - **Summary:** Using the locked_transfer command in the monero-wallet-cli users can send outputs with high lock times like 1,000,000 blocks.
+- **Remote P2P DoS** — `Monero` · `Critical` [↗](https://hackerone.com/reports/592200)
+  - Remote P2P DoS resolved.
+- **CVE-2018-0296** — `VK.com` · `High` [↗](https://hackerone.com/reports/377542)
+  - `CVE-2018-0296`
+- **Cisco ASA Denial of Service & Path Traversal (CVE-2018-0296)** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/378698)
+  - `CVE-2018-0296` Unpatched CVE-2018-0296 in test Cisco ASA instance (enter-test.odkl.ru)
+- **UBNT Amplification DDOS Attack** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/221625)
+  - Denial of Service attack in airMAX prior to 8.3.2 , airMAX prior to 6.0.7 and EdgeMAX prior to 1.9.7 allow attackers to use the Discovery Protocol in amplification attacks.
+- **HTTP PUT method is enabled ratelimited.me** — `RATELIMITED` · `Critical` [↗](https://hackerone.com/reports/487656)
+  - Found on HTTP PUT sites enabled on web servers.
+- **User account blocking by Internal Server error** — `Infogram` · `High` [↗](https://hackerone.com/reports/451052)
+  - If you send a language[]=en in https://infogram.com/api/users/me user be forever get an Internal Server error ( EVEN AFTER re-logining): https://youtu.be/AxYa11lEiWA (I idk why does hackerone can't upload this video so I uploaded this video privately to the youtube!) In this vide
+- **Долгоживущий хеш + получение частичного доступа к аккаунту после сброса сессии** — `VK.com` · `High` [↗](https://hackerone.com/reports/363809)
+  - —
+- **CORS misconfig | Account Takeover** — `X / xAI` · `High` [↗](https://hackerone.com/reports/426147)
+  - CORS misconfig is found on niche.co as Access-Control-Allow-Origin is dynamically fetched from client Origin header with **credential true** and **different methods are enabled** as well.
+- **Prototype Pollution Vulnerability in mpath Package** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/390860)
+  - `CVE-2018-16490` I would like to report prototype pollution vulnerability in mpath.
+- **Accidental Access to Programs Information via SAML Login** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/438306)
+  - On November 8th, 2018, HackerOne released software to production that contained a bug which impacted our Security Assertion Markup Language (SAML) authentication system.
+- **SSRF vulnerability on proxy.duckduckgo.com (access to metadata server on AWS)** — `DuckDuckGo` · `Critical` [↗](https://hackerone.com/reports/395521)
+  - Hello, I saw that SSRF on proxy.duckduckgo.com is out of scope but because of the severity I wanted to report this.
+- **RCE: DnDing shortcut files to chrome://brave allows loading HTML files in Muon's context** — `Brave Software` · `High` [↗](https://hackerone.com/reports/415258)
+  - This approach allows navigating to chrome://brave/ origin.
+- **Local files reading using `link[rel="import"]`** — `Brave Software` · `High` [↗](https://hackerone.com/reports/375329)
+  - HTML file could import another file using <link rel="import">.
+- **Local files reading from the "file://" origin through `brave://`** — `Brave Software` · `High` [↗](https://hackerone.com/reports/390362)
+  - Sadly, fix for #390013 works only for web.
+- **`chrome://brave` available for navigation in Release build [-> RCE] + navigation to `chrome://*` using tab_helper ["Open in new tab"]** — `Brave Software` · `High` [↗](https://hackerone.com/reports/395737)
+  - Navigation to chrome://brave + <local_file_path> requires local file at <local_file_path>.
+- **Local files reading from the web using `brave://`** — `Brave Software` · `Critical` [↗](https://hackerone.com/reports/390013)
+  - brave:// protocol was introduced as a replacement for AsarProtocolHandler(or something like that) in brave/muon after #375329.
+- **IDOR to view User Order Information** — `BOHEMIA INTERACTIVE a.s.` · `High` [↗](https://hackerone.com/reports/287789)
+  - **Description:** There is an idor to view other user's order information and determine their IP addresses and other order infromation
+- **Reflected XSS on Partners Subdomain** — `Uber` · `High` [↗](https://hackerone.com/reports/390181)
+  - There was a reflected cross site scripting vulnerability at https://partners.uber.com/.
+- **Arbitrary File Write Through Archive Extraction** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/362118)
+  - `CVE-2018-1002204` I would like to report arbitrary file write vulnerability in adm-zip module It allows attackers to write arbitrary files when a malicious archive is extracted.
+- **Tor Browser: iframe with `data:` uri  has access to parent window** — `Tor` · `High` [↗](https://hackerone.com/reports/358005)
+  - 7.5.4 (based on Mozilla Firefox 52.8.0) Tested with standard security slider.
+- **Tracking Bitwarden firefox addon users** — `Bitwarden` · `High` [↗](https://hackerone.com/reports/337189)
+  - Firefox web extension, generate a UUID for each web-extension and is specific to a user.
+- **[www.zomato.com] Abusing LocalParams to Inject Code through ███████ query** — `Eternal` · `High` [↗](https://hackerone.com/reports/341600)
+  - @bigshaq found an endpoint which was throwing 500 Internal Server Error after adding a double quote, while he thought that this behaviour might well be a SQLi, and after a bit of fuzzing @bigshaq demonstrated why he believed it to be a SQLi > After some research @bigshaq was ab
+- **ПРОСМОТР ЛЮБЫХ ПРИВАТНЫХ ФОТО + ПРЕВЬЮ ЛЮБОГО ПРИВАТНОГО ВИДЕО.** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/330378)
+  - Просмотр закрытых фотографий.
+- **Insecure Direct Object Reference on API without API key** — `Semrush` · `High` [↗](https://hackerone.com/reports/284963)
+  - It is possible to query the semrush API without specifying an API key.
+- **Unrestricted File System Access via Twig Template Injection on dev-ucrm-billing-demo.ubnt.com** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/301406)
+  - `CVE-2017-0913` The researcher found a Local File inclusion vulnerability, this could be exploited by using Twig templates available on the system.
+- **Open redirect at app.goodhire.com via ReturnUrl parameter** — `Inflection` · `High` [↗](https://hackerone.com/reports/240091)
+  - At login, the ReturnURL parameter could be manipulated to send a user to any arbitrary URL, rather than just a local redirect, if the user was already logged into their GoodHire account and visited the login page again.
+- **IDOR in merchant.rbmonkey.com allows deleting eShops of another user** — `RBKmoney` · `High` [↗](https://hackerone.com/reports/281296)
+  - Website merchant.rbmonkey.com was exposed to an insecure direct object reference vulnerability (IDOR) which may allow an attacker to deleting shop objects of another user.
+- **XSS в личных сообщениях** — `ok.ru` · `High` [↗](https://hackerone.com/reports/293105)
+  - Доброго времени суток.
+- **Cross-origin resource sharing** — `Semrush` · `High` [↗](https://hackerone.com/reports/288912)
+  - The application implements an HTML5 cross-origin resource sharing (CORS) policy for this request that allows access from any domain.
+- **Provide a security sistem most fit to our team** — `Ruby` · `High` [↗](https://hackerone.com/reports/281850)
+  - Now we want to proof that our security sistem is most fit in this year
+- **Take back my all data from limfuimay@gmail.com** — `Ruby` · `High` [↗](https://hackerone.com/reports/282588)
+  - —
+- **Bugs** — `Ruby` · `High` [↗](https://hackerone.com/reports/281942)
+  - —
+- **Password reset link injection allows redirect to malicious URL** — `Mavenlink` · `High` [↗](https://hackerone.com/reports/281575)
+  - @cablej found a vulnerability in our password reset functionality that allowed an attacker using an HTTP request with a modified Host header to cause a password reset link to be emailed to the target user that would navigate to the attacker's domain.
+- **Privilege Escalation with Session Hijacking Having a Non-privileged Valid User** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/242407)
+  - `CVE-2017-0935` EdgeOS version 1.9.1.1 and prior, consequence of lack of protection if the file-system, exposing sensitive information, an attacker with access to an operator (read-only) account, can escalate privileges to admin (root) access in the system.
+- **CSRF: Replacing the router configuration backup having an 'operator' user and bypassing the "Referer:' whitelist protection** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/240098)
+  - `CVE-2017-0933` EdgeOS version 1.9.1 and prior, the researcher was able to bypass the CSRF protection.
+- **Privilege Escalation: From operator to ubnt (and root) with non-interactive Session Hijacking** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/241044)
+  - `CVE-2017-0934` EdgeOS version 1.9.1 and prior, consequence of lack of protection if the file-system, exposing sensitive information, an attacker with access to an operator (read-only) account, can escalate privileges to admin (root) access in the system.
+- **Server-side cache poisoning leads to the http://my.dev.owox.com inaccessibility** — `OWOX, Inc.` · `High` [↗](https://hackerone.com/reports/291012)
+  - By using single specially crafted URL, it was possible to cause service inaccessibility for all users who will visit the site, as result of infinite redirect loop.
+- **Any user with invite capabilities can take-over any account on Discourse** — `Discourse` · `Critical` [↗](https://hackerone.com/reports/242765)
+  - Users with a trust level of 2 and above on Discourse (being a member for 15 days,reading more than 100 posts and more - can be seen on: https://github.com/discourse/discourse/blob/b7386958edfb8215c99d90fde04521b3312d2ccd/config/site_settings.yml) can invite new users to join dis
+- **XSS в товарах** — `VK.com` · `High` [↗](https://hackerone.com/reports/273365)
+  - Отсутствие фильтрации при поиске в товарах.
+- **Wordpress 4.8.1 - Rogue editor leads to RCE. And the risks of same origin frame scripting in general** — `WordPress` · `High` [↗](https://hackerone.com/reports/263718)
+  - This report is mainly about how a user with the role of editor, expectedly can post unfiltered content but unexpectedly can pwn an administrator with a RCE chain due to same origin frame scripting.
+- **Unauthenticated RCE in Vaultpress** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/236552)
+  - Hitting wordpress instalattion with vaultpress on it with get parameter vaultpress=true attacker is one method away from RCE and that method is **validate_api_signature**.
+- **Email Length Verification ** — `Legal Robot` · `High` [↗](https://hackerone.com/reports/263589)
+  - Hi Team, Hope you are good.
+- **Restaurant payment information leakage** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/252043)
+  - An endpoint was leaking banking information of restaurant owners: Bank Name, Account number etc.
+- **[Buddypress] Arbitrary File Deletion through bp_avatar_set** — `WordPress` · `High` [↗](https://hackerone.com/reports/183568)
+  - Hi, The bp_avatar_set action in BuddyPress when cropping avatars allows an attacker to arbitrarily delete a file the webserver can delete through the 'original_file' parameter.
+- **Possible subdomain takeover at openapi.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/241503)
+  - @benoculars was able to take advantage of a process flaw to use some of the space provided for openapi.starbucks.com.
+- **Lack of Controls Allowing for Card and PIN Enumeration Leading to Fraud** — `Starbucks` · `High` [↗](https://hackerone.com/reports/198494)
+  - The pages https://www.starbucks.com/account/card/addcard and https://www.starbucks.com/account/card/Balance do not properly enforce security controls to limit POST requests.
+- **Parameter tampering can result in product price manipulation** — `Adobe` · `High` [↗](https://hackerone.com/reports/218748)
+  - Parameters set during the shopping cart checkout workflow are vulnerable to tampering.
+- **Stored XSS templates -> 'call for action' feature** — `Mixmax` · `High` [↗](https://hackerone.com/reports/237927)
+  - Reporting the Stored XSS in template section on 'call for action' button.
+- **doc.owncloud.com: CVE-2015-5477 BIND9 TKEY Vulnerability + Exploit (Denial of Service)** — `ownCloud` · `High` [↗](https://hackerone.com/reports/217381)
+  - `CVE-2015-5477` BIND9 TKEY Vulnerability + Exploit (Denial of Service)
+- **[██████████.gnip.com] .htpasswd disclosure** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/219197)
+  - There is a .htpasswd disclosure on your subdomain : Protect the htpasswd file
+- **[URGENT] Opportunity to publish tweets on any twitters account** — `X / xAI` · `High` [↗](https://hackerone.com/reports/208978)
+  - The reporter discovered a flaw in the handling of Twitter Ads Studio requests which allowed an attacker to tweet as any user.
+- **Email Spoofing Vulnerability from nextcloud.** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/229599)
+  - Hi nextcloud, Here is Shaifullah Shaon (Black_EyE), An Ethical Hacker.
+- **Nextcloud Server Remote Command Execution** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/226896)
+  - Hy NextCloud Security Team i found a critical vulnerability (RCE) : Nextcloud Server 11.0.2 is affected by a critical vulnerability, which gives to the attacker complete permission to run a system command.
+- **I am because bug** — `Paragon Initiative Enterprises` · `Critical` [↗](https://hackerone.com/reports/226094)
+  - I'm because I hacker found bug because I report this bug I want to report a bug and because want some $$$$ so please because you are telling me how much you pay money so I give you bug.
+- **I am because bug** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/226097)
+  - I'm because I hacker found bug because I report this bug I want to report a bug and because want some $$$$ so please because you are telling me how much you pay money so I give you bug.
+- **takeover a lot of accounts** — `Eternal` · `High` [↗](https://hackerone.com/reports/180388)
+  - Weak password may lead to breakthrough many accounts I have been able to penetrate more than 100 account now.
+- **Version 4.7.2 of wordpress is vulnerable** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/211206)
+  - I observed that your website https://nextcloud.com still use wordpress 4.7.2 Version 4.7.2 of wordpress is vulnerable to :
+- **GNIP subdomain take over** — `X / xAI` · `High` [↗](https://hackerone.com/reports/189548)
+  - Hello, Your subdomain at blog.gnipcentral.com is not well configured with allows subdomain take over as @fransoren explained in report #145224 .
+- **Jenkins** — `Udemy` · `High` [↗](https://hackerone.com/reports/181849)
+  - A Jenkins server being developed for internal Continuous Integration was inadvertently left open to all users with a Github account.
+- **Crash: Initialize Decimal with itself triggers an assertion** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/185775)
+  - When Decimal is initialized with itself, a new (empty) mpd_t will be created.
+- **Nested attributes reject_if proc can be circumvented by providing "_destroy" parameter** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/90457)
+  - Nested attributes rejection proc bypass in Active Record.
+- **[gratipay.com] CRLF Injection** — `Gratipay` · `High` [↗](https://hackerone.com/reports/79552)
+  - (Chrome, Internet Explorer) Location: https://gratipay.com/\r Set-Cookie:csrf_token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;\r\n

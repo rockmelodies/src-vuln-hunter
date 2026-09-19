@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "src-hunter",
+  "owner": {
+    "name": "rockmelodies",
+    "email": "939555035@qq.com",
+    "url": "https://github.com/rockmelodies"
+  },
+  "metadata": {
+    "description": "蒸馏版 SRC / 众测 / Bug bounty 漏洞挖掘 Claude Code skill 仓库（基于 MyuriKanao/src-hunter-skill 蒸馏，原生支持 cc-switch 多 provider 切换）",
+    "version": "2.0.0"
+  },
+  "plugins": [
+    {
+      "name": "src-hunter",
+      "source": "./",
+      "description": "实战 SRC / 众测 / Bug bounty 漏洞挖掘工作流。5 阶段强制 checkpoint、19 类攻击 playbook、结构化 payload 库、WAF/EDR 绕过变体、2743 份 HackerOne 案例蒸馏为可检索 case card、国产组件指纹库。原生适配 cc-switch：按上下文预算档位（A/B/C）自动调节加载策略。",
+      "version": "2.0.0",
+      "homepage": "https://github.com/rockmelodies/src-vuln-hunter",
+      "category": "security",
+      "tags": [
+        "security",
+        "bug-bounty",
+        "src",
+        "hackerone",
+        "pentesting",
+        "vulnerability-hunting",
+        "waf-bypass",
+        "owasp",
+        "cc-switch"
+      ],
+      "license": "MIT"
+    }
+  ]
+}

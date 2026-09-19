@@ -1,0 +1,48 @@
+# XML External Entities (XXE)
+
+_22 reports — High/Critical, disclosed_
+
+- **XML E██████ternal Entity (XXE) Injection in ███** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2564265)
+  - `CVE-2022-2414` Description CVE-2022-2414 describes an XML E██████ternal Entity (XXE) injection vulnerability.
+- **XML External Entity (XXE) Injection** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2573567)
+  - XML External Entity (XXE) injection vulnerability.
+- **XXE with RCE potential on the https://█████████ (CVE-2017-3548)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/710654)
+  - `CVE-2017-3548` I was able to identify XXE on the https://███████ It is CVE in Oracle PeopleSoft (CVE-2017-3548) I determined that instance is available on localhost port 80, so it's possible to access /pspc/services/AdminService via XXE:
+- **[HTA2] XXE on https://███ via SpellCheck Endpoint.** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/715949)
+  - There is a full read XXE vulnerability on POST /Kview/CustomCodeBehind/Base/Utilities/RapidSpellHelpFile.aspx HTTP/1.1 Host: ███████ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:69.0) Gecko/20100101 Firefox/69.0 Accept: */* Accept-Language: en-US,en;q=0.5 Accept-E
+- **AEM forms XXE Vulnerability** — `Adobe` · `Critical` [↗](https://hackerone.com/reports/1321070)
+  - AEM Forms Cloud Service offering, as well as version 6.5.10.0 (and below) are affected by an XML External Entity (XXE) injection vulnerability that could be abused by an attacker to achieve RCE.
+- **HackerOne’s 100K CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1218708)
+  - Greetings team It has been a great challenge, thank you very much for the fun moments and also for the annoying ones :) P.S.
+- **CCC H1 June 2021 CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1217114)
+  - This was my first H1 CTF and I was excited to work with several others to collaborate on the CTF and find the flag.
+- **XXE in Enterprise Search's App Search web crawler** — `Elastic` · `Critical` [↗](https://hackerone.com/reports/1156748)
+  - The latest version of Enterprise Search (7.12.0) is vulnerable to XXE when [parsing sitemaps](https://www.elastic.co/guide/en/app-search/current/crawl-web-content.html#crawl-web-content-manage-sitemaps).
+- **Non-production Open Database In Combination With XXE Leads To SSRF** — `Evernote` · `Critical` [↗](https://hackerone.com/reports/742808)
+  - The Apache Hive database hosted on the IP ██████████ and open on port 10000 is open and vulnerable to XXE.
+- **Singapore - XXE at https://www.starbucks.com.sg/RestApi/soap11** — `Starbucks` · `High` [↗](https://hackerone.com/reports/762251)
+  - rugb discovered the endpoint at https://www.starbucks.com.sg/RestApi/* was found vulnerable to XML eXternal Entity (XXE) processing.
+- **XXE through injection of a payload in the XMP metadata of a JPEG file** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/836877)
+  - Users are able to change their avatar picture.
+- **XXE at ecjobs.starbucks.com.cn/retail/hxpublic_v6/hxdynamicpage6.aspx** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/500515)
+  - Hi,guys,when i was visited the jobs of starbucks websites in China(https://ecjobs.starbucks.com.cn), i found a features of uploaded user's photo.Thought the bypass the security restrictions of upload,i can upload html/xhtml/xml/config files etc.The uploaded html file can realize
+- **XXE in DoD website that may lead to RCE** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/227880)
+  - A malicious user can modify an XML-based request to include XML content that is then parsed locally.
+- **Partial bypass of #483774 with Blind XXE on https://duckduckgo.com** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/486732)
+  - Hi DuckDuckGo team, I've contacted previously you because in a second time (on the #483774 report), I've seen that was possible bypass the fix.
+- **XXE on https://duckduckgo.com** — `DuckDuckGo` · `Critical` [↗](https://hackerone.com/reports/483774)
+  - An XML External Entity (XXE) injection vulnerability was discovered in the x.js endpoint on https://duckduckgo.com via u parameter.
+- **Flag WriteUp** — `h1-5411-CTF` · `Critical` [↗](https://hackerone.com/reports/415202)
+  - Hello everyone , here is my writeup : First I decoded the QR Code of the [tweet](https://twitter.com/Hacker0x01/status/1045075889120268289) , decoding to Here you go: 68747470733a2f2f68312d353431312e68316374662e636f6d .
+- **LFI and SSRF via XXE in emblem editor** — `Rockstar Games` · `Critical` [↗](https://hackerone.com/reports/347139)
+  - This summary is provided by the researcher who submitted this report, @alexbirsan .
+- **XXE in Site Audit function exposing file and directory contents** — `Semrush` · `Critical` [↗](https://hackerone.com/reports/312543)
+  - The Project Site Audit function is vulnerable to XXE when parsing sitemap.xml files.
+- **Remote Code Execution (RCE) vulnerability in a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/232330)
+  - `CVE-2017-3548` A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Uploaded XLF files result in External Entity Execution** — `Weblate` · `High` [↗](https://hackerone.com/reports/232614)
+  - Summary: ======== Weblate users in the Translate group (or those with the ability to upload translation files) can trigger XML External Entity Execution.
+- **XXE on DoD web server** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/188743)
+  - A Department of Defense webserver was vulnerable to an XML External Entity (XXE) processing vulnerability.
+- **DMARC  Not found for paragonie.com   URGENT** — `Paragon Initiative Enterprises` · `Critical` [↗](https://hackerone.com/reports/179828)
+  - I am new hacker in hackerone platform I am glad to join paragonie bounty program ..i want to report a very critical bug that is i found DMARC missing for your domain paragonie.com Add DMARC record as soon as possible ..

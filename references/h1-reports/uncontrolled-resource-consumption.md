@@ -1,0 +1,236 @@
+# Uncontrolled Resource Consumption
+
+_116 reports — High/Critical, disclosed_
+
+- **Critical Deadlock Vulnerability in Monero RPC Leading to Complete Node Paralysis** — `Monero` · `Critical` [↗](https://hackerone.com/reports/3307874)
+  - A deadlock vulnerability in Monero's JSON-RPC interface allows a remote, unauthenticated attacker to completely paralyze any Monero node with a single HTTP request containing specific batch methods, leading to permanent denial of service.
+- **Denial of Service via `__proto__` header name in `req.headersDistinct` (Uncaught `TypeError` crashes Node.js process)** — `Node.js` · `High` [↗](https://hackerone.com/reports/3560402)
+  - `CVE-2026-21710` A flaw in Node.js HTTP request handling causes an uncaught TypeError when a request is received with a header named __proto__ and the application accesses req.headersDistinct.
+- **Economic DoS (Griefing) on IBC Relayers via `memo` Callback Gas Exploitation** — `Cosmos` · `High` [↗](https://hackerone.com/reports/3425308)
+  - This vulnerability allows an attacker to bypass the relayer's simulation defense and force permissionless relayers to execute computationally expensive, but 'successful', transactions via the memo callback feature.
+- **Denial of Service (DoS) vulnerability in dedotdotify() URL path normalization** — `curl` · `High` [↗](https://hackerone.com/reports/3463608)
+  - A Denial of Service (DoS) vulnerability exists in the dedotdotify() function in lib/urlapi.c that can cause excessive CPU consumption due to O(n²) time complexity when processing URLs with malicious path patterns containing many ../ sequences.
+- **Application Level DoS - Large Markdown Payload in Reply Section Leading to Resource Exhaustion** — `Discourse` · `High` [↗](https://hackerone.com/reports/3058919)
+  - An application level Denial of Service (DoS) vulnerability was identified in the reply section on https://try.discourse.org By submitting an excessively large markup payload (~800,000 characters), the server takes 30 seconds to respond before returning an HTTP/2 502 Bad Gateway e
+- **WebSocket Fragmentation DoS on Curl Client** — `curl` · `High` [↗](https://hackerone.com/reports/3303765)
+  - A malicious WebSocket server can send a fragmented message (FIN=0) followed by a flood of continuation frames, causing the client (curl) to continuously allocate memory while waiting for message completion.
+- **Crafted smart contract can take 8 minutes to execute due to bug in modexp precompile.** — `Rootstock Labs` · `High` [↗](https://hackerone.com/reports/2412583)
+  - A bug in the modexp precompile can cause long stalls.
+- **DOS of RSKJ server** — `Rootstock Labs` · `High` [↗](https://hackerone.com/reports/2105808)
+  - Due of closing of report (ID #2102315) I will summarize total reproducible report here java -classpath rskj-core-5.0.0-FINGERROOT-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start
+- **[CVE-2025-27220] ReDoS in CGI::Util#escapeElement** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/3023605)
+  - `CVE-2025-27220` I've made a report at https://hackerone.com/reports/2890322 The regular expression used in CGI::Util#escapeElement is vulnerable to ReDoS.
+- **Remote memory exhaustion in Epee RPC stack under zero Receive Window** — `Monero` · `High` [↗](https://hackerone.com/reports/2912194)
+  - Memory exhaustion can be triggered in http_protocol_handler.inl and abstract_tcp_server2.inl under delayed ACK or zero Receive Window advertisement.
+- **Unauthenticated WordPress Database Repair DoS** — `WordPress` · `High` [↗](https://hackerone.com/reports/2786591)
+  - The WordPress Database Repair feature, accessible via the /wp-admin/maint/repair.php endpoint, is vulnerable due to improper access control and insecure design.
+- **CVE-2024-34750 Apache Tomcat DoS vulnerability in HTTP/2 connector** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2586226)
+  - `CVE-2024-34750` Hello IBB team, i would like to submit a report about Apache Tomcat DoS vulnerability that i have reported to the Tomcat team, which was assigned to CVE-2024-34750 and disclosed yesterday.
+- **Assertion failed in node::http2::Http2Session::~Http2Session() leads to HTTP/2 server crash** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2453328)
+  - `CVE-2024-27983` An attacker can make the Node.js HTTP/2 server completely unavailable by sending a small amount of HTTP/2 frames packets with a few HTTP/2 frames inside.
+- **Denial of Service caused by HTTP/2 CONTINUATION Flood** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2334401)
+  - `CVE-2024-24549` I sent the following report to Apache Tomcat Security Team.
+- **"Assertion failed" in node::http2::Http2Session::~Http2Session() leads to HTTP/2 server crash** — `Node.js` · `High` [↗](https://hackerone.com/reports/2319584)
+  - `CVE-2024-27983` I discovered a vulnerability in Node.js HTTP/2 stack (http2) package.
+- **http: Reading unprocessed HTTP request with unbounded chunk extension allows DoS attacks** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2375446)
+  - `CVE-2024-22019` I'd like to report Node.js vulnerability (CVE-2024-22019) that was recently fixed: This is a major issue because it allows unbounded resource (CPU, network bandwidth) consumption of the standard Node.js http server.
+- **http: Reading unprocessed HTTP request with unbounded chunk extension allows DoS attacks** — `Node.js` · `High` [↗](https://hackerone.com/reports/2233486)
+  - `CVE-2024-22019` A vulnerability in Node.js HTTP servers allows an attacker to send a specially crafted HTTP request with chunked encoding, leading to resource exhaustion and denial of service (DoS).
+- **ReDoS( Ruby, Time)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1929567)
+  - `CVE-2023-28756` I reported at https://hackerone.com/reports/1485501 ReDoS occurs when Time.rfc2822 accepts user input.
+- ** WordPress application vulnerable to DoS attack via wp-cron.php** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1888723)
+  - The WordPress application is vulnerable to a Denial of Service (DoS) attack via the wp-cron.php script.
+- **DoS at █████(CVE-2018-6389)** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1887996)
+  - `CVE-2018-6389` Unauthenticated attackers can cause a denial of service (resource consumption) listing a large number of registered .js files (from wp-includes/script-loader.php) Vulnerable Url : https://██████████/wp-admin/load-scripts.php?load=eutil,common,wp-a11y,sack,quicktag,colorpicker,edi
+- **DoS at ████████ (CVE-2018-6389)** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1861569)
+  - `CVE-2018-6389` Unauthenticated attackers can cause a denial of service (resource consumption) by using the large list of registered .js files (from wp-includes/script-loader.php) to construct a series of requests to load every file many times.
+- **DOS via issue preview** — `GitLab` · `High` [↗](https://hackerone.com/reports/1543718)
+  - Previewing an issue with a specially-crafted description results in high CPU usage for 60 seconds (request timeout).
+- **Deny of service via malicious Content-Type** — `Fastify` · `High` [↗](https://hackerone.com/reports/1715536)
+  - `CVE-2022-39288` I found a way to crash a fastify@4.6.0 server with a single query on a minimal setup.
+- **Lack of Packet Sanitation in Goflow Results in Multiple DoS Attack Vectors and Bugs** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/1636320)
+  - `CVE-2022-2529` sflow decode package of the [Goflow](https://github.com/cloudflare/goflow) application did not implement sufficient packet sanitisation which could lead to a denial of service attack.
+- **DOS validator nodes of blockchain to block external connections** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/1695472)
+  - `CVE-2022-31006` Attack was documented in the in the github repo: https://github.com/hyperledger/indy-node/security/advisories/GHSA-x996-7qh9-7ff7 The attacker sends 500 read requests to each node and opens a new one when holding 500 parallel connections.
+- **Remote denial of service in HyperLedger Fabric** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/1635854)
+  - `CVE-2022-36023` go run poc.go -server=192.168.0.208:7051 import ( "context" "crypto/tls" "flag" "fmt"
+- **RPC call crashes node** — `Monero` · `High` [↗](https://hackerone.com/reports/1379707)
+  - Passing a large list of amounts to the get_output_distribution call crashes a remote node, after maybe 90 seconds of keeping it busy.
+- **Remote denial of service in  HyperLedger Fabric** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/1604951)
+  - `CVE-2022-31121` This issue was caused by [a missing check of nil](https://github.com/hyperledger/fabric/pull/3494).
+- **Regexes with large repetitions on empty sub-expressions take a very long time to parse** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1518036)
+  - `CVE-2022-24713` Rust's regex crate guarantees a linear time complexity with regex length for compilation of untrusted regexes.
+- **Cache Poisoning DoS on downloads.exodus.com** — `Exodus` · `High` [↗](https://hackerone.com/reports/1173153)
+  - The subdomain downloads.exodus.com hosts all files meant to be downloaded by exodus users.
+- **Cache poisoning Denial of Service affecting assets.gitlab-static.net** — `GitLab` · `High` [↗](https://hackerone.com/reports/1160407)
+  - Gitlab.com is hosting JS and CSS on https://assets.gitlab-static.net/ and uses them on gitlab.com/* The static files seem to be stored on a gcp host, which by default accepts the x-http-method-override header.
+- **[dubsmash] Long String in 'shoutout' Parameter Leading Internal server Error on Popular hastags , Community and User Profile** — `Reddit` · `High` [↗](https://hackerone.com/reports/1237428)
+  - If the user input a long string in the 'shoutout' parameter of the 'CreateVideo' API then all the APIs where this video is supposed to appear (eg: hashtag API, community API, and user profile API) will throw 'internal server error' in the response.
+- **Cache Posioning leading to denial of service at `█████████` - Bypass fix from report #1198434	** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1322732)
+  - **C**ache **P**osioning **D**enial **O**f **S**ervice (CPDoS) [1] is taking advantage of 301 redirects by storing an false value of either domain, port or header that effect the response in any way.
+- **Cache Posioning leading do Denial of Service on `www.█████████`** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1198434)
+  - To be clear.
+- **XMLRPC, Enabling XPSA and Bruteforce and DOS + A file disclosing installer-logs.** — `MTN Group` · `High` [↗](https://hackerone.com/reports/865875)
+  - [XMLRPC+Installer_logs+Backup_Filename+Admin_username+disclosure] I was able to reproduce this whole https://www.netsparker.com/blog/web-security/xml-rpc-protocol-ip-disclosure-attacks/
+- **DoS due to improper input validation can break the admin access into the user data will disallow him from editing that user's data.** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1147611)
+  - `CVE-2021-32657` A malicious user may be able to break the user administration page.
+- **HTTP2 'unknownProtocol' cause Denial of Service by resource exhaustion** — `Node.js` · `Critical` [↗](https://hackerone.com/reports/1043360)
+  - `CVE-2021-22883` Node.js http2 server is vulnerable against denial of service attacks when too many connection attempts with an 'unknownProtocol' are established.
+- **Camera adoption DoS - UniFi Protect** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/1008579)
+  - `CVE-2021-22882` A vulnerability was found in UniFi Protect v1.13.7 and earlier that would allow an attacker to use spoofed cameras to perform a denial-of-service attack that could cause the UniFi Protect controller to crash.
+- **xmlrpc.php FILE IS enabled it will used for Bruteforce attack and Denial of Service(DoS)** — `BlockDev Sp. Z o.o` · `Critical` [↗](https://hackerone.com/reports/1086850)
+  - xmlrpc.php file is visible
+- **Denial of Service by requesting to reset a password** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/812754)
+  - `CVE-2020-8295` I believe that this is posible due to the brute force protection that makes all request last for 30 seconds which in this case is using all the PHP workers avalible in the pool, so the only way to defend yourself is setting up a limit or having a lot of resources.
+- **Mission completed. Grinch Networks is down and Christmas saved.** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1067090)
+  - Hi, I decided to create a good writeup, but for that I'd need some time, that's why I am submitting this pre-report now, and the actual report I ll submit before the deadline in this thread, right under this one.
+- **Hacky Holidays CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066007)
+  - 12 days of challenges - some more challenging than others!
+- **[CTF] I've DDoSed Grinch Network** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1065493)
+  - Here are all 12 flags for HackyHolidays CTF: 4.
+- **Permanent DOS for new users!** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/1057484)
+  - The vulnerability has been fixed The team concluded as informative but this issue is active and reproducible enjoy ;)
+- **DNS Max Responses for DOS** — `Node.js` · `High` [↗](https://hackerone.com/reports/1033107)
+  - `CVE-2020-8277` See Github (my issue): https://github.com/nodejs/node/issues/36063 When i try to fetch the A Dns records of following domain: ticbrasil.com.br I dont get any response.
+- **a very long name in hey.com can prevent anyone from accessing their contacts and probably can cause denial of service** — `Basecamp` · `High` [↗](https://hackerone.com/reports/1018037)
+  - Summary : ========= after trying to change my initial name to something long i found out that their are no limits to how long it can be , so i directly changed it to something very long {F1050497} which caused my account to really slow down when accessing it and in **the android
+- **Denial of Service by resource exhaustion CWE-400 due to unfinished HTTP/1.1 requests** — `Node.js` · `Critical` [↗](https://hackerone.com/reports/868834)
+  - `CVE-2020-8251` **Summary:** Node.js is vulnerable to HTTP denial of service (DOS) attacks based on delayed requests submission which can make the server unable to accept new connections.
+- **DOS in stream filters** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/505278)
+  - `CVE-2018-10546` see bug report https://bugs.php.net/bug.php?id=76249 $fh = fopen('php://memory', 'rw'); fwrite($fh, "abc"); rewind($fh); stream_filter_append($fh, 'convert.iconv.iso-10646/utf8//IGNORE', STREAM_FILTER_READ, []); echo stream_get_contents($fh);
+- **[json-bigint] DoS via `__proto__` assignment** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/916430)
+  - `CVE-2020-8237` I would like to report a DoS in json-bigint.
+- **Prototype Pollution lodash 4.17.15** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/864701)
+  - I would like to report Prototype Pollution in lodash version 4.17.15 It allows Denial of Service and more.
+- **[wappalyzer] ReDoS allows an attacker to completely break Wappalyzer** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/888030)
+  - please note that I'm reporting two different problematic regexes.
+- **[is-my-json-valid] ReDoS via 'style' format** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/909757)
+  - I would like to report a ReDoS in is-my-json-valid It allows cause a denial of service if schema uses the built-in style format.
+- **Malformed HTTP/2 SETTINGS frame leads to reachable assert** — `Node.js` · `Critical` [↗](https://hackerone.com/reports/800140)
+  - I do not expect any form of cash bounty for this issue.
+- **disable test send feature if user's email address isn't verified** — `Courier` · `High` [↗](https://hackerone.com/reports/906226)
+  - There is no mechanism to limit the request in places while send the preview email There is a weak account registration process, which allow user to register and login without any email confirmation.
+- **[wappalyzer] ReDoS allows an attacker to completely break Wappalyzer** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/888021)
+  - I would like to report [VULNERABILITY] in [MODULE] It allows [DESCRIBE THE IMPACT OF THE VULNERABILITY - E.G READ ARBITRARY FILES, READ DATA FROM DATABASE ETC] **module name:** Wappalyzer **version:** 6.0.2 **npm page:** https://www.npmjs.com/package/wappalyzer
+- **Prototype pollution in multipart parsing** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/804772)
+  - `CVE-2020-8136` I would like to report a prototype pollution attack in fastify-multipart it allows to crash a remote server parsing multipart requests by sending a specially crafted request.
+- **Bypass password reset rate limit protection at moneybird.com/passwords** — `Moneybird` · `High` [↗](https://hackerone.com/reports/723974)
+  - Attacker found a way to completely bypass our rate limit protection, allowing for other types of attacks.
+- **Lodash "difference" (possibly others) Function Denial of Service Through Unvalidated Input** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/670779)
+  - I would like to report a denial of service in Lodash.
+- **Exim handles BDAT data incorrectly and leads to crash/hang** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/296994)
+  - `CVE-2017-16944` When receiving data with BDAT command, SMTP server should not consider a single dot ‘.’ in a line to be the end of message.
+- **Potential infinite loop in gdImageCreateFromGifCtx!** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/305972)
+  - `CVE-2018-5711` ----- It is easy to trigger in web application if the web use GD as its image library.
+- **rpcbind "rpcbomb" CVE-2017-8779, CVE-2017-8804** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/235016)
+  - `CVE-2017-8779` Description: this allowed an attacker to easily disrupt a remote system through excessive memory consumption.
+- **Denial of service in libxml2, using malicious lzma file to consume available system memory** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/270059)
+  - [Reported to the libxml2 devs on 23 August 2017](https://bugzilla.gnome.org/show_bug.cgi?id=786696) [Patched on 7 September 2017](https://git.gnome.org/browse/libxml2/commit/?id=e2a9122b8dde53d320750451e9907a7dcb2ca8bb) It was discovered through fuzzing that malicious LZMA compre
+- **DoS through PeerExplorer** — `Rootstock Labs` · `High` [↗](https://hackerone.com/reports/363636)
+  - **Summary:** The peer discovery implementation is vulnerable to a Denial of Service attack due to improper management of connections.
+- **Multiple HTTP/2 DOS Issues** — `Node.js` · `High` [↗](https://hackerone.com/reports/589739)
+  - A security researcher has conducted a broad survey of HTTP/2 implementations to investigate common Denial of Service attack vectors.
+- **Resource Consumption DOS on Edgemax v1.10.6** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/406614)
+  - Resource consumption Denial of service.
+- **CryptoNote: remote node DoS** — `Monero` · `High` [↗](https://hackerone.com/reports/506595)
+  - Remote node DoS.
+- **(remote) exabyte allocation via load_from_binary() (DoS)** — `Monero` · `High` [↗](https://hackerone.com/reports/506498)
+  - Changes introduced in commit b82efa32e can result in a denial of service if epee::serialization::portable_storage::load_from_binary() is called with untrusted data.
+- **Computing hash of crafted block leads to crash in tree_hash()** — `Monero` · `High` [↗](https://hackerone.com/reports/519120)
+  - I'm not sure how to test this against against an actual Monero instance, so I'm instead showing an isolated PoC: int main(void) { cryptonote::block b = AUTO_VAL_INIT(b); for (size_t i = 0; i < 300000; i++) { b.tx_hashes.push_back({}); } std::ostringstream oss; binary_archive<true
+- **`useragent` is vulnerable to ReDoS in user-agent string** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/320159)
+  - Denial of Service by passing crafted user-agent strings.
+- **xmlrpc.php file is enable it will used for (DOS) and bruteforce attack** — `FormAssembly` · `High` [↗](https://hackerone.com/reports/448524)
+  - Wordpress that have xmlrpc.php enabled for pingbacks, trackbacks, etc.
+- **Prototype Pollution Vulnerability in cached-path-relative Package** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/390847)
+  - `CVE-2018-16472` I would like to report a prototype pollution attack in cached-path-relative.
+- **Prototype pollution attack (lodash / constructor.prototype)** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/380873)
+  - `CVE-2018-16487` I would like to report a prototype pollution vulnerability in lodash.
+- **Malicious get_random_rct_outs.bin rpc can cause a near-infinite loop** — `Monero` · `High` [↗](https://hackerone.com/reports/391611)
+  - An unsanitized get_random_rct_outs.bin rpc request can cause the rpc handler to go into an effectively infinite-loop, peg the cpu, and block other requests from completing.
+- **Prototype pollution attack (extend)** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/381185)
+  - `CVE-2018-16492` I would like to report prototype pollution in extend It allows an attacker to inject properties on Object.prototype.
+- **`memjs` allocates and stores buffers on typed input, resulting in DoS and uninitialized memory usage** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/319809)
+  - `CVE-2018-3767` I would like to report a Buffer allocation vulnerability in memjs.
+- **`foreman` is vulnerable to ReDoS in path** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/320586)
+  - I would like to report ReDoS in foreman.
+- **Rate Limitation Vulnerability (DDos)** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/209860)
+  - Rate limiting on account confirmation emails and forgot password.
+- **`http-proxy-agent` passes unsanitized options to Buffer(arg), resulting in DoS and uninitialized memory leak** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/321631)
+  - I would like to report a Buffer allocation vulnerability in http-proxy-agent.
+- **`sshpk` is vulnerable to ReDoS when parsing crafted invalid public keys** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/319593)
+  - I would like to report a ReDoS in sshpk It allows to cause Denial of Service by trying to parse a crafted public key.
+- **`https-proxy-agent` passes unsanitized options to Buffer(arg), resulting in DoS and uninitialized memory leak** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/319532)
+  - I would like to report a Buffer allocation vulnerability in https-proxy-agent.
+- **Fastify denial-of-service vulnerability with large JSON payloads** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/303632)
+  - `CVE-2018-3711` Fastify - https://www.npmjs.com/package/fastify Affected versions: <=0.37.0 (all version before 0.38.0) A denial-of-service attack can be performed against servers running Fastify by sending a request with "Content-Type: application/json" and a very large payload.
+- **Application-level DoS on image's "size" parameter.** — `Gratipay` · `High` [↗](https://hackerone.com/reports/247700)
+  - The size parameter located on images is vulnerable to DoS.
+- **No limit of summary length allows Denail of Service** — `RubyGems` · `High` [↗](https://hackerone.com/reports/243003)
+  - `CVE-2017-0900` Currently, there is no limit for summary length.
+- **ci.nextcloud.com: CVE-2015-5477 BIND9 TKEY Vulnerability + Exploit (Denial of Service)** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/237860)
+  - `CVE-2015-5477` In reference report #217381 I've reported the DDOS attack via DNS Port at OwnCloud..
+- ** XXE in upload file feature** — `Informatica` · `High` [↗](https://hackerone.com/reports/105787)
+  - The attacker was able to execute XXE in one of the file upload feature.
+- **Segmentation fault when a Ruby method is invoked by a C method via Object#send** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/183425)
+  - We can arrange for C to call Object#send by aliasing it over initialize.
+- **OCSP Status Request extension unbounded memory growth (CVE-2016-6304)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/216840)
+  - `CVE-2016-6304` A malicious client can send an excessively large OCSP Status Request extension.
+- **[app.informaticaondemand.com] XXE** — `Informatica` · `High` [↗](https://hackerone.com/reports/105753)
+  - Request: POST /ma/api/v2/user/login HTTP/1.1 Host: app.informaticaondemand.com Content-Length: 285 Content-Type: application/xml Accept: application/xml Then i got file /etc/passwd (xxe_app.png)
+- **Content length restriction bypass can lead to DOS by reading large files on gip.rocks** — `Gratipay` · `High` [↗](https://hackerone.com/reports/203388)
+  - Since you mentioned in the rules that all libraries listed on your github repositories are in scope, I decided to take a look at http://gip.rocks The application reads an image file and convert it into smaller formats, zip it and let the users to download the updated file.
+- **Interger overflow in str_substr leading to read/write out of bound memory** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/205884)
+  - Failed check len & beg in str_substr when call mrb_str_aref_m by String.
+- **Segmentation fault - mrb_gc_mark** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/195842)
+  - GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1 Copyright (C) 2016 Free Software Foundation, Inc.
+- **DoS: type confusion in mrb_no_method_error** — `shopify-scripts` · `Critical` [↗](https://hackerone.com/reports/181871)
+  - Overwriting the 'new' method of the NoMethodError singleton to not return an exception object leads to memory corruption and possibly arbitrary code execution.
+- **Authorization issue in Google G Suite allows DoS through HTTP redirect** — `Uber` · `High` [↗](https://hackerone.com/reports/191196)
+  - The combination of an authorization flaw in Google’s G Suite and a misconfiguration on Uber’s behalf, allowed @uranium238 to set up an HTTP redirect for the domain ubereats.com.
+- **ruby DoS https://www.mruby.science** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/180695)
+  - Hi, When I sent 49000x "A" I was probably able to crash service running on https://www.mruby.science since new code can't be executed for now.
+- **Null pointer dereference due to TOCTTOU bug in mrb_time_initialize** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/182274)
+  - mrb_time_initialize sets the data pointer to NULL before parsing function arguments.
+- **Invalid handling of zero-length heredoc identifiers leads to infinite loop in the sandbox** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/187305)
+  - Introduction ============ Certain invalid Ruby programs (which should normally raise a syntax error) are able to cause an infinite loop in MRuby's parser which makes the mruby-engine sandbox (and consequently the MRI process it is running in) unresponsive to SIGTERM.
+- **Broken handling of maximum number of method call arguments leads to segfault** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/182484)
+  - Introduction ============ Improper logic for handling of maximum number of method call arguments leads to dereferencing an invalid pointer in some cases, which causes a segfault in both mruby and mruby_engine (and the parent MRI).
+- **Buffer overflow in mrb_time_asctime** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/188326)
+  - This one doesn't always crash every time, but with ASAN on it will.
+- **Denial of Service in mruby due to null pointer dereference** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181232)
+  - The following file causes a segmentation fault in mruby, which also causes a segmentation fault in mruby-engine.
+- **Null pointer derefence due to bug in codegen with negation without using value** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/187536)
+  - p *case when nil -0 nil end $ ./dev/bin/mruby crash.rb crash.rb:1:3: '*' interpreted as argument prefix Segmentation fault: 11
+- **Segmentation fault due to bad memory access in kh_get_mt** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/188313)
+  - values=[0,0,0,0] unused_but_needed=[] Hash=[] values.each do values.each do values & values.each do values.each do % [0]=nil end end end end $ ./dev/bin/mruby crash.rb Segmentation fault: 11
+- **Denial of service due to invalid memory access in mrb_ary_concat** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/184712)
+  - The following file causes a segmentation fault in mruby, which also causes a segmentation fault in mruby-engine.
+- **NULL pointer dereference when parsing ternary operators** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181677)
+  - There is a NULL pointer dereference when parsing ternary operators which will cause a crash.
+- **SIGSEGV when invalid argument on remove_method** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181874)
+  - There is an invalid memory read on mruby when calling to remove_method with invalid arguments which causes a SIGSEGV which leads into denial of service.
+- **SIGSEV on mrb_ary_splice** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/182027)
+  - The following code causes a SIGSEV when executed under the sandbox t0me=methods t0me[0,0]=t0me
+- **SIGSEGV on mruby mrb_str_modify() (Invalid memory access)** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/183231)
+  - There is an invalid memory read on mruby when calling to mrb_str_modify() with a invalid RString * which causes a SIGSEGV and leads to denial of service.
+- **Range#initialize_copy null pointer dereference** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181685)
+  - It's possible to segfault mruby through mruby-engine with the following snippet of code: Range.remove_method(:initialize_copy) (1..2).dup.to_s
+- **Undefined method_missing null pointer dereference** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181695)
+  - It's possible to segfault mruby by undefining BasicObject#method_missing in certain cases.
+- **Range constructor type confusion DoS** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181910)
+  - It's possible to crash mruby by redefining the Range class and then using the range literal syntax: Range = Array (1..2).inspect
+- **Null target_class DoS** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/183405)
+  - The Object#instance_exec method in mrbgems/mruby-object-ext/src/object.c executes a block in the context of an object.
+- **Segfault in mruby, mruby_engine and the parent MRI Ruby due to null pointer dereference** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181828)
+  - Introduction ============ Certain valid Ruby programs are able to cause a segmentation fault in mruby through a null pointer derefence, which in turn leads to a crash in mruby_engine and the parent MRI Ruby process.
+- **Segfault and/or potential unwanted (byte)code execution with "break" and "||=" inside a loop** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/183356)
+  - Introduction ============ Certain invalid inputs (invalid Ruby programs) crash mruby and mruby_engine (including the parent MRI VM).
+- **Type confusion in mrb_exc_set leading to memory corruption** — `shopify-scripts` · `Critical` [↗](https://hackerone.com/reports/185041)
+  - Similar to #181871, but the bug is more general.
+- **Exception cause SIGABRT** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/180977)
+  - Overriding the to_s method of an exception and raise it from a sandboxed mruby evaluation result in a abort() call from mruby.
+- **Password Forgot/Password Reset Request Bug** — `Pushwoosh` · `High` [↗](https://hackerone.com/reports/182267)
+  - Password Forgot/Password Reset Request Bug
+- **[rev-app.informatica.com] - XXE** — `Informatica` · `High` [↗](https://hackerone.com/reports/105434)
+  - In file I wrote XXE payload: Then, i went to https://rev-app.informatica.com and made new project and imported my XLSX-file

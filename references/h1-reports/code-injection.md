@@ -1,0 +1,280 @@
+# Code Injection
+
+_138 reports — High/Critical, disclosed_
+
+- **Internal application wrapper or script using curl** — `curl` · `Critical` [↗](https://hackerone.com/reports/3648199)
+  - While -guid is not a standard or documented curl command, a Command Injection or Argument Injection vulnerability within a specific application that wraps curl.
+- **Injection in path parameter of Ingress-nginx** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/2701701)
+  - `CVE-2021-25748` The objective of an Ingress Controller is to act as a gatekeeper for all incoming traffic to a Kubernetes cluster.
+- **[RCE] Remote Code Execution via  React Server Components Vulnerability CVE-2025-55182** — `IBM` · `Critical` [↗](https://hackerone.com/reports/3458235)
+  - `CVE-2025-55182` [RCE] Remote Code Execution on an IBM endpoint via React Server Components Vulnerability CVE-2025-55182 was reported to IBM, analyzed and has been remediated.
+- **Title: Remote Code Execution (RCE) via Arbitrary Library Loading in `--engine` option** — `curl` · `Critical` [↗](https://hackerone.com/reports/3293801)
+  - The curl command-line tool is vulnerable to Arbitrary Code Execution on POSIX-like systems (Linux, macOS, etc.).
+- **Uncontrolled File Write/Arbitrary File Creation ** — `curl` · `High` [↗](https://hackerone.com/reports/3250117)
+  - The dumpeasysrc function in the provided code snippet allows an attacker to specify an arbitrary file path for outputting the generated libcurl source code via the global->libcurl variable.
+- **Potential XSS vector in curl via unsanitized URL parameter handling** — `curl` · `High` [↗](https://hackerone.com/reports/3118915)
+  - Description Summary: During the analysis of the curl source code, a possible vector for Cross-Site Scripting (XSS) was identified through the glob_url() function and how URL input is handled via urlnode->url.
+- **[SECURITY] CVE-2024-50379 Apache Tomcat - RCE via write-enabled default servlet** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2905013)
+  - `CVE-2024-50379` Code injection triggered by a race condition on a Windows machine.
+- **CVE-2017-9822 DotNetNuke Cookie Deserialization Remote Code Execution (RCE) on lonidoor.mtn.ci** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2762119)
+  - `CVE-2017-9822` DotNetNuke (DNN) versions between 5.0.0 - 9.3.0 are affected to deserialization vulnerability that leads to Remote Code Execution (RCE).
+- **Account Takeover / Arbitrary File read and deletion / Partial code execution (intent redirection)** — `MercadoLibre` · `High` [↗](https://hackerone.com/reports/2289836)
+  - We thank @fr4via for the report and for providing clear reproduction steps with a proof-of-concept code demonstrating the vulnerability.
+- **Low privileges (auth) Remote Command Execution - PHP file upload bypass.** — `ExpressionEngine` · `High` [↗](https://hackerone.com/reports/841397)
+  - `CVE-2020-13443` ExpressionEngine was vulnerable to unrestricted file upload via a low-privileged user due to a bypass extension check that led to remote command execution.
+- **Remote code execution and exfiltration of secret tokens by poisoning the mozilla/fxa CI build cache** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2255750)
+  - A security researcher was able to obtain an upload URL for NX Cloud's caching service, used by the Firefox Accounts repository.
+- **Remote code execution via crafted pentaho report uploaded using default credentials for pentaho business server** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1677047)
+  - Good day, While I do recon for mtn.ci domain I found Pentaho business server at https://sm.mtn.ci:8888/pentaho with default credentials admin/password ,then I figured that I can upload prpt reports to server which could use some beanshell,js and java to achieve RCE The impact o
+- **CVE-2023-5528: Insufficient input sanitization in in-tree storage plugin leads to privilege escalation on Windows nodes** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/2231019)
+  - `CVE-2023-5528` This is an imported report from the email i have sent a month ago about a code injection vulnerability The vulnerability was assigned as CVE-2023-5528 As a reference i have talked with Balaji from the k8 team.
+- **Pre-auth RCE in ForgeRock OpenAM (CVE-2021-35464)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1248052)
+  - `CVE-2021-35464` RCE is possible thanks to unsafe Java deserialization in the Jato framework used by OpenAM.
+- **Ingress nginx annotation injection causes arbitrary command execution** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1728174)
+  - `CVE-2021-25742` [add a summary of the vulnerability] For CVE-2021-25742 and CVE-2021-25746, I found a bypass method, which is fatal to the current measures taken by the team I can easily bypass restrictions and execute arbitrary commands in the express nginx container.
+- **RCE  on ingress-nginx-controller via Ingress spec.rules.http.paths.path field** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1620702)
+  - A user with ingress create/update privilege may inject config into nginx.conf with path.
+- **Code inject via nginx.ingress.kubernetes.io/permanent-redirect annotation** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/2039464)
+  - `CVE-2023-5044` The value of the nginx.ingress.kubernetes.io/permanent-redirect annotation will be not sanitized and passed into the nginx configuration.
+- **Argument/Code Injection via ActiveStorage's image transformation functionality** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/1154034)
+  - `CVE-2022-21831` Gabriel Quadros and Ricardo Silva from Conviso Application Security ActiveStorage has an image transformation functionality [1, 2, 3, 4, 5, 6] which uses the concept of *variants*.
+- **[hta3] Remote Code Execution on ████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1072832)
+  - In the days leading up to this event, I looked at ███████ due to the ████████ press release which described this as the scope for this event.
+- **Remote Code Execution on ownCloud instances with ImageMagick installed** — `ownCloud` · `Critical` [↗](https://hackerone.com/reports/1838674)
+  - It is possible to execute code on ownCloud instances which have ImageMagick installed.
+- **Synthetics Recorder: Code injection when recording website with malicious content** — `Elastic` · `High` [↗](https://hackerone.com/reports/1636382)
+  - Synthetics recorder has a quote function to escape user-controlled input, but in one particular scenario the escaping isn't enough and a malicious website can inject arbitrary code in the recorder session.
+- **[███████] Remote Code Execution at ██████ [CVE-2021-44529] [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1624172)
+  - `CVE-2021-44529` The server at https://███ is running a vulnerable version of CSA.
+- **CVE-2022-40127: RCE in Apache Airflow <2.4.0 bash example** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1776476)
+  - `CVE-2022-40127` airflow-2.3.3/airflow/example_dags/example_bash_operator.py has a command injection vulnerability.
+- **[hta3] Remote Code Execution on  https://███ via improper access control to SCORM Zip upload/import** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1122791)
+  - There is a Remote Code Execution vulnerability at https://█████████/Kview/CustomCodeBehind/base/courseware/scorm/management/scorm2004uploadcourse.aspx which allows any user to upload a SCORM course package.
+- **CVE-2022-21831: Possible code injection vulnerability in Rails / Active Storage** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1652042)
+  - `CVE-2022-21831` Original report: https://hackerone.com/reports/1154034 Rails advisory: https://discuss.rubyonrails.org/t/cve-2022-21831-possible-code-injection-vulnerability-in-rails-active-storage/80199 Blogpost: https://blog.convisoappsec.com/en/cve-2022-21831-overview-of-the-security-issues-w
+- **solr_log4j - http://██████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1631370)
+  - Hi security team, i found a solr log4j vulnerability in your aplication Logging untrusted or user controlled data with a vulnerable version of Log4J may result in Remote Code Execution (RCE) against your application.
+- **██████_log4j - https://██████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1631364)
+  - Hi security team, i found a log4j vulnerability in your aplication Logging untrusted or user controlled data with a vulnerable version of Log4J may result in Remote Code Execution (RCE) against your application.
+- **Ingress-nginx annotation injection allows retrieval of ingress-nginx serviceaccount token and secrets across all namespaces** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1378175)
+  - `CVE-2021-25742` I submitted the following report to security@kubernetes.io: An attacker with permission to create/modify ingresses in one namespace can inject content into the connection-proxy-header annotation and read arbitrary files from the ingress controller (including the service account).
+- **Server Side Template Injection on Name parameter during Sign Up process** — `Glovo` · `High` [↗](https://hackerone.com/reports/1104349)
+  - Server-side template injection is when an attacker is able to use native template syntax to inject a malicious payload into a template, which is then executed server-side.
+- **[Urgent] Critical Vulnerability [RCE] on ███ vulnerable to Remote Code Execution by exploiting MS15-034, CVE-2015-1635** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/469730)
+  - `CVE-2015-1635` @ashutosh7 found a ███████ server in Shodan, vulnerable to MS15-034, confirmed using Metasploit.
+- **██████████ vulnerable to CVE-2022-22954** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1537543)
+  - `CVE-2022-22954` I found that one of the targets belongs to **DOD** vulnerable to **CVE-2022-22954** where an attacker may be able to execute any malicious code like escalating Remote code execution is also possible CVE-2022-22954 is a server-side template injection vulnerability in the VMware Wo
+- **███ vulnerable to CVE-2022-22954** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1537694)
+  - `CVE-2022-22954` I found that one of the targets belongs to DOD vulnerable to CVE-2022-22954 where an attacker may be able to execute any malicious code like escalating Remote code execution is also possible CVE-2022-22954 is a server-side template injection vulnerability in the VMware Workspace
+- **F5 BIG-IP TMUI RCE - CVE-2020-5902 (██.packet8.net)** — `8x8` · `Critical` [↗](https://hackerone.com/reports/1519841)
+  - `CVE-2020-5902` @remonsec reported to us a vulnerability in F5 BIG-IP's Traffic Management User Interface (TMUI), which exploited, could have led to RCE (in undisclosed pages): [CVE-2020-5902](https://support.f5.com/csp/article/K52145254) We swiftly applied the fix to the F5 BIG-IP & restricted
+- **Log4j Java RCE in [beta.dev.adobeconnect.com]** — `Adobe` · `Critical` [↗](https://hackerone.com/reports/1442644)
+  - Log4j versions prior to 2.15.0 are subject to a remote code execution vulnerability via the ldap JNDI parser.
+- **Remote Code Execution on ██.8x8.com via .NET VSTATE Deserialization** — `8x8` · `Critical` [↗](https://hackerone.com/reports/1391576)
+  - @0daystolive reported to us a flaw in a 3rd party community platform, which could be exploited to achieve RCE.
+- **Log4Shell: RCE 0-day exploit on █████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1429014)
+  - `CVE-2021-44228` Hi team, log4 shell is recent 0-day exploit it's Java package vulnerable.
+- **CVE-2021-40870 in [███]** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/1360593)
+  - `CVE-2021-40870` An issue was discovered in Aviatrix Controller 6.x before 6.5-1804.1922.
+- **RCE on 17 different Docker containers on your network** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/1332433)
+  - I was able to get RCE on 17 different docker containers, ranging from postgres and some prod enviroments I found that there was a unconfigured portainer.io service running on http://spreed-demo.nextcloud.com:9000
+- **Custom crafted message object in Meteor.Call allows remote code execution and impersonation** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/534887)
+  - The researcher found a vulnerability where an attacker could impersonate other users.
+- **CVE-2021-40870 on [52.204.160.31]** — `Elastic` · `Critical` [↗](https://hackerone.com/reports/1356845)
+  - `CVE-2021-40870` An issue was discovered in Aviatrix Controller 6.x before 6.5-1804.1922.
+- **RCE Apache Struts2 remote command execution (S2-045) on [wifi-partner.mtn.com.gh]** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1070532)
+  - A Remote Code Execution vulnerability exists in Apache Struts2 when performing file upload based on Jakarta Multipart parser.
+- ** Pre-auth RCE in ForgeRock OpenAM (CVE-2021-35464)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1248040)
+  - `CVE-2021-35464` RCE is possible thanks to unsafe Java deserialization in the Jato framework used by OpenAM.
+- **Pre-auth RCE in ForgeRock OpenAM (CVE-2021-35464)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1249456)
+  - `CVE-2021-35464` RCE is possible thanks to unsafe Java deserialization in the Jato framework used by OpenAM.
+- **Arbitrary Code Execution via npm misconfiguration – installing internal libraries from the public registry** — `LY Corporation` · `Critical` [↗](https://hackerone.com/reports/1043385)
+  - Due to misconfiguration of the Private NPM registry, a nodejs-based project was able to install a malicious module generated by an attacker instead of a normal module.
+- **Server-side Template Injection in lodash.js ** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/904672)
+  - I would like to report Server-side Template Injection in lodash.js (_.template function) It allows the execution of code on the server **module name:** lodash **version:** 4.17.15 **npm page:** https://www.npmjs.com/package/lodash
+- **Persistant Arbitrary code execution in mattermost android** — `Mattermost` · `High` [↗](https://hackerone.com/reports/1115864)
+  - Activity com.mattermost.share.ShareActivity is is exported and is designed to allow file sharing from third party application to mattermost android app.
+- **PHP Code Injection through "previewBlock()" method** — `Invision Power Services, Inc.` · `High` [↗](https://hackerone.com/reports/1092574)
+  - The vulnerability exists because the IPS\cms\modules\front\pages\_builder::previewBlock() method allows to pass arbitrary content to the IPS\_Theme::runProcessFunction() method, which will be used in a call to the eval() function.
+- **RCE when removing metadata with ExifTool** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/1154542)
+  - When uploading image files, GitLab Workhorse passes any files with the extensions [jpg/jpeg/tiff](https://gitlab.com/gitlab-org/gitlab/-/blob/v13.10.2-ee/workhorse/internal/upload/exif/exif.go#L104) through to [ExifTool](https://exiftool.org/) to remove any non-whitelisted tags.
+- **Team members can trigger arbitrary code execution in Slack Desktop Apps via HTML Notifications** — `Slack` · `High` [↗](https://hackerone.com/reports/816156)
+  - A vulnerability in Slack's desktop clients allowed a user within a Slack team to send a malicious link to a teammate which would cause code to be executed on that victim's local computer.
+- **RCE via unsafe inline Kramdown options when rendering certain Wiki pages** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/1125425)
+  - When rendering wiki content with certain extensions such as .rmd, render_wiki_content will call [other_markup_unsafe](https://gitlab.com/gitlab-org/gitlab/-/blob/v13.9.3-ee/app/helpers/markup_helper.rb#L145) which will end up calling GitHub::Markup.render from the githu
+- **RCE on TikTok Ads Portal** — `TikTok` · `Critical` [↗](https://hackerone.com/reports/1024575)
+  - The video upload endpoint on the TikTok Ads portal was potentially susceptible to remote code execution (RCE) due to a ffmpeg misconfiguration.
+- **RCE in ██████ subdomain via CVE-2017-1000486** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1067291)
+  - `CVE-2017-1000486` The application at ████████/ftn-Website/ uses primefaces 5.3 but not 5.3.8, making it vulnerable to unauthenticated RCE CVE-2017-1000486.
+- **[Fixed] A vulnerability in KAVKIS 2020 products family allows full disabling of protection** — `Kaspersky` · `High` [↗](https://hackerone.com/reports/870615)
+  - I use Translator, T_T Sorry can turn off anti-virus functionality in an external process.
+- **RCE due to ImageTragick v2** — `pixiv` · `Critical` [↗](https://hackerone.com/reports/402362)
+  - Hello Pixiv team!
+- **RCE via npm misconfig -- installing internal libraries from the public registry** — `Uber` · `Critical` [↗](https://hackerone.com/reports/1007014)
+  - The hacker spotted some orphaned references to Uber-branded Node.js library packages and claimed them on the public NPM registry to run their own proof-of-concept code.
+- **SQL Injection in www.hyperpure.com** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/1044716)
+  - PUT /consumer/onboarding/saleslead/6b6a8a5a-4a74-46db-b2fe-32a46f927ecc HTTP/1.1 Host: api.hyperpure.com User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:83.0) Gecko/20100101 Firefox/83.0 Accept: application/json, text/plain, */* Accept-Language: en-US,en;q=0.5 Accept-
+- **Dashboard sharing enables code injection into ████ emails** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/904064)
+  - An attacker is able to share their dashboard with other █████████ users.
+- **RCE via npm misconfig -- installing internal libraries from the public registry** — `PayPal` · `Critical` [↗](https://hackerone.com/reports/925585)
+  - A Bug Bounty researcher identified an issue where certain development projects defaulted to the public NPM registry, instead of using the intended internal packages.
+- **[imagickal] Remote Code Execution** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/973245)
+  - I would like to report RCE in imagickal It allows to execute arbitrary commands on the victim's PC **module name:** imagickal **version:** 4.2.0 **npm page:** https://www.npmjs.com/package/imagickal
+- **[arpping] Remote Code Execution** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/972220)
+  - I would like to report RCE in arpping It allows to execute arbitrary commands on the victim's PC **module name:** arpping **version:** 2.0.0 **npm page:** https://www.npmjs.com/package/arpping
+- **Apache solr RCE via velocity template** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/822002)
+  - While doing some recon i stumbled upon an IP address http://██████/ The IP took me to a Login Page at ████=https%3A%2F%2F██████████████████ as of the URL suggest this system belongs to US gov.
+- **Websites Can Run Arbitrary Code on Machines Running the 'PlayStation Now' Application** — `PlayStation` · `Critical` [↗](https://hackerone.com/reports/873614)
+  - The PlayStation Now application version 11.0.2 is vulnerable to remote code execution (RCE).
+- **Remote Code Execution in Basecamp Windows Electron App** — `Basecamp` · `High` [↗](https://hackerone.com/reports/1016966)
+  - The Windows application for Basecamp, allows a "Download" feature for images in your posts.
+- **Desktop app RCE (#276031 bypass)** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/843171)
+  - **Summary:** #276031 fix bypass, two click remote code execution.
+- **[create-git] RCE via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/694471)
+  - The create-git NPM module was vulnerable against command injection which was possible since some user supplied inputs were concatenated without proper checks inside a exec() call, which made possible executing arbitrary commands besides the git one (which is used by t
+- **Сode injection host  █████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/954398)
+  - Good day, security team.
+- **Remote Code Execution on █████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/962013)
+  - `CVE-2019-0192` An unauth solr lead to RCE on ██████████ Hello, I found a solr unauth at https://██████/solr/
+- **Remote Code Execution in Slack desktop apps + bonus** — `Slack` · `Critical` [↗](https://hackerone.com/reports/783877)
+  - With any in-app redirect - logic/open redirect, HTML or javascript injection it's possible to execute arbitrary code within Slack desktop apps.
+- **[notevil] - Sandbox Escape Lead to RCE on Node.js and XSS in the Browser** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/809012)
+  - I would like to report a sandbox escape / code injection vulnerability in notevil.
+- **[windows-edge] RCE via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/878420)
+  - I would like to report a RCE issue in the windows-edge module.
+- **Java Debug Console Provides Command Injection Without Privellage Esclation** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/767482)
+  - I intially found the debug console as a tool to insert arbitrary html/xss bugs, however after further probing the debug console it has some serious security flaws to allow arbitrary java code to be executed.
+- **Remote Code Execution through Extension Bypass on Log Functionality** — `Concrete CMS` · `High` [↗](https://hackerone.com/reports/841947)
+  - Summary: ===================== The Application concrete5 CMS available on github is vulnerable to remote code execution through the functionality of setting the log file in "Loggin Settings".
+- **bunyan - RCE via insecure command formatting** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/902739)
+  - I would like to report RCE in bunyan It allows arbitrary commands remotely inside the victim's PC **module name:** bunyan **version:** 1.8.12 **npm page:** https://www.npmjs.com/package/bunyan
+- **[H1-2006 2020]  Connecting the dots to send hackers their Bug Bounty** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/889886)
+  - Hello team Thank you so much for organising the ctf it has helped a lot to learn and improve my knowledge now lets got to solution i have preapred short videos as a refrence for each part and broken down ctf in 8 challenges.
+- **[CRITICAL] Remote code execution on http://axa.dxi.eu** — `8x8` · `Critical` [↗](https://hackerone.com/reports/418308)
+  - The application allowed for upload of a file with PHP extension that when loaded on the server would evaluate embedded php source.
+- **Code injection possible with malformed Nextcloud Talk chat commands** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/851807)
+  - `CVE-2020-8180` The Nextcloud Talk app allows system administrators to setup chat commands that can be executed in Talk using the "/command" syntax.
+- **[logkitty] RCE via insecure command formatting** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/825729)
+  - `CVE-2020-8149` I would like to report a RCE issue in the logkitty module.
+- **potential RCE and XSS via file upload requiring user account and default settings** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/678727)
+  - current release Version 16.0.4.1 stable Build: '2019-08-14T18:57:27+00:00 a1a245e88202d834f08f4c2e4451dcbe9baee3aa' On nextcloud php files can be uploaded, but when clicked they are only shown in a text editor.
+- **Docker image with FPM is vulnerable to CVE-2019-11043** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/720306)
+  - `CVE-2019-11043` The CVE-2019-11043 vulnerability can be exploited in the latest nextcloud:fpm image.
+- **[blamer] RCE via insecure command formatting** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/772448)
+  - `CVE-2020-8137` I would like to report a RCE issue in the blamer module.
+- **(Authenticated) RCE by bypassing of the .htaccess blacklist** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/228825)
+  - Storage::copyFromStorage doesn't check the content of a folder it copies against the list of blacklisted files.
+- **Several simple remote code execution in pdf-image** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/781664)
+  - `CVE-2020-8132` I would like to report "A simple remote code execution" in "pdf-image".
+- **(Critical) Remote Code Execution Through Old TinyMCE upload bypass** — `8x8` · `High` [↗](https://hackerone.com/reports/778629)
+  - A third party marketing site utilized an outdated version of TinyMCE that was vulnerable to CVE-2011-4906.
+- **Modify Host Header which is sent to email** — `Endless Group` · `High` [↗](https://hackerone.com/reports/791293)
+  - Modify host header and include the fake website in password reset email.
+- **Public instance of Jenkins on https://██████████/ with /script enabled** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/768266)
+  - An Amazon instance was found on https://█████/ running Jenkins.
+- **Arbitrary file read via ffmpeg HLS parser at https://www.flickr.com/photos/upload** — `Flickr` · `Critical` [↗](https://hackerone.com/reports/487008)
+  - Summary: FFmpeg is a video and audio software that is used for generating previews and for converting videos.
+- **[tree-kill] RCE via insecure command concatenation (only Windows)** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/701183)
+  - `CVE-2019-15599` I would like to report a RCE issue in the tree-kill module.
+- **[treekill] RCE via insecure command concatenation (only Windows)** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/703415)
+  - `CVE-2019-15598` I would like to report a RCE issue in the treekill module.
+- **[node-df] RCE via insecure command concatenation** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/703412)
+  - `CVE-2019-15597` I would like to report a RCE issue in the node-df module.
+- **Monero Wallet Gui for Windows (Arbitrary Code Execution)** — `Monero` · `High` [↗](https://hackerone.com/reports/630903)
+  - Summary: The windows version of the monero-wallet-gui.exe application allows for code injection.
+- **GMP Deserialization Type Confusion Vulnerability [MyBB <= 1.8.3 RCE Vulnerability]** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/198734)
+  - Taoguang Chen <[@chtg57](https://twitter.com/chtg57)> - Write Date: 2015.4.28 Affected Versions ------------ Affected is PHP 5.6 < 5.6.30
+- **Panorama UI XSS leads to Remote Code Execution via Kick/Disconnect Message** — `Valve` · `Critical` [↗](https://hackerone.com/reports/631956)
+  - Counter-Strike: Global Offensive's UI is built of a framework called [Panorama](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Panorama) which is heavily influenced by modern HTML/CSS with JS capabilities.
+- **Remote Code Execution (RCE) in a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/248116)
+  - One of the DoD applications uses a java library which is vulnerable to expression language injection.
+- **Root Remote Code Execution on https://███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/632721)
+  - `CVE-2019-11580` Atlassian Crowd is a centralized identity management application that allows companies to "Manage users from multiple directories - Active Directory, LDAP, OpenLDAP or Microsoft Azure AD - and control application authentication permissions in one single location." A DOD installat
+- **Server Side JavaScript Code Injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/532667)
+  - I would like to report a Service Side JavaScript Code Injection in fastify.
+- **accounts.informatica.com - RCE due to exposed Groovy console** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/672243)
+  - Researcher identified a misconfigured "Groovy" panel on an AEM web application that was vulnerable to RCE.
+- **RCE on █████ via CVE-2017-10271** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/576887)
+  - `CVE-2017-10271` Happy Friday!
+- **CVE-2019-5443: Windows Privilege Escalation: Malicious OpenSSL Engine** — `curl` · `High` [↗](https://hackerone.com/reports/608577)
+  - `CVE-2019-5443` The curl windows binaries are built with OpenSSL libraries and have an insecure path for the OPENSSLDIR build parameter.
+- **RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/502758)
+  - This report from @spaceraccoon demonstrated a valid attack resulting in RCE and full compromise of the target.
+- **Remote code executio in  NPM package getcookies** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/346516)
+  - I would like to report remote code execution in the getcookies module.
+- **Code Injection Vulnerability in dot Package** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/390929)
+  - `CVE-2020-8141` I would like to report a code injection vulnerability in dot.
+- **chrome://brave navigation from web** — `Brave Software` · `Critical` [↗](https://hackerone.com/reports/415967)
+  - It's possible to navigate to the infamous 'chrome://brave' (and all other) privileged page from web, requiring only a single click.
+- **chrome://brave can still be navigated to, leading to RCE** — `Brave Software` · `High` [↗](https://hackerone.com/reports/415178)
+  - 'chrome://brave' can be navigated to using the middle mouse click (or normal click with CTRL held) IFF coming from a bookmark.
+- **Solution for h15411's CTF challenge** — `h1-5411-CTF` · `Critical` [↗](https://hackerone.com/reports/415222)
+  - Earlier today a friend tipped me off about an ongoing CTF challenge that was being run by HackerOne and would get the first ten winners a ticket to participate in #h15411, which will be a live-hacking event happening in Buenos Aires.
+- **RCE via Local File Read -> php unserialization-> XXE -> unpickling** — `h1-5411-CTF` · `Critical` [↗](https://hackerone.com/reports/415501)
+  - It was possible to escalate to Remote Code Execution via different bugs such as local file read, php object injection, XML External Entity and Un-Pickling of Python serialized object.
+- **Remote Code Execution in Rocket.Chat Desktop** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/276031)
+  - **Summary:** The Markdown parser can be tricked into allowing arbitrary Javascript leading to "remote code execution".
+- **Public Jenkins instance with /script enabled** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/403402)
+  - First of all.
+- **forum.getmonero.org Shell upload** — `Monero` · `High` [↗](https://hackerone.com/reports/357858)
+  - The method uploadProfile in the UsersController allows an attacker to upload a shell to the target server due to lack of image validation.
+- **RCE via Print function [Simplenote 1.1.3 - Desktop app] ** — `Automattic` · `High` [↗](https://hackerone.com/reports/358049)
+  - In **Simplenote 1.1.3 - Desktop app** there is a stored XSS vulnerability that can be used to execute arbitrary code.
+- **Insecure implementation of deserialization in cryo** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/350418)
+  - `CVE-2018-3784` I would like to report code injection in serialization package cryo It allows execute arbitrary code using custom prototype.
+- **Insecure implementation of deserialization in funcster** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/350401)
+  - I would like to report code injection in serialization package funcster.
+- **Remote Code Execution (RCE) in DoD Websites** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/235605)
+  - `CVE-2013-2165` A remote code execution (RCE) vulnerability was found on a Department of Defense (DoD) website which could have enabled an attacker to execute remote commands on the web server.
+- **Remote Code Execution in Wordpress Desktop** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/301458)
+  - An attacker can create a malicious page that when viewed or edited in Wordpress Desktop App will results in remote code execution.
+- **[marketplace.informatica.com] -  Template Injection** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/299241)
+  - The researcher has identified and reported a "Template Injection" vulnerability in one of Informatica's domain and helped us in resolving the issue.
+- **Unserialize leading to arbitrary PHP function invoke** — `Rockstar Games` · `Critical` [↗](https://hackerone.com/reports/210741)
+  - In this report, the researcher was able to demonstrate a method to run arbitrary PHP functions on www.rockstargames.com.
+- **[Simplenote for Windows] Client RCE via External JavaScript Inclusion leveraging Electron** — `Automattic` · `High` [↗](https://hackerone.com/reports/291539)
+  - A carefully crafted injection in the Markdown parser within Simplenote for Windows can be leveraged to achieve remote code execution via an external JavaScript file.
+- **Request Hijacking Vulnerability in RubyGems 2.6.11 and earlier** — `RubyGems` · `High` [↗](https://hackerone.com/reports/218088)
+  - `CVE-2017-0902` The RubyGems client supports a gem server API discovery functionality, which is used when pushing or pulling gems to a gem distribution/hosting server, like RubyGems.org.
+- **links the user may download can be a malicious files** — `Brave Software` · `High` [↗](https://hackerone.com/reports/182557)
+  - This vulnerability is pretty simple and pretty dangerous at the same time Almost any link the user tries to download it's extension is set according to the file extension in the path if the path is / then it download's it according to the domain name Eg: [1] http://example.com/
+- **Mercurial can be tricked into granting authorized users access to the Python debugger** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/222020)
+  - `CVE-2017-9462` I reported this bug privately to Mercurial and they produced an out of band release to fix the bug here: I produced a very detailed proof of concept with a Metasploit exploit module, which can be seen publicly here:
+- **Remote code execution (RCE) in multiple DoD websites** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/226245)
+  - A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Remote Code Execution (RCE) vulnerability in multiple DoD websites** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/231687)
+  - A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Remote code execution vulnerability on a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/212985)
+  - `CVE-2017-5638` A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Server-side include injection vulnerability in a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/192931)
+  - A Department of Defense website was vulnerable to a Server-Side Include Injection attack which could have allowed an attacker to inject code into HTML pages or, under some circumstances, perform remote code execution.
+- **Remote code execution vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/192567)
+  - `CVE-2014-0094` A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Completed Compromise & Source Code Disclosure via Exposed Jenkins Dashboard at https://jenkins101.udemy.com** — `Udemy` · `High` [↗](https://hackerone.com/reports/182104)
+  - Summary: ======= I am writing to inform you of a critical information disclosure bug via an exposed Jenkins dashboard located at https://jenkins101.udemy.com.
+- **Remote Code Execution (RCE) in a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/231926)
+  - A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Remote Code Execution (RCE) in a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/212022)
+  - `CVE-2017-5638` A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Java Deserialization RCE via JBoss on card.starbucks.in** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/221294)
+  - The researcher discovered that a Starbucks online system running on the domain http://card.starbucks.in/ performs deserialization of java objects that are submitted by users on a specific path belonging to JBOSSMQ without sanitizing/validating the data.
+- **Remote Code Execution on Git.imgur-dev.com ** — `Imgur` · `Critical` [↗](https://hackerone.com/reports/206227)
+  - Hi, Imgur Security Team: I just found that your GitHub Enterprise Server(https://git.imgur-dev.com/) didn't patch to the latest version(2.8.7).
+- **Remote Code Execution (RCE) in a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/211381)
+  - A remote code execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Remote command execution (RCE) vulnerability on a DoD website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/202652)
+  - A remote command execution (RCE) vulnerability was found on a DoD website which could have enabled an attacker to execute remote commands on the web server.
+- **Type confusion in wrap_decimal leading to memory corruption** — `shopify-scripts` · `Critical` [↗](https://hackerone.com/reports/185051)
+  - Decimal can be redefined, causing the Decimal class lookup in wrap_decimal to be invalid.
+- **Remote code execution on an Army website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/188284)
+  - A webserver hosted by the U.S.
+- **RCE on a Department of Defense website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/184279)
+  - A misconfigured webserver hosted by the Department of Defense allowed the execution of local shell commands.
+- **Struct type confusion RCE** — `shopify-scripts` · `Critical` [↗](https://hackerone.com/reports/181879)
+  - I've been poking at mruby a bit more and I've found a vulnerability that allows an attacker to take control of the instruction pointer.
+- **TOCTTOU bug in mrb_str_setbyte leading the memory corruption** — `shopify-scripts` · `Critical` [↗](https://hackerone.com/reports/181893)
+  - The String#setbyte function caches the length of the string before loading the function arguments.
+- **Use after free vulnerability in mruby Array#to_h causing DOS possible RCE** — `shopify-scripts` · `Critical` [↗](https://hackerone.com/reports/181321)
+  - This bug was found with jmlb337.
+- **Explicit, dynamic render path: Dir. Trav + RCE** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/46019)
+  - Possible Information Leak Vulnerability in Action View There is a possible directory traversal and information leak vulnerability in Action View.

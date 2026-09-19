@@ -1,0 +1,90 @@
+# OS Command Injection
+
+_43 reports — High/Critical, disclosed_
+
+- **GlobalProtect - OS Command Injection #█████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2468496)
+  - `CVE-2024-3400` A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.Cloud NGFW,
+- ** OS Command Injection in scripts/firefox-db2pem.sh via untrusted certificate nicknames** — `curl` · `High` [↗](https://hackerone.com/reports/3225565)
+  - On AI usage: Only for grammar/formatting suggestions/POC code troubleshooting; all vulnerability discovery, POC code creation, and analysis were done manually.
+- **Unauthenticated Path Traversal and Command Injection in Trellix Enterprise Security Manager 11.6.10** — `Trellix` · `Critical` [↗](https://hackerone.com/reports/2817658)
+  - **Product:** Trellix Enterprise Security Manager (ESM) **Version Tested:** 11.6.10
+- **CVE-2020-7961 RCE Liferay Portal Unauthenticated via https://████████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2742457)
+  - `CVE-2020-7961` POST /api/jsonws/invoke HTTP/1.1 Host: ████████ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0 Content-Length: 4939 Content-Type: application/x-www-form-urlencoded Referer: https://██████//api/jsonws?contextName=&signature=%2Fexpandocolumn%2Fad
+- **[forum.acronis.com] JNDI Code Injection due an outdated log4j component** — `Acronis` · `Critical` [↗](https://hackerone.com/reports/1430622)
+  - `CVE-2021-44228` It seems that the machine is affected by the latest CVE-2021-44228 which grants any authenticated user command execution.
+- **Remote code injection in Log4j on  https://mymtn.mtncongo.net - CVE-2021-44228** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1425565)
+  - `CVE-2021-44228` I would to like report this security flaw on https://mymtn.mtncongo.net.
+- **Remote code injection in Log4j on http://mtn1app.mtncameroon.net  - CVE-2021-44228** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1425563)
+  - `CVE-2021-44228` I would to like report this security flaw on http://mtn1app.mtncameroon.net .
+- **Shell command injection in https://partner.steamgames.com/admin/game/publish/ via screenshot URL** — `Valve` · `Critical` [↗](https://hackerone.com/reports/949361)
+  - Insufficient validation of parameters allowed injecting shell metacharacters into values used to construct a Bash command.
+- **Shell command injection in https://partner.steamgames.com/bundles/savestore/ via overwriting asset_path_identifier** — `Valve` · `Critical` [↗](https://hackerone.com/reports/926169)
+  - Insufficient validation of parameters allowed injecting shell metacharacters into values used to construct a Bash command.
+- **RCE in ███ [CVE-2021-26084]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1327769)
+  - `CVE-2021-26084` In affected versions of Confluence Server and Data Center, an OGNL injection vulnerability exists that would allow an authenticated user, and in some instances an unauthenticated user, to execute arbitrary code on a Confluence Server or Data Center instance.
+- **RCE on ███████ [CVE-2021-26084]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1327701)
+  - `CVE-2021-26084` In affected versions of Confluence Server and Data Center, an OGNL injection vulnerability exists that would allow an authenticated user, and in some instances an unauthenticated user, to execute arbitrary code on a Confluence Server or Data Center instance.
+- **DNS rebinding in --inspect (again) via invalid IP addresses ** — `Node.js` · `High` [↗](https://hackerone.com/reports/1574078)
+  - `CVE-2022-32212` The IsAllowedHost check in https://github.com/nodejs/node/blob/fdf0a84e826d3a9ec0ce6f5a3f5adc967fe99408/src/inspector_socket.cc#L580 can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid or not.
+- **Jitsi Desktop Client RCE By Interacting with Malicious URL Schemes on Windows** — `8x8` · `High` [↗](https://hackerone.com/reports/1692603)
+  - `CVE-2022-43550` A command injection vulnerability exists in Jitsi before commit [8aa7be58522f4264078d54752aae5483bfd854b2]( https://github.com/jitsi/jitsi/commit/8aa7be58522f4264078d54752aae5483bfd854b2) when launching browsers on Windows which could allow an attacker to insert an arbitrary URL
+- **Insecure use of shell.openExternal() leads to RCE in Rocket.Chat-Desktop** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1781102)
+  - `CVE-2022-44567` Rocket.Chat-Desktop passes the parameter url of openInternalVideoChatWindow to shell.openExternal(), which may lead to remote code execution (internalVideoChatWindow.ts#L17).
+- **RCE via github import** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/1672388)
+  - While continuing mining on [github import](https://hackerone.com/reports/1665658), I found a vulnerability on gitlab.com allowing to execute remotely arbitrary commands.
+- **Insecure use of shell.openExternal() in Rocket.Chat Desktop App leading to RCE** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/924151)
+  - **Summary:** The Rocket.Chat Desktop app passes the links users click on to Electron's shell.openExternal() function which can lead to remote code execution.
+- **Blind User-Agent SQL Injection to Blind Remote OS Command Execution at █████████** — `Sony` · `Critical` [↗](https://hackerone.com/reports/1339430)
+  - The researcher reported that a login form of a Sony website was vulnerable to a blind SQL injection.
+- **Reflected XSS and Blind out of band command injection at subdomain dstuid-ww.dst.ibm.com** — `IBM` · `High` [↗](https://hackerone.com/reports/410334)
+  - I found an XSS and Blind OS based injection issue due to the incorrect handling of the characters in THE EMAIL get& post parameters.
+- **Exposed Kubernetes API - RCE/Exposed Creds** — `Snapchat` · `Critical` [↗](https://hackerone.com/reports/455645)
+  - @txt3rob found one of Snaps internal Kubernetes instances exposing an API endpoint without authorization to the public.
+- **Remote OS Command Execution on Oracle Weblogic server via [CVE-2017-10271]** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/810755)
+  - `CVE-2017-10271` I was able to identify RCE vulnerability due to the outdated Oracle Weblogic instance on https://raebilling.mtn.co.za.
+- **Remote OS Command Execution on Oracle Weblogic server via [CVE-2017-3506]** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/810778)
+  - `CVE-2017-3506` I was able to identify RCE vulnerability due to the outdated Oracle Weblogic instance on https://raebilling.mtn.co.za.
+- **Unauth RCE on Jenkins Instance at https://█████████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1125329)
+  - While Doing Recon on U.s Government Sites, I Found below asset Belongs to U.S Government (Please Check its SSL certificate to confirm or Please check attached POC Video) █████████ Attacker can execute Command Injection without Authentication.
+- **XSS leads to RCE on the RocketChat desktop client.** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/899964)
+  - **Summary:** It is possible to call electron.shell.openExternal from javascript inside a server webview.
+- **GitLab-Runner on Windows `DOCKER_AUTH_CONFIG` container host Command Injection** — `GitLab` · `High` [↗](https://hackerone.com/reports/955016)
+  - GitLab-Runner, when running on Windows with a docker executor, is vulnerable to Command Injection via the DOCKER_AUTH_CONFIG build variable.
+- **Remote Code Execution through DNN Cookie Deserialization ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/876708)
+  - The application at https://████████ presents a deserialization vulnerability that permits RCE and file read/write Where test is the wanted file
+- **Remote Code Execution - Unauthenticated Remote Command Injection (via Microsoft SharePoint CVE-2019-0604)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/534630)
+  - `CVE-2019-0604` Microsoft recently released a patch for CVE-2019-0604.
+- **Remote Code Execution in ██████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/710864)
+  - The vulnerability you reported has been resolved and this report is now closed.
+- **[listening-processes] Command Injection** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/511459)
+  - I would like to report Command Injection in listening-processes It allows an attacker to execute arbitrary commands.
+- **Store Development Resource Center was vulnerable to a Remote Code Execution - Unauthenticated Remote Command Injection (CVE-2019-0604)** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/536134)
+  - `CVE-2019-0604` l00ph0le discovered an endpoint on the Store Development Resource Center site at https://sdrc.starbucks.com/_layouts/15/picker.aspx was vulnerable to a deserialization RCE in Microsoft Sharepoint per CVE-2019-0604.
+- **Arbitrary File Reading leads to RCE in the Pulse Secure SSL VPN on the https://███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/678496)
+  - `CVE-2019-11510` Some time ago, researcher Orange Tsai from DEVCORE team had a talk on Defcon/BlackHat regarding Pulse Secure SSL VPN vulnerabilities fixed on 2019/4/25: CVE-2019-11542 - Post-auth Stack Buffer Overflow
+- **Pulse Secure File disclosure, clear text and potential RCE** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/671749)
+  - `CVE-2019-11510` Pulse Secure has two main vulnerabilities that allow file disclosure and post auth RCE CVE-2019-11510 is a file disclosure due to some normalization issues in pulse secure.
+- **Webshell via File Upload on ecjobs.starbucks.com.cn** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/506646)
+  - OS Command Injection which can let the attacker who get more important information of the server,such as disclosures internal source code of the webapp,database data and invade the internal network.
+- **Remote OS command Execution in the 3 more Oracle Weblogic on the ████████, ████, ███████ [CVE-2017-10352]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/634630)
+  - `CVE-2017-10352` I was able to identify 3 more RCE vulnerabilities due to the outdated Oracle Weblogic instance on the █████████, ███, █████ After my previous discoveries I decided to dig deeper into the ███.mil scope/IP space and found other instances of vulnerable Oracle WebLogic.
+- **gitlabhook OS Command Injection** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/685447)
+  - `CVE-2019-5485` I would like to report OS Command Injection in gitlabhook.
+- **OS Command Injection in Nexus Repository Manager 2.x** — `Central Security Project` · `Critical` [↗](https://hackerone.com/reports/654888)
+  - `CVE-2019-5475` **groupId:** org.sonatype.nexus.plugins **artifactId:** nexus-yum-repository-plugin **version:** 2.14.9-01 The Nexus Yum Repository Plugin is vulnerable to Remote Code Execution.
+- **Potential pre-auth RCE on Twitter VPN** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/591295)
+  - `CVE-2019-11510` Hi, we(Orange Tsai and Meh Chang) are the security research team from DEVCORE.
+- **Remote Code Execution via Extract App Plugin** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/546753)
+  - `CVE-2019-5441` Hi, I found a critical issue in the Add-on "Extract" listed in the Nextcloud Marketplace: https://apps.nextcloud.com/apps/extract (This extension can be installed directly from Nextcloud Application) The vulnerability was found in file: extract/lib/Controller/ExtractionController
+- **Jenkins Unauthenticated RCE on https://djangoci.com/** — `Django` · `Critical` [↗](https://hackerone.com/reports/579760)
+  - `CVE-2018-1000861` This report discloses an RCE issue on djangoci.com as outlined in https://www.djangoproject.com/weblog/2019/may/15/rce-djangoci/ While technically a valid issue, it is out of scope for bounty, please see https://hackerone.com/django for details on which issues qualify for bountie
+- **Remote Command Execution in a internal server to get the flag file** — `h1-5411-CTF` · `Critical` [↗](https://hackerone.com/reports/415682)
+  - After source code disclosure using a LFI vulnerability and using PHP object injection with XXE I was able to find an internal service at port 1337.
+- **Authenticated RCE in ToughSwitch** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/273449)
+  - In ToughSwitch v1.3.5 and prior, due to lack of validation is possible to execute an CSRF.
+- **[git-dummy-commit] Command injection on the msg parameter** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/341710)
+  - `CVE-2018-3785` Hi there, I've found a Command Injection on the "git-dummy-commit" module.
+- **[buttle] Remote Command Execution via unsanitized PHP filename when it's run with --php-bin flag** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/331032)
+  - I would like to report Remote Code Execution in buttle module.
+- **RCE via ssh:// URIs in multiple VCS ** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/260005)
+  - `CVE-2017-9800` I'd like to submit an RCE issue within Git SVN and Mercurial, the CVEs are: Further Info can be found at:

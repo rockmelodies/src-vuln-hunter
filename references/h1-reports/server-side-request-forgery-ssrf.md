@@ -1,0 +1,190 @@
+# Server-Side Request Forgery (SSRF)
+
+_93 reports — High/Critical, disclosed_
+
+- **SSRF Filter Bypass via Unblocked NAT64 Local-Use IPv6 Prefix (64:ff9b:1::/48)** — `arkadiyt-projects` · `High` [↗](https://hackerone.com/reports/3634400)
+  - ssrf_filter v1.3.0 blocks 64:ff9b::/96, but doesnt block the NAT64 local-use prefix 64:ff9b:1::/48, allowing those addresses to be treated as public.
+- **Gopher Protocol Command Injection (SSRF Smuggling)** — `curl` · `High` [↗](https://hackerone.com/reports/3508785)
+  - The curl Gopher protocol handler is vulnerable to command injection through URL-encoded CRLF sequences in the path.
+- **[my.stripo.email] Blind SSRF Vulnerability in Stripo App Export via Missing Endpoints Export Email Message to Zapier** — `Stripo Inc` · `Critical` [↗](https://hackerone.com/reports/2932960)
+  - This presentation covers a critical Blind SSRF (Server-Side Request Forgery) vulnerability identified in Stripo's export service.
+- **DNS Rebinding Attack** — `arkadiyt-projects` · `Critical` [↗](https://hackerone.com/reports/3383095)
+  - Hi, there is a DNS rebinding vulnerability in your SSRF filter.
+- **Server-Side Request Forgery (SSRF) via Game Export API** — `Lichess` · `Critical` [↗](https://hackerone.com/reports/3165242)
+  - I found a Server-Side Request Forgery vulnerability in the game export functionality.
+- **SSRF in Autodesk Rendering leading to account takeover** — `Autodesk` · `Critical` [↗](https://hackerone.com/reports/3024673)
+  - A server side request forgery (SSRF) vulnerability was found in Autodesk Rendering, which could have allowed an attacker to send a malicious link to a victim and gain control of their account while logged in.
+- **External service interaction (HTTP)** — `AWS VDP` · `High` [↗](https://hackerone.com/reports/2731133)
+  - There is External service interaction ( DNS and HTTP ) vulnerability in url : ████ in this video ██████████ The External Service Interaction arise when it is possible for a attacker to induce application to interact with the arbitrary external service such as DNS HTTP etc.
+- **SSRF and secret key disclosure found on Turbonomic endpoint** — `IBM` · `High` [↗](https://hackerone.com/reports/2697592)
+  - SSRF and secret key disclosure found on Turbonomic endpoint were reported to IBM, analyzed and have been remediated.
+- **SSRF and secret key disclosure found on Turbonomic endpoint** — `IBM` · `High` [↗](https://hackerone.com/reports/2697601)
+  - SSRF and secret key disclosure found on Turbonomic endpoint were reported to IBM, analyzed and have been remediated.
+- **Unauthenticated full-read SSRF via Twilio integration** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1886954)
+  - `CVE-2024-39713` A Server-Side Request Forgery (SSRF) affects Rocket.Chat's Twilio webhook endpoint before version 6.10.1.
+- **/applications/dpc_(get|post) provide full access to api.steampowered.com with the Dota2 API key** — `Valve` · `High` [↗](https://hackerone.com/reports/674800)
+  - Insufficient validation of parameters enabled using path traversal to call arbitrary API methods using an API key that had elevated privileges for Dota2.
+- **important: Apache HTTP Server on WIndows UNC SSRF (CVE-2024-38472)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2585385)
+  - `CVE-2024-38472` I reported this vulnerability through the official Apache HTTP Server security email on April 1, 2024, and received a fix along with a CVE number on July 1, 2024.
+- **Libuv: Improper Domain Lookup that potentially leads to SSRF attacks** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2429894)
+  - `CVE-2024-24806` I recently encountered a challenge in a CTF competition that led me to discover a vulnerability within Node.js, present in all versions after v10.
+- **Lack of sanitization of the billing address in pdf invoice** — `Semrush` · `High` [↗](https://hackerone.com/reports/2077985)
+  - Adam identified a vulnerability that allowed the HTML code injection into payment invoice PDFs.
+- **[SSRF] my.stripo.email via the setup-wizard parameter** — `Stripo Inc` · `Critical` [↗](https://hackerone.com/reports/1622432)
+  - —
+- **SSRF in https://couriers.indrive.com/api/file-storage** — `inDrive` · `High` [↗](https://hackerone.com/reports/2300358)
+  - SSRF in  url  parameter in https://couriers.indrive.com/api/file-storage I will try to demonstrate it using burp collaborator
+- **Server Side Request Forgery (SSRF) via Analytics Reports** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/2262382)
+  - Hello Gents, I would like to report an issue where attackers are able to read internal files via an SSRF vulnerability.
+- **External service interaction ( DNS and HTTP ) in www.████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1704024)
+  - There is External service interaction ( DNS and HTTP ) vulnerability in www.█████████ Here is an example request :
+- **Blind SSRF to internal services in matrix preview_link API** — `Reddit` · `High` [↗](https://hackerone.com/reports/1960765)
+  - Reddit' new chat is based on Matrix software which has preview_link functionality which doesn't filter the URL before sending the request Attacker can enumerate services by grabbing og:title and port scanning, also possible RCE escalation (Asking for permission on this one)
+- **Unauthenticated Blind SSRF at https://█████ via xmlrpc.php file** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1890719)
+  - I would like to report a security vulnerability I discovered on your website.
+- **[data-07.uberinternal.com] SSRF in Portainer app lead to access to Internal Docker API without Auth** — `Uber` · `Critical` [↗](https://hackerone.com/reports/366638)
+  - Thanks for the report and participation in our program, @kxyry!
+- **SSRF to read AWS metaData at https://█████/ [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1624140)
+  - Hello Team, While researching your program I found that the domain https://████/ is vulnerable to Server Side Request Frogery Attacks via the url parameter.
+- **Blind SSRF via image upload URL downloader on https://██████/ ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1691501)
+  - I found Blind SSRF on one domain from Hack US program.
+- ** mail.acronis.com is vulnerable to zero day vulnerability CVE-2022-41040** — `Acronis` · `Critical` [↗](https://hackerone.com/reports/1719719)
+  - `CVE-2022-41040` curl -ksL -m5 -o /dev/null -I -w "%{http_code}" "https://mail.acronis.com/autodiscover/autodiscover.json?Email=autodiscover/autodiscover.json@outlook.com&Protocol=ActiveSync" curl -ksL -m5 "https://mail.acronis.com/autodiscover/autodiscover.json?Email=autodiscover/autodiscover.j
+- **SSRF on http://www.███████/crossdomain.php via url parameter** — `Sony` · `Critical` [↗](https://hackerone.com/reports/971590)
+  - The researcher reported that a Sony endpoint was vulnerable to Local File Inclusion (LFI) and Server-Side Request Forgery (SSRF) vulnerabilities.
+- **SSRF in Functional Administrative Support Tool pdf generator (████) [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1628209)
+  - I found that it is possible to inject a javascript payload during the PDF form creation process, which is then executed by the checklist application server.
+- **Full read SSRF at █████████ [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1628102)
+  - Heyy there, We have found a full read ssrf vuln in https://█████ , we were able to hit the AWS Metadata endpoint (http://███████) though the SSRF Vuln.
+- **Blind SSRF External Interaction on ████████** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1220688)
+  - I am S █████(Metaxone Certified Ethical Hacker) and a Security Researcher I just checked your website and found Blind SSRF External Interaction on ██████████ What is SSRF?
+- **CVE-2021-40438 on cp-eu2.acronis.com** — `Acronis` · `High` [↗](https://hackerone.com/reports/1370731)
+  - `CVE-2021-40438` CVE-2021-40438 on cp-eu2.acronis.com  https://cp-eu2.acronis.com?unix:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+- **Local file disclosure through SSRF at next.nutanix.com** — `Nutanix` · `High` [↗](https://hackerone.com/reports/471520)
+  - Issue marked resolved and test fixed in January 2019.
+- **Full read SSRF via Lark Docs `import as docs` feature ** — `Lark Technologies` · `Critical` [↗](https://hackerone.com/reports/1409727)
+  - A SSRF (server side request forgery) vulnerability was found in the LarkDocs using the "import as docs" feature, which could have potentially been used to access services running on the internal network.
+- **Full read SSRF in www.evernote.com that can leak aws metadata and local file inclusion** — `Evernote` · `Critical` [↗](https://hackerone.com/reports/1189367)
+  - The following endpoint was found to be vulnerable to SSRF : https://www.evernote.com/ro/aHR0cDovLzE2OS4yNTQuMTY5LjI1NC8jdGVzdC5qcw==/-1430533899.js The endpoint take a path in url and retrieve its content.
+- **SSRF to AWS file read** — `Lab45` · `Critical` [↗](https://hackerone.com/reports/978823)
+  - after seeing the disclosure it looks like the bug was not fixed properly copy and paste the request below and paste it into Burpsuite repeater
+- **FogBugz import attachment full SSRF requiring vulnerability in *.fogbugz.com** — `GitLab` · `High` [↗](https://hackerone.com/reports/1092230)
+  - Hi Team, a bit of a odd one here.
+- **Bypass of SSRF Vulnerability** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/879803)
+  - Fix applied after reporting the actual report did not prevent from SSRF issue.
+- **SSRF By adding a custom integration on console.helium.com** — `Helium` · `High` [↗](https://hackerone.com/reports/1055823)
+  - A Server Side Request Forgery vulnerability was found in the *Add a custom Integration* feature on *console.helium.com*.
+- **External Service Interaction (HTTP/DNS) on https://www.███  (██████████ parameter)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/997376)
+  - Greetings, i've find a External service interaction (HTTP/DNS) on https://www.███████ External service interaction arises when it is possible to induce an application to interact with an arbitrary external service, such as a web or mail server.
+- **SSRF chained to hit internal host leading to another SSRF which allows to read internal images.** — `PlayStation` · `High` [↗](https://hackerone.com/reports/826097)
+  - We found an SSRF at https://image.api.np.km.playstation.net/ Vulnerable endpoints: /images , /dis/images.
+- **Server Side Request Forgery** — `Lark Technologies` · `Critical` [↗](https://hackerone.com/reports/644238)
+  - A SSRF (server side request forgery) vulnerability was found in the chat feature of Lark Suite on MacOS, which could have potentially been used to access services and web applications running on the internal network.
+- **CVE-2021-26855 on ████████ resulting in SSRF** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1119228)
+  - `CVE-2021-26855` ***CVE-2021-26855*** exists on ***███████ resulting*** in SSRF Server Side Request Frogery
+- **SSRF due to CVE-2021-26855 on ████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1119224)
+  - `CVE-2021-26855` There exists a Server Side Request Frogery (SSRF) on ***█████████*** due to ***CVE-2021-26855*** Server Side Request Frogery
+- **[usuppliers.uber.com] - Server Side Request Forgery via XXE OOB** — `Uber` · `High` [↗](https://hackerone.com/reports/448598)
+  - `CVE-2016-0457` It was possible to determine open internal ports on an usuppliers.uber.com server, via examination of different error messages to a specific POST request made with various payloads.
+- **External SSRF and Local File Read via video upload due to vulnerable FFmpeg HLS processing** — `TikTok` · `High` [↗](https://hackerone.com/reports/1062888)
+  - A local file disclosure vulnerability was found which an attacker could have used to upload a payload file via the TikTok website and potentially exfiltrate arbitrary local system files.
+- **Stored XSS & SSRF in Lark Docs** — `Lark Technologies` · `Critical` [↗](https://hackerone.com/reports/892049)
+  - A stored XSS (cross site scripting) vulnerability was discovered in Lark Docs that could be escalated into a Server Side Request Forgery (SSRF) vulnerability if opened in a headless browser on the Lark server.
+- **SSRF in login page using fetch API exposes victims IP address to attacker controled server** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/996273)
+  - Note: This is similar to my last report #991163.
+- **Hacky Holidays CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066801)
+  - Greetings team Yay!
+- **Infiltrating into Grinch-Networks and saving Christmas!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069141)
+  - Hi, you can find the write-up for this CTF here : https://castilho101.github.io/posts/hackerone-ctf-christmas
+- **[ Hacky Holidays CTF ] Completely taken down the Grinch Networks** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066914)
+  - We're presented with sample ui page without any function.
+- **12 Days of CTF Walkthroughs** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1068433)
+  - This is my writeup for 12 Days of Hacky Holidays.
+- **SSRF via maliciously crafted URL due to host confusion** — `curl` · `Critical` [↗](https://hackerone.com/reports/704621)
+  - `CVE-2018-3774` Curl is vulnerable to SSRF due to improperly parsing the host component of the URL compared to other URL parsers and the [URL living standard](https://url.spec.whatwg.org/).
+- **GET /api/v2/url_info endpoint is vulnerable to Blind SSRF** — `Automattic` · `High` [↗](https://hackerone.com/reports/1057531)
+  - GET /api/v2/url_info endpoint is vulnerable to Blind SSRF.
+- **CRLF injection & SSRF in git:// protocal lead to arbitrary code execution** — `GitLab` · `High` [↗](https://hackerone.com/reports/441090)
+  - The implementation of git:// protocal in GitLab is vulnerable to CRLF injection and Server-Side Request Forgery.
+- **Half-Blind SSRF found in kube/cloud-controller-manager can be upgraded to complete SSRF (fully crafted HTTP requests) in vendor managed k8s service.** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/776017)
+  - `CVE-2020-8555` We’re two French security researchers and our respective names are Brice Augras and Christophe Hauquiert, we worked and found the vulnerability together.
+- **[h1-2006 2020] Bounty payments are done !** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895824)
+  - Read more here!
+- **Injection of `http.<url>.*` git config settings leading to SSRF** — `GitLab` · `High` [↗](https://hackerone.com/reports/855276)
+  - When import a repo with credentials via a URL, gitaly generates the git clone command with a -c flag to add the Authorization header: flags = append(flags, git.ValueFlag{Name: "-c", Value: fmt.Sprintf("http.%s.extraHeader=%s", u.String(), authHeader)})
+- **SSRF in imgur video GIF conversion** — `Imgur` · `High` [↗](https://hackerone.com/reports/247680)
+  - There was issue in -> https://hackerone.com/reports/115748 We have found similar one but in next steps
+- **Full Read SSRF on Gitlab's Internal Grafana** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/878779)
+  - Apparently, Grafana is bundled with Gitlab by default.
+- **SSRF via Export Service in  ActiveCampaign** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/847101)
+  - SSRF with ActiveCampaign
+- **SSRF in my.stripo.email** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/852413)
+  - They are a SSRF (Server-side Request Forgery) in https://my.stripo.email An attacker can do an attack and get ip address behind WAF and try to get RCE
+- **[Uppy] Internal Server side request forgery (bypass of #786956)** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/891270)
+  - `CVE-2020-8205` I would like to report Internal Server-side request forgery in Uppy It allows the attacker to easily extract information from internal servers **module name:** Uppy **version:**1.15.0 **npm page:** https://www.npmjs.com/package/uppy
+- **[H1-2006 2020] CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/893305)
+  - Hardcoded validation 5.
+- **[H1-2006 2020]   CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/887766)
+  - Just submitting Flag for now, Will soon submit Writeup :) Flag: ^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$
+- **[H1-2006 2020] CTF write-up** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/890555)
+  - thank you for the awesome CTF!
+- **[h1-2006 2020] CTF Walkthrough** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895780)
+  - The tweet announces the CTF challenge.
+- **Open TURN relay abuse is possible due to lack of peer access control (Critical)** — `8x8` · `High` [↗](https://hackerone.com/reports/843256)
+  - The affected TURN server did not put any restrictions on peer which allows remote attackers to bypass firewall rules and reach internal services on the server itself as well as the AWS internal network.
+- **SSRF on project import via the remote_attachment_url on a Note** — `GitLab` · `High` [↗](https://hackerone.com/reports/826361)
+  - The Note model has an attachment which is provided by a CarrierWave uploader: mount_uploader :attachment, AttachmentUploader
+- **SSRF and LFI in site-audit tool** — `Semrush` · `High` [↗](https://hackerone.com/reports/794099)
+  - SSRF and LFI vulnerability in Site Audit due to lack of connection protocol verification.
+- **Server Side Request Forgery mitigation bypass** — `GitLab` · `High` [↗](https://hackerone.com/reports/632101)
+  - `CVE-2019-5464` This vulnerability allows attacker to send arbitrary requests to local network which hosts GitLab and read the response.
+- **Blind SSRF at https://chat.makerdao.com/account/profile** — `BlockDev Sp. Z o.o` · `Critical` [↗](https://hackerone.com/reports/846184)
+  - Blind SSRF at https://chat.makerdao.com/account/profile
+- **SSRF on music.line.me through getXML.php** — `LY Corporation` · `High` [↗](https://hackerone.com/reports/746024)
+  - The reporter found an endpoint through which limited SSRF could be achieved.
+- **Blind SSRF while Creating Templates** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/800909)
+  - Blind SSRF While Creating Email Templates
+- **SSRF in the Custom Integration Webhook discloses AWS metadata** — `Dynatrace` · `Critical` [↗](https://hackerone.com/reports/643278)
+  - Dynatrace allows customers to set up a webhook integration in order to automatically send updates to a specific endpoint of choice.
+- **TURN server allows TCP and UDP proxying to internal network, localhost and meta-data services** — `Slack` · `Critical` [↗](https://hackerone.com/reports/333419)
+  - The TURN servers used by Slack allow TCP connections and UDP packets to be proxied to the internal network.
+- **Server Side Request Forgery in Uppy npm module** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/786956)
+  - `CVE-2020-8135` While we were testing our security engine at Shieldfy (https://shieldfy.io), We found a server side request forgery (SSRF) vulnerability in Uppy npm package.
+- **SSRF & unrestricted file upload on https://my.stripo.email/** — `Stripo Inc` · `Critical` [↗](https://hackerone.com/reports/771382)
+  - The researcher discovered an SSRF & unrestricted file upload (Remote code execution ) vulnerabilities .
+- **[h1-415 2020] SSRF in a headless chrome with remote debugging leads to sensible information leak** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/781295)
+  - Converter is using headless chrome with remote debbuging by rendring a page where we have out name, with which we can get xss leads to ssrf By using the remote debbugging with that ssrf we can grab the info all tabs in that chrome wher we can get even the flag document.
+- **[h1-415 2020] Chain of vulnerabilities leading to account takeover and unauthorized access of sensitive internal resources** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/781281)
+  - Chaining following issues let's an attacker access sensitive information, 4.
+- **[H1-415 2020] CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/776634)
+  - As there is a bonus for the first solver, I am sending only the flag for now.
+- **[h1-415 2020] Multiple vulnerabilities leading to leaking of secret user files** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/780036)
+  - I'm just submitting both flags for CTF, will send my write up on hacker summary, since it's 7:00 am now :).
+- **SSRF  leaking internal google cloud data through upload function [SSH Keys, etc..]** — `Vimeo` · `Critical` [↗](https://hackerone.com/reports/549882)
+  - Using our upload feature, the user was able to force an SSRF to occur.
+- **GitLab::UrlBlocker validation bypass leading to full Server Side Request Forgery** — `GitLab` · `High` [↗](https://hackerone.com/reports/541169)
+  - The GitLab::UrlBlocker IP address validation methods suffer from a Time of Check to Time of Use (ToCToU) vulnerability.
+- **SSRF on ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/406387)
+  - The web application hosted on the "███████" domain is affected by a Server Side Request Forgery (SSRF) vulnerability that could allows an attacker to force the application to make requests to arbitrary targets.
+- **https://████████ Impacted by DNN ImageHandler SSRF** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/482634)
+  - Summary: https://███████ runs DNN 8.0.0 to 9.1.1 and is impacted by CVE 2017-0929 allowing for a SSRF through the DNN ImageHandler.
+- **SSRF in webhooks leads to AWS private keys disclosure** — `Omise` · `High` [↗](https://hackerone.com/reports/508459)
+  - Omise makes use of Amazon AWS as their application environment.
+- **SSRF at ideas.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/500468)
+  - In this report, @damian89 identified a Server Side Request Forgery (SSRF) vulnerability on ideas.starbucks.com that allowed sending arbitrary HTTP requests and returned response bodies.
+- **Unauthenticated blind SSRF in OAuth Jira authorization controller** — `GitLab` · `High` [↗](https://hackerone.com/reports/398799)
+  - The Oauth::Jira::AuthorizationsController#access_token endpoint is vulnerable to a blind SSRF vulnerability.
+- **Blind SSRF at https://chaturbate.com/notifications/update_push/** — `Chaturbate` · `High` [↗](https://hackerone.com/reports/411865)
+  - In the application at https://chaturbate.com/notifications/update_push/ there is a functionality to subscribe any cam model which will trigger the provided request.
+- **SSRF on duckduckgo.com/iu/** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/398641)
+  - Normally, a call to https://duckduckgo.com/iu contains a query parameter (u) with some path using the domain yimg.com.
+- **SSRF in proxy.duckduckgo.com via the image_host parameter** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/358119)
+  - The only restriction that is there must be a http:// or https:// before the URL so you can't go with ssh:// These are I think internal web ports because I wasn't able to go to these ports from the external proxy.duckduckgo.com url.
+- **Evaluating Ruby code by injecting Rescue job on the system_hook_push queue through web hook** — `GitLab` · `High` [↗](https://hackerone.com/reports/299473)
+  - `CVE-2017-0916` The secret token field of a webhook is vulnerable to a new line injection, allowing an attacker to inject non-HTTP commands in a TCP stream.
+- **SSRF in https://www.zomato.com████ allows reading local files and website source code** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/271224)
+  - @nbsp found a SSRF vulnerability which leads to read local files from the web server (source code & system files).
+- **SMB SSRF in emblem editor exposes taketwo domain credentials, may lead to RCE** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/288353)
+  - In this report, the researcher found that by submitting crafted SVG files, he was able to establish a listener on our server that enabled SSRF attacks.
+- **Limited code execution vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/229199)
+  - A DoD website was misconfigured in a manner that could have allowed an attacker to execute some malicious code.

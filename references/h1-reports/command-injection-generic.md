@@ -1,0 +1,206 @@
+# Command Injection - Generic
+
+_101 reports — High/Critical, disclosed_
+
+- **Argument Injection via curl Short-Flag Grouping** — `curl` · `Critical` [↗](https://hackerone.com/reports/3669305)
+  - This report details how the curl -os command facilitates an Argument Injection vulnerability in applications that wrap the curl command-line tool.
+- **Middleware Authentication Bypass on IBM Portal** — `IBM` · `Critical` [↗](https://hackerone.com/reports/3088290)
+  - `CVE-2025-29927` Middleware authentication bypass on IBM portal endpoint was reported to IBM, analyzed and has been remediated.
+- **CVE-2023-41763 Business Elevation of Privilege vulnerability on [.mtn.com]** — `MTN Group` · `High` [↗](https://hackerone.com/reports/2309291)
+  - `CVE-2023-41763` The Microsoft Skype for Business installation on the remote host is missing security updates.
+- **Cisco IOS XE instance at ████ vulnerable to CVE-██████** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2778350)
+  - `CVE-2023-20198` CVE-███████ is characterized by improper path validation to bypass Nginx filtering to reach the webui_wsma_http web endpoint without requiring authentication.
+- ** Remote Code Execution and AWS IAM Credentials Exfiltration in https://████████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2083771)
+  - The host https://██████/ has /jenkins/script directory enabled that allows user to execute system command in the host.
+- **Management Console Editor Privilege Escalation to Root SSH Access in GitHub Enterprise Server via RCE in ghe-update-check** — `GitHub` · `High` [↗](https://hackerone.com/reports/2325023)
+  - `CVE-2024-1359` A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance when setting up an HTTP proxy.
+- **Management Console Editor Privilege Escalation to Root SSH Access in GitHub Enterprise Server via RCE in collectd** — `GitHub` · `High` [↗](https://hackerone.com/reports/2329547)
+  - `CVE-2024-1369` A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance when setting the username and password for collectd configurations.
+- **Management Console Editor Privilege Escalation to Root SSH Access in GitHub Enterprise Server via RCE in actions-console** — `GitHub` · `High` [↗](https://hackerone.com/reports/2323292)
+  - `CVE-2024-1355` A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via the actions-console docker container while setting a service URL.
+- **Management Console Editor Privilege Escalation to Root SSH Access in GitHub Enterprise Server via nomad template injection and audit-forward** — `GitHub` · `High` [↗](https://hackerone.com/reports/2332623)
+  - `CVE-2024-1374` A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via nomad templates when configuring audit log forwarding.
+- **Management Console Editor Privilege Escalation to Root SSH Access in GitHub Enterprise Server via nomad template injection** — `GitHub` · `High` [↗](https://hackerone.com/reports/2332551)
+  - `CVE-2024-1378` A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via nomad templates when configuring SMTP options.
+- **Management Console Editor Privilege Escalation to Root SSH Access in GitHub Enterprise Server via RCE in syslog-ng** — `GitHub` · `High` [↗](https://hackerone.com/reports/2329466)
+  - `CVE-2024-1354` A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via the syslog-ng configuration file.
+- **Shell command injection in https://partner.steamgames.com/apps/communityitems/ via file extension of item_image_small and item_image_large** — `Valve` · `Critical` [↗](https://hackerone.com/reports/840243)
+  - Shell injection was achieved on a publishing gateway through metacharacter injection in an item-upload path.
+- **WG call injection in /economy/contextcommand** — `Valve` · `Critical` [↗](https://hackerone.com/reports/652649)
+  - Context-specific commands to a web-facing gateway had insufficient parameter validation.
+- **RCE on partner.steampowered.com** — `Valve` · `Critical` [↗](https://hackerone.com/reports/518348)
+  - Insufficient validation of parameters allowed an attacker to specify the name of a PHP function to call with parameter types (array, array, string).
+- **Bypass incomplete fix of CVE-2024-27980** — `Node.js` · `High` [↗](https://hackerone.com/reports/2461831)
+  - `CVE-2024-36138` The CVE-2024-27980 was identified as an incomplete fix for the BatBadBut vulnerability.
+- **RCE via File Upload  with a Null Byte Truncated File Extension at https://██████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2054184)
+  - I found "repos" at https://███/ and https://c█████████/ and this one (which doesn't have the file upload functionality appearing on the DOM, but it still may be there) https://███████.
+- **RCE of Burp  Scanner / Crawler via Clickjacking ** — `PortSwigger Web Security` · `High` [↗](https://hackerone.com/reports/1274695)
+  - Burp Suite utilizes an embedded Chrome browser for crawling and scanning web applications.
+- **PHP Object injection -> Building Custom Gadget chain -> RCE ** — `ExpressionEngine` · `High` [↗](https://hackerone.com/reports/1820492)
+  - When signed into the control panel with permissions, this researcher was able to build a custom Gadget chain, which led to remote code execution.
+- **Rocket.Chat Server RCE** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/1631258)
+  - `CVE-2023-23917` Rocket.Chat server (https://github.com/RocketChat/Rocket.Chat) has a Prototype Pollution vulnerability that leads to RCE under the admin account.
+- **LFI at http://www.████** — `Sony` · `High` [↗](https://hackerone.com/reports/986380)
+  - The researcher reported that a Sony endpoint was vulnerable to a Local File Inclusion (LFI) vulnerability via a URL parameter.
+- **LOGJ4 VUlnerability [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1624137)
+  - `CVE-2021-44228` log4 shell is recent 0-day exploit it's Java package vulnerable.
+- **Apache Flink RCE via GET jar/plan API Endpoint** — `Aiven Ltd` · `Critical` [↗](https://hackerone.com/reports/1418891)
+  - Aiven has not restricted access to the GET jars/{jar_id}/plan API.
+- **POOL_UPGRADE request handler may allow an unauthenticated attacker to remotely execute code on every node in the network. ** — `Linux Foundation Decentralized Trust` · `Critical` [↗](https://hackerone.com/reports/1705717)
+  - `CVE-2022-31020` This issue is related to the https://github.com/hyperledger/indy-node.
+- **Remote Command Execution via Github import** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/1679624)
+  - `CVE-2022-2884` This is very similar to https://about.gitlab.com/releases/2022/08/22/critical-security-release-gitlab-15-3-1-released/#Remote%20Command%20Execution%20via%20Github%20import and allows arbitrary redis commands to be injected when imported a GitHub repository.
+- **CVE-2022-38362: Apache Airflow Docker Provider <3.0 RCE vulnerability in example dag** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1671140)
+  - `CVE-2022-38362` Apache Airflow Docker's Provider shipped with an example DAG that was vulnerable to (authenticated) remote code exploit of code on the Airflow worker host.
+- **RCE via the DecompressedArchiveSizeValidator and Project BulkImports (behind feature flag)** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/1609965)
+  - `CVE-2022-2185` The DecompressedArchiveSizeValidator is used to check the size of a archive before extracting it: def command "gzip -dc #{@archive_path} / wc -c" end
+- **Path traversal, to RCE** — `GitLab` · `High` [↗](https://hackerone.com/reports/733072)
+  - This one is similar to #732330 but much simpler.
+- **CVE-2022-24288: Apache Airflow: TWO RCEs in example DAGs** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1492896)
+  - `CVE-2022-24288` In Apache Airflow, prior to version 2.2.4, In DAG script of airflow , there is two command injection vulnerability (RCE) in the some scripts, which an attacker can execute arbitrary commands on the system.
+- **Remote Code Execution at https://169.38.86.185/ (edst.ibm.com)** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1379130)
+  - A discovered Gitlab server was running an old version affected by RCE.
+- **Insecure Bundler configuration fetching internal Gems (okra) from Rubygems.org** — `Basecamp` · `High` [↗](https://hackerone.com/reports/1104874)
+  - I believe (most likely) that one of your projects is not set up correctly to only pull internal gems from your internal gem server, and instead will pull gems from Rubygems.org if the version number there is higher.
+- **View Only to Root Privilege Escalation on UniFi Protect** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/825764)
+  - UniFi Protect v1.13.2 (and prior) containing vulnerabilities allowing users to run certain custom commands that can be used to assign themselves unauthorized roles, escalating their privileges.
+- **Readonly to Root Privilege Escalation on EdgeSwitch** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/796414)
+  - `CVE-2020-8233` An authenticated read-only user can execute arbitrary shell commands over the HTTP interface, allowing them to escalate privileges.
+- **[wireguard-wrapper] Command Injection via insecure command concatenation** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/858674)
+  - I would like to report a Command Injection issue in the wireguard-wrapper module.
+- **[CVE-2018-7600] Remote Code Execution due to outdated Drupal server on www.█████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1063256)
+  - `CVE-2018-7600` Due to an outdated Drupal version, remote code execution is possible on www.█████ via CVE-2018-7600.
+- **Pre-auth Remote Code Execution on multiple Uber SSL VPN servers** — `Uber` · `Critical` [↗](https://hackerone.com/reports/540242)
+  - format string vulnerability on /sslmgr with no authentication required
+- **[curling] Remote Code Execution** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/973386)
+  - I would like to report RCE in curling I can bypass the security check for special characters, read / overwrite file **module name:** curling **version:** 1.1.0 **npm page:** https://www.npmjs.com/package/curling
+- **[last-commit-log] Command Injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/881713)
+  - I would like to report Command Injection in last-commit-log It allows execution of arbitrary commands **module name:** last-commit-log **version:** last-commit-log@3.0.4 **npm page:** https://www.npmjs.com/package/last-commit-log
+- **Remote code execution on Basecamp.com** — `Basecamp` · `Critical` [↗](https://hackerone.com/reports/365271)
+  - `CVE-2017-8291` A critical flaw in Basecamp's profile image upload function leads to remote command execution.
+- **[systeminformation] Command Injection via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/925324)
+  - I would like to report a Command Injection vulnerability in the systeminformation package.
+- **[gfc] Command Injection via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/871071)
+  - I would like to report a Command Injection issue in the gfc module.
+- **[extra-asciinema] Command Injection via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/863956)
+  - I would like to report a Command Injection issue in the extra-asciinema module.
+- **[extra-ffmpeg] Command Injection via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/863944)
+  - I would like to report a Command Injection issue in the extra-ffmpeg module.
+- **[vboxmanage.js] Command Injection via insecure command concatenation** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/864777)
+  - I would like to report a Command Injection issue in the vboxmanage.js module.
+- **Test-scripts for postgis in mason-repository using unsafe unzip of content from unclaimed bucket creates potential RCE-issues** — `Mapbox` · `Critical` [↗](https://hackerone.com/reports/329689)
+  - On March 25, 2018 @fransrosen reported a vulnerability to Mapbox.
+- **[xps] Command Injection via insecure command concatenation** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/865168)
+  - I would like to report a Command Injection issue in the xps module.
+- **[diskstats] Command Injection via insecure command concatenation** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/864354)
+  - I would like to report a Command Injection issue in the diskstats module.
+- **RCE in AirOS 6.2.0 Devices with CSRF bypass** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/703659)
+  - `CVE-2020-8168` There are certain end-points containing functionalities that are vulnerable to command injection.
+- **OS Command Injection in Nexus Repository Manager 2.x -- Bypass for Nexus Repository Manage 2.14.15-01 Command Injection fix** — `Central Security Project` · `Critical` [↗](https://hackerone.com/reports/724599)
+  - An OS command injection vulnerability has been discovered in Nexus Repository Manager requiring immediate action.
+- **Blind Command Injection #1** — `8x8` · `High` [↗](https://hackerone.com/reports/807961)
+  - OS Command injection on text-to-speech functionality API.
+- **[devcert] Command Injection via insecure command formatting** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/863544)
+  - `CVE-2020-8186` I would like to report a Command Injection issue in the devcert module.
+- **Command Injection (via CVE-2019-11510 and CVE-2019-11539)** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/680480)
+  - `CVE-2019-11510` The Navy has a Pulse Secure SSL VPN (https://████████/dana-na/auth/url_default/welcome.cgi) that is vulnerable to: CVE-2019-11510 - Pre-auth Arbitrary File Reading CVE-2019-11539 - Post-auth Command Injection vulnerable hostname from ssl certificate: ██████████.navy.mil
+- **Git flag injection - local file overwrite to remote code execution** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/658013)
+  - The wiki_blobs scope of the Search API can be provided with an arbitrary ref parameter, allowing for additional flags to be injected into the git command.
+- **Git flag injection leading to file overwrite and potential remote code execution** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/653125)
+  - The ref_name in the Commits API is not sanitized, allowing for a ref starting with -- to be provided causing git to interpret it as a flag instead of as a ref.
+- **Git flag injection - Search API with scope 'blobs' ** — `GitLab` · `High` [↗](https://hackerone.com/reports/682442)
+  - `CVE-2019-15575` As requested from @hackerjuan, breaking this out of https://hackerone.com/reports/658013 for easier tracking.
+- **[open] concatenation of unsanitized input into exec() command** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/319473)
+  - I would like to report command injection in open.
+- **RCE on default Ubuntu Desktop >= 12.10 Quantal** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/192512)
+  - I recently reported a number of vulnerabilities in Canonical's Apport crash report software.
+- **Privilege Escalation From user to SYSTEM via unauthenticated command execution ** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/544928)
+  - `CVE-2019-15595` The vulnerability, or feature depending how you look at it, is the ability to execute commands using the evostream API interface that is exposed on localhost:7440.
+- **OS Command Injection in Nexus Repository Manager 2.x(bypass CVE-2019-5475)** — `Central Security Project` · `Critical` [↗](https://hackerone.com/reports/688270)
+  - `CVE-2019-15588` **groupId:** org.sonatype.nexus.plugins **artifactId:** nexus-yum-repository-plugin **version:** 2.14.14-01 The Nexus Yum Repository Plugin is vulnerable to Remote Code Execution.
+- **Mercurial git subrepo lead to arbritary command injection** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/294147)
+  - `CVE-2017-17458` I'd like to submit a issue exist in Mercurial.
+- **[insideok.ru] Remote Command Execution via file upload.** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/666716)
+  - Incorrect configuration of the insideok.ru web server allowed PHP execution in the directory with user-generated files, which could be used for RCE.
+- **Local files could be overwritten in GitLab, leading to remote command execution** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/587854)
+  - A new feature (download a directory of a repository) in GitLab 11.11 introduced some changes in ./internal/service/repository/archive.go of Gitaly.
+- **Remote Code Execution on www.semrush.com/my_reports on Logo upload** — `Semrush` · `Critical` [↗](https://hackerone.com/reports/403417)
+  - The Logo upload in the report constructor at: https://www.semrush.com/my_reports/constructor is passed through a not properly patched version of ImageMagick.
+- **RCE which may occur due to `ActiveSupport::MessageVerifier` or `ActiveSupport::MessageEncryptor` (especially Active storage)** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/473888)
+  - `CVE-2019-5420` Since ActiveSupport::MessageVerifier and ActiveSupport::MessageEncryptor use Marshal as the default serializer, I confirmed that RCE is possible by object injection.
+- **Command Injection Vulnerability in kill-port Package** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/389561)
+  - `CVE-2019-5414` I would like to report a command injection vulnerability in kill-port.
+- **h1-5411-CTF report: LFI / Deserialization / XXE vulnerability, ** — `h1-5411-CTF` · `Critical` [↗](https://hackerone.com/reports/415233)
+  - The CTF contained a Local File inclusion that enabled the attacker to read .php files (among others) from the server and by doing so, it helped to find out PHP serialization bug and the XXE vulnerability that was used as SSRF to exploit the hidden maintenance pages.
+- **[apex-publish-static-files] Command Injection on connectString** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/405694)
+  - `CVE-2018-16462` I would like to report a command injection vulnerability in the apex-publish-static-files npm module.
+- **Cisco RCE** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/411270)
+  - The researcher was able to complete RCE attack and download sensitive files.
+- **Sending arbitrary IPC messages via overriding Function.prototype.apply** — `Brave Software` · `Critical` [↗](https://hackerone.com/reports/188086)
+  - Brave Browser allows to overwrite the internal js code from the user js code.
+- **Sending arbitrary IPC messages via overriding Array.prototype.push** — `Brave Software` · `Critical` [↗](https://hackerone.com/reports/188561)
+  - This bug is similar to #187542 and #188086.
+- **Brave Browser unexpectedly allows to send arbitrary IPC messages** — `Brave Software` · `Critical` [↗](https://hackerone.com/reports/187542)
+  - I found that Brave Browser allows to overwrite the internal js code from the user js code.
+- **[ascii-art] Command injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/390631)
+  - I would like to report a command injection vulnerability in the **ascii-art npm** module.
+- **[samsung-remote] Command injection** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/394294)
+  - I would like to report a command injection vulnerability in the **samsung-remote** npm module.
+- **Vulnerability in project import leads to arbitrary command execution** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/378148)
+  - A filename regular expression could be bypassed and enable the attacker to create a symbolic link in Gitlab upload directory by importing a specially crafted Gitlab export.
+- **[egg-scripts] Command injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/388936)
+  - `CVE-2018-3786` I would like to report a command injection vulnerability in egg-scripts.
+- **Command Injection Vulnerability in win-fork/win-spawn Packages** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/390871)
+  - I would like to report a command injection vulnerability in win-fork and win-spawn packages.
+- **Malware in `active-support` gem** — `RubyGems` · `Critical` [↗](https://hackerone.com/reports/392311)
+  - `CVE-2018-3779` This was sent to RubySec: The gem duplicates official activesupport (no hyphen) code, but adds a compiled extension.
+- **[entitlements] Command injection on the 'path' parameter** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/341869)
+  - Hello again, another command injection, this time on the entitlements module.
+- **Code Execution in restricted CLI of EdgeSwitch** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/313245)
+  - In EdgeSwitch 1.7.3 and prior, an user with admin credentials can make use of specially crafted commands to execute arbitrary shell instructions, bypassing the SSH/TELNET CLI interface.
+- **Triggering RCE using XSS to bypass CSRF in PowerBeam M5 300** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/289264)
+  - In AirOS 6.1.5 and prior, due to lack of validation is possible to bypass the CSRF in certain web pages.
+- **Remote Command Execution vulnerability in pullit** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/315773)
+  - I would like to report Remote Command Execution vulnerability in pullit It allows remote command execution such as reading or writing to the file system, and executing other programs under the current user running the pullit node executable.
+- **`macaddress` concatenates unsanitized input into exec() command** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/319467)
+  - I would like to report code injection in macaddress It allows to inject arbitrary shell commands if the user input can influence the iface argument.
+- **`command-exists` concatenates unsanitized input into exec()/execSync() commands** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/324453)
+  - I would like to report command injection in command-exists.
+- **`fs-path` concatenates unsanitized input into exec()/execSync() commands** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/324491)
+  - `CVE-2020-8298` I would like to report command injection in fs-path.
+- **XXE at Informatica sub-domain** — `Informatica` · `High` [↗](https://hackerone.com/reports/150520)
+  - Researcher has identified and reported an XXE in one of our domain and helped us in resolving the issue.
+- **Command injection by overwriting authorized_keys file through GitLab import** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/298873)
+  - `CVE-2017-0915` The Projects::GitlabProjectsImportService contains a vulnerability that allows an attacker to write files to arbitrary directories on the server.
+- **RCE By import channel field** — `ExpressionEngine` · `High` [↗](https://hackerone.com/reports/335761)
+  - The reporter determined that a malicious Channel Set could be used to allow an administrator to upload a PHP file that they might otherwise not have permission to upload.
+- **[pdfinfojs] Command Injection on filename parameter** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/330957)
+  - `CVE-2018-3746` Hello , there is a Command Injection vulnerability on the "pdfinfojs" module.
+- **`whereis` concatenates unsanitized input into exec() command** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/319476)
+  - `CVE-2018-3772` I would like to report command injection in whereis It allows to inject arbitrary shell commands by trying to locate crafted filenames.
+- **Admin Panel Accessed (OAuth Bypassed ) ** — `Mapbox` · `Critical` [↗](https://hackerone.com/reports/294911)
+  - On December 4, 2017, @aneeskhan reported an authentication bypass vulnerability on a Mapbox internal portal.
+- **Command injection in the process of downloading the latest version of the cloud key firmware through the unifi management software.** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/183458)
+  - In UniFi Cloud Key versions prior to 5.3.12, 5.4.9 and 5.5.2, the firmware is downloaded in a unprotected channel, with allow an attacker in an MitM scenario to interfere with the communication, and possibly modifying the firmware during an update.
+- **Remote Code Execution at http://tw.corp.ubnt.com** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/269066)
+  - The researcher found a Command Injection in tw.corp.ubnt.com.
+- **Command injection on Phabricator instance with an evil hg branch name** — `Phabricator` · `Critical` [↗](https://hackerone.com/reports/288704)
+  - I found an evil branch name of hg a repo can lead to arbitrary command injection on phabricator instance.
+- **HTML injection in email in unikrn.com** — `Unikrn` · `High` [↗](https://hackerone.com/reports/262004)
+  - **Summary:** Referral emails sent from unikrn.com are vulnerable to HTML injection via the first name field.
+- **Command Execution because of extension handling** — `Brave Software` · `High` [↗](https://hackerone.com/reports/188078)
+  - Using this bug an attacker can execute commands as the current user using brave & gain complete shell capabilities (and all possibilities associated) The issue is in the way the application handles website TLDs.
+- **Admin Command Injection via username in user_archive ExportCsvFile** — `Discourse` · `High` [↗](https://hackerone.com/reports/214022)
+  - When a user generates a backup of their posts, their username gets sent to the ExportCsvFile job.
+- **RCE by command line argument injection to `gm convert` in `/edit/process?a=crop`** — `Imgur` · `Critical` [↗](https://hackerone.com/reports/212696)
+  - `CVE-2016-10033` The y parameter of /edit/process endpoint (with a=crop) is vulnerable to command-line argument injection to something that appears to be GraphicsMagick utility (probably gm convert).
+- **[careers.informatica.com] Reflected Cross Site Scripting to XSS Shell Possible** — `Informatica` · `High` [↗](https://hackerone.com/reports/147196)
+  - Cross-site Scripting (XSS) refers to client-side code injection attack wherein an attacker can execute malicious scripts (also commonly referred to as a malicious payload) into a legitimate website or web application.
+- **Unrestricted File Upload** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/184596)
+  - A Navy system had a file upload tool accessible from the Internet.
+- **[marketplace.informatica.com] - XXE** — `Informatica` · `High` [↗](https://hackerone.com/reports/106797)
+  - Request: POST /api/rest/mpapi/infaMPAPISearchWebService/query HTTP/1.1 Host: marketplace.informatica.com Connection: keep-alive Content-Length: 140 Accept: */* X-J-Token: no-user X-Requested-With: XMLHttpRequest User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) Apple
+- **[rev-app.informatica.com] - XXE via SAML** — `Informatica` · `High` [↗](https://hackerone.com/reports/106865)
+  - Request: POST /sso HTTP/1.1 Host: rev-app.informatica.com Connection: keep-alive Content-Length: 8669 Cache-Control: max-age=0 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 Origin: https://infapassport.okta.com Upgrade-Insecure-
+- **Administrator Access To Management Console** — `Pushwoosh` · `Critical` [↗](https://hackerone.com/reports/182637)
+  - Malicious user had the administrator access to RabbitMQ

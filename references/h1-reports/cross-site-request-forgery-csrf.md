@@ -1,0 +1,122 @@
+# Cross-Site Request Forgery (CSRF)
+
+_59 reports — High/Critical, disclosed_
+
+- **CSRF leads to Account takeover** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2699029)
+  - During my search in this domain I found it vulnerable to CSRF so I tried to escalate it Account takeover and I succeed Account takeover via CSRF
+- **CSRF leads to Account takeover** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2712857)
+  - During my search in this domain I found it vulnerable to CSRF so I tried to escalate it Account takeover and I succeed Account takeover via CSRF
+- **CSRF Attack on changing security questions leads to full Account TakeOver** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2652603)
+  - While researching https://www.████/, I discovered that an attacker could exploit a CSRF vulnerability to perform a password reset and gain full control of any user's account.
+- **Argo CD CSRF leads to Kubernetes cluster compromise** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2326194)
+  - GHSA: https://github.com/argoproj/argo-cd/security/advisories/GHSA-92mw-q256-5vwg It's been publicly known for years that all of Argo CD API is vulnerable to Cross-Site Request Forgery (CSRF).
+- **Revocation API Token by Bypassing The XSRF Token** — `Enjin` · `Critical` [↗](https://hackerone.com/reports/2312217)
+  - @alpernae was able to demonstrate that the [Enjin Platform](https://platform.enjin.io)'s GraphQL interface was missing the appropriate CSRF protection when using a session token.
+- **Cross-Site Request Forgery ** — `ownCloud` · `High` [↗](https://hackerone.com/reports/2041007)
+  - The application does not throw a CrossSiteRequestForgeryException, if the request does not contain the requesttoken header.
+- **Improper CSRF token validation allows attackers to access victim's accounts linked to Hackerone** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1727221)
+  - Organisations in Hackerone can automate their workflow by integrating their accounts with their existing tools like Github or Jira.
+- **CSRF to delete accounts [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1629828)
+  - Hello, I Have an endpoint in ██████████that's vulerable to CSRF which lead to delete a victim's account 4.
+- **[uchat.uberinternals.com] Mattermost doesn't check Origin in Websockets, which leads to the Critical Inforamation Leakage.** — `Uber` · `Critical` [↗](https://hackerone.com/reports/201326)
+  - Thanks for the report and participation in our program, @kxyry!
+- **CSRF to ATO at https://█████/user/account [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1624421)
+  - hello dod security team today while i was doing pentest on your scope i came across https://████████/user/account so i register and after that tried to edit my data and the data was in json request so i simple change content-type to content-type application/x-www-form-urlencoded
+- **CSRF Account Takeover** — `TikTok` · `High` [↗](https://hackerone.com/reports/1253462)
+  - A Cross-Site Request Forgery (CSRF) vulnerability was found on a TikTok endpoint which could have resulted in a full account takeover.
+- **CSRF protection bypass in GitHub Enterprise management console** — `GitHub` · `High` [↗](https://hackerone.com/reports/1497169)
+  - `CVE-2022-23732` A path traversal vulnerability was identified in GitHub Enterprise Server management console that allowed the bypass of CSRF protections.
+- **0-day Cross Origin Request Forgery vulnerability in Grafana 8.x .** — `Aiven Ltd` · `High` [↗](https://hackerone.com/reports/1458236)
+  - `CVE-2022-21703` To triage, please note that this is still a 0-day that was alerted to Grafana already, in order to make sure the client is safe I report this issue now, please make sure to not spread it further or leak it, as the best interest is to let you be aware and safer from any potential
+- **Widespread CSRF on authenticated POST endpoints** — `UPchieve` · `High` [↗](https://hackerone.com/reports/1309435)
+  - Cross-Site Request Forgery (CSRF) is possible on most, if not all, authenticated POST endpoints.
+- **CSRF to change password** — `Nord Security` · `Critical` [↗](https://hackerone.com/reports/204703)
+  - Cross-Site Request Forgery (CSRF) is a type of attack that occurs when a malicious web site, email, blog, instant message, or program causes a user's web browser to perform an unwanted action on a trusted site for which the user is currently authenticated.
+- **CSRF in Account Deletion feature (https://www.flickr.com/account/delete)** — `Flickr` · `High` [↗](https://hackerone.com/reports/615448)
+  - CSRF was missing in Account Deletion form due to switching login providers.
+- **CSRF on /api/graphql allows executing mutations through GET requests** — `GitLab` · `High` [↗](https://hackerone.com/reports/1122408)
+  - Mutations are edit or create queries used in Graphql.
+- **Slack integration setup lacks CSRF protection** — `HackerOne` · `High` [↗](https://hackerone.com/reports/170552)
+  - Cross-site Request Forgery in the Integrations (https://hackerone.com/[YOUR_TEAM]/integrations) feature for teams.
+- **CSRF на установку своей почты к аккаунту.** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/301586)
+  - CSRF при привязке почты к странице.
+- **Japan - CSRF in webapp.starbucks.co.jp with user interaction could leak an access token if the user was not using Chrome** — `Starbucks` · `High` [↗](https://hackerone.com/reports/1113559)
+  - elber discovered a CSRF in webapp.starbucks.co.jp leaked an access token if an authenticated user opened a crafted HTML file in a browser other than Chrome which has Same Site Attribute for the cookie set by default.
+- **SocialClub Account Take Over Through Import Friends feature** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/901728)
+  - In this report, the researcher identified a vulnerability in a Social Club feature intended to allow users to import their friends list from Facebook and other social media sites.
+- **[socket.io] Cross-Site Websocket Hijacking ** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/931197)
+  - I would like to report Cross-Site Websocket Hijacking in socket.io It allows an attacker to bypass origin protection using special symbols include "" and "$" **module name:** socket.io **version:** 2.3.0 **npm page:** https://www.npmjs.com/package/socket.io
+- **███████mill is vulnerable to cross site request forgery that leads to full account take over.** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1066083)
+  - The form within the "My Account" page in ███████mil fails to verify the CSRF token used when an user makes changes such as changing the password and other details.
+- **[CSRF] TikTok Careers Portal Account Takeover** — `TikTok` · `High` [↗](https://hackerone.com/reports/1010522)
+  - A missing CSRF protection and open redirect vulnerability was reported in the TikTok Careers portal single sign on flow which is used by applicants to apply for TikTok positions.
+- **CSRF to account takeover in https://█████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1018270)
+  - Hi DoD team, I found a CSRF to account takeover in https://███████/ Try to open the site in firefox because chrome sometimes is not allowing to open the site.
+- **CSRF on launchpad.37signals.com OAuth2 authorization endpoint** — `Basecamp` · `High` [↗](https://hackerone.com/reports/850022)
+  - Hi, I found a CSRF in the OAuth2 authorization endpoint on launchpad.37signals.com.
+- **CSRF to account takeover in https://███████.mil/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/987751)
+  - 4: Now send the link to the victims It is a critical issue as i was able to takeover anyone account using this attack..
+- **CSRF Vulnerabiliy on Facebook Linkage Page Allows Full Account takerover of Socialclub Accounts.** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/653254)
+  - In this report, the researcher identified a CSRF vulnerability in the account linking process that could have allowed attackers to link their Facebook account to the victim's Social Club account, giving the attacker access to the victim's Social Club account.
+- **Account takeover through CSRF in http://███████/██████████/default.asp** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/670924)
+  - I have found a CSRF vulnerability in http://██████/████/default.asp that leads to account takeover.
+- **Firmware download/install vulnerable to CSRF** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/323852)
+  - `CVE-2020-8168` Attackers can abuse multiple end-points not protected against cross-site request forgery (CSRF), as a result authenticated users can be persuaded to visit malicious web pages, which allows attackers to perform arbitrary actions, such as downgrade the device's firmware to older v
+- **Отсутствие CSRF ключа на функции Закрытый Профиль.** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/448928)
+  - "Friends only" account mode could be toggled on and off with a CSRF attack.
+- **H1514 CSRF in Domain transfer allows adding your domain to other user's account** — `Shopify` · `High` [↗](https://hackerone.com/reports/416978)
+  - Shopify allows users to buy their own domain from the Shopify system.
+- **CSRF - Modify Project Settings** — `Stripo Inc` · `Critical` [↗](https://hackerone.com/reports/766533)
+  - Attacker just need to know victim project Id.
+- **Norway - store.starbucks.no - CSRF on email change** — `Starbucks` · `High` [↗](https://hackerone.com/reports/718852)
+  - moonlight323 discovered a Cross-Site Request Forgery (CSRF) vulnerability on store.starbucks.no.
+- **Cross-Site Request Forgery (CSRF) vulnerability on API endpoint allows account takeovers** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/419891)
+  - The /signup/email API endpoint at [khanacademy.org](https://khanacademy.org) is vulnerable to Cross-Site Request Forgery (CSRF) attacks, allowing takeovers of accounts associated with unconfirmed email addresses.
+- **Take over of accounts created using Google or Facebook** — `Khan Academy` · `Critical` [↗](https://hackerone.com/reports/442901)
+  - When a user creates an account using Google or Facebook and does not set an additional password, it is possible to set their passwords via CSRF.
+- **Account takeover by changing email** — `Khan Academy` · `Critical` [↗](https://hackerone.com/reports/538800)
+  - The endpoint /signup/email allows users to change their email before they confirm their account email.
+- **CSRF to HTML Injection in Comments** — `WordPress` · `High` [↗](https://hackerone.com/reports/428019)
+  - Simon discovered a CSRF vulnerability that led to RCE.
+- **UniFi Video Server web interface Configuration Restore CSRF leading to full application compromise** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/329749)
+  - `CVE-2019-5430` In UniFi Video 3.10.0, due to the lack of CSRF protection, it is possible to abuse the Web API to make changes on the server configuration without the user consent, requiring the attacker to lure an authenticated user to access on attacker controlled page.
+- **CSRF in Inviting users** — `Ping Identity` · `High` [↗](https://hackerone.com/reports/323975)
+  - **Summary:** [add summary of the vulnerability] When a user is invited, a GET request is made.
+- **Issue:Form does not contain an anti-CSRF token** — `Phabricator` · `High` [↗](https://hackerone.com/reports/513134)
+  - -------------------------------------------------------------------------------------------------------------------- Issue Details ==> Cross-site Request Forgery (CSRF) is an attack which forces an end user to execute unwanted actions on a web application to which he/she is curre
+- **Request vulnerable to CSRF** — `Phabricator` · `High` [↗](https://hackerone.com/reports/513137)
+  - There are 4 instances of this issue: [+] /dashboard/panel/render/12/ [+] /dashboard/panel/render/22/ [+] /dashboard/panel/render/4/ [+] /dashboard/panel/render/6/ Issue background ==> Cross-site Request Forgery (CSRF) is an attack which forces an end user to execute unwanted acti
+- **Account Takeover using Linked Accounts due to lack of CSRF protection** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/463330)
+  - In this report, the researcher found a weakness in our third-party account linking process.
+- **Проверяем принадлеженость email и номера телефона к определенному юзеру / CSRF на смену номера для некоторых пользователей** — `VK.com` · `High` [↗](https://hackerone.com/reports/388236)
+  - Проблема генерации хеша.
+- **Site-wide CSRF on eats.uber.com** — `Uber` · `High` [↗](https://hackerone.com/reports/161529)
+  - There was a lack of CSRF protections on eats.uber.com which allowed an attacker to add a credit card to another account.
+- **Account takeover at https://try.discourse.org due to no CSRF protection in connecting Yahoo account** — `Discourse` · `High` [↗](https://hackerone.com/reports/423022)
+  - There is an option in https://try.discourse.org/u/testh1ay/preferences/account to connect our Yahoo account.
+- **CSRF log victim into the attacker account** — `Unikrn` · `High` [↗](https://hackerone.com/reports/293016)
+  - All the API endpoints (v1 & v2) reflect session_id to Set-Cookie response - which can lead victim to login attacker account, for example: POST /apiv1/ HTTP/1.1 Host: unikrn.com User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0 Accept: appli
+- **CSRF in Raffles Ticket Purchasing** — `Unikrn` · `High` [↗](https://hackerone.com/reports/272588)
+  - An API endpoint get executed with no CSRF prevention, the endpoint did not verify session_id required in the post form.
+- **Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth** — `WordPress` · `High` [↗](https://hackerone.com/reports/187520)
+  - This report is a variant on report #110801 but with broader vector.
+- **[CRITICAL] Full account takeover using CSRF** — `X / xAI` · `High` [↗](https://hackerone.com/reports/235642)
+  - Reporter discovered a CSRF vulnerability in the linkage between Periscope accounts and Facebook.
+- **Possible SOP bypass in www.starbucks.com due to insecure crossdomain.xml** — `Starbucks` · `High` [↗](https://hackerone.com/reports/244504)
+  - I was penetration testing your website, and noticed that your crossdomain.xml file allowed many sites access.
+- **CSRF Vulnerability allows attackers to steal SocialClub private token.** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/253128)
+  - The researcher was able to combine a Flash exploit with a CSRF vulnerability in order to obtain sensitive user tokens from https://socialclub.rockstargames.com/profileedit/GetTokens.
+- **CSRF** — `Mixmax` · `High` [↗](https://hackerone.com/reports/226612)
+  - —
+- **<- Critical IDOR vulnerability in socialclub allow to insert and delete comments as another user and it discloses sensitive information ->** — `Rockstar Games` · `Critical` [↗](https://hackerone.com/reports/204292)
+  - In this report, the researcher found an insecure direct object reference that allowed a malicious user to impersonate another user in the comment section under Newswire articles.
+- **Account Takeover using Third party Auth CSRF** — `Weblate` · `High` [↗](https://hackerone.com/reports/225653)
+  - Login with Ubuntu One account , before clicking on Yes log me in on ubuntu authentication site , start a proxy tool like Burp and intercept the request.
+- **Persistent CSRF in /GiftCert-AddToBasket prevents purchases on eCommerce sites** — `Starbucks` · `High` [↗](https://hackerone.com/reports/206319)
+  - SUMMARY -------------- Hello, I have found an extremely interesting issue that can be used to permanently lock a user's possibility of ever buying anything from teavana.com by removing the credit card payment method.
+- **CSRF csrftoken in cookies** — `Gratipay` · `High` [↗](https://hackerone.com/reports/174228)
+  - Your web application generates CSRF token values inside cookies which is not a best practice for web applications as revelation of cookies can reveal CSRF Tokens as well.
+- **Authentication bypass on sso.ubnt.com via subdomain takeover of ping.ubnt.com** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/172137)
+  - This is not a standard vulnerability, but a chain of two more exotic vulnerabilities leading to a full authentication bypass of your SSO login system at sso.ubnt.com (via account.ubnt.com).
+- **[community.informatica.com] - CSRF in Private Messages allows to move user's messages to Trash** — `Informatica` · `High` [↗](https://hackerone.com/reports/45050)
+  - To remove a message, an attacker needs to know a message ID.

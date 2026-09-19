@@ -1,0 +1,60 @@
+# Memory Corruption - Generic
+
+_28 reports — High/Critical, disclosed_
+
+- **[MK8DX] Improper ranking/replay file parsing** — `Nintendo` · `Critical` [↗](https://hackerone.com/reports/1813453)
+  - The ranking file was not properly verified before parsing and could lead to some memory corruption This issue affected the following assets:
+- **Buffer Overflow in curl MQTT Test Server (tests/server/mqttd.c) via Malicious CONNECT Packet** — `curl` · `Critical` [↗](https://hackerone.com/reports/3101127)
+  - The MQTT test server (mqttd.c) in the curl project contains a buffer overflow vulnerability due to improper validation of password length fields in MQTT CONNECT packets.
+- **[avito.ru] ImageMagick uninitialized image palette** — `Avito` · `Critical` [↗](https://hackerone.com/reports/271355)
+  - При подаче объявления можно загружать фотографии.
+- **imagecolormatch Out Of Bounds Write on Heap ** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/478368)
+  - `CVE-2019-6977` The link to the PHP bug: https://bugs.php.net/bug.php?id=77270 This is possible to exploit in PHP 7.0.33 and 5.6.39.
+- **napi_get_value_string_X allow various kinds of memory corruption** — `Node.js` · `High` [↗](https://hackerone.com/reports/784186)
+  - `CVE-2020-8174` napi_get_value_string_latin1, napi_get_value_string_utf8, napi_get_value_string_utf16 are vulnerable to buffer overflows, partially due to an integer underflow.
+- **HTTP/2 Denial of Service Vulnerability** — `Node.js` · `High` [↗](https://hackerone.com/reports/335533)
+  - **Summary:** Malformed HTTP/2 frames cause NodeJS http2 module to perform an uninitialized read.
+- **Stack Buffer Overflow in GD dynamicGetbuf** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/175587)
+  - Description: ------------ 1) imagecreatefromstring() takes in a string and attempts to convert it into an image.
+- **Malformed .MDL triggers an Access Violation on GoldSRC (hl.exe)** — `Valve` · `High` [↗](https://hackerone.com/reports/495793)
+  - A malformed player .MDL triggers an exploitable Access Violation on GoldSRC engine games (Half-Life) upon invocation, which could lead to remote code execution on a client.
+- **CVE-2017-5482 The Q.933 parser in tcpdump before 4.9.0 has a buffer overflow in print-fr.c:q933_print().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/202969)
+  - `CVE-2017-5482` Reported to the project maintainers in 2016.
+- **CVE-2017-5342 In tcpdump before 4.9.0 a bug in multiple protocol parsers could cause a buffer overflow in print-ether.c:ether_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/202968)
+  - `CVE-2017-5342` Reported to the project maintainers in 2016.
+- **CVE-2017-5484 The ATM parser in tcpdump before 4.9.0 has a buffer overflow in print-atm.c:sig_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/202967)
+  - `CVE-2017-5484` Reported to the project maintainers in 2016.
+- **CVE-2017-5341 The OTV parser in tcpdump before 4.9.0 has a buffer overflow in print-otv.c:otv_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/202965)
+  - `CVE-2017-5341` Reported to the project maintainers in 2016.
+- **CVE-2017-5204: The IPv6 parser in tcpdump before 4.9.0 has a buffer overflow in print-ip6.c:ip6_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/202960)
+  - `CVE-2017-5204` Reported to the project maintainer in October 2016.
+- **ZeroMQ libzmq remote code execution** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/477073)
+  - `CVE-2019-6250` Bug report and exploit: https://github.com/zeromq/libzmq/issues/3351 Fix by me: https://github.com/zeromq/libzmq/pull/3353 My motive for full disclosure is as follows:
+- **Linux kernel: CVE-2017-1000112: a memory corruption due to UFO to non-UFO path switch** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/684573)
+  - `CVE-2017-1000112` [CVE-2017-1000112](https://nvd.nist.gov/vuln/detail/CVE-2017-1000112) is a vulnerability I found in the Linux kernel caused by a UFO to non-UFO path switch for UFO packets.
+- **Linux kernel: CVE-2017-7308: a signedness issue in AF_PACKET sockets** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/684567)
+  - `CVE-2017-7308` [CVE-2017-7308](https://nvd.nist.gov/vuln/detail/CVE-2017-7308) is a vulnerability I found in the Linux kernel caused by a signedness issue in AF_PACKET sockets.
+- **heap-buffer-overflow (buffer read overrun) in curl: ourWriteOut() src/tool_writeout.c:115** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/212931)
+  - Curl is a ubiquitous tool in use by millions of people around the world.
+- **Memory corrouption in mrb_gc_mark** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/208363)
+  - The memory corruption in mrb_gc_mark function can lead to code execution or at least DoS on mruby.
+- **Certain inputs cause tight C-level recursion leading to process stack overflow** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/189633)
+  - Introduction ============ Certain legal Ruby programs can cause a tight recursion on the C-level (without using eval) while spending very little of the Ruby-level stack.
+- **Crash: Overwriting NoMethodError with a builtin class crashes/corrupts memory** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/186723)
+  - Uhm, while testing this I seem to have broken https://mruby.science..
+- **attempting double-free using the mruby compiler `mrbc`** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/193517)
+  - I cloned the mruby git 4 days ago, started fuzzing with American Fuzzy Lop.
+- **SIGSEGV on mruby's mark_tbl() (Invalid memory access)** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/183239)
+  - There is an invalid memory access on mruby when calling to mark_tbl() which causes a SIGSEGV and leads to denial of service.
+- **Crash: mrb_any_to_s can't handle NilClass, Symbol and Fixnum** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/185794)
+  - When using boxing_word.h (haven't tested other boxing methods yet), mrb_any_to_s is unable to handle NilClass, Symbol and Fixnum.
+- **mruby-time: Crash host with uninitialized Time obj** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/184661)
+  - So once again, another try ;) (As always hopefully unknown and valid ;)) Time::initialize_copy performs its copy action even on Time objects on which initialize never ran, leading to a crash.
+- **Crash: calling Proc::initialize_copy with a Proc instance where initialize never ran leads to a crash** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/184857)
+  - Using the same trick from #184661 with Proc leads to another crash, this time in Proc related functions.
+- **Memory disclosure in mruby String#lines method** — `shopify-scripts` · `High` [↗](https://hackerone.com/reports/181319)
+  - This bug was found with jmlb337.
+- **JSBeautifier BApp: Race condition leads to memory disclosure** — `PortSwigger Web Security` · `High` [↗](https://hackerone.com/reports/187134)
+  - Description ==================== If an attacker builds up multiple connections which will be released at the same time having a response Content-Length of 0, leaving out the response Content-Length header or having a higher Content-Length than the actual response while insinuatin
+- **LZMADecompressor.decompress Use After Free** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/172562)
+  - I have submitted a vulnerability that has now been fixed.

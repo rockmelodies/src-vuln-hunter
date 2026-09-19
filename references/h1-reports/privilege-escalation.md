@@ -1,0 +1,248 @@
+# Privilege Escalation
+
+_122 reports — High/Critical, disclosed_
+
+- **Pending invites remain valid even after the inviter is removed.** — `Omise` · `High` [↗](https://hackerone.com/reports/3303136)
+  - When an admin (A) invites another user (B) with admin privileges, removing the inviter (A) does not invalidate the pending invite for B.
+- **Bug Report #23JAN136 (subdomain takeover via shopify )** — `Mars` · `High` [↗](https://hackerone.com/reports/1851895)
+  - A subdomain takeover vulnerability was identified on the domain █████████, where the subdomain pointed to an unclaimed Shopify instance.
+- **Bug Report #23JAN135 (subdomain takeover via shopify )** — `Mars` · `High` [↗](https://hackerone.com/reports/1851886)
+  - The researcher kuriyama discovered a subdomain takeover vulnerability affecting ██████████, which was pointing to an unclaimed Shopify instance.
+- **Elevation of Privileges (EoP) vulnerabilities related to the some easy_options on Windows** — `curl` · `High` [↗](https://hackerone.com/reports/2941920)
+  - An Elevation of Privileges (EoP) vulnerability can occur in a Windows privileged process that uses CURLOPT_COOKIEJAR, CURLOPT_HSTS, or CURLOPT_ALTSVC.
+- **Privilege Escalation leads to Unauthorized Access to Private Conversations By any Regular user  [Read , Edit and Delete]** — `Dust` · `Critical` [↗](https://hackerone.com/reports/3103849)
+  - A normal authenticated user on dust.tt can escalate their privileges by accessing, modifying, and deleting any chat threads belonging to other users — including administrators — through a vulnerable API endpoint without having the appropriate permissions.
+- **Unauthorized access to PII leads to Administrator account Takeover** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2450685)
+  - This vulnerability is present in the wp-json/wp/v2/users/15 file located in the wordpress directory endpoints.
+- **Non Org Admin/Group Manager can create groups in an organization** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2372018)
+  - This report describes a privilege escalation vulnerability that allows a user with only "Program Admin" permissions, to escalate their privileges to higher levels like "Report Manager" or even full administrator privileges under certain circumstances.
+- **setuid() does not drop all privileges due to io_uring** — `Node.js` · `High` [↗](https://hackerone.com/reports/2170226)
+  - `CVE-2024-22017` setuid() does not affect libuv's internal io_uring operations if initialized before the call to setuid().
+- **Code injection and privilege escalation through Linux capabilities** — `Node.js` · `High` [↗](https://hackerone.com/reports/2237545)
+  - `CVE-2024-21892` On Linux, Node.js ignores certain environment variables if those may have been set by an unprivileged user while the process is running with elevated privileges with the only exception of CAP_NET_BIND_SERVICE.
+- **Permissions policies can be bypassed via Module._load.** — `Node.js` · `High` [↗](https://hackerone.com/reports/1960870)
+  - `CVE-2023-32002` The use of Module._load() can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.
+- **Privilege Escalation in kOps using GCE/GCP Provider** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1842829)
+  - When using kOps with the GCP provider, it is possible for a user with shell access to any pod, to escalate their privileges to cluster admin.
+- **The use of __proto__ in process.mainModule.__proto__.require() bypasses the permission system in Node v19.6.1** — `Node.js` · `High` [↗](https://hackerone.com/reports/1877919)
+  - `CVE-2023-30581` process.mainModule.require() correctly works with permission system in Node v19.6.1.
+- **Ad Account Takeover** — `LinkedIn` · `Critical` [↗](https://hackerone.com/reports/1791720)
+  - The researcher found an authorization issue in LinkedIn Marketing Solutions - Business Manager, which allowed an attacker to bind an unrelated Campaign Manager Account via the attacker's Business Manager.
+- **Brave News feeds can open arbitrary chrome: URLs** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1819668)
+  - URL link in Brave News feeds can open arbitrary chrome: URLs.
+- **Permissions policies can be bypassed via process.mainModule** — `Node.js` · `High` [↗](https://hackerone.com/reports/1747642)
+  - `CVE-2023-23918` Permissions policies module can be bypassed via process.mainModule.require Permission policies allow to run a script with a specific set of authorized node js built-in modules.
+- **Email Verification Bypass Allows Users to Add & verify Any Email  As Guardians Email ** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/1636552)
+  - ██████ 4.
+- **Subdomain takeover at http://test.www.midigator.com** — `Equifax-vdp` · `High` [↗](https://hackerone.com/reports/1718371)
+  - Subdomain test.www.midigator.com points to an AWS S3 bucket that no longer exists.
+- **Main Domain Takeover at  https://www.marketo.net/** — `Adobe` · `Critical` [↗](https://hackerone.com/reports/1661914)
+  - Resolved valid subdomain takeover report on Marketo.
+- **Ingress-nginx path allows retrieval of ingress-nginx serviceaccount token** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1382919)
+  - A user with the permissions to create an ingress resource can obtain the ingress-nginx service account token which can list secrets is all namespaces (cluster wide).
+- **Acronis True Image Local Privilege Escalation Due To Race Condition In Application Verification ** — `Acronis` · `High` [↗](https://hackerone.com/reports/1251464)
+  - The Acronis True Image application has a SUID binary "Acronis True Image" that starts another binary "console" in the same directory.
+- **bd-j exploit chain** — `PlayStation` · `High` [↗](https://hackerone.com/reports/1379975)
+  - Below are 5 vulnerabilities chained together that allows an attacker to gain JIT capabilities and execute arbitrary payloads.
+- **Upload Profile Photo in any folder you want with any extension you want** — `Stripo Inc` · `Critical` [↗](https://hackerone.com/reports/753375)
+  - The vulnerability has been fixed Using this vulnerability, a Stripo user becomes able to upload his/her profile photo in any folder (including that of other users), with any file extension as per his/her wish.
+- **Subdomain Takeover at https://new.rubyonrails.org/** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/1429148)
+  - I know it's OOS but the issue is pretty serious because of the attractive domain name "new.rubyonrails.org" basically anyone could have put malware there.
+- **EC2 subdomain takeover at http://████████/** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1296366)
+  - There is a dangling DNS A record that points to an EC2 instance that no longer exists, I was able to claim the EC2 instance and host content on http://███████/.
+- **Subdomains takeover of  register.acronis.com, promo.acronis.com, info.acronis.com and promosandbox.acronis.com** — `Acronis` · `High` [↗](https://hackerone.com/reports/1018790)
+  - The Subdomains https://register.acronis.com, https://promo.acronis.com, https://info.acronis.com and https://promosandbox.acronis.com are vulnerable to takeover due to unclaimed marketo CNAME records.
+- **Выполнение API-методов при открытии сообщества/приложения** — `VK.com` · `High` [↗](https://hackerone.com/reports/1354452)
+  - Недостаточная валидация.
+- **Authenticated kubernetes principal with restricted permissions can retrieve ingress-nginx serviceaccount token and secrets across all namespaces** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1249583)
+  - ingress-nginx allows adding custom snippets of nginx configuration to Kubernetes ingress objects.
+- **Non privileged user is able to approve his own app himself leading to mass privilege  escalations.** — `Lark Technologies` · `High` [↗](https://hackerone.com/reports/1168475)
+  - A privilege escalation vulnerability was identified in Lark which could have potentially allowed an attacker to approve the apps in the same tenant by bypassing the admin approval.
+- **Social Club Account Takeover Via RGL And Steam/Epic Linked Account** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/1235008)
+  - In this report, the researcher discovered and demonstrated a method to hijack access to a Social Club account via a previously-linked Epic Games or Steam account.
+- **Attacker is able to join any tenant on larksuite and view personal files/chats.** — `Lark Technologies` · `Critical` [↗](https://hackerone.com/reports/1363185)
+  - A privilege escalation issue was found in Open.larksuite.com, which could have potentially allowed attackers to join any tenant, and view files and communications that are shared by team members.
+- **Subdomain takeover [​████████]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1341133)
+  - The subdomain ███████ was pointing to an Azure Cloud App domain (araz-sp.centralus.cloudapp.azure.com), but that endpoint was not registered.
+- **Subdomain takeover of ███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/892667)
+  - The subdomain ██████ had an CNAME record pointing to an unclaimed ███████ webservice.
+- **DNS Miconfiguration Leads to Subdomain Takeover  - max1.liveplan.com** — `Palo Alto Software` · `High` [↗](https://hackerone.com/reports/1294492)
+  - The issue happens due to using EC2 public DNS instead of using Elastic IPs as CNAME record.
+- **Local privilege escalation via insecure MSI file** — `Acronis` · `High` [↗](https://hackerone.com/reports/1071832)
+  - I've found a vulnerability which leads to a local privilege escalation starting from a non-admin user.
+- **[CVE-2020-27194] Linux kernel: eBPF verifier bug in `or` binary operation tracking function leads to LPE** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1010340)
+  - `CVE-2020-27194` CVE-2020-27194 is a eBPF verifier bug that allows an unprivileged attacker to create BPF socket filter programs that can read and write Out of Bounds, trough which an arbitrary kernel read write can be achieved.
+- **Uncontrolled Search Path Element allows DLL hijacking for priv esc to SYSTEM** — `GlassWire` · `High` [↗](https://hackerone.com/reports/921675)
+  - GlassWire contains a DLL hijacking vulnerability that could allow an authenticated attacker to execute arbitrary code on the targeted system.
+- **RCE hazard in reporting (via Chromium)** — `Elastic` · `Critical` [↗](https://hackerone.com/reports/1168765)
+  - **Summary:** Reporting embeds a Chromium that is susceptible to RCEs Reporting uses a headless Chromium to generate PNGs and PDFs.
+- **Privilege Escalation via REST API to Administrator leads to RCE** — `WordPress` · `High` [↗](https://hackerone.com/reports/1107282)
+  - `CVE-2021-21389` Kien Hoang reported a privilege escalation vulnerability in the BuddyPress REST-API.
+- **Subdomain takeover of ████.jitsi.net** — `8x8` · `High` [↗](https://hackerone.com/reports/1197013)
+  - █████.jitsi.net points to an AWS EC2 instance at 18.195.93.116 that no longer exists.
+- **Request Access for Uber Device Returns Management Platform (https://www.eats-devicereturns.com/request-access/) Bypass Allows Access to PII** — `Uber` · `High` [↗](https://hackerone.com/reports/1010787)
+  - The hacker identified a registration page on a website ran by a 3rd party for Uber for managing Uber Eats devices, for example devices' returns when they stop working.
+- **Subdomain takeover of ███.wavecell.com** — `8x8` · `High` [↗](https://hackerone.com/reports/1181762)
+  - An EC2 instance was terminated but the DNS record was initially not updated/removed.
+- **Remote Code Execution in coming Kibana 7.7.0** — `Elastic` · `Critical` [↗](https://hackerone.com/reports/861744)
+  - Kibana 7.7.0 as per commit [c5f682cb](https://github.com/elastic/kibana/commits/c5f682cb) is vulnerable to a remote code execution vulnerability that is similar to the one reported in https://hackerone.com/reports/852613 Kibana 7.7.0 is not released, so this is an experiment.
+- **Password Reset link hijacking via Host Header Poisoning leads to account takeover** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1108874)
+  - ████████ uses the Host header when sending out password reset links.
+- **Arbitrary file creation via symlink attack on syncagentsrv (Acronis Sync Agent Service)** — `Acronis` · `High` [↗](https://hackerone.com/reports/945122)
+  - Arbitrary file creation is a vulnerability that allows attacker to create file in arbitrary location within filesystem.
+- **DNS Misconfiguration (Subdomain Takeover) █.staging.█.8x8.com** — `8x8` · `High` [↗](https://hackerone.com/reports/1108125)
+  - An EC2 instance was terminated but the DNS record was initially not updated/removed.
+- **DNS Misconfiguration (Subdomain Takeover) ███.wavecell.com** — `8x8` · `High` [↗](https://hackerone.com/reports/1089502)
+  - An S3 bucket was deleted, but a DNS record pointing to the bucket was initially not updated/removed.
+- **DNS Misconfiguration (Subdomain Takeover) ███████.8x8.com** — `8x8` · `High` [↗](https://hackerone.com/reports/1101877)
+  - An EC2 instance was replaced but the DNS record was initially not updated/removed.
+- **curl on Windows can be forced to execute code via OpenSSL environment variables** — `curl` · `High` [↗](https://hackerone.com/reports/714215)
+  - `CVE-2019-1552` Preface: While I have an interest in security, I am not a professional security researcher, so please be forgiving of any lack of convention in this submission.
+- **Arbitrary DLL injection in mmsminisrv (Acronis Managed Machine Service Mini)** — `Acronis` · `High` [↗](https://hackerone.com/reports/944735)
+  - During initialization, **mms_mini.exe** (service binary of mmsminisrv) loads library *C:\Program Files (x86)\Common Files\Acronis\Home\libssl10.dll*.
+- **Email Confirmation Bypass in your-store.myshopify.com which leads to privilege escalation** — `Shopify` · `Critical` [↗](https://hackerone.com/reports/910300)
+  - Hello Shopify, I have found a bug by which I can verify any email on .myshopify.com, the bug is very strange but it works.
+- **Privilege escalation from any user (including external) to gitlab admin when admin impersonates you** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/493324)
+  - Hey team, I have discovered a way for any logged in user (attacker) to escalate his privileges to gitlab administrator if the real gitlab administrator impersonates attacker's account.
+- **Remote Code Execution on Cloud via latest Kibana 7.6.2** — `Elastic` · `Critical` [↗](https://hackerone.com/reports/852613)
+  - **Summary:** A prototype pollution in Kibana can be used to gain remote code execution.
+- **Subdomain takeover of ████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/900062)
+  - I was able to claim the subdomain: ████ using Microsoft Azure ( CDN profiles) Platform(s) Affected: Subdomain Azure CDN
+- **[H1-2006 2020] Bypassing access control checks by modifying the URL, internal application state, or the HTML page, or using a custom API attack tool** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895172)
+  - H1-2006 CTF Writeup {F859938} Access control enforces policy such that users cannot act outside of their intended permissions.
+- **[h1-2006 2020]  Writeup h12006 CTF** — `h1-ctf` · `High` [↗](https://hackerone.com/reports/895795)
+  - ^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$ You can find the writeup with all images here https://github.com/chinchila/h12006 Sorry for the inconvenience.
+- **[H1-2006 2020] CTF write-up** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/894604)
+  - Hello HackerOne team!
+- **[H1-2006 2020] [CTF Writeup] A story about Bounty Payments, Collaboration & Community** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/892337)
+  - This is a story about both solving a CTF and, most importantly, on how to make friends during the journey and learn a lot a valuable things for the future.
+- **[H1-2006 2020] Solution for the h1-2006 CTF challenge** — `h1-ctf` · `High` [↗](https://hackerone.com/reports/891093)
+  - Hi, The flag is ^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$.
+- **[H1-2006 2020]  Multiple vulnerabilities leading account takeover** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/887700)
+  - I'm posting flag and will send my write up upcoming days when I clear my mind after this rabbit holes!
+- **Local Privilege escalation to root via XPC** — `Clario` · `High` [↗](https://hackerone.com/reports/750118)
+  - The application is divided into a few parts responsible for different actions.
+- **able to login into login.topechelon.com** — `Top Echelon Software` · `High` [↗](https://hackerone.com/reports/712318)
+  - The support login for our administrative account was using insecure credentials, allowing access to our administrative account.
+- **Subdomain Takeover uptime** — `BTFS` · `High` [↗](https://hackerone.com/reports/824909)
+  - i can't report it to the company so i hope to accept it as a valid bug , i found subdomain takeover in your subdomain uptime.btfs.io , i found this subdomain pointed to uptimerobot and not claimed so i signedup in uptimerobot and claimed it.
+- **UniFi Video web interface Configuration Restore user privilege escalation** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/329659)
+  - `CVE-2020-8145` Summary of the issue: Low privileged UniFi Video users can abuse the Configuration Restore functionality to modify any application configuration setting, including creating new administrative users.
+- **Able to Become Admin for Any LINE Official Account** — `LY Corporation` · `Critical` [↗](https://hackerone.com/reports/698579)
+  - The reporter found an issue where abusing an IDOR would allow for an attacker to become an administrator of any LINE Official Account.
+- **Subdomain Takeover at creatorforum.roblox.com** — `Roblox` · `High` [↗](https://hackerone.com/reports/264494)
+  - A few days ago, I was looking at Roblox subdomains, and I noticed an unusual one called creatorforum.roblox.com.
+- **China - president-starbucks.com.cn DNS configuration reported as takeover** — `Starbucks` · `High` [↗](https://hackerone.com/reports/423269)
+  - k3mlol discovered that president-starbucks.com.cn was displaying Chinese gambling content, reporting it as a takeover.
+- **[h1-415 2020] @_bayotop h1-415-ctf writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/779113)
+  - Thanks for the challenge!
+- **China - ecjobsdc.starbucks.com.cn html/shtml file upload vulnerability** — `Starbucks` · `High` [↗](https://hackerone.com/reports/412481)
+  - During the test, I found ecjobsdc.starbucks.com.cn this site has an upload vulnerability, you can upload html and shtml format files, so you can read the server's intranet IP, the physical address of the website application and read the website web.config file.
+- **Subdomain takeover of storybook.lystit.com** — `Lyst` · `High` [↗](https://hackerone.com/reports/779442)
+  - The subdomain storybook.lystit.com had an CNAME record pointing to an unclaimed S3 bucket.
+- **Arbitrary File Write as SYSTEM from unprivileged user** — `Valve` · `High` [↗](https://hackerone.com/reports/583184)
+  - The Steam Client installs a "Steam Client Service" that runs as SYSTEM to update the steam application.
+- **App Takeover ( makerdao.herokuapp.com )** — `BlockDev Sp. Z o.o` · `High` [↗](https://hackerone.com/reports/664044)
+  - Takeover of an old app that is no longer used by the company.
+- **WooCommerce Blacklist in 'map_meta_cap' leads to Privilege Escalation of Shopmanagers** — `Automattic` · `High` [↗](https://hackerone.com/reports/403039)
+  - When the Shopmanager role is defined for the first time, it receives the following WordPress core privileges: // Shop manager role.
+- **Bulgaria - Subdomain takeover of mail.starbucks.bg** — `Starbucks` · `High` [↗](https://hackerone.com/reports/736863)
+  - nukedx discovered that the mail.starbucks.bg domain was pointing to a mail service from icn.bg and confirmed that icn.bg did not host this domain.
+- **Project Template functionality can be used to copy private project data, such as repository, confidential issues, snippets, and merge requests** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/689314)
+  - I've found a three minor vulnerabilities which, when combined, allow an attacker to copy private repositories, confidential issues, private snippets, and then some.
+- **Worker container escape lead to arbitrary file reading in host machine [again]** — `Semmle` · `Critical` [↗](https://hackerone.com/reports/697055)
+  - After a successful build, LGTM allow user to view the file list.
+- **Worker container escape lead to arbitrary file reading in host machine** — `Semmle` · `Critical` [↗](https://hackerone.com/reports/694181)
+  - Because lack of security, attacker will be able to remove original log file and replace it will a symlink to other file, After finishing job, host machine copy file from docker container.
+- **[Critical] Possibility to takeover any user account #2 without interaction on the https://██████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/544334)
+  - This time I discovered a way to tekeover any user's account via unsafe password reset.
+- **CVE-2019-5736: Escape from Docker and Kubernetes containers to root on host** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/495495)
+  - `CVE-2019-5736` description here: https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html PoC: https://github.com/q3k/cve-2019-5736-poc Some more links: https://seclists.org/oss-sec/2019/q1/119 https://access.redhat.com/security/cve/cve-2019-5736
+- **Privilege escalation in workers container ** — `Semmle` · `High` [↗](https://hackerone.com/reports/692603)
+  - In the prepare step, semmle allows user to install new package.
+- **Apache HTTP [2.4.17-2.4.38] Local Root Privilege Escalation** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/520903)
+  - `CVE-2019-0211` I reported a Local Root privilege escalation vulnerability on Apache HTTPd at the beginning of the year.
+- **Subdomain takeover of datacafe-cert.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/665398)
+  - The subdomain datacafe-cert.starbucks.com had an CNAME record pointing to an unclaimed Azure webservice.
+- **Ubuntu Linux privilege escalation (dirty_sock)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/496285)
+  - Hi team, This week, I have publicly disclosed the dirty_sock local root exploit affecting multiple Linux Operating Systems.
+- **Subdomain takeover of d02-1-ag.productioncontroller.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/661751)
+  - I was able to claim the subdomain: d02-1-ag.productioncontroller.starbucks.com using Azure Cloud Service Subdomain Azure Cloud Service
+- **Group admins can remove arbitrary data from "data" directory (including admin data)** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/508493)
+  - `CVE-2019-15624` Result: The data/files_external / data/appdata{..} folder is removed.
+- **Privilege Escalation удаляем все созданные ссылки с okl.lt** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/478621)
+  - IDOR at okl.lt allowed to hide links in another user's dashboard.
+- **[okl.lt] Раскрытие администраторских функций в .js + Возможность использования этих функций.** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/547145)
+  - @iframe reported insufficient authorization at okl.lt which allowed regular users to perform actions intended to be accessible to administrators only.
+- **Бесконечный доступ к аккаунту если мы смогли хотя бы раз зайти на аккаунт.** — `VK.com` · `High` [↗](https://hackerone.com/reports/596363)
+  - Временная возможность продлить сессию после получения полного доступа к странице.
+- **Homebrew privilege escalation vulnerability** — `Homebrew` · `High` [↗](https://hackerone.com/reports/593926)
+  - Additional symlinks/directories that were not chownd by brew services needed to be added to avoid the replacement of the opt prefix link.
+- **Homebrew installed LaunchDaemons create simple root esclations** — `Homebrew` · `High` [↗](https://hackerone.com/reports/586251)
+  - Many programs installed via Homebrew require services to function as expected - most of the time these are LaunchAgents but sometimes they need to run as root via LaunchDaemons to function properly.
+- **Privilege-0 to Root Privilege Escalation on EdgeSwitch** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/511025)
+  - `CVE-2019-5425` In EdgeSwitch X v1.1.0 and prior, an authenticated user can execute arbitrary shell commands over the SSH interface bypassing the CLI interface, which allow them to escalate privileges to root.
+- **SaaS admin can modify/delete/get user information.** — `Ping Identity` · `High` [↗](https://hackerone.com/reports/324006)
+  - **Summary:** [add summary of the vulnerability] Based on what is seen, SaaS admin should not have access to users info from this page: https://ort-admin.pingone.com/web-portal/usermanagement#/ however, it is still able to get the info on that page.
+- **Subdomain takeover on usclsapipma.cv.ford.com** — `Ford` · `High` [↗](https://hackerone.com/reports/484420)
+  - I want to report a Subdomain takeover vulnerability in this report, a pretty serious security issue in some context.
+- **Privilege Escalation: Read-Only to Admin** — `Inflection` · `High` [↗](https://hackerone.com/reports/277138)
+  - While the interface hides the users page from read-only users, they can still perform PUT requests to the API to change their privileges where they only have read-only permissions.
+- **Subdomain takeover at signup.uber.com** — `Uber` · `High` [↗](https://hackerone.com/reports/197489)
+  - The domain signup.uber.com was pointing to an unclaimed Netlify domain, allowing an attacker to take over the subdomain.
+- **UniFi Video Server - Broken access control on system configuration** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/129698)
+  - In UniFi Video Server prior to 3.7.0, an attacker with user permissions can download the Backup and Support files.
+- **Domain Takeover in [obviousengine.com] a snapchat acquisitions** — `Snapchat` · `High` [↗](https://hackerone.com/reports/392785)
+  - while searching in snapchat acquisitions i found  obviousengine  moe information here https://www.crunchbase.com/organization/obvious-engineering#section-overview and i found that it's pointing to Github page so i claimed it Domain takeover is abused for several purposes:
+- **[flintcms] Account takeover due to blind MongoDB injection in password reset** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/386807)
+  - `CVE-2018-3783` I would like to report a privilege escalation vulnerability in flintcms.
+- **Subdomain takeover on wfmnarptpc.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/388622)
+  - this is pretty serious security issue in some context, so please act as fast as possible.
+- **Subdomain takeover on svcgatewaydevus.starbucks.com and svcgatewayloadus.starbucks.com** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/383564)
+  - This is fairly close to [this report](https://hackerone.com/reports/325336) however these are different subdomains than the one in the report.
+- **Privilege escalation allows any user to add an administrator** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/343626)
+  - `CVE-2018-16483` I would like to report privilege escalation in the npm module express-cart.
+- **Privilage escalation with malicious .npmrc** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/358359)
+  - I'm forwarding to you my conversation with npm staff regarding security issue.
+- **Subdomain takeover on svcgatewayus.starbucks.com** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/325336)
+  - this is pretty serious security issue in some context, so please act as fast as possible.
+- **ACME TLS-SNI-01/02 challenge vulnerable when combined with shared hosting providers** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/304378)
+  - The [ACME TLS-SNI-01](https://tools.ietf.org/html/draft-ietf-acme-acme-01#section-7.3) (and [TLS-SNI-02](https://tools.ietf.org/html/draft-ietf-acme-acme-09#section-8.4)) specification assumed wrong in terms of how current major cloud providers routed and validated domains.
+- **UniFi Video v3.2.2 (Windows) Local Privileges Escalation due to weak default install directory ACLs** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/140793)
+  - `CVE-2016-6914` The UniFi Video Windows installation v3.7.3 and prior create directories with insecure permission, allowing unprivileged users to modify UniFi Video files and consequently escalate privileges.
+- **Multiple Subdomain takeovers via unclaimed instances** — `Starbucks` · `High` [↗](https://hackerone.com/reports/276269)
+  - Hacker @benoculars was able to successfully faciliate multiple subdomain takeovers by taking advantage of a process flow to use some of the space provided for germany.openapi.starbucks.com, psv.openapi.starbucks.com, stage-psv.openapi.starbucks.com, and test-psv.openapi.starbucks
+- **Subdomain Takeover** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/289051)
+  - @picklepwns discovered a subdomain takeover attack.
+- **Privilege Escalation using API->Feature** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/239719)
+  - `CVE-2017-0932` EdgeOS version 1.9.1.1 and prior, consequence of the lack of validation on the input of the Feature functionality, an attacker with access to an operator (read-only) account and ssh connection to the devices, can escalate privileges to admin (root) access in the system.
+- **Privilege escalation in the client impersonation functionality** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/221454)
+  - In UCRM 2.3.0-beta4 and prior, consequence of a lack of validation in Client Impersonation functionality, an attacker with access to an Read-Only account can escalate privileges to Admin.
+- **Subdomain Takeover via unclaimed UserVoice domain** — `Snapchat` · `High` [↗](https://hackerone.com/reports/269109)
+  - @benocular found a bitstripsforschools CNAME entry pointing to an unclaimed UserVoice domain, which could be taken over by an external party.
+- **all private tokens are leaked to an unauthenticated attacker** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/268794)
+  - Using the api, one can obtain the authentication token for any user on gitlab: $ curl -s --request GET https://gitlab.com/api/v4/users/951422 / jq '.authentication_token' "[redacted]"
+- **Subdomain take-over of {REDACTED}.18f.gov** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/263542)
+  - @jackds discovered a number of related subdomain takeover attacks against some subdomains of 18f.gov.
+- **Access of Android protected components via embedded intent** — `Slack` · `Critical` [↗](https://hackerone.com/reports/200427)
+  - @bagipro found a vulnerability wherein a malicious and unprivileged app on the victim's phone could interact with any activity in the Slack Android app, allowing manipulation of the app in unintended ways.
+- **Privilege escalation-User who does not have access is able to add notes to the contact** — `Mixmax` · `High` [↗](https://hackerone.com/reports/235059)
+  - We didn't properly check that users had read-write access to contacts when posting notes.
+- **Password Reset link hijacking via Host Header Poisoning ** — `Concrete CMS` · `High` [↗](https://hackerone.com/reports/226659)
+  - Concrete5 uses the Host header when sending out password reset links.
+- **Возможность взлома любого пользователя, не использующего двухфакторной аутентификации, через получения кода восстановления на чужой номер.** — `VK.com` · `Critical` [↗](https://hackerone.com/reports/219171)
+  - Уязвимость в библиотеке приложения VK на Android, позволяющая получить на свой номер код для восстановления некоторых страниц.
+- **Privilege escalation - Normal user can somehow make admin to delete shared folders** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/166581)
+  - @etd reported an issue to us which had already been reported to us an independent party [via our public bug tracker](https://github.com/nextcloud/server/issues/1256).
+- **Subdomain takeover in many subdomains** — `OWOX, Inc.` · `Critical` [↗](https://hackerone.com/reports/205949)
+  - Subdomain takeover was possible in some of the subdomains.
+- **Privilege Escalation on a DoD Website** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/199644)
+  - A Department of Defense website was exposed to a privilege escalation vulnerability, which could have allowed remote administrator access to the website.
+- **Subdomain Takeover at http://gameday.websummit.net** — `WebSummit` · `Critical` [↗](https://hackerone.com/reports/193056)
+  - As i said in the title i found a subdomain takeover vulnerability on the url http://gameday.websummit.net The url was trying to find a bucket that didn't exist from a probably forgotten dns entry that was at gameday.websummit.net.s3-website-eu-west-1.amazonaws.com So i created a
+- **Subdomain takeover on happymondays.starbucks.com due to non-used AWS S3 DNS record** — `Starbucks` · `High` [↗](https://hackerone.com/reports/186766)
+  - I discovered that happymondays.starbucks.com DNS CNAME record is pointing to S3 AWS bucket which doesn't exist.
+- **State filter in IssuableFinder allows attacker to delete all issues and merge requests** — `GitLab` · `High` [↗](https://hackerone.com/reports/186194)
+  - `CVE-2016-9469` The state filter in the IssuableFinder class has the ability to filter issues and merge requests by state.
+- **Ability to access all user authentication tokens, leads to RCE** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/158330)
+  - The project export feature serializes the user objects of team members and stores it in the project.json file.

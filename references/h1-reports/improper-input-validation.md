@@ -1,0 +1,46 @@
+# Improper Input Validation
+
+_21 reports — High/Critical, disclosed_
+
+- **HTTP/2 server push accepts a non-authoritative :scheme=https over cleartext h2c, enabling HTTPS cache-key poisoning** — `curl` · `High` [↗](https://hackerone.com/reports/3630310)
+  - I found that libcurl 8.19.0 accepts an HTTP/2 pushed stream on a cleartext h2c connection even when the server sends :scheme=https in PUSH_PROMISE.
+- **Unsafe Global IFS Modification in OS400 Shell Script Enables Command Injection and Parsing Flaws (CWE-78/CWE-20)** — `curl` · `High` [↗](https://hackerone.com/reports/3295656)
+  - In the curl source repository, the OS400 initialization script (packages/OS400/make-incs.sh) modifies the global shell variable IFS (Internal Field Separator) without local scoping or restoration.
+- **Arbitrary File Deletion Vulnerability in curl Source Code via os.unlink()** — `curl` · `High` [↗](https://hackerone.com/reports/2864414)
+  - The curl source code's testing scripts contain instances where the os.unlink() function is used to delete files without validating the input file paths.
+- **HTTP/3 Stream Dependency Cycle Exploit** — `curl` · `High` [↗](https://hackerone.com/reports/3125832)
+  - A novel exploit leveraging stream dependency cycles in the HTTP/3 protocol stack was discovered, resulting in memory corruption and potential denial-of-service or remote code execution scenarios when used against HTTP/3-capable clients such as curl (tested on version 8.13.0).
+- **important: Apache HTTP Server weakness with encoded question marks in backreferences (CVE-2024-38474)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2585381)
+  - `CVE-2024-38474` I reported this vulnerability through the official Apache HTTP Server security email on April 1, 2024, and received a fix along with a CVE number on July 1, 2024.
+- **important: Apache HTTP Server weakness in mod_rewrite when first segment of substitution matches filesystem path. (CVE-2024-38475)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2585378)
+  - `CVE-2024-38475` I reported this vulnerability through the official Apache HTTP Server security email on April 1, 2024, and received a fix along with a CVE number on July 1, 2024.
+- **Remote code execution due to unvalidated file upload** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1164452)
+  - Hello I found a critical vunerability in one of your site, where user can upload any file type as a profile picture (including php file) 4.
+- **Economic Harm through Twitter's Cropping Algorithm** — `Twitter Algorithmic Bias` · `Critical` [↗](https://hackerone.com/reports/1290872)
+  - Megan, also known as CyberQueenMeg, is a passionate rising cybersecurity professional who is interested in programming, cybersecurity, and web development.
+- **Underrepresentation Bias through Twitter's Cropping Algorithm #2: Favoring Animals over Black People** — `Twitter Algorithmic Bias` · `Critical` [↗](https://hackerone.com/reports/1294242)
+  - Bounty Hunter Name: CyberQueenMeg About You: Megan, also known as CyberQueenMeg, is a passionate rising cybersecurity professional who is interested in programming, cybersecurity, and web development.
+- **Underrepresentation Bias through Twitter's Cropping Algorithm** — `Twitter Algorithmic Bias` · `Critical` [↗](https://hackerone.com/reports/1294062)
+  - Bounty Hunter Name: CyberQueenMeg About You: Megan, also known as CyberQueenMeg, is a passionate rising cybersecurity professional who is interested in programming, cybersecurity, and web development.
+- **CVE-2021-22924: Bad connection reuse due to flawed path name checks** — `curl` · `High` [↗](https://hackerone.com/reports/1223565)
+  - `CVE-2021-22924` Curl_ssl_config_matches attempts to compare whether two SSL connections have identical SSL security options or not.
+- **[Source Engine] Material path truncation leads to Remote Code Execution** — `Valve` · `High` [↗](https://hackerone.com/reports/544096)
+  - Title: [Source Engine] Material path truncation leads to Remote Code Execution Scope: *.exe Weakness: Improper Input Validation Severity: High (7.1) Link: https://hackerone.com/reports/544096 Date: 2019-04-20 12:18:09 +0000 By:
+- **2FA Disable With Wrong Password - Response Tampering.** — `8x8` · `High` [↗](https://hackerone.com/reports/893085)
+  - The application contained a business logic flaw that resulted in missing validation when removing 2FA on the authenticated account.
+- **Send Phishing/Spam email from support@sameroom.io to any email address.** — `8x8` · `High` [↗](https://hackerone.com/reports/840688)
+  - The Sameroom API contained an endpoint to generate an email to notify the user that the account had been updated.
+- **Insecure OAuth redirection at [admin.8x8.vc]** — `8x8` · `High` [↗](https://hackerone.com/reports/770548)
+  - The meetings admin application performed an insufficient validation of the specified redirect location during OAuth negotiation.
+- **HTTP header values do not have trailing OWS trimmed** — `Node.js` · `High` [↗](https://hackerone.com/reports/730779)
+  - `CVE-2019-15606` [I suspect I may have tagged the wrong vulnerability type -I'm failing to find "insufficient validation of user input"] According to the HTTP-spec, http values are field-value = *( field-content / LWS ) http_parser does not appear to trim trailing LWS.
+- **[url-parse] Improper Validation and Sanitization** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/496293)
+  - `CVE-2020-8124` I would like to report Improper Validation and Sanitization in url-parse.
+- **Steal ALL collateral during liquidation by exploiting lack of validation in `flip.kick`** — `BlockDev Sp. Z o.o` · `Critical` [↗](https://hackerone.com/reports/684092)
+  - The flip contract allows for the MCD system to auction collateral in exchange for DAI.
+- **Steal all MKR from `flap` during liquidation by exploiting lack of validation in `flap.kick`** — `BlockDev Sp. Z o.o` · `High` [↗](https://hackerone.com/reports/684152)
+  - The flap contract provides the ability to auction DAI for MKR.
+- **Bypass of GitLab CI runner slash fix in YAML validation** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/409395)
+  - I notice the bug #301432 that Jobert reported earlier is could be bypassed by setting variable in environment.
+- **Improper UUID validation results in bypass of #419896** — `HackerOne` · `High` [↗](https://hackerone.com/reports/423073)
+  - This was found while evaluating the vulnerability and patch identified in #419896.

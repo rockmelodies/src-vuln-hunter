@@ -1,0 +1,198 @@
+# Insecure Direct Object Reference (IDOR)
+
+_97 reports — High/Critical, disclosed_
+
+- **Missing Access Control in MigrationFile allows attacker to upload files to any Migration** — `GitHub` · `High` [↗](https://hackerone.com/reports/3506183)
+  - `CVE-2026-1355` A Missing Authorization vulnerability was identified in GitHub Enterprise Server that allowed an attacker to upload unauthorized content to another user’s repository migration export due to a missing authorization check in the repository migration upload endpoint.
+- **Unauthenticated Users Can Access Other Users’ Bug Report Attachments via Broken Access Control** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3259610)
+  - The /BugReport/Admin/Attachment/{id} endpoint exposes attachments linked to private bug reports.
+- **IDOR Exposes PII of Tens of Thousands of Users and Supervisors** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2967032)
+  - While using the system as intended (submitting a SAAR), I noticed there is an insure direct object Reference vulnerability in the application.
+- **IDOR Vulnerability in Banner Deletion ** — `Revive Adserver` · `High` [↗](https://hackerone.com/reports/3401612)
+  - `CVE-2025-52670` I found an IDOR vulnerability in Revive Adserver's banner deletion endpoint that lets any Manager delete banners belonging to other Managers.
+- **Authentication Bypass in Subscription Management Endpoint** — `lemlist` · `Critical` [↗](https://hackerone.com/reports/3417162)
+  - A vulnerability was identified in the subscription management functionality that allows unauthorized access to customer billing information.
+- **Arbitrary Read of Another Users private repository without Authorization** — `GitHub` · `High` [↗](https://hackerone.com/reports/3124517)
+  - `CVE-2025-8447` An improper access control vulnerability was identified in GitHub Enterprise Server that allowed users with access to any repository to retrieve limited code content from another repository by creating a diff between the repositories.
+- **Broken Access Control (IDOR) in Booking Detail and Bids Could Leads to Sensitive Information Disclosure** — `Bykea` · `High` [↗](https://hackerone.com/reports/2374730)
+  - I hope this report finds you well, I would like to report an issue where a malicious user could see other users booking detail, bids information & bids config.
+- **IDOR: Account Deletion via Session Misbinding – Attacker Can Delete Victim Account** — `Mozilla` · `High` [↗](https://hackerone.com/reports/3154983)
+  - A critical vulnerability in the Firefox Accounts API allows an authenticated attacker to permanently delete any user's account by sending a POST /v1/account/destroy request using attacker session, but including the victim’s email and authPW (password hash) in the JSON paylo
+- **Sale cancellations from other sellers without restrictions** — `MercadoLibre` · `Critical` [↗](https://hackerone.com/reports/2495989)
+  - We thank @capablanca0 for the report and for providing clear reproduction steps with a proof-of-concept code demonstrating the vulnerability.
+- **Insecure Direct Object Reference (IDOR) in GraphQL deleteProfileImages Mutation** — `Autodesk` · `High` [↗](https://hackerone.com/reports/2968039)
+  - An IDOR (Insecure Direct Object Reference) vulnerability was found on Autodesk User Profile, through the "id" parameter which could have allowed an attacker to delete another user's photo.
+- **Unauthorized Reservation Cancellation Through IDOR Vulnerability** — `Yelp` · `High` [↗](https://hackerone.com/reports/2944357)
+  - It is possible to cancel a reservation by knowing the reservation id, this is because the reservation feature does not require users to login.
+- **█████████ when adding branches to your account** — `Mars` · `Critical` [↗](https://hackerone.com/reports/2756402)
+  - A vulnerability has been identified in the branch addition functionality of the Royal Canin specialized channel website ██████████.
+- **Upload profile photo and  Pets addition - IDOR** — `Mars` · `High` [↗](https://hackerone.com/reports/2393021)
+  - An Insecure Direct Object Reference (IDOR) vulnerability is discovered on the website ██████████.
+- **IDOR at mtnmobad.mtnbusiness.com.ng leads to PII leakage. ** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1773609)
+  - Hello team, i found an IDOR at https://mtnmobad.mtnbusiness.com.ng/ that allows an attacker to enumerate data such as personal phone number and and account information justt from knowing the email.
+- **Email Takeover leads to permanent account deletion** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2587953)
+  - I found that an attacker can change their email address to the victim's(existing user) email, which then leads to permanent account deletion of the victim's account.
+- **Unauth IDOR to mass account takeover without user interaction on the ███████ (https://███████.edu/)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/685338)
+  - During poking around █████/24 range - AS257 ██████ looking for the Cisco devices, I came across virtual host https://██████████.edu/ on the ██████████ While it's a not .mil host, it's likely related to the DoD since it hosted in the DoD-controlled ASN.
+- **IDOR leading unauthenticated attacker to download documents discloses PII of users and soldiers via https://www.█████████/Download.aspx?id= [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1626508)
+  - Hey team, I have found this API endpoint leads to leaking attachments and documents of users.
+- **Insecure Direct Object Reference (IDOR) Allows Viewing Private Report Details via /bugs.json Endpoint** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/2487889)
+  - POST /bugs.json HTTP/2 Host: hackerone.com Cookie: __Host-session=Your-Session-Here X-Csrf-Token: Your-Csrf-Here Content-Type: application/x-www-form-urlencoded; charset=UTF-8 X-Requested-With: XMLHttpRequest Te: trailers Content-Length: 390 text_query=1&organization_id=58579&pe
+- **Insecure Direct Object Reference Protection bypass by changing HTTP method in IBM Your Learning endpoint. ** — `IBM` · `Critical` [↗](https://hackerone.com/reports/2456603)
+  - Insecure Direct Object Reference vulnerability was reported to IBM, analyzed and has been remediated.
+- **Attachment disclosure via summary report ** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/2442008)
+  - Hackerone provides a form for reporting vulnerabilities to various programs.
+- **An attacker can submit arbitrary projects to their service accounts and obtain full information on projects of other users.** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/2291999)
+  - An IDOR issue was discovered in the Request Services feature, where an attacker can gain access to project details of other users by submitting work project requests.
+- **IDOR vulnerability reveals additional information** — `Semrush` · `Critical` [↗](https://hackerone.com/reports/1770858)
+  - An issue was identified in the Content Outline Builder product.
+- **IDOR on Delete Email address features** — `Mozilla` · `High` [↗](https://hackerone.com/reports/2382484)
+  - An Insecure direct object reference vulnerability was found in Mozilla Monitor which allowed any user to delete secondary email addresses in other users' accounts, using the email address ID.
+- **IDOR allows information disclosure** — `Semrush` · `High` [↗](https://hackerone.com/reports/1816900)
+  - Adam discovered a vulnerability related to information disclosure within the Social Media Inbox tool.
+- **IDOR to account takeover on POST to █████████ by changing member_id parameter** — `Mars` · `Critical` [↗](https://hackerone.com/reports/2132183)
+  - The website endpoint "██████" is exposed to multiple identifier vulnerabilities, which could potentially result in a complete takeover of user accounts.
+- **IDOR in upload videos of a Channel on https://video.ibm.com** — `IBM` · `Critical` [↗](https://hackerone.com/reports/2085185)
+  - IDOR in uploading videos to channels on https://video.ibm.com was reported to IBM, analyzed and has been remediated.
+- **IDOR - Delete all Licenses and certifications from users account using CreateOrUpdateHackerCertification GraphQL query** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2122671)
+  - While editing our **Licenses and certifications** if we change the ID number we can delete other users **Licenses and certifications**.
+- **Attackers can use TRIAL Premium only by paying **IDR 10,000.00** from the original price of `IDR462,400.00` per month** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/1808719)
+  - Reporter found a method to tamper with the LinkedIn Premium pricing so that an attacker can subscriber for a LinkedIn Premium at a significant discount.
+- **An IDOR that can lead to enumeration of a user and disclosure of email and phone number within cashier** — `Unikrn` · `High` [↗](https://hackerone.com/reports/1966006)
+  - As an attacker, it was possible to exploit IDOR on https://cashier.unikrn.com.
+- **████ ' can change any account email and cannot retrieve his account and access it ' at ███** — `Mars` · `High` [↗](https://hackerone.com/reports/1952771)
+  - hi ███ i found ██████████ , i can change any account email and he cannot retrieve his account and access it easily.
+- ** read and message other user's messages** — `Reddit` · `Critical` [↗](https://hackerone.com/reports/1744264)
+  - go to your account's chat page, stop the request and change the reddit session parameter, now leave the request and you will be able to access the test account's chat screen send the request to the repeater change the reddit session parameter and send it then you will see the ret
+- **Insecure Direct Object Reference (IDOR) - Delete Campaigns  ** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1969141)
+  - I think I can delete any Campaigns based on campaign_id Follow the POST request below
+- **IDOR in TalentMAP API can be abused to enumerate personal information of all the users** — `U.S. Department of State` · `High` [↗](https://hackerone.com/reports/1848176)
+  - I hope you're having a good day.
+- **Unauthorized User can View Subscribers of Other Users Newsletters** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/1716300)
+  - A creator can create a newsletter, the followers can subscribe to the newsletter.
+- **Delete anyone's content spotlight remotely.** — `Snapchat` · `High` [↗](https://hackerone.com/reports/1819832)
+  - Hello Snapchat, Snapchat has viral video feature callled spotlight which alone was the biggest trend and increase snapchat users and profit in millions.
+- **IDOR for changing privacy settings on any memories** — `TikTok` · `High` [↗](https://hackerone.com/reports/1733627)
+  - An Insecure Direct Object Reference (IDOR) vulnerability was found within TikTok Now on Android, which would have allowed any user to change the "Who Can View" privacy setting for another users' Memory.
+- **Unauthorized access to resumes stored on LinkedIn** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/1777095)
+  - As LinkedIn is heavily used by recruiters across the globe there are billions of resumes stored in the system.
+- **Remove Every User, Admin, And Owner Out Of Their Teams on developers.mtn.com via IDOR + Information Disclosure** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1448550)
+  - This vulnerability is too involved with regular users, in order for us to prevent any damage, we need 3 different user accounts we own.
+- **Unprotected Direct Object Reference** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1536936)
+  - Hello MTN Security Team, During my hunting, I discovered that there's an Insecure Direct Object Reference on https://nin.mtnonline.com Vulnerable Path: https://nin.mtnonline.com/nin/success?message=1 Steps To Reproduce: You may not even require to submit any NIN before accessin
+- **Business Suite "Get Leads" Resulting in Revealing User Email & Phone** — `TikTok` · `High` [↗](https://hackerone.com/reports/1744194)
+  - A vulnerability within the Business Suite settings on an Android device could have resulted in a user's email and/or phone number being revealed via the "sec_user_id" parameter if their information is sent via "Get Leads".
+- **IDOR in API applications (able to see any API token, leads to account takeover)** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/1695454)
+  - @ehtis, thank you for the test account.
+- **IDOR allows an attacker to modify the links of any user** — `Reddit` · `High` [↗](https://hackerone.com/reports/1661113)
+  - I found an IDOR which allows to modify the links of any user.
+- **IDOR Leads To Account Takeover Without User Interaction** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1272478)
+  - Hello Team, There's IDOR Bug on this subdomain mtnmobad.mtnbusiness.com.ng leads to account takeover, More details check the Poc.
+- **Getting access of mod logs from any public or restricted subreddit with IDOR vulnerability** — `Reddit` · `High` [↗](https://hackerone.com/reports/1658418)
+  - There's no check if the user is moderator of the particular subreddit or not while trying to access the mod logs via gql.reddit.com by using operation id.
+- **Steal private objects of other projects via project import** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/743953)
+  - An attacker could transfer issues, merge requests of another project to the imported project by importing a crafted GitLab export.
+- **Private objects exposed through project import** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/767770)
+  - This is a bypass of https://hackerone.com/reports/743953 , the current fix is blocking all "_ids" attributes.
+- **Multiple IDORs in family pairing api** — `TikTok` · `High` [↗](https://hackerone.com/reports/1286332)
+  - An IDOR (Insecure Direct Object Reference) vulnerability was found on a TikTok Family Pairing endpoint which could have been used to disable various features.
+- **Chain of IDORs Between U4B and Vouchers APIs Allows Attackers to View and Modify Program/Voucher Policies and to Obtain Organization Employees' PII** — `Uber` · `High` [↗](https://hackerone.com/reports/1148697)
+  - The security researchers discovered a number of connected IDORs in the Uber business and voucher applications.
+- **Authorization bypass -> IDOR -> PII Leakage** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1489470)
+  - During testing ████ I found javascript file containing administrative panel functionality.
+- **IDOR: leak buyer info & Publish/Hide foreign comments** — `Judge.me` · `High` [↗](https://hackerone.com/reports/1410498)
+  - HI @judgeme!
+- **GRAPHQL cross-tenant IDOR giving write access thought the operation UpdateAtlasApplicationPerson** — `Stripe` · `High` [↗](https://hackerone.com/reports/1066203)
+  - @bubbounty discovered an Insecure Direct Object Reference (IDOR) vulnerability that allowed someone with prior Admin access to a Stripe account to add a co-founder to a Stripe Atlas application belonging to the merchant account they used to administer.
+- **IDOR delete any Tickets on ads.tiktok.com** — `TikTok` · `High` [↗](https://hackerone.com/reports/1475520)
+  - An IDOR (Insecure Direct Object Reference) vulnerability was found on TikTok ads, through the "draft_order_id" parameter which could have allowed an attacker to delete the support tickets of other users.
+- **Able to steal private files by manipulating response using Auto Reply function of Lark** — `Lark Technologies` · `High` [↗](https://hackerone.com/reports/1387320)
+  - A IDOR (Insecure Direct Object Reference) vulnerability was found within the "AutoReply" functions of Lark.
+- **Able to steal private files by manipulating response using Compose Email function of Lark** — `Lark Technologies` · `High` [↗](https://hackerone.com/reports/1373784)
+  - A IDOR (Insecure Direct Object Reference) vulnerability was found within the "Compose Email" functions of Lark.
+- **Email change or personal data change on the account.** — `Stripe` · `Critical` [↗](https://hackerone.com/reports/1250037)
+  - @dk82hg found the email change flow on indiehackers.com was vulnerable to an insecure direct object reference (IDOR) which allowed an attacker to change the email associated with a user account to one they owned and ultimately take over a victim’s account in certain situations.
+- **IDOR - Other user's delivery address disclosed** — `Azbuka Vkusa` · `High` [↗](https://hackerone.com/reports/964010)
+  - —
+- **Deleting all DMs on RedditGifts.com** — `Reddit` · `High` [↗](https://hackerone.com/reports/1213237)
+  - It's possible to delete all 4.4M private messages on RedditGifts.com due to missing permission check on DELETE request DELETE /api/v1/messages/4423007/ HTTP/1.1 Host: www.redditgifts.com X-CSRFTOKEN: rYxQcijrs6viZxyLZt2os9gNvLgmEeXfSrH5wOe10GcOg3ABOvL3ebDbAXmeXojj Referer: https:
+- **Chain of vulnerabilities in Uber for Business Vouchers program allows for attacker to perform arbitrary charges to victim's U4B payment account** — `Uber` · `High` [↗](https://hackerone.com/reports/1145428)
+  - We have determined that through a chain of 3 vulnerabilities, it is possible for any U4B user to apply credit card charges or holds to any business using the Vouchers site.
+- **IDOR while uploading ████ attachments at [█████████]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1196976)
+  - There is an IDOR vulnerability in uploading attachments to the ████ section where an attacker can upload attachments in other user's █████████ if there is no attachment uploaded by a user.
+- **Ability to add arbitrary images/descriptions/titles to ohter people's issues via IDOR on getrevue.co** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/1096560)
+  - Hi team, I discovered a vulnerability that allows an attacker to add arbitrary images/descriptions/titles to other people's issues via IDOR It's possible to perform a IDOR attacker on getrevue.cowhen adding a image to your issue it's also possible to add descriptions and more t
+- **TAMS registration details API for admins open at https://tamsapi.gsa.gov/user/tams/api/usermgmnt/pendingUserDetails/** — `U.S. General Services Administration` · `High` [↗](https://hackerone.com/reports/1061292)
+  - TAMS administrators are supposed to approve or deny all registration requests.
+- **Cross-Tenant IDOR ( graphql `AddRulesToPixelEvents` query ) allowing to add, update, and delete rules of any Pixel events on the platform** — `TikTok` · `High` [↗](https://hackerone.com/reports/984965)
+  - Due to an Insecure Direct Object Reference (IDOR) vulnerability, an attacker could have potentially added, deleted, or updated rules for other users' pixel events in the TikTok ads portal.
+- **█████████ IDOR leads to disclosure of PHI/PII** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1085782)
+  - ████ is designed in a way where there is a vulnerable endpoint that allows a non-medical user to view the ██████████ records of people who are not ████████s of the sponsor.
+- **View another user information with IDOR vulnerability ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1004745)
+  - 1- Navigate to the system.
+- **IDOR when editing users leads to Account Takeover without User Interaction at CrowdSignal** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/915114)
+  - Hi team, If you click Edit button on any user of your team at https://app.crowdsignal.com/users/list-users.php, you will send a GET request to https://app.crowdsignal.com/users/invite-user.php?id=(userid)&popup=1 In this endpoint, id parameter is vulnerable for IDOR.
+- **IDOR when moving contents at CrowdSignal** — `Automattic` · `High` [↗](https://hackerone.com/reports/915127)
+  - Hi team, You can move your contents via Move to button at https://app.crowdsignal.com/dashboard And when you click to Move to > My Content you will send a POST request to /dashboard like that : actionable[] parameter's value is the content's ID.
+- **IDOR when editing email leads to Account Takeover on Atavist** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/950881)
+  - Hi team, I created an account on Atavist and checked my settings page.
+- **IDOR leads to Edit Anyone's Blogs / Websites** — `Automattic` · `High` [↗](https://hackerone.com/reports/974222)
+  - Hello there, I hope all is well!
+- **Security@ email forwarding and Embedded Submission drafts can be used to obtain copy of deleted attachments from other HackerOne users** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1034346)
+  - HackerOne has a number of ways for hackers to submit security vulnerabilities to a program, two of which are through an embedded submission form and through security@ email forwarding.
+- **IDOR + Account Takeover  [UNAUTHENTICATED]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1004750)
+  - 1- Open the burp suite.
+- **IDOR to Account Takeover on https://████/index.html** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/969223)
+  - I found when you wish to update your profile on https://███████/ after your login through https://██████████/signIn/signIn.html website due to an IDOR.
+- **Adding everyone to the repo due to the lack of rate limit** — `GitLab` · `High` [↗](https://hackerone.com/reports/978768)
+  - Since there is no rate limit in the inviting users to the repository section, it is possible to add all users on gitlab to a repository.
+- **Stealing data from customers.gitlab.com without user interaction** — `GitLab` · `High` [↗](https://hackerone.com/reports/674195)
+  - An attacker can link her own customers.gitlab.com account to the one of the victim, and these give access to 3 different vulnerabilities: The attacker registers herself on customers.gitlab.com, logging in using her Gitlab.com account.
+- **I.D.O.R To Order,Book,Buy,reserve On YELP FOR FREE (UNAUTHORIZED USE OF OTHER USER'S CREDIT CARD)** — `Yelp` · `Critical` [↗](https://hackerone.com/reports/391092)
+  - @hk755a found an Insecure Direct Object Reference (IDOR) Vulnerability that allowed an attacker to pay with someone else's registered credit card, while ordering food with Grubhub through the /checkout/transaction_platform endpoint.
+- **Idor for firstpromoter service** — `Dropcontact` · `High` [↗](https://hackerone.com/reports/959697)
+  - An IDOR has been detected on firstpromoter service
+- **Singapore - Account Takeover via IDOR** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/876300)
+  - ko2sec discovered that an alternate site shared database and cookie credentials with card.starbucks.com.sg.
+- **IDOR with Geolocation data not stripped from images** — `IRCCloud` · `High` [↗](https://hackerone.com/reports/906907)
+  - Vulnerable URL :- ████ Vulnerability Discription: When an image is taken using a smartphone or camera certain metadata fields are often attached to it.
+- **Read-Only user can delete users** — `Helium` · `High` [↗](https://hackerone.com/reports/888729)
+  - hello this endpoint (DELETE /api/invitations/0ff7e9f9-877a-40cc-b99f-f6b3b1bea3f8 )vulnerable to Insecure Direct Object Reference Steps to reproduce the bug Let's assume that three accounts exist: admin@helium.com (role Administrator) attacker@helium.com (role Read-Only
+- **account takeover on 3.0.1 version** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/842625)
+  - I find user reset password hash info and other security info on "/api/v1/[users.info](http://users.info)" note : I login on rocketchat with ldap account (my role : user) note: in request "[https://target/api/v1/users.info?username=[x]](https://target/api/v1/users.info?username=%5
+- **Full Account Take-Over of ████████ Members via IDOR** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/847452)
+  - userName originalEmail Email RecoveryEmail I am able to add Recovery Email address of my choice, thus, enabling me to send a password reset link to my attacker controlled email address.
+- **idor on upload profile functionality ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/741683)
+  - Vulnerable URL: https://██████████/███████ID/#Common/EditOne/Person/{account_id} steps to reproduce: 1).browse the image and click on the upload button 2).capture this request in burp suite 3).
+- **IDOR on update user preferences** — `Palo Alto Software` · `Critical` [↗](https://hackerone.com/reports/854290)
+  - Team member with role USER can change data of any user in the team, or steal his cookies, or steal the account of victim via forget password function.
+- **████ █████ exposes highly sensitive information to public** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/388554)
+  - www.██████ is a system used by ██████ for vendors to upload details of their technology for review by ███.
+- **Missing ownership check on remote wipe endpoint** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/819807)
+  - `CVE-2020-8154` On settings/user/security You can mark a device for wipe out that does not belong to you.
+- **Thailand - Insecure Direct Object Reference permits an unauthorized user to transfer funds from a victim using only the victims Starbucks card** — `Starbucks` · `High` [↗](https://hackerone.com/reports/766437)
+  - nnez discovered that a hacker could transfer funds from one Starbucks card to another by inspecting the form with Google Chrome DevTools and then change the forms "CardNumber" value to a victim's valid Starbucks card number.
+- **IDOR allow access to payments data of any user** — `Nord Security` · `High` [↗](https://hackerone.com/reports/751577)
+  - simple send this POST request (no need any auth): POST /api/v1/orders HTTP/1.1 Host: join.nordvpn.com Accept: application/json Accept-Language: en-US,en;q=0.5 Content-Type: application/json Content-Length: 179 DNT: 1 Connection: close
+- **Importing GitLab project archives can replace uploads of other users** — `GitLab` · `High` [↗](https://hackerone.com/reports/534794)
+  - `CVE-2019-5469` Importing a modified exported GitLab project archive can overwrite uploads for other users.
+- **IDOR on DoD Website exposes FTP users and passes linked to all accounts!** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/228383)
+  - An attacker can view anybody's FTP server information, thus **compromising** the user's FTP servers.
+- **IDOR to add secondary users in www.paypal.com/businessmanage/users/api/v1/users** — `PayPal` · `High` [↗](https://hackerone.com/reports/415081)
+  - PayPal Business Accounts allow account owners to create multiple secondary users with specific privileges assigned to their employees.
+- **Access to all █████████ files, including CAC authentication bypass** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/429000)
+  - Due to an Insecure Direct Object Reference (IDOR) in adding recipients to a shared package on ██████████, an unauthenticated attacker can access all files uploaded to ████.
+- **███████ Site Exposes █████████ forms** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/395246)
+  - The █████ site (https://██████.mil/) allows authenticated users to submit ██████ e-forms.
+- **Embedded submission form UUIDs can be enumerated through GraphQL node interface, exposing sensitive program details** — `HackerOne` · `High` [↗](https://hackerone.com/reports/447930)
+  - It's possible for an attacker to enumerate embedded submission form UUIDs through HackerOne's GraphQL node interface.
+- **Able to purchase a gift card with any amount** — `Starbucks` · `High` [↗](https://hackerone.com/reports/316789)
+  - There is a vulnerability in card.starbucks.com.sg that allows an attacker to modify the purchasing value of a starbucks gift card such that he is paying the minimum amount for the maximum value of the gift card.
+- **View & add to cart unlisted items via IDOR** — `Instacart` · `High` [↗](https://hackerone.com/reports/344284)
+  - Access Control vulnerability that would let an attacker order certain items from the API, even though they are missing from the Web catalog
+- **'cnvID' parameter vulnerable to Insecure Direct Object References** — `Concrete CMS` · `Critical` [↗](https://hackerone.com/reports/265284)
+  - Installation Information === IIS 8, PHP 5.5, Concrete5 (5.7.5.7) [Default install] An unauthenticated user can enumerate comments from all blog posts by POSTing requests to /index.php/tools/required/conversations/view_ajax with incremental 'cnvID' integers.
+- **[www.zomato.com] IDOR - Leaking all Personal Details of all Zomato Users through an endpoint** — `Eternal` · `High` [↗](https://hackerone.com/reports/269937)
+  - Hacker is able to get the PI(Personal Information) of any Zomato user.
+- **IDOR to cancel any table booking and leak sensitive information such as email,mobile number,uuid** — `Eternal` · `High` [↗](https://hackerone.com/reports/265258)
+  - Hacker is able to cancel the other user's table booking, The same request leaked the private information of the user (email & mobile no).

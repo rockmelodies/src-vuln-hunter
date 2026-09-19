@@ -1,0 +1,56 @@
+# Buffer Over-read
+
+_26 reports — High/Critical, disclosed_
+
+- **Heap Buffer Over-read in lib/http2.c (on_header) handling PUSH_PROMISE frames** — `curl` · `High` [↗](https://hackerone.com/reports/3480078)
+  - I have discovered a Heap Buffer Over-read vulnerability in lib/http2.c within the on_header callback function.
+- **Out-of-bounds read in HTTP method handling causes undefined behavior and potential crash This is sharp, Gaurav. We’ve got a real memory-safety bug ins** — `curl` · `High` [↗](https://hackerone.com/reports/3434510)
+  - Summary -​‍​‌‍​‍‌​‍​‌‍​‍‌ Component: libcurl core HTTP handling (HTTP/2 request translation and CONNECT detection) Affected​‍​‌‍​‍‌​‍​‌‍​‍‌ code paths
+- **Heap Buffer Overflow in Curl_memdup0() via CURLOPT_COPYPOSTFIELDS/CURLOPT_POSTFIELDSIZE Mismatch** — `curl` · `High` [↗](https://hackerone.com/reports/3292590)
+  - A heap buffer overflow vulnerability exists in libcurl's Curl_memdup0() function when handling CURLOPT_COPYPOSTFIELDS operations.
+- **Squid leaks previous content from reusable buffer** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/824163)
+  - `CVE-2019-12528` A malicious response to a FTP request can cause Squid to miscalculate the length of a string copying data past the terminating NULL.
+- ** The VTP parser in tcpdump before 4.9.2 has a buffer over-read in print-vtp.c:vtp_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/802846)
+  - `CVE-2017-13033` The vulnerable code portion is linked below.
+- **CVE-2017-13050: The RPKI-Router parser in tcpdump before 4.9.2 has a buffer over-read in print-rpki-rtr.c:rpki_rtr_pdu_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/802863)
+  - `CVE-2017-13050` The vulnerable code portion is linked below.
+- **CVE-2017-13019:  The PGM parser in tcpdump before 4.9.2 has a buffer over-read in print-pgm.c:pgm_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/802896)
+  - `CVE-2017-13019` The vulnerable code portion is linked below.
+- **CVE-2020-9383 Floppy OOB read** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/891846)
+  - `CVE-2020-9383` A vulnerability was found in Linux Kernel up to 5.5.6 (Operating System) and classified as critical.
+- **CVE-2017-13040 The MPTCP parser in tcpdump before 4.9.2 has a buffer over-read in print-mptcp.c, several functions.** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/964582)
+  - `CVE-2017-13040` Versions of tcpdump before 4.9.2 are vulnerable to a buffer over-read in print-mptcp.c.
+- **CVE-2017-13041 The ICMPv6 parser in tcpdump before 4.9.2 has a buffer over-read in print-icmp6.c:icmp6_nodeinfo_print().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/964583)
+  - `CVE-2017-13041` Versions of tcpdump before 4.9.2 are vulnerable to a buffer over-read in print-icmp6.c.
+- **h1 hacky holidays CTF solution** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1065517)
+  - Simple script to print all the flags.
+- **Out of Bounds Memory Read in php_jpg_get16** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/665330)
+  - `CVE-2019-11040` I have found and reported an out of bounds memory read in PHP [php_jpg_get16] When PHP EXIF extension is parsing EXIF information from an image, e.g.
+- **Out-of-bounds read in iconv.c:_php_iconv_mime_decode() due to integer overflow** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/593229)
+  - `CVE-2019-11039` PHP upstream bug report: https://bugs.php.net/bug.php?id=78069 *Description:* In _php_iconv_mime_decode() function in iconv.c, there's an out-of-bounds read due to an integer overflow vulnerability.
+- **heap buffer overflow in phar_detect_phar_fname_ext** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/475499)
+  - `CVE-2019-9021` The original report is here https://bugs.php.net/bug.php?id=77247 USE_ZEND_ALLOC=0 ./php-src-PHP-7.2.13/sapi/cli/php -r "var_dump(new Phar(file_get_contents('poc.phar'),0,'test.phar'));"
+- **Invalid Read on exif_process_SOFn** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/510025)
+  - `CVE-2019-9640` This bug is present in exif_scan_thumbnail method of ext/exif/exif.c file.
+- **Heap Buffer Overflow (READ: 4) in phar_parse_pharfile** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/477344)
+  - `CVE-2018-20783` Phar files with __HALT_COMPILER(); in unexpected places can lead to a buffer overrun.
+- **[bl] Uninitialized memory exposure via negative .consume()** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/966347)
+  - `CVE-2020-8244` **module name:** bl **version:** 4.0.2 **npm page:** https://www.npmjs.com/package/bl 8 660 595 weekly downloads
+- **GarlicRust - heartbleed style vulnerability in major I2P C++ router implementations** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/295740)
+  - `CVE-2017-17066` Brief ----- I2pd and kovri are both C++ I2P routers that share the same code base, as kovri was forked from i2pd several years ago.
+- **Heap-buffer-overflow in Perl__byte_dump_string (utf8.c) could lead to memory leak** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/480778)
+  - `CVE-2018-6798` With crafted regex match, I have found a heap-over-flow in function Perl__byte_dump_string, which would lead to memory leak.
+- **CVE-2017-13008 The IEEE 802.11 parser in tcpdump before 4.9.2 has a buffer over-read in print-802_11.c:parse_elements().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/268805)
+  - `CVE-2017-13008` Reported to the devs on 6 March 2017.
+- **CVE-2017-12986 The IPv6 routing header parser in tcpdump before 4.9.2 has a buffer over-read in print-rt6.c:rt6_print().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/268804)
+  - `CVE-2017-12986` Reported to the devs on 4 February 2017.
+- **CVE-2017-13038 The PPP parser in tcpdump before 4.9.2 has a buffer over-read in print-ppp.c:handle_mlppp().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/268808)
+  - `CVE-2017-13038` Reported to the devs on 11 June 2017.
+- **CVE-2017-13010 The BEEP parser in tcpdump before 4.9.2 has a buffer over-read in print-beep.c:l_strnstart().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/268807)
+  - `CVE-2017-13010` Reported to the devs on 6 March 2017.
+- **CVE-2017-13009 The IPv6 mobility parser in tcpdump before 4.9.2 has a buffer over-read in print-mobility.c:mobility_print().** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/268806)
+  - `CVE-2017-13009` Reported to the devs on 6 March 2017.
+- **CVE-2017-12985: The IPv6 parser in tcpdump before 4.9.2 has a buffer over-read in ip6_print()** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/268803)
+  - `CVE-2017-12985` Reported to the devs on 4 February 2017.
+- **A specifically malformed MQTT Subscribe packet crashes MQTT Brokers using the mqtt-packet module for decoding  ** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/541354)
+  - `CVE-2019-5432` I would like to report a buffer over-read in mqtt-packet respectively BufferList module.

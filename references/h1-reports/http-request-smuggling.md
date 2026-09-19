@@ -1,0 +1,58 @@
+# HTTP Request Smuggling
+
+_27 reports — High/Critical, disclosed_
+
+- **HTTP Request Smuggling and SSRF via CRLF Injection in Curl_add_custom_headers** — `curl` · `High` [↗](https://hackerone.com/reports/3484431)
+  - A lack of CRLF validation in Curl_add_custom_headers at lib/http.c:1761 allows users to inject arbitrary HTTP headers.
+- **Request Smuggling in Apache Tomcat (Important, CVE-2023-45648)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2299692)
+  - `CVE-2023-45648` Apache Tomcat supports Trailer Section.
+- **CVE-2024-21733 Apache Tomcat HTTP Request Smuggling (Client- Side Desync) (CWE: 444)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2327341)
+  - `CVE-2024-21733` Apache Tomcat from 8.5.7 through 8.5.63, from 9.0.0-M11 through 9.0.43 are vulnerable to client-side de-sync attacks.
+- **Possibility of Request smuggling attack** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2280391)
+  - Request smuggling was possible by throwing an IOException with the upper size limit of the trailer header.
+- **HTTP Request Smuggling (CL.0) leads to mass redirect users to attacker server without user interaction** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/1943608)
+  - —
+- **Pause-based desync in Apache HTTPD** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1667974)
+  - Apache was vulnerable to a pause-based desync.
+- **HTTP request smuggling with Origin Rules using newlines in the host_header action parameter** — `Cloudflare Public Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/1575912)
+  - The host_header action parameter available to rulesets in the [Origin Rules API](https://developers.cloudflare.com/rules/origin-rules/) lacked sufficient input validation i.e., allowing CRLF characters.
+- **HTTP Request Smuggling in Transform Rules using hexadecimal escape sequences in the concat() function** — `Cloudflare Public Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/1478633)
+  - The Edge Rules engine used by Cloudflare Transform Rules features string modifying functions like lower() and concat(), which accepted hexadecimal-encoded characters such as ”\x0a\x0d“.
+- **HTTP Request Smuggling via HTTP/2** — `Basecamp` · `Critical` [↗](https://hackerone.com/reports/1211724)
+  - HTTP Request Smuggling via HTTP/2
+- **HTTP Request Smuggling ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1120982)
+  - hello dear support I have found HTTP Request Smuggling on www.████████ Issue description ==============
+- **http request smuggling in  twitter.com** — `X / xAI` · `High` [↗](https://hackerone.com/reports/715996)
+  - the same vulnerability reported in other domain , see this report [here](https://hackerone.com/reports/713285) the Description of HTTP request smuggling attacks : [here](https://portswigger.net/web-security/request-smuggling)
+- **HTTP request smuggling on Basecamp 2 allows web cache poisoning** — `Basecamp` · `Critical` [↗](https://hackerone.com/reports/919175)
+  - It is found that an authenticated Basecamp 2 user can desync front and backend servers and poison the socket with harmful response for the next visitor.
+- **Unauthenticated request smuggling on launchpad.37signals.com** — `Basecamp` · `Critical` [↗](https://hackerone.com/reports/867577)
+  - By sending an ambiguous request on the rails application on launchpad.37signals.com, an attacker can desynchronise frontend and backend servers, leaving the socket to the backend server poisoned with a harmful response.
+- **HTTP Request Smuggling due to CR-to-Hyphen conversion** — `Node.js` · `High` [↗](https://hackerone.com/reports/922597)
+  - `CVE-2020-8201` **Summary:** [add summary of the vulnerability] Apparently, node.js converts CR in HTTP request headers to hyphen before parsing.
+- **http request smuggling in pscp.tv and periscope.tv** — `X / xAI` · `High` [↗](https://hackerone.com/reports/713285)
+  - the Description of HTTP request smuggling attacks : [here](https://portswigger.net/web-security/request-smuggling) seems that many subdomains in pscp.tv and periscope.tv vulenrable
+- **Stealing Zomato X-Access-Token: in Bulk using HTTP Request Smuggling on api.zomato.com** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/771666)
+  - Hi Zomato Security Team!
+- **HTTP request Smuggling** — `Helium` · `High` [↗](https://hackerone.com/reports/867952)
+  - When malformed or abnormal HTTP requests are interpreted by one or more entities in the data flow between the user and the web server, such as a proxy or firewall, they can be interpreted inconsistently, allowing the attacker to "smuggle" a request to one device without the other
+- **HTTP Request Smuggling** — `Brave Software` · `High` [↗](https://hackerone.com/reports/866382)
+  - When malformed or abnormal HTTP requests are interpreted by one or more entities in the data flow between the user and the web server, such as a proxy or firewall, they can be interpreted inconsistently, allowing the attacker to "smuggle" a request to one device without the other
+- **Request smuggling on admin-official.line.me could lead to account takeover** — `LY Corporation` · `High` [↗](https://hackerone.com/reports/740037)
+  - The reporter identified a request smuggling issue on admin-official.line.me [(TE.CL-type).](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn) The reporter clearly illustrated the impact without putting our users at risk or affecting the stability of o
+- **HTTP Request Smuggling on https://labs.data.gov** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/726773)
+  - The application appears to be vulnerable to HTTP request smuggling due to a disagreement between the front-end and back-end server, where the front-end server uses the Transfer-Encoding header to determine content in the HTTP body, but back-end server uses the Content-Length head
+- **Mass account takeovers using HTTP Request Smuggling on https://slackb.com/ to steal session cookies** — `Slack` · `Critical` [↗](https://hackerone.com/reports/737140)
+  - My name is Evan and I'm a first time bug hunter to your platform :) Because you guys were running a month long bounty promotion I decided to take a little of my time and gently perform recon on your platform.
+- **HTTP request smuggling using malformed Transfer-Encoding header** — `Node.js` · `Critical` [↗](https://hackerone.com/reports/735748)
+  - `CVE-2019-15605` Please see the attached PDF for a writeup of this vulnerability.
+- **Multiple HTTP Smuggling reports** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/648434)
+  - `CVE-2017-7658` Theses reports spreads other several years and are all about **HTTP Smuggling issues** (HTTP Requests or Responses splitting, Cache Poisoning, Security filter bypass).
+- **Request smuggling on ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/526880)
+  - The sites at █████████ and ww.██████████ are vulnerable to backend socket poisoning which enables attackers to hijack responses to other users.
+- **Bypass for #488147 enables stored XSS on https://paypal.com/signin again** — `PayPal` · `High` [↗](https://hackerone.com/reports/510152)
+  - Due to a configuration in frontend, caching servers, it was possible for a researcher to use request smuggling to convert a page request into a cached redirect.
+- **Stored XSS on https://paypal.com/signin via cache poisoning** — `PayPal` · `High` [↗](https://hackerone.com/reports/488147)
+  - Due to a configuration in frontend, caching servers, it was possible for a researcher to use request smuggling to convert a page request into a cached redirect.
+- **Hackerone1** — `RATELIMITED` · `High` [↗](https://hackerone.com/reports/471087)
+  - **Summary:** [add summary of the vulnerability] **Description:** [add more details about this vulnerability]

@@ -1,0 +1,62 @@
+# Cross-site Scripting (XSS) - DOM
+
+_29 reports — High/Critical, disclosed_
+
+- **DOM XSS in `fizzy.do` import filename preview enables one-click victim account takeover** — `Basecamp` · `High` [↗](https://hackerone.com/reports/3608199)
+  - While auditing the latest Fizzy code and validating it end to end in a live Docker deployment of current main, I found that the account import page renders the selected local filename with innerHTML instead of textContent.
+- **XSS on using the legacy "Graphie To Png" API** — `Khan Academy` · `Critical` [↗](https://hackerone.com/reports/2846011)
+  - An attacker can can upload malicious graphies via (http://graphie-to-png.kasandbox.org/) and (http://graphie-to-png.khanacademy.systems/) that exploit the graphie renderer.
+- **DOM Based Reflected Cross Site Scripting** — `MTN Group` · `High` [↗](https://hackerone.com/reports/2321874)
+  - I hope you're doing well.
+- **DOM XSS in tiktok.com/login via the redirect_url parameter** — `TikTok` · `High` [↗](https://hackerone.com/reports/2583874)
+  - A DOM Cross-Site Scripting (XSS) vulnerability was found on the redirect_url parameter that could have resulted in account takeover.
+- **Lynxview JS interfaces Takeover via deeplink traversal** — `TikTok` · `High` [↗](https://hackerone.com/reports/2417516)
+  - Multiple vulnerabilities could have been chained together resulting in the takeover of Javascript interfaces via the application's exposed Webview.
+- **DOM XSS on multiple Automattic domains through postMessages** — `Automattic` · `High` [↗](https://hackerone.com/reports/2371019)
+  - I have found a 2 flaws that when combined lead to DOM XSS on every website that is using Jetpack with the [Likes](https://jetpack.com/support/likes/) feature enabled.
+- **xss due to incorrect handling of postmessages** — `Khan Academy` · `Critical` [↗](https://hackerone.com/reports/1758132)
+  - Due to Insecure handling of create link tags (a tags) in a function called autolink found in 7Bmt.af733e428f9f986dfc96.js e = n.autolink(e, !0)); const n = function() { const e = /\b(?:(?:https?:\/\//www\d{0,3}[.]/[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>&]+/&amp;/\((?:[^\s()<>
+- **com.basecamp.bc3 Webview Javascript Injection and JS bridge takeover** — `Basecamp` · `High` [↗](https://hackerone.com/reports/1343300)
+  - It was identified that the android **com.basecamp.bc3 application**, contains a Webview where the loaded URLs are not sanitised properly.
+- **Dom Xss vulnerability** — `Recorded Future` · `High` [↗](https://hackerone.com/reports/1448616)
+  - [add details for how we can reproduce the issue] XSS can have huge implications for a web application and its users.
+- **Stored XSS in Mermaid when viewing Markdown files** — `GitLab` · `High` [↗](https://hackerone.com/reports/1212822)
+  - GitLab's Mermaid configuration allows an attacker to inject HTML in the rendered Markdown.
+- **Prototype Pollution leads to XSS on https://blog.swiftype.com/#__proto__[asd]=alert(document.domain)** — `Elastic` · `High` [↗](https://hackerone.com/reports/998398)
+  - deparam function which parses location.hash in https://s.swiftypecdn.com/install/v2/st.js is vulnerable to prototype pollution.
+- **Stored XSS in any message (leads to priv esc for all users and file leak + rce via electron app)** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1014459)
+  - `CVE-2021-22886` Persistent XSS flaw using nested markdown tags allows remote attacker to inject arbitrary JavaScript to message.
+- **RPC Implementation allows unauthenticated remote calls** — `Lark Technologies` · `High` [↗](https://hackerone.com/reports/876022)
+  - It was found that the RPC implementation via postMessage within Lark did not check origin, so an attacker could have potentially performed RPC calls on behalf of a user.
+- **Possible DOM XSS on app.hey.com** — `Basecamp` · `High` [↗](https://hackerone.com/reports/1010132)
+  - Hello Team, While testing it was observed that on https://app.hey.com/, on Search box there is a possibility of XSS.
+- **Cross-site Scripting (XSS) - DOM - iqcard.informatica.com** — `Informatica` · `High` [↗](https://hackerone.com/reports/1004833)
+  - I found a DOM based XSS at iqcard.informatica.com After finding the path **iqcard.informatica.com/pub/fujitsu/fm3v2/player/attach.html**.
+- **DOM BASED XSS ON https://www.rockstargames.com/GTAOnline/features ** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/479612)
+  - In this report, the researcher identified a DOM-based Cross-Site Scripting vulnerability under the GTAOnline section of the main site.
+- **DOM Based xss on https://www.rockstargames.com/ ( 1 )** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/475442)
+  - In this report the researcher identified a DOM-based Cross-Site Scripting vulnerability on the main rockstargames.com site.
+- **Warehouse dom based xss may lead to Social Club Account Taker Over.** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/663312)
+  - The researcher brought our attention to a DOM-based Cross-Site Scripting vulnerability.
+- **DOM-based XSS on mobile.line.me** — `LY Corporation` · `High` [↗](https://hackerone.com/reports/736272)
+  - The reporter found a DOM-based XSS affecting mobile.line.me, which could have resulted in an attacker gaining access to information about a user's mobile plans, usage and user details registered as part of their mobile subscription plan.
+- **DOM Based XSS via postMessage at https://inventory.upserve.com/login/** — `Upserve` · `High` [↗](https://hackerone.com/reports/603764)
+  - DOM based XSS is possible at https://inventory.upserve.com/login/ due to insecure origin checking when receiving a postMessage.
+- **H1514 DOMXSS on Embedded SDK via Shopify.API.setWindowLocation abusing cookie Stuffing** — `Shopify` · `High` [↗](https://hackerone.com/reports/422043)
+  - I'm reporting a rather unusual DOMXSS that allows an attacker to perform a XSS attack on any Shopify apps that use the Embedded SDK.
+- **DOMXSS in redirect param** — `Semmle` · `High` [↗](https://hackerone.com/reports/361287)
+  - The **redirect** param can consist of a javascript: url, which results in XSS.
+- **DOM XSS on 50x.html page on proxy.duckduckgo.com** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/426275)
+  - I read the report about DOM XSS on 50x.html page (https://hackerone.com/reports/405191).
+- **DOM XSS on 50x.html page** — `DuckDuckGo` · `High` [↗](https://hackerone.com/reports/405191)
+  - The is a DOM XSS vulnerability on https://duckduckgo.com/50x.html, it seems like the sink is DIV.innerHTML and the source is location.search.
+- **CSS Injection on /embed/ via bgcolor parameter leaks user's CSRF token and allows for XSS ** — `Chaturbate` · `High` [↗](https://hackerone.com/reports/386334)
+  - There's a CSS injection here: https://chaturbate.com/embed/admin/?bgcolor=%7D*%7Bbackground:red&tour=nvfS&disable_sound=0&campaign=iNSGX body, div#main, div.content, div.block, div.section {margin: 0px; padding: 0px;} body {min-width:800px;} div.content {width: 100%;}
+- **[html-janitor] Passing user-controlled data to clean() leads to XSS** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/308155)
+  - `CVE-2017-0931` Passing user-controlled data to the module's clean() function can result in arbitrary JS execution, because of unsafe DOM operations.
+- **XSS в названии сервера** — `VK.com` · `High` [↗](https://hackerone.com/reports/262010)
+  - XSS в поле названия сервера, с ограниченным количеством символов.
+- **XSS в комментариях от имени сообщества ** — `VK.com` · `High` [↗](https://hackerone.com/reports/264445)
+  - XSS в дропдауне выбора сообщества при комментировании.
+- **[GitHub Extension] Unsanitised HTML leading to XSS on GitHub.com** — `Algolia` · `High` [↗](https://hackerone.com/reports/220494)
+  - I noticed that certain HTML is unsanitised by the Awesome Autocomplete for GitHub extension, leading to a case of XSS on the GitHub website.

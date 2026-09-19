@@ -1,0 +1,70 @@
+# Classic Buffer Overflow
+
+_33 reports — High/Critical, disclosed_
+
+- **Stack Buffer Overflow in mprintf.c formatting function (fallback path)** — `curl` · `High` [↗](https://hackerone.com/reports/3493602)
+  - A stack-based buffer overflow exists in mprintf.c within the out_double() function.
+- **Buffer Overflow in WebSocket Handshake (lib/ws.c:1287)** — `curl` · `High` [↗](https://hackerone.com/reports/3392174)
+  - Buffer overflow vulnerability in curl's WebSocket implementation due to unsafe use of strcpy() in the handshake process.
+- **Multiple Unsafe strcpy() Function Calls Leading to Potential Buffer Overflow Vulnerabilities in cURL 8.16.1-DEV** — `curl` · `High` [↗](https://hackerone.com/reports/3337561)
+  - During a comprehensive security audit of the cURL codebase, multiple instances of unsafe strcpy() function usage were identified in critical code paths.
+- **[Xenoblade Chronicles X: Definitive Edition] Buffer overflow in string escape function, multiplayer DoS** — `Nintendo` · `High` [↗](https://hackerone.com/reports/3048061)
+  - When displaying other players's profile/avatar name or other user-controlled input received through online multiplayer, the game would perform sanitization by escaping '\' and '%' (backslash and percent) characters by duplicating them.
+- **Buffer Overflow Risk in Curl_inet_ntop and inet_ntop4** — `curl` · `High` [↗](https://hackerone.com/reports/2887487)
+  - *Curl is a software that I love and is an important tool for the world.
+- **Buffer Overflow Vulnerability in strcpy() Leading to Remote Code Execution** — `curl` · `Critical` [↗](https://hackerone.com/reports/2871792)
+  - The vulnerability in the program arises from a classic buffer overflow, triggered by the unsafe use of the strcpy() function without bounds checking.
+- **Remote vulnerabilities in spp** — `PlayStation` · `High` [↗](https://hackerone.com/reports/2177925)
+  - `CVE-2006-4304` A malicious PPPoE server can cause denial-of-service or potentially remote code execution in kernel context on the PS4/PS5.
+- **Buffer overflow and affected url:-https://github.com/curl/curl/blob/master/docs/examples/hsts-preload.c** — `curl` · `Critical` [↗](https://hackerone.com/reports/2252307)
+  - A buffer overflow, also known as a buffer overrun, occurs when a program or process attempts to write more data to a buffer than the buffer is allocated to hold.
+- **[WiiU/Switch] Remote code execution inside the ENL library** — `Nintendo` · `High` [↗](https://hackerone.com/reports/1541273)
+  - Nintendo uses its own private library called ENL, it can do matchmaking using NEX (networking library for Nintendo game servers) and communication between players is done using PIA (UDP peer-to-peer networking library) This library is used in many Nintendo games including:
+- **Use of Unsafe function || Strcpy** — `curl` · `High` [↗](https://hackerone.com/reports/1485379)
+  - It was observed that application is using strcpy() function which may cause buffer overflow attacks.
+- **CVE-2021-3711: SM2 decrypt  buffer overflow ** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1352429)
+  - `CVE-2021-3711` CVE-2021-3711 In order to decrypt SM2 encrypted data an application is expected to call the API function EVP_PKEY_decrypt().
+- **Buffer overrun in Steam SILK voice decoder** — `Valve` · `Critical` [↗](https://hackerone.com/reports/1180252)
+  - The SteamWorks SDK has a function available named [DecompressVoice()](https://partner.steamgames.com/doc/api/ISteamUser#DecompressVoice), which takes as input some compressed voice data, and returns the raw audio data.
+- **UrnState Heap Overflow** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/824771)
+  - `CVE-2019-12526` When handling a URN Request an attacker controlled response can cause Squid to overflow a heap buffer.
+- **Squid as reverse proxy RCE and data leak** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/778610)
+  - This was a very difficult experience as Squid maintainers took a long time to answer.
+- **Buffer overflow in PyCArg_repr in _ctypes/callproc.c for Python 3.x to 3.9.1** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1084342)
+  - `CVE-2021-3177` Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param.
+- **Several protocol parsers in before 4.9.2 could cause a buffer overflow in util-print.c:bittok2str_internal()** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/800324)
+  - Length of a local buffer used to parse network packets was not validated against actual payload size leading to a classic buffer overflow.
+- **Buffer Overflow in ext_lm_group_acl helper** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/789034)
+  - `CVE-2020-8517` Due to incorrect buffer management ext_lm_group_acl is vulnerable to a denial of service attack when processing NTLM Authentication credentials.
+- **[Portal 2] Remote Code Execution via voice packets** — `Valve` · `Critical` [↗](https://hackerone.com/reports/733267)
+  - RCE can be achieved on other players via voice packets due to the lack of length validation when reading into a stack based buffer.
+- **Specially Crafted Closed Captions File can lead to Remote Code Execution in CS:GO and other Source Games** — `Valve` · `Critical` [↗](https://hackerone.com/reports/463286)
+  - With a specially crafted closed captions file, the parser calls CHudCloseCaption::GetNoRepeatValue which in turn calls CHudCloseCaption::SplitCommand which has no boundary checks allowing the on stack variables cmd and args to be overflowed which in turn allows Remote Code Execut
+- **Android App Crashes while sending message to users/ on channel ** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/832217)
+  - I found a security vulnerability in Rocket's latest android app by which I was able to remotely crash any user’s app instantly just by just sending a simple message in private or in channel.
+- **phar_tar_writeheaders_int() buffer overflow** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/504761)
+  - `CVE-2019-9675` A buffer overflow has been found in the phar_tar_writeheaders_int() function.
+- **Uninitialized read in exif_process_IFD_in_TIFF** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/510336)
+  - `CVE-2019-9641` This bug can be reproduced only in 32 bit PHP builds.
+- **[Half-Life 1] Malformed map name leads to memory corruption and code execution** — `Valve` · `High` [↗](https://hackerone.com/reports/402566)
+  - A stack overflow takes place when map names with malformed names are listed which can be used to execute arbitrary code.
+- **[GoldSrc] RCE via 'spk' Console Command** — `Valve` · `High` [↗](https://hackerone.com/reports/769014)
+  - RCE can be achieved on clients via the 'spk' console command due to missing length checks before copying into a stack based buffer.
+- **[GoldSrc] RCE via malformed BSP file** — `Valve` · `High` [↗](https://hackerone.com/reports/763403)
+  - RCE can be achieved via a malformed BSP file due to the lack of length validation when copying data from the BSP file into a stack based buffer.
+- **Malformed BSP in GoldSrc Engine may cause shellcode injection** — `Valve` · `High` [↗](https://hackerone.com/reports/458929)
+  - There's a vulnerability in GoldSrc Engine that allows to run arbitrary assembly code using incorrect BSP format processing.
+- **Malformed NAV file leads to buffer overflow and code execution in Left4Dead2.exe** — `Valve` · `Critical` [↗](https://hackerone.com/reports/542180)
+  - In the parsing routines of NAV files (which contain the navigation mesh used by the AI for survivor bots, zombies, and the AI director spawning system) a buffer overflow exists which can be used to control the EIP register and takeover code execution.
+- **Malformed .BMP file in Counter-Strike 1.6 may cause shellcode injection** — `Valve` · `High` [↗](https://hackerone.com/reports/397545)
+  - With the vulnerability of the GoldSource Engine, the server is able to perform remote code execution on the client, overwriting the stack when reading the BMP file.
+- **CVE-2017-13089 wget stack smash** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/287666)
+  - `CVE-2017-13089` The http.c:skip_short_body() function is called in some circumstances, such as when processing redirects.
+- **CVE-2017-13090 wget heap smash** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/287667)
+  - `CVE-2017-13090` The retr.c:fd_read_body() function is called when processing OK responses.
+- **RCE on Steam Client via buffer overflow in Server Info** — `Valve` · `Critical` [↗](https://hackerone.com/reports/470520)
+  - In Steam and other valve games (CSGO, Half-Life, TF2) there is a functionality to find game servers called the server browser.
+- **Malformed Skybox .TGA in Half-Life (GoldSRC) leads to Access Violation** — `Valve` · `High` [↗](https://hackerone.com/reports/351016)
+  - A malformed .TGA when loaded as a Skybox on a map in a GoldSRC engine game (Half-Life) can lead to arbitrary code execution on a remote client.
+- **Malformed .BSP Access Violation in CS:GO can lead to Remote Code Execution** — `Valve` · `Critical` [↗](https://hackerone.com/reports/351014)
+  - A malformed .BSP can trigger an Access Violation on CS:GO that can lead to arbitrary code execution on a remote computer.

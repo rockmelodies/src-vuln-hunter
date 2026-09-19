@@ -1,0 +1,68 @@
+# Violation of Secure Design Principles
+
+_32 reports — High/Critical, disclosed_
+
+- **FS Permissions Bypass** — `Node.js` · `High` [↗](https://hackerone.com/reports/3417819)
+  - `CVE-2025-55130` A flaw in Node.js’s Permissions model allows attackers to bypass --allow-fs-read and --allow-fs-write restrictions using crafted relative symlink paths.
+- **Account Takeover via Unverified Email Change and Improper Session Handling** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3324823)
+  - During testing on ███ , I noticed an issue with session handling after changing the account email.
+- **Cross‑Layer State Confusion in libcurl: Credential & Key‑Material Persistence Across Redirect / Connection Reuse Boundaries** — `curl` · `Critical` [↗](https://hackerone.com/reports/3480641)
+  - This report describes a state‑level security invariant violation in libcurl where credential‑ or key‑related state may persist or be re‑applied across logical trust boundaries (redirects, connection reuse, or scheme transitions) without a formal invariant enforcing reset semantic
+- **Exposure of Private Personal Information to an Unauthorized Actor - PII  and soldier data (mos, schools, and speciality training)** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1556950)
+  - Authenticated users on https://█████████/SelfService/home/selfservice can view other ████████'s data by following the page site for My ███ Data and start manipulating URL requests to view the following tabs: Tester primarily focused on Personnel, ATRRS, and Education/Training
+- **Unauthenticated arbitrary file upload on the https://█████/ (█████████)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/698789)
+  - I was able to identify unsafe upload endpoint on the https://█████/upload.php 1) Go to the https://█████████/upload.php 2) Upload some test file.
+- **Subdomain takeover ██████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2552243)
+  - The subdomain █████ is pointing to open-elb-prod-277276106.us-east-1.elb-amazonaws.com., the domain elb-amazonaws.com was available for registration Using this vulnerability an attacker can:
+- **Unauthenticated arbitrary file upload on the https://█████/ (█████.mil)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/698793)
+  - I was able to identify unsafe upload endpoint on the https://██████/upload.php 1) Go to the https://██████/upload.php 2) Upload some test file.
+- **Subdomain Takeover via Host Header Injection on www.█████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2188240)
+  - **_Reported By_**: Ezequiel \[@ezequielpuig\] **_Reported Date_**: 01/October/2023 **_Reported To_**: U.S.
+- **Onion-Location header allows to open arbitrary URLs including chrome:** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1089995)
+  - This [PR](https://github.com/brave/brave-core/pull/6762) introduced "Open in Tor" feature that can open .onion URLs offered through Onion-Location response header, but Onion-Location header allows to open arbitrary URLs such as javascript: and chrome:.
+- **[█████] Bug Reports allow for Unrestricted File Upload** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1850065)
+  - The web page https://███████/ allows for users to submit bug reports.
+- **String length restriction byepass at https://callerfeel.mtnonline.com/profile/feedback.html** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1638347)
+  - Hi, hope you are well :) I found that the attacker can bye pass the lenght restriction of user name at the feedback form
+- **Web Cache Poisoning on  █████ ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1183263)
+  - The web application https://████████ uses a web cache to more efficiently serve its pages to the users.
+- **Arbitrary file upload and stored XSS via ███ support request** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/865354)
+  - A malicious user can upload files of any type when submitting a support request.
+- **Access Token Smuggling from my.playstation.com via Referer Header** — `PlayStation` · `High` [↗](https://hackerone.com/reports/835437)
+  - I discovered a way to smuggle an access token from my.playstation.com via Referer header through chain of open redirection vulnerability.
+- **Email Verification bypass on signup** — `Automattic` · `High` [↗](https://hackerone.com/reports/1040047)
+  - This bug is related to wordpress.com.
+- **On Singing up with a Phone number , The 4 digit OTP does not expires for a long time leading to an easy attack and make a verified account easilty** — `Bumble` · `High` [↗](https://hackerone.com/reports/792295)
+  - Hello there how are you doing ?
+- **Authorization Token on PlayStation Network Leaks via postMessage function** — `PlayStation` · `High` [↗](https://hackerone.com/reports/826394)
+  - After some analysis on how playstation network authentication work, I came across a certain pattern of how authorization tokens are handled.
+- **[H1-2006 2020] From multiple vulnerabilities to complete ATO on any customer account and staff admin** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/894863)
+  - First of all, thanks for the awesome CTF.
+- **[H1-2006 2020] How I solved my first H1 CTF** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895587)
+  - My name is @cr33pbp0y and I going to tell you how I resolved my first HackerOne CTF.
+- **[H1-2006 2020] CTF** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/887993)
+  - As there is a bonus for first 10 solutions for now I'll just post a flag.
+- **Unrestricted File Upload to ███████SubmitRequest/Index.cfm?fwa=wizardform** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/813395)
+  - An attacker is able to upload files of any type to ███SubmitRequest/Index.cfm?fwa=wizardform as long as they are less than 5 MB.
+- **Flaw in Change Email https://youtu.be/MMvlcHIGs2A** — `Staging.every.org` · `Critical` [↗](https://hackerone.com/reports/825643)
+  - See https://youtu.be/MMvlcHIGs2A
+- **Cache poisoning DoS to various TTS assets** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/728664)
+  - I have recently come across a technique to force a Cloudfoundry app to return a HTTP 404 error when requesting any resource, which contains cache friendly headers.
+- **Bypass Email Verification using Salesforce -- Reproducible in gitlab.com** — `GitLab` · `High` [↗](https://hackerone.com/reports/617896)
+  - `CVE-2019-5486` The salesforce login integration allows attacker to bypass email verification -- user is able to signup with any email domain they want, effectively bypass all email domain whitelist/blacklist restriction or any other 3rd party using gitlab instance's email address.
+- **Missing Protection Mechanism in Mail Servers allows malicious user to use staff.ratelimited.me email could lead to identity theft.** — `RATELIMITED` · `High` [↗](https://hackerone.com/reports/486667)
+  - I'm not really sure how your mail servers being configured but i guess there is a mis-configuration or missing protection mechanism that fails to verify if the email that is going to be sent are only made by authorized ratelimited staff only.
+- **SSLv3 Poodle Vulnerability** — `FormAssembly` · `High` [↗](https://hackerone.com/reports/220116)
+  - Hey there, I tested against POODLE MITM and enterprisedemo.formassembly.com is vulnerable, I simply went into terminal and used this command "openssl s_client -connect enterprisedemo.formassembly.com:443 -ssl3" How to fix: Disable SSLv3
+- **Private program email forwarding response invitation not expire after first use.** — `HackerOne` · `High` [↗](https://hackerone.com/reports/209140)
+  - Before i reported that email forwarding of private can be enumerated and any user join to private program here #201369 , __but this seems by design__, but now it i found a related issue which can cause a security impact on private program because the email forwarding response of
+- **Access to local file system using javascript** — `Tor` · `High` [↗](https://hackerone.com/reports/258630)
+  - Access to local file system using javascript(slightly xss on server side ) The browser can access the local files using iframes with a local html file.
+- **Exposed API-key allows to control nightly builds of firmwares (█████████ & ████████)** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/179986)
+  - The researcher found a public API token that was mistakenly granted full-access permission, which allowed the creation/overwrite of nightly builds of UniFi Firmware.
+- **{REDACTED}.data.gov subdomain takeover.** — `GSA Bounty` · `High` [↗](https://hackerone.com/reports/263902)
+  - @edio discovered a number of related subdomain takeover attacks against some subdomains of data.gov.
+- **out of date disqus shortname usage in the web app source code** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/172780)
+  - **Short definition of bug**: Misusage of an third-party web service in http://www.starbucks.com/ Hi Starbucks Bug Bounty Team, I found a vulnerability on your global website.
+- **An unsafe design practice in the Passphrase may result in Secret being accidentally changed.** — `Phabricator` · `High` [↗](https://hackerone.com/reports/218324)
+  - Summary: An unsafe design practice in the Passphrase may result in Secret being accidentally changed.

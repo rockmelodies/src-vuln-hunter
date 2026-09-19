@@ -1,0 +1,48 @@
+# Cleartext Storage of Sensitive Information
+
+_22 reports — High/Critical, disclosed_
+
+- **Critical PII Data Exposure in ORDER_ERROR_LOG** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3242830)
+  - A critical security vulnerability has been identified in the application's error logging system where the ORDER_ERROR_LOG file contains complete database insertion statements that expose Personally Identifiable Information (PII) of customers in plain text format.
+- **[Critical Data Breach] Exposure of PII Data Leak via API Response** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/3078508)
+  - A critical information disclosure vulnerability was discovered, exposing sensitive user data via an API response.
+- **Leaked reused password for a few Khan Academy users** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/3099978)
+  - I found A lot of credentials for your domain on the Telegram bot: ███ While the exact sources of the leaked data are unknown, the volume of exposed information is substantial.
+- **Unauthorized Account Access via Leaked Credentials in URL Format (Account Takeover )** — `Khan Academy` · `Critical` [↗](https://hackerone.com/reports/3080597)
+  - I discovered a critical vulnerability that allows attackers to access user accounts on khanAcademy.com using credentials publicly available on VirusTotal., an attacker can directly authenticate into a user’s account without any secondary verification or alert to the user.
+- **███ leaking PII of tour visitors (names, email addresses, phone numbers) via misconfigured record permissions** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2294930)
+  - The ████████ is leaking a large amount of sensitive data, including **full names, email addresses and phone numbers**.
+- **Mozilla Employee's Token for sql.telemetry.mozilla.org Exposed in Git Commit** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2193815)
+  - A Mozilla employee's API token for https://sql.telemetry.mozilla.org was leaked in one of our Github repos.
+- **Mozilla FuzzManager API Token Exposed in Git Commit** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2030076)
+  - The researcher has discovered that an API token for the FuzzManager of Mozilla (https://fuzzmanager.fuzzing.mozilla.org) was leaked in one of our GitHub repositories.
+- **debug.log File Exposure that exposes (user/████) username and password at █████████** — `Mars` · `High` [↗](https://hackerone.com/reports/2122938)
+  - Hello Team, I have discovered a debug.log file exposure vulnerability at █████████ .
+- **Exposed GIT repo on ██████████[HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1629822)
+  - Git metadata directory (.git) was found in this folder.
+- **Cleartext storage of sensitive information at https://staging.status.ai-apps-comms.ibm.com/env can lead to account takeover  of several IBM employees** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1670586)
+  - Cleartext storage of sensitive information was reported to IBM, analyzed and has been remediated.
+- **Sensitive Information Disclosure Through Config File** — `MTN Group` · `High` [↗](https://hackerone.com/reports/1397788)
+  - An attacker could gain access to sensitive information about usernames, encrypted passwords, internal IP addresses and configuration data of internal services.
+- **████ api key exposed in github.com/███/███** — `8x8` · `High` [↗](https://hackerone.com/reports/1454965)
+  - @adnanmalikinfo identified a committed API key of a 3rd party SaaS platform for social marketing.
+- **Critical || Unrestricted access to private Github repos and properties of Elastic through leaked token of Elastic employee** — `Elastic` · `Critical` [↗](https://hackerone.com/reports/1266188)
+  - @prateek_0490 was able to gain access to private Github repositories through a leaked Github token on bitbucket.
+- **Leaking Rockset API key on Github** — `Rockset` · `High` [↗](https://hackerone.com/reports/1094151)
+  - We all know that Github is great, but it runs the risk of some credentials being revealed by mistake.
+- **Development Application Credentials + Information Exposed** — `Kubernetes` · `High` [↗](https://hackerone.com/reports/1018413)
+  - When I browsed through all the JS files on prow.k8s.io I came across a link called **/config** which contains a configuration disclosure for the development files kubespray: required_status_checks: contexts:
+- **Sensitive information about a ██████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/893970)
+  - To confirm that it indeed was a confidential document it was found that a basic search related to this pdf returns a meta info containing a label about criminal penalties for foreign export: "WARNING – This document contains technical data whose export is restricted by the Arms E
+- **PII/PHI data available on web https://████████Portals/22/Documents/Meetings** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/877598)
+  - Also here I've found many biographies of medical officers with different level of details.
+- **SSN is exposed on slides, previous critical report was not fixed in an appropriate way** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/874017)
+  - SSN is exposed on slides, previous critical report was not fixed in an appropriate way ██████wp-content/uploads/2018/12/████████
+- **Sensitive Information Leaking Through Navy Website. [█████]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/812585)
+  - While performing recon work on websites owned by DoD i came up with a Navy website which is leaking sensitive information.
+- **AppLovin API Key hardcoded in a Github repo** — `X / xAI` · `High` [↗](https://hackerone.com/reports/674774)
+  - Hello, I found a Sensitive Data Exposure in github/mopub-android-mediation project, the AppLovin UI API key is hardcoded in source code.
+- **Production secret key leak in config/secrets.yml** — `Grab` · `High` [↗](https://hackerone.com/reports/456997)
+  - Production secret key leak in config/secrets.yml In Github, http://engineering.grab.com/ secret_key_base is leaked which is present in the config/secrets.yml
+- **Github Token Leaked publicly for https://github.sc-corp.net** — `Snapchat` · `Critical` [↗](https://hackerone.com/reports/396467)
+  - GitHub is a truly awesome service but it is unwise to put any sensitive data in code that is hosted on GitHub and similar services as i was able to find github token indexed ***7 hours Ago*** by user ***██████ - Software Engineer - Snap Inc*** You can find the leak in this link :

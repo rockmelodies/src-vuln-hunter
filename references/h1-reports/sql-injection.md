@@ -1,0 +1,284 @@
+# SQL Injection
+
+_140 reports — High/Critical, disclosed_
+
+- **Complete authentication bypass to admin permissions** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/3564655)
+  - `CVE-2026-29198` A NoSQL injection vulnerability in Rocket.Chat allows unauthenticated remote attackers to bypass authentication and perform account takeover.
+- **SQL Injection vulnerability found on ibm.com endpoint** — `IBM` · `Critical` [↗](https://hackerone.com/reports/3578842)
+  - SQL Injection vulnerability found on ibm.com endpoint was reported to IBM, analyzed and has been remediated.
+- **SQLi At `███████` via `theme_name` ** — `Mars` · `Critical` [↗](https://hackerone.com/reports/3293803)
+  - A critical SQL injection vulnerability was discovered in a web application's theme selection endpoint through the theme_name parameter.
+- **SQLi at █████ parameter** — `Mars` · `Critical` [↗](https://hackerone.com/reports/3277276)
+  - A critical SQL injection vulnerability was discovered in an items endpoint that accepted unauthenticated POST requests without CSRF validation.
+- **SQL Injection - entryid parameter in 'formbuilderv2-confirmation.php'** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3127198)
+  - I discovered a SQL Injection vulnerability via entryid on the website █████.
+- **SQLi in LASCO CME Query** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/186367)
+  - There is sqli in the form █████████ on the "CME DateTime" parameter.
+- **SQL Injection - JSON 'name' parameter** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3257171)
+  - I discovered a SQL Injection vulnerability in the formid parameter on the website █████████ .
+- **SQL Injection in URI Path Leading to Full Database Disclosure on ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3234050)
+  - A time-based blind SQL injection vulnerability was discovered on the U.S.
+- **SQL Injection via URL** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3127562)
+  - I discovered a SQL Injection vulnerability via URL on the website ██████████.
+- **SQL Injection - data[account][id] parameter** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/3127152)
+  - I discovered a SQL Injection vulnerability in the data[account][id] parameter on the website ███████.
+- **SQL injection identified on IBM endpoint. ** — `IBM` · `Critical` [↗](https://hackerone.com/reports/2830573)
+  - SQL injection identified on IBM endpoint was reported to IBM, analyzed and has been remediated.
+- **Potential SQL Injection when annotating FilteredRelation on PostgreSQL** — `Django` · `High` [↗](https://hackerone.com/reports/3417967)
+  - `CVE-2025-57833` Hi Django security team !
+- **SQL Injection in Django ORM via Unvalidated `_connector` in Q Objects** — `Django` · `Critical` [↗](https://hackerone.com/reports/3335709)
+  - A **critical** SQL injection vulnerability exists in the Django ORM's handling of Q objects.
+- **Error-Based & Time-Based SQL Injection in 'keyword' Parameter of admin-search.php Allowing Full Database Access in Revive Adserver v6.0.0** — `Revive Adserver` · `High` [↗](https://hackerone.com/reports/3395221)
+  - `CVE-2025-52664` A critical SQL Injection vulnerability has been identified in Revive Adserver's administrative search functionality, specifically in the admin-search.php file.
+- **SQL Injection when using FilteredRelation** — `Django` · `Critical` [↗](https://hackerone.com/reports/3292573)
+  - Vulnerability location: https://github.com/django/django/blob/main/tests/filtered_relation/tests.py#L124 You may create my POC function above the "test_select_related_foreign_key" function:
+- **SQL injection in JSONField KeyTransform** — `Django` · `High` [↗](https://hackerone.com/reports/2588426)
+  - `CVE-2024-42005` The vulnerability is in: https://github.com/django/django/blob/main/tests/model_fields/test_jsonfield.py#L427 I created a function and added it to the "test_jsonfield.py" to explain the vulnerability (POC).
+- **SQLi | in URL paths** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2958619)
+  - A SQL Injection vulnerability was discovered in the customerId parameter of the URL path: ███████ We can observe this by adding a little quote in the customerId: █████████ which will show the following error, indicating that its vulnerable to SQL Commands Injection: ███████ We
+- **CVE-2024-53908: Django Potential SQL injection in `HasKey(lhs, rhs)` on Oracle** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2882887)
+  - `CVE-2024-53908` I've found a potential SQL Injection vulnerability and reported it to the Django team.
+- **SQL injection in URL path leads to Database Access** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2633959)
+  - The application https://corporate.admyntec.co.za/ application has an SQL injection in the URL paths since it takes the ID numbers in there and insert them directly into the backend SQL query without sanitizing them.
+- **SQL Injection** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2737595)
+  - I discovered a Blind SQL Injection vulnerability in the application, which allows an attacker to manipulate database queries by injecting malicious input into the vulnerable parameter.
+- **SQL injection in https://demor.adr.acronis.com/ via the username parameter** — `Acronis` · `High` [↗](https://hackerone.com/reports/1436751)
+  - I have discovered a SQL injection in https://demor.adr.acronis.com/ using the POST request via the username parameter.
+- **SQL injection in /errors/viewbuild/** — `Valve` · `Critical` [↗](https://hackerone.com/reports/690349)
+  - A SQL injection vulnerability was found on a partner-facing tool that allowed queries against a legacy backing store.
+- **Blind SQL Injection on █████ via URI Path** — `Mars` · `Critical` [↗](https://hackerone.com/reports/2266081)
+  - Time-based SQL injection is a hacking technique that capitalizes on vulnerabilities in systems interacting with databases.
+- **SQL Injection on prod.oidc-proxy.prod.webservices.mozgcp.net via invite_code parameter - Mozilla social inscription** — `Mozilla` · `Critical` [↗](https://hackerone.com/reports/2209130)
+  - I wanted to play on [https://mozilla.social](https://mozilla.social), however this requires a user account and an invitation code as it's not open to the public.
+- **Time based SQL injection at████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2312334)
+  - While doing test on██████, I’ve found that the endpoint at /pubs/index.php is vulnerable with SQL injection vulnerability.
+- **SQL injection at ███████** — `Sony` · `Critical` [↗](https://hackerone.com/reports/2256032)
+  - The researcher reported that a Sony website was vulnerable to an error-based SQL injection.
+- **Blind Sql Injection in https://█████/qsSearch.aspx** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2081316)
+  - Click to sort capture packets POST /qsSearch.aspx HTTP/1.1 Host: ████████ Cookie: ASP.NET_SessionId=qrwzcesx1pczpna5a1bumabn; TS01e0cc7d=01a9fe659bc0aaa5aeffd1dcb0212ef4158c4865925e960169a653a233f6de5425138871ffe81b759d57e8cd4d192f460a8455c20a; TS64c50bb0027=085749d0e4ab2000abff0
+- **Blind Sql Injection in https://████████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2072306)
+  - first browse url https://█████████/DSF/SmartStore.aspx?gktTg9gFCEBknhRFawes89EY4WcuDKHZNYh58W8kzOWv0SM9Nk6SFMv570fOCer/BHfPrtRYtqRvYJ88zd0KsQ==&random=0.7493498572981403#!/Storefront click Choose Facility █████████
+- **SQL Injection in version 1.4.3 and below** — `ImpressCMS` · `High` [↗](https://hackerone.com/reports/1506129)
+  - SQL Injection in ImpressCMS v1.4.3 and earlier allows remote attackers to inject into the code in unintended way, this allows an attacker to read and modify the sensitive information from the database used by the application.
+- **NoSQL injection in listEmojiCustom method call** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1757676)
+  - `CVE-2023-28359` A NoSQL injection vulnerability has been identified in the listEmojiCustom method call within Rocket.Chat.
+- **SQL Injection at https://████ via ███ parameter** — `Sony` · `Critical` [↗](https://hackerone.com/reports/1935151)
+  - The researcher reported that a Sony website was vulnerable to a time-based SQL injection.
+- **Time Based SQL Injection** — `U.S. Department of State` · `Critical` [↗](https://hackerone.com/reports/1878584)
+  - Hello and greetings and respect to you, dear friends We all know that the sql injection bug is very dangerous, so this bug should be eliminated as soon as possible.
+- **SQL Injection in CVE Discovery Search ** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1893800)
+  - Unsanitized user-controlled inputs in the CVE Discovery Search allow for SQL injection.
+- **SQL Injection at https://████████.asp (█████████) [selMajcom] [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1628408)
+  - SQL injection (SQLi) is a vulnerability in which an application accepts input into an SQL statement and treats this input as part of the statement.
+- **SQL Injection on [█████████]** — `Sony` · `High` [↗](https://hackerone.com/reports/1213207)
+  - The researcher reported that the login form of a Sony endpoint was susceptible to an error-based SQL injection vulnerability.
+- **Unauthenticated SQL Injection at █████████  [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1626226)
+  - Hi team, I found Unauthenticated SQL Injection at ██████.
+- **SQL Injection through /include/findusers.php** — `ImpressCMS` · `Critical` [↗](https://hackerone.com/reports/1081145)
+  - The vulnerability is located in the /include/findusers.php script: 281.
+- **Regex account takeover** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/1581059)
+  - `CVE-2022-32211` get admin reset token with authenticated user normal user login can access to admin reset token and set a new password for admin user
+- **time based SQL injection at [https://███] [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1627970)
+  - while doing test on [www.█████](http://www.████████/) I’ve found that the endpoint at /olc/setlogin.php is vulnerable with SQL injection vulnerability POST /olc/setlogin.php HTTP/1.1 Host: www.██████ Cookie: UsafNoticeConsent=1; PHPSESSID=5r61rj890ogju3dvb5ptup2mn1; session=e
+- **SQL injection at [█████████] [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1626198)
+  - while doing test on [█████](http://███████/) I’ve found that the endpoint at /olc/set/m101/leasib.php is vulnerable with SQL injection vulnerability Parameter: scn (POST) Type: boolean-based blind Title: AND boolean-based blind - WHERE or HAVING clause Payload: COURSEID=M101&
+- **SQL injection at [https://█████████] [HtUS]** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1627995)
+  - while doing test on [www.███](http://www.██████/) I’ve found that the endpoint at [/olc/███comments/comment_post.php](https://████████) is vulnerable with SQL injection vulnerability python3 sqlmap.py --level=5 --risk=3 --tamper=space2comment --random-agent -u "https://█████
+- **Ability to escape database transaction through SQL injection, leading to arbitrary code execution** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1663299)
+  - HackerOne has an internal backend interface that gives debugging capabilities to its engineers.
+- **sql injection via https://setup.p2p.ihost.com/** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1567516)
+  - A SQL Injection against an IBM domain was reported to IBM, analyzed and has been remediated.
+- **SQL Injection on https://████████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/232378)
+  - The ███████ parameter in https://█████████/██████ does not properly sanitize input, thus allowing an attacker to execute SQL queries on the server!
+- **SQL Injection on █████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/277380)
+  - It looks like the patch for #231338 has been reverted and this subdomain is yet again vulnerable to SQL injection.
+- **SQL injextion via vulnerable doctrine/dbal version** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1390331)
+  - `CVE-2021-43608` SQL injection via limit parameter on user facing APIs For more details see: https://github.com/nextcloud-gmbh/h1/issues/197
+- **SQL injection in URL path processing on www.ibm.com** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1527284)
+  - A blind SQL injection in URL path processing on www.ibm.com was reported to IBM, analyzed and has been remediated.
+- **SQL Injection on https://soa-accp.glbx.tva.gov/ via "/api/" path - VI-21-015** — `Tennessee Valley Authority` · `Critical` [↗](https://hackerone.com/reports/1125752)
+  - i've found this subdomain soa-accp.glbx.tva.gov also is vulnerable to SQLI through /api/ path Microsoft SQL Server 2017 (RTM-CU22-GDR) (KB4583457) - 14.0.3370.1 (X64) \n\tNov 6 2020 18:19:52 \n\tCopyright (C) 2017 Microsoft Corporation\n\tEnterprise Edition (64-bit) on Win
+- **SQL Injection in █████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1489744)
+  - By using SQL injection, an attacker can exfiltrate the whole database, and gain RCE POC 1 - curl command injecting query, returning database version: curl https://█████████ -X POST -data="url=%2F████████&███████=AA'+OR(cast(version as date))LIKE'A" -k
+- **SQL Injection at https://files.palantir.com/ due to CVE-2021-38159** — `Palantir Public` · `High` [↗](https://hackerone.com/reports/1525200)
+  - `CVE-2021-38159` A vulnerability was discovered in an Internet-facing asset (files.palantir.com).
+- **Saving Christmas from Grinchy Gods** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1434017)
+  - It was a fun CTF to play had some good learning on thinking of how to approach real world targets and more things we can try while testing any target , some nudges were good and reminded of scenarios of actual microservices are built where these security issues can be present hug
+- **SQL Injection and plaintext passwords via User Search** — `IBM` · `High` [↗](https://hackerone.com/reports/703819)
+  - An identified SQL Injection vulnerability was reported to IBM found within an IBM asset.
+- **SQL Injection leads to retrieve the contents of an entire database. ** — `BlockDev Sp. Z o.o` · `Critical` [↗](https://hackerone.com/reports/1002641)
+  - SQL Injection leads to retrieve the contents of an entire database.
+- **SQL Injection in IBM access control panel & Broken access in admin panel** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1355817)
+  - An application endpoint was found to be vulnerable to SQL Injection caused by a lack of sanitation on the client_id parameter.
+- **SQL injection located in `███` in POST param `████████` ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1262757)
+  - I was able to exploit an SQL injection [1] in one of your domains.
+- **SQL injection [futexpert.mtngbissau.com]** — `MTN Group` · `High` [↗](https://hackerone.com/reports/924855)
+  - [add summary of the vulnerability] [add details for how we can reproduce the issue]
+- **SQL Injection in agent-manager** — `Acronis` · `High` [↗](https://hackerone.com/reports/962889)
+  - —
+- **Blind SQL Injection ** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1069531)
+  - I have found Blind SQL Injection on https://futexpert.mtngbissau.com/signin/ parameters injectable phone_number=0&pin=1&submit=Continuar via post URL:https://futexpert.mtngbissau.com/signin/ Post: email=0 my payload : phone_number=0'XOR(if(now()=sysdate()%2Csleep(0)%2C0))XOR'Z&pi
+- **SQLi on █████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/954667)
+  - Researcher discovered a Boolean-based SQLi on a Dept.
+- **SQL Injection on the administrator panel** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/865436)
+  - Hello team. The admin panel of the website is mtngbissau.com or is vulnerable to sql attack via https://mtngbissau.com/webadmin/index.php POST /webadmin/index.php HTTP/1.1 Host: mtngbissau.com User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0 Accept
+- **blind sql on  [ https://argocd.upchieve.org/login?return_url=id= ]** — `UPchieve` · `Critical` [↗](https://hackerone.com/reports/1278928)
+  - [i have discoverd a blind sql on your site login page which i confirmed using two scenarios to confirm its existance.] [add details for how we can reproduce the issue]
+- **ccc ctf ** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1216085)
+  - will send detailed report later can get admin credentials
+- **SQL injection on admin.acronis.host development web service** — `Acronis` · `High` [↗](https://hackerone.com/reports/923020)
+  - I found an Acronis domain and started hunting on it.
+- **100K CTF's Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1216591)
+  - Limited disclosure based on researcher's request.
+- **ccc.h1ctf.com CTF** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1215919)
+  - Claiming the flag, writeup to follow.
+- **H1-CTF 100k Solution - Congratz on the 100k Rep todayisnew** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1216408)
+  - Sharing the final flag for now.
+- **SQLI on uberpartner.eu leads to exposure of sensitive user data of Uber partners** — `Uber` · `High` [↗](https://hackerone.com/reports/361623)
+  - The Uber EU test site has a SQLI vulnerability exposing several databased and based on the database names, may expose hashed passwords and Uber partner information.
+- **Taking Grinch Down To Save Holidays** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1067037)
+  - Hi thank you Hackerone and Adam for organizing the CTF, this had honestly helped me to learn good skills and techniques.
+- **CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1066233)
+  - Hi, First of all, thanks for this amazing CTF!.
+- **SQL Injection in www.██████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1015406)
+  - SQL Injection is a vulnerability which allows interference with the queries performed on a database, to obtain sensitive information which could be really useful to attackers.
+- **First CTF ever!** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069263)
+  - Started looking into hacking this autumn and then found out HackerOne was doing a Christmas themed CTF.
+- **[intensedebate.com] SQL Injection Time Based on /changeReplaceOpt.php** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/1042746)
+  - Hello, i have found a SQLI Injection Time Based on https://www.intensedebate.com/changeReplaceOpt.php.
+- **[intensedebate.com] SQL Injection Time Based On /js/commentAction/** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/1044698)
+  - [intensedebate.com] SQLi Time Based On /js/commentAction/ I have found a SQLI Injection Time Based on /js/commentAction/.
+- **Sql injection on docs.atavist.com** — `Automattic` · `High` [↗](https://hackerone.com/reports/1039315)
+  - I have found SQL injection on docs.atavist.com url:http://docs.atavist.com/reader_api/stories.php?limit=10&offset=20&organization_id=88822&search=0&sort= parameters: injectable search=0
+- **[SQLI ]Time Bassed Injection at ██████████ via /██████/library.php?c=G14 parameter** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1024984)
+  - copy the request to your burp suite : GET /█████████/library.php?c=G14'XOR(if(now()=sysdate(),sleep(1*1),0))OR' HTTP/1.1 Host: ██████ Accept-Encoding: gzip, deflate Accept: */* Accept-Language: en User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, li
+- **Blind SQL injection at tsftp.informatica.com** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/1034625)
+  - The parameter refresh_token sent to the REST path /api/v1/token is vulnerable to blind SQL injection.
+- **[████] SQL Injections on Referer Header exploitable via Time-Based method** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1018621)
+  - SQL Injections on Referer Header exploitable via Time-Based method First, vulnerable points: https://███████/███████/library.php?alert= https://██████████/████████/Chart01.php?alert= https://████████/████/Chart02.php?alert= https://██████████/█████████/Chart03.php?alert= https://
+- **[SQLI ]Time  Bassed Injection at ██████████ via referer header** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/995122)
+  - the ████ was vulnerable to time bassed injection via referer header 1- copy the request to your burp suite :
+- **SQLi in login form of █████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/982202)
+  - The following is vulnerable to a sqli, due to a limited char set this is t██████████y to demonstrate and not picked up by sqlmap.
+- **[www.zomato.com] Blind SQL Injection in /php/widgets_handler.php** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/836079)
+  - Disclosing it as per the request from @zzzhacker13.
+- **[www.zomato.com] Blind SQL Injection in /php/geto2banner** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/838855)
+  - Our team discovered a Blind SQL Injection by Abusing LocalParams (res_id) in /php/geto2banner POST /php/geto2banner HTTP/1.1 Host: www.zomato.com Connection: close Content-Length: 73 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gec
+- **Solr Injection in `user_id` parameter at :/v2/leaderboard_v2.json** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/952501)
+  - @zzzhacker13 identified a Solr Injection on the user_id parameter at :/v2/leaderboard_v2.json.
+- **SQL injection (stacked queries) in the export to Excel functionality on Vidyo Server** — `8x8` · `High` [↗](https://hackerone.com/reports/922567)
+  - An abandoned Vidyo server was found to be vulnerable to SQL injection and exposing access to the associated local database.
+- **SQL Injection or Denial of Service due to a Prototype Pollution** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/869574)
+  - `CVE-2020-8158` I would like to report a prototype pollution vulnerability in the typeorm package.
+- **SQL Injection in the `move_papers.php` on the https://██████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/491191)
+  - I was able to find another one Time-based SQLI on the https://██████████/pubs/move_papers.php using pub_group_id parameter.
+- **[CRITICAL] Sql Injection on http://axa.dxi.eu** — `8x8` · `Critical` [↗](https://hackerone.com/reports/722145)
+  - One of the micro service endpoints of the ContactNow application constructed a SQL query utilizing user provided parameters without utilizing a proper prepared statement.
+- **Followup - SQL Injection - https://██████████/██████/MSI.portal** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/692326)
+  - Time based blind sql injection for parameter MSI_additionalFilterType1, at the following URL: This is a follow up to a previous report I submitted:
+- **SQL Injection in Login Page: https://█████/█████████/login.php** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/447742)
+  - I believe I've discovered an error based SQL injection in the login page for https://████/██████/login.php.
+- ** SQL Injection on cookie parameter** — `MTN Group` · `High` [↗](https://hackerone.com/reports/761304)
+  - It seams one of the parameters in the cookies is vulnerable to SQL injection.
+- **[increments] sql injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/508346)
+  - I would like to report SQL Injection in increments.
+- **[@azhou/basemodel] SQL injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/506644)
+  - I would like to report SQL injection in @azhou/basemodel It allows attacker to read data from database.
+- **MSSQL injection via param Customwho in https://█████/News/Transcripts/Search/Sort/ and WAF bypass** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/577612)
+  - MSSQL injection via param Customwho in https://███████/News/Transcripts/Search/Sort/ MSSQL injection via param Customwho in https://██████████/News/Transcripts/Search/Sort/
+- **SQL injection on █████ due to tech.cfm ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/310031)
+  - The website appears to be vulnerable to SQL injection due to inducing an sql error using a single ' The following url, https://█████/hro/html/tech.cfm?Sort=Grade&ThisType=2 contains the parameter sort= which is vulnerable to SQLI.
+- **Blind SQL injection on ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/313037)
+  - I discovered that a post request made to https://████████/elist/viewem6.php is vulnerable to SQL injection and is quite clearly vulnerable as I was able to induce a 2 second hang on the web page.
+- **Code reversion allowing SQLI again in ███████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/348047)
+  - I just noticed that my publicly disclosed report, https://hackerone.com/reports/311922 is sstill vulnerable either a code reversion was made or something was done to revert the patch.
+- **sql injection on  /messagecenter/messagingcenter at https://www.███████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/381758)
+  - Hi , i would like to report an issues that lead to SQL injection in search box at https://www.████/messagecenter/messagingcenter , if you add the character ' that usually used to test if the site have in sql injection  the site will return with Incorrect syntax error that
+- **████████ SQL** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/381771)
+  - hi , i think i find a SQL in https://██████████/ POST /requestaccount.php?
+- **SQL Injection on www.██████████ on countID parameter** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/390879)
+  - Hello Team, I have came across a sql injection vulnerability on www.██████ on countID parameter.
+- ** SQL injections** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/272506)
+  - An email is not well handeled and leads to sql injection.
+- **SQL injection on the https://████/** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/488795)
+  - I was able to find Blind SQL injection on the https://███/ Database appears to be MySQL 5.
+- **SQL Injection in the get_publications.php on the https://█████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/489483)
+  - Hello. I was able to find Time-based SQLI on the https://███/pubs/get_publications.php using pub_group_id parameter GET /pubs/get_publications.php?pub_group_id=wrtqvasi10rc19j1'%2b(select*from(select(sleep(5)))a)%2b'&rno86qi4=1 HTTP/1.1 Host: █████ Connection: keep-alive Cache-
+- **SQL Injection in ████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/419017)
+  - There is an SQL injection vulnerability in the SSN field at https://██████████/████/candidate_app/status_scholarship.aspx An attacker could use this vulnerability to control the content in the database, exfiltrate information, and potentially obtain remote code execution.
+- **SQL Injection in ████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/519631)
+  - There is an SQL injection vulnerability in ████████ in the /█████/recruiter/updapp.aspx page, exploitable through the app_id form parameter.
+- **SQL Injection vulnerability located at ████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/384397)
+  - I have found a SQL Injection at ███████ in the ████ Portal.
+- **SQL Injection Extracts Starbucks Enterprise Accounting, Financial, Payroll Database** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/531051)
+  - As described in the Hacker Summary, @spaceraccoon discovered a SQL Injection vulnerability in a web service backed by Microsoft Dynamics AX.
+- **Blind SQLi leading to RCE, from Unauthenticated access to a test API Webservice** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/592400)
+  - @geek_jeremy, at the same time as other hackers who submitted their own reports, discovered a browsable WSDL service on an API endpoint under the starbucks.com.cn domain, running on a non-standard port.
+- **Arbitrary SQL command injection** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/508487)
+  - `CVE-2019-5476` When querying for users on the lookup server any unauthenticated user could perform an SQL Injection.
+- **Blind SQL Injection on starbucks.com.gt and WAF Bypass  :*** — `Starbucks` · `High` [↗](https://hackerone.com/reports/549355)
+  - Starting with a blind SQL Injection on http://www.starbucks.com.gt/menu/beverage/detail, @d3417_ was able to dump schema on several database tables.
+- **[untitled-model] sql injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/507222)
+  - I would like to report [VULNERABILITY] in [MODULE] It allows [DESCRIBE THE IMPACT OF THE VULNERABILITY - E.G READ ARBITRARY FILES, READ DATA FROM DATABASE ETC] **module name:** untitled-model **version:** 1.0.5 **npm page:** https://www.npmjs.com/package/untitled-model
+- **[typeorm] SQL Injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/506654)
+  - I would like to report SQL Injection in typeorm.
+- **SQL injection in https://labs.data.gov/dashboard/datagov/csv_to_json via User-agent ** — `GSA Bounty` · `Critical` [↗](https://hackerone.com/reports/297478)
+  - I've identified an SQL injection vulnerability in the website **labs.data.gov** that affects the endpoint /dashboard/datagov/csv_to_json and can be exploited via the **User-Agent** HTTP header.
+- **SOAP WSDL Parser SQL Code Execution** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/390359)
+  - SOAP WSDL Parser SQL Code Execution It was possible to parse WSDL resources and read all functions from the SOAP Admin Panel, therefor i was able to repeat the sql query with a tampered request with my own custom SQL command.
+- **SQL Injection Proof of Concept for Starbucks URL** — `Starbucks` · `High` [↗](https://hackerone.com/reports/360539)
+  - browser: firefox quantum 60.0.1 64 bit os: windows 10 sqli type: char formula injection info found: oracle database system url: https://www.starbucks.de/coffee/our-coffees/format/whole-bean injected url using oracle concatenation and char functions: https://www.starbucks.de/coffe
+- **SQL injection in GraphQL endpoint through embedded_submission_form_uuid parameter** — `HackerOne` · `Critical` [↗](https://hackerone.com/reports/435066)
+  - The embedded_submission_form_uuid parameter in the /graphql endpoint is vulnerable to a SQL injection.
+- **blind sql injection** — `Hanno's projects` · `High` [↗](https://hackerone.com/reports/374027)
+  - There exists a possibility that your Serendipity installation is vulnerable to a blind sql injection.
+- **SQL injection in Serendipity (serendipity_fetchComments)** — `Hanno's projects` · `High` [↗](https://hackerone.com/reports/374748)
+  - An authenticated administrator can alter *Entries to display on frontpage* and *Entries to display in Feeds* in a way to perform a SQL injection and extract database records or access files on the underlying system.
+- **[www.zomato.com] SQLi - /php/██████████ - item_id** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/403616)
+  - Thanks @gerben_javado for helping us keep @zomato secure :) Thanks to the entire @Zomato team for doing this challenge.
+- **[express-cart] Customer and admin email enumeration through MongoDB injection** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/397445)
+  - I would like to report an injection in express-cart It allows to enumerate the email address of the customers and the administrators.
+- **SQL Injection in report_xml.php through countryFilter[] parameter** — `Valve` · `Critical` [↗](https://hackerone.com/reports/383127)
+  - An unvalidated parameter on an partner reporting page (report_xml.php) could be used to read certain SQL data from a single backing database.
+- **[www.zomato.com] SQLi on `order_id` parameter** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/358669)
+  - @saltedfish found that a parameter order_id was vulnerable to SQLi.
+- **[query-mysql] SQL Injection due to lack of user input sanitization allows to run arbitrary SQL queries when fetching data from database** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/311244)
+  - `CVE-2018-3754` There is SQL Injection in query-mysql module.
+- **SQL injection in MilestoneFinder order method** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/298176)
+  - `CVE-2017-0914` The MilestoneFinder is a class used to find milestones based on group or project identifiers.
+- ** SQL injection ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/311922)
+  - Initially I discovered a Defunct admin panel with default credentials, admin/admin.
+- **[critical] sql injection by GET method** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/319279)
+  - Hey there, after tampering a bit with the values, since I figured out your backend is not php (most likely django or nodejs), I found an SQL injection .
+- **[https://reviews.zomato.com] Time Based SQL Injection** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/300176)
+  - @samengmg found an cookie based SQL injection on https://reviews.zomato.com.
+- **www.drivegrab.com SQL injection** — `Grab` · `High` [↗](https://hackerone.com/reports/273946)
+  - The website uses a WordPress plugin called Formidable Pro.
+- **WordPress DB Class, bad implementation of prepare method guides to sqli and information disclosure** — `WordPress` · `Critical` [↗](https://hackerone.com/reports/179920)
+  - Issue 1: Method checks if first argument is an array and if it is, it avoids the rest of the arguments and uses the first argument array values as input.
+- **SQL Injection, exploitable in boolean mode** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/246412)
+  - The reporter found a SQL injection in one of the applications in www.zomato.com.
+- **SQL Injection vulnerability in a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/216699)
+  - A Department of Defense webserver was vulnerable to a SQL injection attack that could have revealed sensitive information.
+- **SQL Injection vulnerability in a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/192110)
+  - A Department of Defense webserver was vulnerable to a SQL injection attack that could have revealed sensitive information.
+- **SQL Injection vulnerability in a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/192079)
+  - A Department of Defense webserver was vulnerable to a SQL injection attack that could have revealed sensitive information.
+- **SQL injection vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/193936)
+  - A Department of Defense website was vulnerable to a SQL injection attack which may allow an attacker to execute arbitrary SQL commands and expose sensitive data.
+- **Blind SQL Injection** — `ok.ru` · `Critical` [↗](https://hackerone.com/reports/221757)
+  - @linkks reported a blind sql injection: insideok.ru is corporate blog and out of the program scope.
+- **sqli** — `Ubiquiti Inc.` · `Critical` [↗](https://hackerone.com/reports/207695)
+  - The researcher found a SQL Injection in one of ours legacy (now defunctioned) servers.
+- **SQL injection in 3rd party software Anomali** — `Uber` · `High` [↗](https://hackerone.com/reports/206872)
+  - SQLi in Anomali from Threatstream on ts02.uberinternal.com -- the server was hosted outside of our infrastructure and any potential data exposure was limited to Uber employees, not Uber users.
+- **SQL injection vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/200623)
+  - A Department of Defense website was vulnerable to a SQL injection attack which may allow an attacker to execute arbitrary SQL commands and expose sensitive data.
+- **Time-based Blind SQLi on news.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/198292)
+  - I just found that the post parameter "group_id" for a particularly crafted http request is being vulnerable to injection due to missing parameter sanitization.
+- **[afocusp.informatica.com] Sql injection  afocusp.informatica.com:37777** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/178632)
+  - hi !There is another sql injection on host afocusp.informatica.com:37777 POC version http://afocusp.informatica.com:37777/pls/apex/f?);OWA_UTIL.CELLSPRINT(:1);--=select+*+from+v$version
+- **[ipm.informatica.com] Sql injection Oracle ** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/178057)
+  - Hi host ipm.informatica.com is vulnerable to sql injection attacks the web application does not produce sufficient validation on user input.
+- **[informatica.com] Blind SQL Injection** — `Informatica` · `Critical` [↗](https://hackerone.com/reports/117073)
+  - JSON POST parameter "docId" is vulnerable to Blind SQL Injection attack POST /_vti_bin/RatingsCalculator/RatingsCalculator.asmx/CalculateRatings HTTP/1.1 User-Agent: Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12.388 Version/12.17 Host: kb-test.informatica.com Accept-Language: ru

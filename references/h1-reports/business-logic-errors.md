@@ -1,0 +1,132 @@
+# Business Logic Errors
+
+_64 reports — High/Critical, disclosed_
+
+- **Non-premium user can disable Ads in japanese version of dic.pixiv.net** — `pixiv` · `High` [↗](https://hackerone.com/reports/3183520)
+  - A vulnerability is identified in the Japanese version of the pixiv dictionary website (dic.pixiv.net) where non-premium users can disable advertisements.
+- **PROTOCOL-LEVEL: Persistent UDP Amplification and Cache Poisoning via Alt-Svc Logic Flaw** — `curl` · `High` [↗](https://hackerone.com/reports/3483902)
+  - A structural logic flaw in the libcurl Alt-Svc header parser allows attack attributes (specifically persist and max-age) to "leak" from one service definition to another.
+- **Change phone number OTP flaw leads to any phone number takeover** — `inDrive` · `Critical` [↗](https://hackerone.com/reports/2588329)
+  - Ive found another valid report, the app allows any user to change the app phone number, but a flaw within the otp allows any number to be added into the account!
+- **Business Logic error leads to bypass 2FA requirement ** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2571981)
+  - I have identified a business logic issue in the 2FA requirement.
+- **Attackers can *Upgrade and claim offer* on the Premium Trial Subscription with a total price of *IDR0.00* from the original *IDR7,022,061.82*** — `LinkedIn` · `High` [↗](https://hackerone.com/reports/2131224)
+  - Reporter found a method to tamper with the premium pricing flow where an attacker could subscribe to LinkedIn Sales Navigator Core offering for free.
+- **Any user could upload attachments to pentest scoping form they don't have access to** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2450215)
+  - hello team in my recent testing i found that any users could upload attachments to any users pentest scoping form without having access to it as long as they have the scope id.
+- **CSP Bypass and escalation of https://hackerone.com/reports/2279346** — `PortSwigger Web Security` · `High` [↗](https://hackerone.com/reports/2387458)
+  - I have gone through this report https://hackerone.com/reports/2279346 and their is CSP bypass where website has implemented security in that but after this i can escalate Again CSP bypass with using different Script .
+- **the domain is truck-admin.eu-east-1.indriverapp.com and Enter the management system of the blasting mobile phone verification code** — `inDrive` · `High` [↗](https://hackerone.com/reports/1991376)
+  - Find the mobile phone number of the administrator through the WHOIS information, and then send the verification code.
+- **User scoped external storage can be used to gather credentials of other users ** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1978882)
+  - `CVE-2023-35928` Security advisory at https://github.com/nextcloud/security-advisories/security/advisories/GHSA-637g-xp2c-qh5h
+- **Able to approve admin approval and change effective status without adding payment details . ** — `Reddit` · `High` [↗](https://hackerone.com/reports/1543159)
+  - In https://ads.reddit.com/ you can create campaign under which you can create ads , once you create new campaign , it is on pending stage and will not be delivered unless you add payment details and is reviewed by admin and approved according to what it says here https://advertis
+- **[app.lemlist.com] Improper handling of payment lead to bypass payment** — `lemlist` · `High` [↗](https://hackerone.com/reports/1420697)
+  - Hello Team, I truly hope it treats you awesomely on your side of the screen :) due to improper handling of payment methods, an attacker can easily bypass the payment and benefit from a paid plan.
+- **Ability to use premium templates as free user via https://stripo.email/templates/?utm_source=viewstripo&utm_medium=referral** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/1166993)
+  - Hello, I found security vulnerability in your web application, another business logic.
+- **Add upto 10K rupees to a wallet by paying an arbitrary amount** — `Eternal` · `High` [↗](https://hackerone.com/reports/1408782)
+  - Thanks to @ashoka_rao for reporting the issue.
+- **Unauthorized access to PII leads to MASS account Takeover** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1061736)
+  - Hi, I hope you doing well I found a critical endpoint which disclosed the personal information which can use to takeover any account present on https://██████████ 4.
+- **Multiple vulnerability leading to account takeover in TikTok SMB subdomain.** — `TikTok` · `Critical` [↗](https://hackerone.com/reports/1404612)
+  - Multiple vulnerabilities like Insecure Direct Object Reference (IDOR), Cross-Site Request Forgery (CSRF), XSS were found that could have resulted in account takeover on the TikTok SMB subdomain.
+- **Subdomain takeover of images.crossinstall.com** — `X / xAI` · `High` [↗](https://hackerone.com/reports/1406335)
+  - images.crossinstall.com points to an AWS S3 bucket that no longer exists.
+- **s3 bucket takeover presented in https://github.com/reddit/rpan-studio/blob/e1782332c75ecb2f774343258ff509788feab7ce/CI/full-build-macos.sh** — `Reddit` · `High` [↗](https://hackerone.com/reports/1285598)
+  - I have found that in the code of full-build-macos.sh in rpanstudio on github(https://github.com/reddit/rpan-studio/blob/e1782332c75ecb2f774343258ff509788feab7ce/CI/install-dependencies-osx.sh) contains a s3 bucket which was unclaimed i.e (https://obs-nightly.s3-us-west-2.amazona
+- **[mtn.com.af] Multiple vulnerabilities allow to Application level DoS** — `MTN Group` · `High` [↗](https://hackerone.com/reports/946578)
+  - `CVE-2018-6389` Unauthenticated attackers can cause a denial of service (resource consumption) by using the large list of registered .js files (from wp-includes/script-loader.php) to construct a series of requests to load every file many times.
+- **Unix time unlock_time values have dangerous validation rules enabling a number of exploits** — `Monero` · `High` [↗](https://hackerone.com/reports/854726)
+  - *Initially found by TheCharlatan, discussed with and expanded on by Isthmus, impacts all releases of monero and monero wallets* The unlock_time field in monero transaction dictates when a transaction's outputs can be spent again.
+- **Payment method token being sent to 3rd party analytics service** — `Upserve` · `High` [↗](https://hackerone.com/reports/637267)
+  - Payment Tokens can be re-used to link the Credit Card to Another Users Account.
+- **CVE-2018-6389 exploitation - using scripts loader** — `MTN Group` · `High` [↗](https://hackerone.com/reports/925425)
+  - `CVE-2018-6389` Unauthenticated attackers can cause a denial of service (resource consumption) by using the large list of registered .js files (from wp-includes/script-loader.php) to construct a series of requests to load every file many times.
+- **Modify in-flight data to payment provider Smart2Pay** — `Valve` · `Critical` [↗](https://hackerone.com/reports/1295844)
+  - I have found vulnerability which allows attacker to generate steam wallet balance.
+- **Able to use 'PREMIUM TEMPLATES' in 'FREE PLAN' at [https://my.stripo.email/cabinet/#/my-templates/]** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/1009046)
+  - The vulnerability has been fixed.
+- **[intensedebate.com] No Rate Limit On The report Functionality Lead To Delete Any Comment When it is enabled** — `Automattic` · `High` [↗](https://hackerone.com/reports/1051734)
+  - I have found a no rate limit issue on the report functionality.
+- **Complete destruction of the Grinch server** — `h1-ctf` · `High` [↗](https://hackerone.com/reports/1065885)
+  - First flag is just a matter of reading /robots.txt file: User-agent: * Disallow: /s3cr3t-ar3a Flag: flag{48104912-28b0-494a-9995-a203d1e261e7}
+- **Host Header injection in oslo.io (using X-Forwarded-For header) leading to email spoofing** — `Logitech` · `High` [↗](https://hackerone.com/reports/1072277)
+  - I found Host Header injection in oslo.io I tried to use it to show the security effect on users And I found this If we try to change the host, 403 will appear {F1145857}
+- **Named pipe connection inteception** — `MariaDB` · `High` [↗](https://hackerone.com/reports/1019891)
+  - With MariaDB running on Windows, when local clients connect to the server over named pipes, it's possible for an unprivileged user with an ability to run code on the server machine to intercept the named pipe connection and act as a man-in-the-middle, gaining access to all the da
+- **Attachments may be hijacked via AppCache+CookieBombing trick (bc3_production_blobs bucket)** — `Basecamp` · `High` [↗](https://hackerone.com/reports/403602)
+  - Basecamp attachments are stored in the bc3_production_blobs bucket in the root directory and can be served with text/html content-type.
+- **Manipulate Uneditable Messages in Support** — `CS Money` · `High` [↗](https://hackerone.com/reports/995969)
+  - The support section has a validation on all the posted messages where it doesn't allow you to edit your messages after some minutes from posting them.
+- **Bypass hide download Nextcloud Share** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/865777)
+  - Hello everyone, accidentally browsing through nextcloud, I have found a small vulnerability on nextcloud server.
+- **An attacker can run pipeline jobs as arbitrary user** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/894569)
+  - An attacker can run arbitrary pipeline jobs as a victim user.
+- **Availing Zomato gold by using a random third-party `wallet_id`** — `Eternal` · `Critical` [↗](https://hackerone.com/reports/938021)
+  - We received a report from @pandaaaa wherein he demonstrated a way to avail Zomato Gold membership using random Zomato User's wallet.
+- **An attacker can buy marketplace articles for lower prices as it allows for negative quantity values leading to business loss** — `Semrush` · `High` [↗](https://hackerone.com/reports/771694)
+  - When someone goes to https://www.semrush.com/marketplace/offers/ and orders for articles, an attacker can pay for less than intended due to negative quantities being allowed.
+- **[yarn] yarn.lock integrity & hash check logic is broken** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/703138)
+  - `CVE-2019-15608` I would like to report a vulnerability in yarn.
+- **Race Condition allows to redeem multiple times gift cards which leads to free "money"** — `Reverb.com` · `High` [↗](https://hackerone.com/reports/759247)
+  - I've found a Race Condition vulnerability which allows to redeem gift cards multiple times.
+- **Improper handling of payment callback allows topping up a Swiss Starbucks Card bypassing actual payment via a crafted success message** — `Starbucks` · `High` [↗](https://hackerone.com/reports/682617)
+  - khovansky uncovered that an attacker could register on https://xtras.starbucks.ch and utilizing that registration, subsequently generate a reset password email via https://card.starbucks.ch After resetting the password for the account, khovansky noticed this process auto generate
+- **Unrestricted File Upload Leading to Remote Code Execution** — `Central Security Project` · `Critical` [↗](https://hackerone.com/reports/683965)
+  - `CVE-2019-15893` As an administrator user it is possible to create files and directories in any location on the file system of the server.
+- **Ability to perform actions (Tweet, Retweet, DM) and other actions, unauthenticated, on any account with SMS enabled.** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/470749)
+  - **Summary:** By knowing the mobile phone number associated with a Twitter account, or by using random mobile phone numbers!
+- **Steal collateral during `end` process, by earning DSR interest after `flow`.** — `BlockDev Sp. Z o.o` · `High` [↗](https://hackerone.com/reports/672664)
+  - The end contract in MCD controls the process of shutting down the MCD contracts and allowing for users to redeem their DAI for collateral -- presumably to migrate to a new implementation of DAI.
+- **Able to manipulate order amount by removing cancellation amount and cause financial impact** — `Eternal` · `High` [↗](https://hackerone.com/reports/614523)
+  - @sjvino identified an issue where it could have allowed to tamper the cancellation amount and pay less than the actual order amount.
+- **Earn free DAI interest (inflation) through instant CDP+DSR in one tx** — `BlockDev Sp. Z o.o` · `High` [↗](https://hackerone.com/reports/665798)
+  - The MCD contracts contain different mechanisms for accumulating rates in different contracts, namely pot and jug corresponding to the cost of a loan and interest earned on savings.
+- **OLO Total price manipulation using negative quantities** — `Upserve` · `Critical` [↗](https://hackerone.com/reports/364843)
+  - Manipulating an order request JSON object, containing an additional item with a negative quantity directly manipulates the total amount of the order.
+- **Gaining unlimited bonus points on websites with WooCommerce Points and Rewards** — `Automattic` · `High` [↗](https://hackerone.com/reports/592803)
+  - In WooCommerce Points and Rewards plugin there is an assumption that Processing order status is only for paid orders.
+- **attacker can book unlimited tickets in free at https://aaf.com/checkout/order-received/21237/?key=wc_order_5bbef48fa35b2** — `Alliance of American Football` · `High` [↗](https://hackerone.com/reports/422331)
+  - **Summary:** [add summary of the vulnerability] After looking into https://aaf.com/ i get to know that there is way where i can book a ticket and can play around , but it asked for valid credit card and all stuff so , i tried to bypass and bought a ticket 23 with 0$ Live PoC: htt
+- **[api.zomato.com] Able to manipulate order amount** — `Eternal` · `High` [↗](https://hackerone.com/reports/512968)
+  - @pasw discovered an interesting find where he was able to manipulate the order amount.
+- **Logic flaw in the Post creation process allows creating posts with arbitrary types without needing the corresponding nonce** — `WordPress` · `High` [↗](https://hackerone.com/reports/404323)
+  - Simon discovered that authors could create posts of unauthorized post types with specially crafted input fixed.
+- **[help.steampowered.com] Account takeover bruteforcing SteamGuard** — `Valve` · `High` [↗](https://hackerone.com/reports/407971)
+  - Due to a missing protection on a support endpoint, email verification codes could be bruteforced - leading to possible account takeover.
+- **Opportunity to post hidden comments** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/434202)
+  - Twitter allows to comment on anyone's tweet.
+- **Global defaming of any twitter user** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/434689)
+  - Private tweets can be used to keep any user's tweet secret from rest of twitter world.
+- **Lack of payment type validation in dial.uber.com allows for free rides** — `Uber` · `High` [↗](https://hackerone.com/reports/162199)
+  - When a rider account had an outstanding account balance, improper validation of the payment method ID provided in the request made it possible to use an invalid payment method.
+- **It's possible to put SDX orderbook into invalid state and execute trades at arbitrary price** — `Stellar.org` · `High` [↗](https://hackerone.com/reports/321511)
+  - stellar-core improperly handles creation of a buy offer which crosses existing sell offers (immediate execution) but can only be filled partially due to a trustline limit on the source account.
+- **Exploitable vulnerability in SDEX** — `Stellar.org` · `High` [↗](https://hackerone.com/reports/330105)
+  - Last Thursday I discovered the exploitable vulnerability in SDEX.
+- **[www.zomato.com] Tampering with Order Quantity and paying less amount then actual amount, leads to business loss** — `Eternal` · `High` [↗](https://hackerone.com/reports/403783)
+  - Like discussed with Prateek I am dropping the report here.
+- **Items bought for free due to lacks of quantity controls** — `Reverb.com` · `High` [↗](https://hackerone.com/reports/357929)
+  - The server fails to check the quantity of the items that are going to be sell.
+- **Domain pointing to vimeo portfolio are prone to takeover using on-demand.** — `Vimeo` · `High` [↗](https://hackerone.com/reports/387307)
+  - We thank @bugdiscloseguys for finding this issue.
+- **Misreporting of received amount by show_transfers** — `Monero` · `High` [↗](https://hackerone.com/reports/364904)
+  - A sender may cause show_transfers to report a higher amount that was actually sent on the recipient's show_transfers output.
+- **A bug in the Monero wallet balance can enable theft from exchanges** — `Monero` · `Critical` [↗](https://hackerone.com/reports/377592)
+  - A Monero bug (already fixed in master) allows theft from exchanges.
+- **Attcker can trick monero wallet into reporting it recived twice as much with alternative tx_keypubs** — `Monero` · `High` [↗](https://hackerone.com/reports/379049)
+  - **Summary:** multiple identical tx_pub_keys were patched, but you can still use alternative tx_pub_keys to get the same result.
+- **Double Payout via PayPal** — `Coinbase` · `Critical` [↗](https://hackerone.com/reports/307239)
+  - An issue with the handling of the PayPal transaction states resulted in a user being able to both withdraw money from PayPal, but not have the funds deducted from their account.
+- **ETH contract handling errors** — `Coinbase` · `Critical` [↗](https://hackerone.com/reports/328526)
+  - A business logic error in the ETH contract handling code allowed for a nested revert call in contract execution to improperly credit a user account though funds had not been transferred.
+- **Ethereum account balance manipulation** — `Coinbase` · `Critical` [↗](https://hackerone.com/reports/300748)
+  - The researchers noticed an issue with our ETH receiving code when receiving from a contract.
+- **Using GitLab to monitor and hijack domains in mass quantity.** — `GitLab` · `High` [↗](https://hackerone.com/reports/312118)
+  - There is a logic flaw in how GitLab pages can set custom domains that allows an attacker to actively monitor domains and hijack them as soon as they point to 52.167.214.135.
+- **[html-janitor] Bypassing sanitization using DOM clobbering** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/308158)
+  - `CVE-2017-0928` Name: [html-janitor](https://www.npmjs.com/package/html-janitor) Version: 2.0.2 Arbitrary HTML can pass the sanitization process, which can be unexpected and dangerous (XSS) in case user-controlled input is passed to the clean function.
+- **2FA user enumeration via login** — `Legal Robot` · `High` [↗](https://hackerone.com/reports/249467)
+  - While going live with additional 2FA options, a security researcher discovered that during login, users that had enabled 2FA were prompted for a second factor, even with an incorrect password (i.e.

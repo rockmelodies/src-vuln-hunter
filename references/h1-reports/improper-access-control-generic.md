@@ -1,0 +1,410 @@
+# Improper Access Control - Generic
+
+_203 reports — High/Critical, disclosed_
+
+- **Potential Subdomain Takeover on IBM.com domain.** — `IBM` · `High` [↗](https://hackerone.com/reports/3592387)
+  - Potential Subdomain Takeover on IBM.com domain was reported to IBM, analyzed and has been remediated.
+- **[Critical] Unauthorized Cross-Tenant Data Access in Stripo AI Hub Campaign via Deleted Project.** — `Stripo Inc` · `Critical` [↗](https://hackerone.com/reports/3459285)
+  - —
+- **Broken Access Control allows advertiser accounts to delete trackers they do not own** — `Revive Adserver` · `High` [↗](https://hackerone.com/reports/3445710)
+  - `CVE-2026-21641` HackerOne community member Jad Ghamloush (0xjad) has reported an authorization bypass vulnerability in the tracker-delete.php script of Revive Adserver.
+- **Unauthenticated File Read Adobe ColdFusion** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2870951)
+  - `CVE-2023-26360` I have found CVE-2023-26360 in ███.
+- **Air Force candidate PII + recruitment chat logs accessible via BAC/IDOR on █████████ (very large/significant exposure)** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2968391)
+  - I've uncovered another serious IDOR on a DoD-owned Salesforce asset (█████████).
+- **HAProxy Connection Reuse leads to IP Spoofing and mTLS Context Smuggling** — `curl` · `High` [↗](https://hackerone.com/reports/3475613)
+  - libcurl fails to respect the CURLOPT_HAPROXY_CLIENT_IP configuration when reusing existing connections.
+- **Authorization bypass allows changing email address of other users** — `Revive Adserver` · `High` [↗](https://hackerone.com/reports/3398283)
+  - `CVE-2025-48986` The Change E-mail UI requires the current password, but the admin panel endpoint /admin/agency-user.php accepts a POST that updates a user’s email (including admin) without requiring the account password.
+- **Bypass of Cloudflare's Cache Keys and WAF via header overflow** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/3027461)
+  - A limitation in our HTTP request header parsing in Front Line (FL) processing enables attackers to bypass defined rulesets.
+- **[CRITICAL] 0-Click Account Takeover via Password Reset [AUTH-3243] /orchestrator/v1/password_reset/start** — `Remitly` · `Critical` [↗](https://hackerone.com/reports/2831902)
+  - A 0-click Account Takeover vulnerability was identified in the password reset functionality of the target website.
+- **Account takeover of existing HackerOne accounts through SCIM provisioning** — `HackerOne` · `High` [↗](https://hackerone.com/reports/3178999)
+  - After numerous attempts and understanding, I was able to take over existing user accounts through SCIM provisioning.
+- **HTTP Proxy Bypass via `CURLOPT_CUSTOMREQUEST` Verb Tunneling** — `curl` · `High` [↗](https://hackerone.com/reports/3231321)
+  - A logic flaw in libcurl version **8.14.1** allows an attacker to bypass restrictive HTTP proxy firewalls by "tunneling" an arbitrary HTTP verb within a CONNECT request.
+- **Unauthorized coins transfer from locking account(s)** — `Cosmos` · `Critical` [↗](https://hackerone.com/reports/2976481)
+  - An attacker can transfer money from the locking account they don't own(if the account has unlocked funds, can be after locking period is over).
+- **1 Click Account Takeover via Auth Token Theft on marketing.hostinger.com** — `hostinger` · `High` [↗](https://hackerone.com/reports/3081691)
+  - Hey Paul, hope you're doing good !
+- **unauthorized access and add user and change personal information all users** — `Mars` · `Critical` [↗](https://hackerone.com/reports/2828641)
+  - The report describes a vulnerability in the ██████████ website, where unauthorized access to an API endpoint allows attackers to add new users and modify personal information of existing users.
+- **change part of personal information all users** — `Mars` · `Critical` [↗](https://hackerone.com/reports/2828693)
+  - The report describes a vulnerability in the ██████████ website, where unauthorized access to an API endpoint allows attackers to add new users and modify personal information of existing users.
+- **Privilege Escalation in Edit and Create Secret Endpoints Leads to Unauthorized Secret Modification** — `Dust` · `High` [↗](https://hackerone.com/reports/3103755)
+  - A user with the **Builder** role — a role that is **not expected** to manage secrets — can: This behavior **violates permission boundaries** and leads to **privilege escalation**, **tampering with app configurations**, or **unauthorized access to sensitive data**.
+- **Admin Dashboard Access Leads to Updating Merchant Info** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2801787)
+  - The ███████ application provides access to 3(Merchant, Supervisor, Admin) classes of users.
+- **Account Takeover via Password Reset without user interactions** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/2293343)
+  - @asterion04 submitted a report to GitLab.
+- **Exposed proxy allows to access internal reddit domains** — `Reddit` · `High` [↗](https://hackerone.com/reports/2967634)
+  - Proxy at https://52.90.28.77:30920 allows to access internal domains To reproduce, simply use this curl command
+- **Applicant security exam Attachments/Documents accessible through an IDOR/BAC on the custom Apex controller on https://█████.mil ** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2950536)
+  - I've uncovered a highly dangerous IDOR on the ██████████ portal.
+- **Improper Access Controls(Admin Path)** — `MTN Group` · `High` [↗](https://hackerone.com/reports/2342461)
+  - Go to https://nin.mtn.ng/ then click on "Check your NIN Link Status" then right click and click on "Inpect" and admin path is display at web browser ../wp-admin/admin-ajax.html STEP 1: Go to https://nin.mtn.ng/ {F3021640}
+- **Worker permission bypass via InternalWorker leak in diagnostics** — `Node.js` · `High` [↗](https://hackerone.com/reports/2575105)
+  - `CVE-2025-23083` With the aid of the diagnostics_channel utility, an event can be hooked into whenever a worker thread is created.
+- **OTP code Leaked in API Response ** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/2633888)
+  - The application https://corporate.admyntec.co.za allows users to sign up for device insurance.
+- **Sensitive data exposure: █████████ candidate resumes/CVs available to download with no authentication through BAC/IDOR/Improper Salesforce config** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2623715)
+  - I located a major example of sensitive data exposure through a BAC/incorrectly configured Salesforce instance.
+- **Missing Line Terminator on allowedOrigins enables origin spoofing** — `MetaMask` · `High` [↗](https://hackerone.com/reports/2585855)
+  - @pkkr identified a vulnerability in our Snaps allowedOrigins functionality, a functionality which allows a Snap developers to control which origins could interact with certain Snaps APIs.
+- **SAML Signature verification bypass allows logging into any user (with specific conditions)** — `GitHub` · `Critical` [↗](https://hackerone.com/reports/2579939)
+  - `CVE-2024-6800` An XML signature wrapping vulnerability was present in GitHub Enterprise Server (GHES) when using SAML authentication with specific identity providers utilizing publicly exposed signed federation metadata XML.
+- **DoD workstation exposed to internet via TinyPilot KVM with no authentication** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2633988)
+  - There appears to be a workstation belonging to ███████ (███) that is completely exposed to the internet via IP web interface by way of a TinyPilot KVM device.
+- **Guest Privilege Escalation to admin group** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/501081)
+  - Due to improper ACLs it was found possible to escalate privileges from a guest user to admin.
+- **Add any depot to your app and access its contents without decryption key;  via /apps/setcommonredists** — `Valve` · `High` [↗](https://hackerone.com/reports/1018368)
+  - A parameter-validation error on an endpoint used to configure redistributable depots could be forced to add external depots to an existing (attacker-owned) app.
+- **Automatic Admin Access** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1991214)
+  - URL: https://█████████.mil/apexcrrel/f?p=150:1:23467499301323::NO::: When visiting the following URL, the user is automatically signed into a user with administrative access.
+- **Endpoint Redirects to Admin Page and Provides Admin role** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1991290)
+  - By navigating to https://████████.mil/apexcrrel/f?p=165:56, the user will automatically be redirected to the web application admin portal with Admin access.
+- **Missing Access Control Allows for User Creation and Privilege Escalation ** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2442229)
+  - The RSI Test Environment application at https://███████████████/ords/f?p=842:1 does not enforce access controls on the user management endpoint.
+- **CVE-2023-26347 in https://████.mil/hax/..CFIDE/adminapi/administrator.cfc?method=getBuildNumber&_cfclient=true** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2518407)
+  - `CVE-2023-26347` Adobe ColdFusion versions 2023.5 (and earlier) and 2021.11 (and earlier) are affected by an Improper Access Control vulnerability that could result in a Security feature bypass.
+- **Can reshare read&share only folder with more permissions** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/2289425)
+  - `CVE-2024-37882` Security advisory at https://github.com/nextcloud/security-advisories/security/advisories/GHSA-jjm3-j9xh-5xmq
+- **Subdomain takeover ████████.mil** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2499178)
+  - The subdomain █████.mil is pointing to peosol-lg.███████., the domain ██████ is currently available for registration as can be seen at https://www.godaddy.com/nl-nl/domainsearch/find?domainToCheck=█████ Given the rules, residency of the US, of the us-tld I decided not to
+- **Program Member Could Duplicate Report To A Non Related Program Original Report ** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2513082)
+  - Hello Hackerone team, I found a vulnerability on setting duplicate report as program owner.
+- **CVE-2021-39226 Discovered on endpoint https://██████/api/snapshots** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2408480)
+  - `CVE-2021-39226` CVE-2021-39226 Discovered on endpoint https://███████/api/snapshots/:key where this issue poses a significant risk to the confidentiality and integrity of snapshot data, allowing both authenticated and unauthenticated users unauthorized access and deletion capabilities.
+- **Access Control Vulnerability Enabling Unauthorized Access to Limited Disclosure Reports** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2516250)
+  - Hi there, I hope you are doing well :) I found a vulnerability which allows me to close a report as duplicate of another program report.
+- **Authentication Bypass with usage of PreSignedURL** — `ownCloud` · `High` [↗](https://hackerone.com/reports/2337427)
+  - It was identified that ownCloud Infinite Scale (oCIS) is prone to vulnerability that allows access any file without authentication.
+- **Lack of Tenant Scoping Enables Limited Cross-Tenant Data Querying and Mutation** — `Enjin` · `Critical` [↗](https://hackerone.com/reports/2327238)
+  - @tushar_rec0n was able to demonstrate on the [Enjin Platform](https://platform.enjin.io) that it was possible, for certain queries and mutations, to query and mutate data cross-tenant (ie.
+- **View Titles of Private Reports with pending email invitation** — `HackerOne` · `High` [↗](https://hackerone.com/reports/2312029)
+  - If a private report has a pending email invitation for collaboration, an anonymous user can see the title of the report.
+- **GHES Management console EoP (editor to site admin)** — `GitHub` · `High` [↗](https://hackerone.com/reports/2197796)
+  - `CVE-2023-46647` Improper privilege management in all versions of GitHub Enterprise Server allows users with authorized access to the management console with an editor role to escalate their privileges by making requests to the endpoint used for bootstrapping the instance.
+- **Default Admin Username and Password on ███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2262365)
+  - It is possible to access the application is using the default username and password Steps To Reproduce: 1-Go to https://███/geoportal/ and login with credentials: user and password: admin user and password: gptadmin Poc video attached A Department of Defense website was misconfig
+- **Unauthenticated File Read Adobe ColdFusion** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2248781)
+  - `CVE-2023-26360` Unauthenticated Arbitrary File Read vulnerability due to de serialization of untrusted data in Adobe ColdFusion.
+- **Adobe ColdFusion Access Control Bypass - CVE-2023-38205** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2090435)
+  - `CVE-2023-38205` Hi team, The subdomain https://████ is with adobe ColdFusion vulnerable with CVE-2023-38205.
+- **Unauthenticated Remote Access to Testing Endpoint** — `IBM` · `Critical` [↗](https://hackerone.com/reports/2192984)
+  - Unauthenticated remote access to a testing endpoint was reported to IBM, analyzed and has been remediated.
+- **Permissions policies can be bypassed via Module._load and require.extensions (High) (CVE-2023-30587)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2188126)
+  - `CVE-2023-32002` [https://hackerone.com/reports/1960870](https://hackerone.com/reports/1960870) The use of Module._load() and require.extensions[".js"] can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.
+- **Delete external storage of any user** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/2212627)
+  - `CVE-2023-48239` A security vulnerability was uncovered that allowed standard users to remove external storage resources from any user account in the application.
+- **User automatically logged in as Sys Admin user on https://███/Administration/Administration.aspx** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/2190808)
+  - Any user can access the Administration section of the following URL: https://███ When the user goes to the following domain they are automatically logged in as "████████" which is a sys admin user on the application, this allows any user to upload files, add users, change permiss
+- **CVE-2023-30587 Process-based permissions can be bypassed with the "inspector" module.** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/2078581)
+  - `CVE-2023-30587` [https://hackerone.com/reports/1962701](https://hackerone.com/reports/1962701) Restrictions set with the new process based permission flag can by bypassed with the built-in inspector module.
+- **Permanent CASB Integration Takeover due to Improper Access Controls+Confused Deputy Problem** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/2086301)
+  - Cloudflare's Cloud Access Security Broker (CASB) had a security vulnerability on a limited set of integrations, known as the "confused deputy problem." If an attacker managed to discover a valid Microsoft tenant UUID or Microsoft domain, GitHub or BOX's installation_id that a pre
+- **2FA BYPASS** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/1805779)
+  - Cloudflare's Dashboard enables users to configure 2-Factor Authentication using a Security Key.
+- **Adobe ColdFusion - Access Control Bypass [CVE-2023-38205] at ██████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/2082528)
+  - `CVE-2023-38205` Hello Gents, I would like to report an issue where attackers are able to bypass the product feature that restricts external access to the ColdFusion Administrator.
+- **New AppPassword can be generated without password confirmation** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/2067572)
+  - `CVE-2023-39963` There is protection on https://github.com/nextcloud/server/blob/master/apps/settings/lib/Controller/AuthSettingsController.php#L122 that you must have recently entered your password to be able to generate a new AppPassword.
+- **Process-based permissions can be bypassed with the "inspector" module.  ** — `Node.js` · `High` [↗](https://hackerone.com/reports/1962701)
+  - `CVE-2023-30587` Restrictions made with with the --experimental-permission flag can by bypassed with the built-in inspector module.
+- **Rider can forcefully get passenger's order accepted resulting in multiple impacts including PII reveal  and more mentioned in the report.** — `inDrive` · `High` [↗](https://hackerone.com/reports/1960107)
+  - Hello Indrive Security Team, This is going to be chain of attacks with major flow being in /api/setTenderStatus request allowing the attacker to get their ride request accepted automatically.
+- **' Full Account Takeover ' at █████** — `Mars` · `Critical` [↗](https://hackerone.com/reports/1959540)
+  - A severe vulnerability is identified in the login functionality of a website belonging to Mars.
+- **End-to-end encrypted file-drops can be made inaccessible** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1914115)
+  - `CVE-2023-35173` Assume a filedrop that is send to 2 people, USER and ATTACKER 4.
+- **Leaks of username and password leads to CVE-2018-18862 exploitation** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1990338)
+  - `CVE-2018-18862` Hi DoD Team, I hope you are doing good today.
+- **LDAP Server NULL Bind Connection Information Disclosure** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1937235)
+  - The remote LDAP server allows anonymous access Configure the service to disallow NULL BINDs.
+- **Reset password link sent over unsecured http protocol** — `Mattermost` · `High` [↗](https://hackerone.com/reports/1888915)
+  - After creating the workspace, if victim clicks on forgot password then reset password link has been generated and sent over mail and that password link is unsecured http protocol.
+- **Authentication bypass on gist.github.com through SSH Certificates** — `GitHub` · `High` [↗](https://hackerone.com/reports/1901040)
+  - `CVE-2023-23761` An improper authentication vulnerability was identified in GitHub Enterprise Server that allowed an unauthorized actor to modify other users' secret gists by authenticating through an SSH certificate authority.
+- **A malicious actor could rotate tokens of a victim, given that he knows the victim's token ID** — `Cloudflare Public Bug Bounty` · `High` [↗](https://hackerone.com/reports/1525309)
+  - Due to lack of proper authorization checks a malicious actor was able to rotate API token of a different user using the Roll Token API method leading to DoS for the token owner and the applications that use it.
+- **Accessing unauthorized administration pages and seeing admin password - speakerkit.state.gov** — `U.S. Department of State` · `High` [↗](https://hackerone.com/reports/1806387)
+  - When you enter the page, it directs you directly to the entrance.
+- **Argo CD reconciles apps outside configured namespaces when sharding is enabled** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1847140)
+  - `CVE-2023-22736` The Application CRD outside configured namespace in Argo CD will be reconciled.
+- **Upload and delete files in debug page without access control.** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1714767)
+  - I found a debug page with no access control that allows: 4.
+- **Low authorization level at server side API operation e2e.updateGroupKey, let an attacker break the E2E architecture.** — `Rocket.Chat` · `High` [↗](https://hackerone.com/reports/1757663)
+  - `CVE-2023-23911` During my personal revision of the E2E encryption feature enable by default at open.rocket.chat server, that allow users to encrypt messages under application layer inside on a specific secure chat room, I found the following vulnerability: It's possible to break the E2E encrypti
+- **connect.8x8.com: admin user can send invites on behalf of another admin user via POST /api/v1/users/<User ID>/invites** — `8x8` · `High` [↗](https://hackerone.com/reports/1474536)
+  - @emperor reported to us a vulnerability allowing admin users to send invites on behalf of another admin.
+- **connect.8x8.com: deactivated users remain access to /api/v1/users/UUID/roles** — `8x8` · `High` [↗](https://hackerone.com/reports/1473071)
+  - @emperor & @sharp488 reported to us a scenario where deactivated users remain access to /api/v1/users/UUID/roles within their own tenant.
+- **jaas.8x8.vc: Removed users can still have READ/WRITE access to the workspace via different API endpoints** — `8x8` · `High` [↗](https://hackerone.com/reports/1479894)
+  - @emperor observed an Improper Access Control issue specific to "removed" users & insufficient session revocation.
+- **admin.8x8.vc: Member users with no permission can integrate email to connect calendar via GET /meet-external/spot-roomkeeper/v1/calendar/auth/init?..** — `8x8` · `High` [↗](https://hackerone.com/reports/1486310)
+  - I have observed an Improper access control Issue.
+- **Github Apps can use Scoped-User-To-Server Tokens to Obtain Full Access to User's Projects in Project V2 GraphQL api** — `GitHub` · `High` [↗](https://hackerone.com/reports/1711938)
+  - `CVE-2022-23739` An incorrect authorization vulnerability was identified in GitHub Enterprise Server, allowing for escalation of privileges in GraphQL API requests from GitHub Apps.
+- **1 click Account takeover via deeplink in [com.kayak.android]** — `KAYAK` · `Critical` [↗](https://hackerone.com/reports/1667998)
+  - We received this great report about a vulnerability in our Android app on August 12.
+- **Github app Privilege Escalation to Administrator/Owner of the Organization ** — `GitHub` · `High` [↗](https://hackerone.com/reports/1732595)
+  - `CVE-2022-23741` An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed a scoped user-to-server token to escalate to full admin/owner privileges.
+- **DNS rebinding in --inspect (insufficient fix of CVE-2022-32212 affecting macOS devices)** — `Internet Bug Bounty` · `High` [↗](https://hackerone.com/reports/1714979)
+  - `CVE-2022-32212` The fix for CVE-2022-32212, covered the cases for routable IP addresses, however, there exists a specific behavior on macOS devices when handling the http://0.0.0.0 URL that allows an attacker-controlled DNS server to bypass the DNS rebinding protection by resolving hosts in th
+- **[MK8DX] Improper verification of Competition creation allows to create "Official" competitions** — `Nintendo` · `High` [↗](https://hackerone.com/reports/1653676)
+  - This vulnerability impacts: **NOTE**: The issue was fixed by removing the "recommended" tournament section
+- **Admin can create a hidden admin account  which even the owner can not detect and remove and do administrative actions on the application.** — `Reddit` · `High` [↗](https://hackerone.com/reports/1596663)
+  - ads.reddit.com is an ads creating and managing application for reddit.
+- **Accessing/Editing Folders of Other Users in the Orginisation.** — `Lark Technologies` · `High` [↗](https://hackerone.com/reports/1025881)
+  - A vulnerability was found where users without Primary admin privileges were able to view/modify the directory structure of other users in their organization.
+- **access nagios dashboard using default credentials in ** omon1.fpki.gov, 3.220.248.203**** — `U.S. General Services Administration` · `Critical` [↗](https://hackerone.com/reports/1700896)
+  - when i performing recon on fpki.gov i found nagios dashboard in ** omon1.fpki.gov, 3.220.248.203** and i accessed it using default credentials username: ** nagiosadmin ** password : ** nagiosadmin **
+- **Authentication bypass leads to Information Disclosure at  U.S Air Force "https://███"** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1690548)
+  - Hi Hackerone Triage team, I'm new in this program, what i understood that every Web Owned/Operated by DoD is in scope , so i did some google searches , exactly in wikipedia and i've find this PNG that confirms that U.S Air Force is in scope : https://en.wikipedia.org/wiki/United_
+- **Broken access discloses users and PII at https://███████ [HtUS]** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1624374)
+  - I was able to register at https://████/ and get the list of users.
+- **DNS rebinding in --inspect (insufficient fix of CVE-2022-32212 affecting macOS devices)** — `Node.js` · `High` [↗](https://hackerone.com/reports/1632921)
+  - `CVE-2022-32212` **Summary:** This is an insufficient fix of CVE-2022-32212, which itself is a fix of CVE-2018-7160.
+- **Unprotected ██████ and Test site API Exposes Documents, Credentials, and Emails in ██████████ Proposal System** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/745171)
+  - The test/integration API of the █████ web services is publicly exposed: disclosing documents, emails, and credentials to what appears to be the Seaport Bid proposal system.
+- **Default Login Credentials on https://broadbandmaps.mtn.com.gh/ ** — `MTN Group` · `Critical` [↗](https://hackerone.com/reports/1297480)
+  - Hello Team, I just found out that broadbandmaps.mtn.com.gh requires logging in when you visit it, but it turned out that you can actually login as an Admin and do anything on the specific site.
+- **IDOR allowing to read another user's token on the Social Media Ads service** — `Semrush` · `High` [↗](https://hackerone.com/reports/1464168)
+  - The hotfix was released asap.
+- **One-click account hijack for anyone using Apple sign-in with Reddit, due to response-type switch + leaking href to XSS on www.redditmedia.com** — `Reddit` · `Critical` [↗](https://hackerone.com/reports/1567186)
+  - I've been researching new ways to steal OAuth codes and access-tokens using postMessage, and I found a way for me to steal the code and/or access-token from Apple-sign-in on reddit.com allowing a full account hijack of the account in Reddit.
+- **Unauthorized packages modification or secrets exfiltration via GitHub actions** — `Linux Foundation Decentralized Trust` · `High` [↗](https://hackerone.com/reports/1548870)
+  - Thank you to @dusty_wormwood for working closely with the Iroha team to fix this issue.
+- **Authentication token and CSRF token bypass** — `Enjin` · `High` [↗](https://hackerone.com/reports/998457)
+  - @whiteshadow201 was able to illustrate a vulnerability, due to an overzealous set of CORS rules, where they could execute certain functions on behalf of another user.
+- **error parse uri path in curl** — `curl` · `High` [↗](https://hackerone.com/reports/1566462)
+  - [add summary of the vulnerability] The uri path error could lead to security filter bypasses.
+- **Able to bypass email verification and change email to any other user email ** — `Reddit` · `High` [↗](https://hackerone.com/reports/1551176)
+  - The reporter discovered they were able to hijack invites to other ads teams by adding the extra field, email, to a request that would allow them to bypass email verification.
+- **Container escape on public GitLab CI runners** — `GitLab` · `High` [↗](https://hackerone.com/reports/1442118)
+  - It is possible to circumvent the isolation in place for build jobs running on public CI runners by escaping the docker container running the build job.
+- **Broken access control, can lead to legitimate user data loss** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1493007)
+  - Hi team, During testing the security of ██████████ I found another possible attack vector: (There are two reports preceding this one - https://hackerone.com/reports/1489470 and https://hackerone.com/reports/1489744) I will try to explain: When an user need access to that inform
+- **IDOR at https://demo.sftool.gov/TwsHome/ScorecardManage/ via scorecard name** — `U.S. General Services Administration` · `High` [↗](https://hackerone.com/reports/1472721)
+  - I have found a broken access control vulnerability on https://demo.sftool.gov/ under your /tws directory.
+- **Public Jenkins instance with /script enabled** — `IBM` · `Critical` [↗](https://hackerone.com/reports/1492447)
+  - An RCE/LFI due to Public Jenkins instance with /script enabled was reported to IBM February 26th, analyzed and has been remediated since March 3rd, 2022.
+- **Broken Authentication** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/409237)
+  - **Description:** It is possible to access other user account by changing the parameter 'email' to another valid e-mail, i managed to guess an existing user '███████@███.com' which discloses the ███ Name and Surname.
+- **Discoverability by phone number/email restriction bypass** — `X / xAI` · `High` [↗](https://hackerone.com/reports/1439026)
+  - **Summary:** By using this vulnerability an attacker can find a twitter account by it's phone number/email even if the user has prohibited this in the privacy options.
+- **Critically Sensitive Spring Boot Endpoints Exposed** — `Semrush` · `Critical` [↗](https://hackerone.com/reports/1022048)
+  - Spring Boot includes a number of additional features to help you monitor and manage your application when you push it to production.
+- **Developer uploaded files missing authentication on LINE GAME Developers site(gdc.game.line.me)** — `LY Corporation` · `High` [↗](https://hackerone.com/reports/969605)
+  - IDOR vulnerability at gdc.game.line.me allowed unauthenticated users to perform brute-force attacks to disclose unauthorized files related to service testing and QA.
+- **Unauthenticated Access to Admin Panel Functions at https://███████/███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1397564)
+  - The admin panel at https://██████████/████████ and all its functions can be accessed without authentication.
+- **Unauthenticated Access to Admin Panel Functions at https://██████████/████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1394910)
+  - I discovered that the admin panel at https://████/█████ and all its functions can be accessed without authentication.
+- **AWS subdomain takeover of www.███████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/1329792)
+  - The AWS bucket hosted on www.████████ was vulnerable to a subdomain takeover.
+- **Misuse of groups feature allows workspace members to join private channels without being invited** — `Slack` · `High` [↗](https://hackerone.com/reports/1248852)
+  - @kmap alerted us to an issue that would have allowed workspace members to join private channels through misuse of our User Groups feature.
+- **Access to microtransaction sales data for lots of apps from 2014 to present at /valvefinance/sanity/** — `Valve` · `Critical` [↗](https://hackerone.com/reports/975212)
+  - The Steamworks Product Data web site had an URL route with insufficient access controls, which would allow an authenticated partner to view data for games which they might not otherwise have permissions to view.
+- **Access to alerta.khanacademy.org leak sensitive data ** — `Khan Academy` · `Critical` [↗](https://hackerone.com/reports/1061664)
+  - Hi , I found to access https://alerta.khanacademy.org/ using signup bypass.That leak access to sensitive data of khanacademy.org 4.
+- **URN Request bypass ACL Checks** — `Internet Bug Bounty` · `Critical` [↗](https://hackerone.com/reports/824802)
+  - `CVE-2019-12523` Attacker can bypass ACL checks gaining access to restricted HTTP servers such as those running on localhost.
+- **Client IP Spoofing using "X-Forwarded-For: 127.0.0.1" on "studio-app.snapchat.com" exposing bucket details** — `Snapchat` · `High` [↗](https://hackerone.com/reports/382678)
+  - Researcher's summary is accurate.
+- **Virtual Data Room / Hide download on collabora is easy to bypass** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1194606)
+  - `CVE-2021-32748` So, let me start with saying I'm not sure if this is a security issue or if it is by design.
+- **Improper authorization on `/api/as/v1/credentials/` for  Dev Role User with Limited Engine Access** — `Elastic` · `High` [↗](https://hackerone.com/reports/1218680)
+  - Since #1168528 was resolved.
+- **Publicly accessible Continuous Integration Tool** — `Snapchat` · `Critical` [↗](https://hackerone.com/reports/313457)
+  - @apfeifer27 found an internal Continuous-Integration instance, which disclosed internal source code and credentials for some of our instances.
+- **Enumerate all the class codes via google dorking ** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/1210043)
+  - I used this particular google dork site:khanacademy.org/join/* to enumerate all the links of joining classes.
+- **Broken Authentication and Session Management lead to take over account** — `Phabricator` · `High` [↗](https://hackerone.com/reports/1271710)
+  - Hello, I found vulnerability using phone Summary : Session token weakness, allowing attackers to take over accounts
+- **Scoped apptokens can be changed by that very apptoken** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1193321)
+  - `CVE-2021-32688` I noticed that there is the possibility to limit apptokens to not be able to access the filesystem.
+- **Unauthorized access to admin panel of the Questionmark Perception system at https://██████████** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1026146)
+  - Due to the lack of access control, an anonymous attacker can compromise the administrator account on the Questionmark Perception system.
+- **Default Admin Username and Password on █████ Server at █████████mil** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1195325)
+  - A ██████ Server is running at https://███mil you can access the login at https://████mil/█████████ the application is using the default "Administrator for the default organization" credentials Go to https://███mil/████████ and login with *█████*
+- **Improper authorization on `/api/as/v1/credentials/` allows any App Search user to access all API keys and escalate privileges** — `Elastic` · `High` [↗](https://hackerone.com/reports/1168528)
+  - Hello team, I hope you're doing well!
+- **Kroki Arbitrary File Read/Write ** — `GitLab` · `High` [↗](https://hackerone.com/reports/1098793)
+  - In short, I've found a potentially weird bug in asciidoctor that could lead to arbitrary file read/write in asciidoctor-kroki even though Gitlab have already made an attempt to disable kroki-plantuml-include module Asciidoc MAX_INCLUDE_DEPTH = 5 MAX_INCLUDES = 32 DEFAULT_AD
+- **Improper Access Control on Lark Footer Feature** — `Lark Technologies` · `High` [↗](https://hackerone.com/reports/1169340)
+  - Due to improper access control within Lark's footer feature, an attacker could have potentially accessed private files.
+- **No Valid SPF Records/don't have DMARC record** — `UPchieve` · `Critical` [↗](https://hackerone.com/reports/1198439)
+  - I have already reported this isssue through email and the company has accepted my report.
+- **Zero click account Takeover due to Api misconfiguration 🏂🎩** — `UPchieve` · `Critical` [↗](https://hackerone.com/reports/1166500)
+  - Hacker reported that full account takeover was possible through exploitation of one our forms.
+- **Full account takeover of any user through reset password** — `UPchieve` · `Critical` [↗](https://hackerone.com/reports/1175081)
+  - Hi Security team members, Usually, If we reset our password on https://app.upchieve.org that time we got a password reset link on the email.
+- **bypassing dashboard without account + Information disclosure trough websockets ** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1102780)
+  - I found a information disclosure for bypassing parameter url attacker can redirect to dashboard without login user/pass page and websocket can be exposed in response/dashboard.
+- **Improper Access Control - Generic on https://████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/992618)
+  - Greetings, I found on one of your sub-domains some tickets that are not supposed to be readable by everyone, we even have the possibility to delete the tickets.
+- **param allows  any external resource to be downloadable | https://████████** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/995347)
+  - The following param allows an attacker to trick people into downloading malicious files, scripts and other payloads.
+- **Acting under any different user via DB-stored credentials** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/1061591)
+  - `CVE-2021-22877` The issue is related to all Nextcloud versions.
+- **DNS rebinding in --inspect (insufficient fix of CVE-2018-7160)** — `Node.js` · `High` [↗](https://hackerone.com/reports/1069487)
+  - `CVE-2021-22884` **Summary:** While the debugger (i.e., the --inspect option) tries to prevent DNS rebinding, the whitelist is excessive.
+- **Support incident can be opened for any user via /███████ and PII leak via █████████ field** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/869450)
+  - A malicious user can open an incident for any user via the ████/████████ page.
+- **CVE-2020-6287  https://redapi2.acronis.com** — `Acronis` · `Critical` [↗](https://hackerone.com/reports/1028392)
+  - `CVE-2020-6287` CVE-2020-6287 https://redapi2.acronis.com https://nvd.nist.gov/vuln/detail/CVE-2020-6287 You can check.
+- **Full account takeover on https://████████.mil** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/1058015)
+  - The flow in application is to sign up and wait for an email containing a one-time password, as soon as you login using that password, it asks you to change it.
+- **Public and secret api key leaked in JavaScript source** — `Top Echelon Software` · `High` [↗](https://hackerone.com/reports/1051029)
+  - I am surfing on the bb3jobboard.topechelon.com website.
+- **Hackyholidays [ h1-ctf] writeup [mission:- stop the grinch ]** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1069396)
+  - In the continuous series of 12 days, twelve flags were hidden inside Hackyholidays site - hackyholidays.h1ctf.com in which once we get all the flags, grinch can be stopped.
+- **A Visit from The Grinch ~ 'Twas the night before Hackmas...** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/1067912)
+  - This was an amazing CTF!
+- **SAML authentication bypass through unauthenticated `addSamlProvider` Meteor Call** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/1049375)
+  - `CVE-2020-29594` **Summary:** Rocket.Chat exposes an unauthenticated Meteor method addSamlProvider, which allows disabling SAML signature verification.
+- **Create an account on auth-sandbox.elastic.co with email @elastic.co or any other @domain.com** — `Elastic` · `High` [↗](https://hackerone.com/reports/837510)
+  - Today when doing some recon steps and found this subdomain Its not loaded correctly and viewing the source code exposed some other links interesting
+- **Unrestricted File Upload Leads to RCE on mobile.starbucks.com.sg** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/1027822)
+  - ko2sec discovered an .ashx endpoint on mobile.starbucks.com.sg intended for image files permitted unrestricted file type uploads which could lead to a potential RCE.
+- **No Email Checking at Invitation Confirmation Link leads to Account Takeover without User Interaction at CrowdSignal** — `Automattic` · `Critical` [↗](https://hackerone.com/reports/915110)
+  - Hi team, When you have a team account, you can invite users to your team from https://app.crowdsignal.com/users/list-users.php If you invite a user, you will see this : {F893386} As you can see, there is confirmation link and we can see it from our dashboard.
+- **Can buy Atavist Magazine subscription for free** — `Automattic` · `High` [↗](https://hackerone.com/reports/951230)
+  - Hi team If you go to https://magazine.atavist.com/ and scroll down.
+- **Ticket Trick at https://account.acronis.com** — `Acronis` · `High` [↗](https://hackerone.com/reports/999765)
+  - Hello dear team, I found a serious issue in Acronis This vulnerability is called ticket trick vulnerability which comes under critical category.
+- **Insufficient Type Check on GraphQL leading to Maintainer delete repository** — `GitLab` · `High` [↗](https://hackerone.com/reports/858671)
+  - As you have know, Maintainer cannot delete/archive repository.
+- **Thailand - SNMP Publicly Accessible** — `Starbucks` · `High` [↗](https://hackerone.com/reports/455726)
+  - k3mlol discovered a Thailand SNMP publicly available which permitted access to configuration information from the asset.
+- **Missing server side controls when editing the board’s sharing permissions per user** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/827816)
+  - `CVE-2020-8182` Author: Silvia Väli, Clarified Security (https://www.clarifiedsecurity.com/silvia-vali/) Date: 24th of March, 2020 **Description**: When the regular user is visiting the Deck view, all created boards are displayed along with the ones that are shared with the user by others.
+- **Unauthorized updates to extended_info properties in /store/ajaxpackagesave** — `Valve` · `High` [↗](https://hackerone.com/reports/815547)
+  - Due to incorrectly-implemented access control, partners were able to set the "extended_info" value on their own packages.
+- **Add apps to packages 0, 61, 62 with /store/ajaxpackagemerge** — `Valve` · `High` [↗](https://hackerone.com/reports/972243)
+  - The ajaxpackagemerge API incorrectly allowed partners to add their own apps to certain Valve administrative packages.
+- **Members from parent group keep their access level on a subgroup transfer and are invisible** — `GitLab` · `High` [↗](https://hackerone.com/reports/790786)
+  - There's an option that allows to transfer groups from one namespace to another, it doesn't work as intended when transferring subgroups from inside a parent group to another group.
+- **Unauthorized Access and updation of EMAIL settings of other user  at https://app.dropcontact.io/app/sponsorship/ by changing the " email " parameter.** — `Dropcontact` · `High` [↗](https://hackerone.com/reports/953866)
+  - When changing email settings with firstpromoter, the email of the account was right in the url, so by changing this parameter, we could change setting of other users.
+- **Insufficient access control on all BCRM instances leading to the ability to create admin accounts using the API** — `LY Corporation` · `High` [↗](https://hackerone.com/reports/836081)
+  - [BCRM](https://bcrm-doc.line.me/) is a service that helps manage and analyze your LINE Official Account, and provide useful insights.
+- **Cross-Site WebSocket Hijacking Lead to Steal XSRF-TOKEN** — `Stripo Inc` · `High` [↗](https://hackerone.com/reports/915541)
+  - The WebSocket handshake request was vulnerable to CSRF, WebSocket content was contain many sensitive data for the user It was like the [PortSwigger Lab](https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking) .
+- **[█████████] Administrative access to Oracle WebLogic Server using default credentials** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/804548)
+  - I discovered an Oracle WebLogic Server and because of weak credentials managed to login as administrator, which led to complete server takeover.
+- **[H1-2006] CTF Writeup** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895778)
+  - I am fairly new to CTFs - this is just my second CTF after [H1-415 CTF](https://twitter.com/Hacker0x01/status/1217561343986782209), at which I didn't get far at all.
+- **Unauthorised Account Detail Modification ** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/868146)
+  - Introduction ========= Hi 5kyw41k3r here, It is a flaw which allows a malicious actor to modify the details of an account.
+- **[H1-2006 2020] In-depth resolution of the h1-2006 CTF** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/894174)
+  - First of all, huge thanks to the creators for this CTF, it was really fun and got me to improve a lot !
+- **[H1-2006 2020] Bounty Pay CTF challenge** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/895798)
+  - Hi there!
+- **Bypass Email activation on http://axa.dxi.eu** — `8x8` · `High` [↗](https://hackerone.com/reports/418267)
+  - The account activation link utilized by the ContactNow application utilized a token in the existing session for validation.
+- **Docker Registry HTTP API v2 exposed in HTTP without authentication leads to docker images dumping and poisoning** — `Semmle` · `Critical` [↗](https://hackerone.com/reports/347296)
+  - Docker Registry HTTP API v2 is exposed in HTTP without authentication.
+- **Organization Takeover** — `Helium` · `High` [↗](https://hackerone.com/reports/809816)
+  - Hello @helium, The **console.helium.com** application doesn't correctly manage the /membership/ resources and allows a user to privilege escalate an organization of which he's part of just modifying it's role.
+- **[Critical] Insufficient Access Control On Registration Page of Webapps Website Allows Privilege Escalation to Administrator ** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/796379)
+  - Due to insufficient access controls and poor implementation of the registration at https://████████/████/login.cfm it was possible to register while privilege escalating to an administrator.
+- **CORS Misconfiguration Leads to Exposing User Data** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/733017)
+  - **Vulnerable Asset:** https://██████/█████████/ var xhttp = new XMLHttpRequest();
+- **[██████████] Unauthorized access to admin panel** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/648222)
+  - In previous reports, I described vulnerabilities in a panel to which I had access.
+- **Unrestricted File Upload** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/683024)
+  - The endpoint at https://███████/ui/core/index.html required authentication, but navigating to https://█████/ui/core/index.html?mode=public#expl-tabl./SHARED/rpchllmd/CSAT allow for read/write access.
+- **IDOR in the https://market.semrush.com/** — `Semrush` · `Critical` [↗](https://hackerone.com/reports/837400)
+  - Insecure direct object references in marketplace due to a length restrictions in chosen hashing function.
+- **"Secure View" aka "Hide Download" can be bypassed easily** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/788257)
+  - `CVE-2020-8139` The mid-2019 announced feature "Secure view" (https://nextcloud.com/blog/secure-view-prevent-your-shared-files-from-getting-downloaded/) allows for hiding the Download button on public shares.
+- **User account compromised authentication bypass via oauth token impersonation** — `Picsart` · `High` [↗](https://hackerone.com/reports/739321)
+  - OAuth token impersonation is actually a bug when 3rd party company app or malicious app collects the access token of the same user then that company can access to user account on PicsArt.
+- **Full account takeover** — `Reverb.com` · `High` [↗](https://hackerone.com/reports/314808)
+  - I got a security issue in reverb ios application which allows an attacker hack all users account.
+- **HackerOne Pentesters can access any structured scope object through GraphQL node interface** — `HackerOne` · `High` [↗](https://hackerone.com/reports/781150)
+  - A missing authorization check in the StructuredScope protector class (app/protectors/protected_structured_scope.rb:42) enables any HackerOne Pentester to access structured scope objects of programs they aren't invited to or aren't running a penetration test through HackerOne.
+- **[h1-415 2020] Spent a week and failed at solving the last step.** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/781265)
+  - I found something interesting with Headless chrome debugging in the last step, I am sure I am going to solve this after trying very hard for about a week, I don't know when this CTF is going to end, that's why I am submitting a summary of how to solve this so that I can write th
+- **[h1-415 2020] h1ctf{y3s_1m_c0sm1c_n0w}** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/781253)
+  - [add summary of the vulnerability] Account takeover was possible because of the email validation used - jobert@mydocz.cosmic<>{} could be registered, but when the the system created the recovery QR code the extra symbols would get stripped leaving us with a valid recovery QR
+- **[h1-415 2020] I got the flag** — `h1-ctf` · `Critical` [↗](https://hackerone.com/reports/777099)
+  - The flag is: h1ctf{y3s_1m_c0sm1c_n0w} I'll submit a well written writeup later today or tomorrow.
+- **Lack or Origin check leads to Cross-Site Websocket Hijacking (CSWSH)** — `Superhuman (formerly Grammarly)` · `High` [↗](https://hackerone.com/reports/535436)
+  - @fisher discovered a CSRF-related vulnerability in Coda docs by which an attacked could craft a convincing page that would make modifications to a specific document without the victim knowing.
+- **Group search leaks private MRs, code, commits** — `GitLab` · `High` [↗](https://hackerone.com/reports/692252)
+  - `CVE-2019-5487` Using the group search you can access MRs and code set as "not public" in a project Create a public group, create a public project inside the group, but with private code.
+- **Group search with Elastic search enable leaks unrelated data** — `GitLab` · `High` [↗](https://hackerone.com/reports/708820)
+  - Performing a group search when Elastic Search is enabled provides access to unrelated merge requests, issues activity, leaking the existence of private groups, plus their activity and MRs.
+- **Examples directory is PUBLIC on https://████████mil, leading to multiple vulns** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/674741)
+  - In an effort to consolidate reporting.
+- **Periscope-all Firebase database takeover** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/684099)
+  - I found one public Firebase database of periscope.tv and I can able to insert data to this database and i only used it once for the testing purposes, so other database queries also possible.
+- **Subdomain takeover on healthyhackathon.khanacademy.org and hackweek.khanacademy.org** — `Khan Academy` · `High` [↗](https://hackerone.com/reports/474798)
+  - healthyhackathon.khanacademy.org can be took over, since it points to a bucket in S3 but that bucket does not exists.
+- **In Dockerized Environments, Failing to Read config.php Grants Any Anonymous User Full Admin Access** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/522876)
+  - Consider this deployment: Now, consider that one or both of the containers encounter an issue reading /var/www/html/config/config.php.
+- **Add users to groups who have restricted group invites** — `WordPress` · `High` [↗](https://hackerone.com/reports/538008)
+  - WordPress version: 5.2 BuddyPress version: 4.2.0 Through this vulnerability, an attacker could add users to groups who have set : I want to restrict Group invites to my friends only.
+- **Possibility to overwrite any file in the vpe.cdn.vimeo.tv leads to the Stored XSS for the all customers on the embed.vhx.tv** — `Vimeo` · `High` [↗](https://hackerone.com/reports/452559)
+  - By modifying the Content-Type to be blank, during a PUT command, the researcher was able to upload files to the CDN.
+- **Attacker is able to access commit title and team member comments which are supposed to be private** — `GitLab` · `High` [↗](https://hackerone.com/reports/502593)
+  - **Summary:** [add summary of the vulnerability] **Description:** [add more details about this vulnerability]
+- **Expired reshare links allow access to all files in share** — `Nextcloud` · `Critical` [↗](https://hackerone.com/reports/452854)
+  - `CVE-2020-8121` After a reshared subfolder link has expired, the link allows access to the full folder.
+- **Broken access control on apps ** — `Rocket.Chat` · `Critical` [↗](https://hackerone.com/reports/491892)
+  - The user without administrative privileges can upload and install any Application into the rocket.chat As ID of application is controlled in the app.json file (which is controlled by uploader) user can also activate the app.
+- **CORS Misconfiguration leading to Private Information Disclosure** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/430249)
+  - Due to mistake on te CORS policy configuration, the sites https://client.amplifi.com and https://protect.ubnt.com/ CORS policy allowed HTTP requests to be made from certain sites outside the *.ubnt.com and *.ui.com domains.
+- **Ability to reset password for account** — `Upserve` · `Critical` [↗](https://hackerone.com/reports/322985)
+  - The attacker was able to send a password reset link to an arbitrary email by sending an array of email addresses instead of a single email address.
+- **ISteamAssets gives partners control over unrelated community market transactions** — `Valve` · `High` [↗](https://hackerone.com/reports/577584)
+  - ISteamAssets APIs would check that the key parameter used was a partner key with access to the appid specified, but then would ignore the passed in appid and would operate on app 753 regardless.
+- **Twitter lite(Android): Vulnerable to local file steal, Javascript injection, Open redirect ** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/499348)
+  - **Summary:** com.twitter.android.lite.TwitterLiteActivity is set to exported and doesn't validate data pass to intent due to which this activity vulnerable to steal users local files, javascript injection and open redirect.
+- **Unauthorized access of Monero wallet by an unprivileged process** — `Monero` · `High` [↗](https://hackerone.com/reports/462442)
+  - As per our understanding, Monero wallet app provides a separate executable for the user to enable the RPC interface (monero-wallet-rpc).
+- **Bug in GraphQL and API integration leads to limited user address disclosure** — `Starbucks` · `High` [↗](https://hackerone.com/reports/473742)
+  - A modified GraphQL query to fetch a user's address book entries led to a limited disclosure of user address book entries.
+- **Exfiltrate and mutate repository and project data through injected templated service** — `GitLab` · `Critical` [↗](https://hackerone.com/reports/446585)
+  - The GitLab import feature contains a vulnerability that allows an attacker to import a project that creates a service template.
+- **[██████] Cross-origin resource sharing misconfiguration (CORS)** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/470298)
+  - In this report I want to describe High level bug which can seriously compromise a user account.
+- **unuse domain still in using at wechat by Starbucks East China** — `Starbucks` · `Critical` [↗](https://hackerone.com/reports/471265)
+  - spcc.mobi is still using at wechat offical account by Starbucks East China.
+- **Local File Download** — `RATELIMITED` · `Critical` [↗](https://hackerone.com/reports/345162)
+  - **Summary:** This bug affects suuport.ratelimited.me and can be used by attackers to download local file from your servers including your emails, and files uploaded by your admins and other users.
+- **Publicly editable GitHub wikis** — `Liberapay` · `High` [↗](https://hackerone.com/reports/460121)
+  - While browsing https://github.com/liberapay I found that many of the repositories have their wikis publicly editable by any GitHub user.
+- **HTTP PUT method enabled** — `RATELIMITED` · `Critical` [↗](https://hackerone.com/reports/460642)
+  - Summary: It is possible to upload files to the server using the PUT method Steps To Reproduce: I used the following request: PUT /emitrani.txt HTTP/1.1 Host: ratelimited.me Content-Length: 10 Connection: close
+- **HTTP PUT method enabled** — `RATELIMITED` · `Critical` [↗](https://hackerone.com/reports/369581)
+  - **Summary:** It is possible to upload files to the server using the PUT method PUT /emitrani.txt HTTP/1.1 Host: ratelimited.me Content-Length: 10 Connection: close
+- **Getting all the CD keys of any game** — `Valve` · `Critical` [↗](https://hackerone.com/reports/391217)
+  - Using the /partnercdkeys/assignkeys/ endpoint on partner.steamgames.com with specific parameters, an authenticated user could download previously-generated CD keys for a game which they would not normally have access.
+- **MemeCTF serial exploitation to local file read to Papertrail access via API-token leakage and more** — `h1-5411-CTF` · `High` [↗](https://hackerone.com/reports/416123)
+  - Hi there dear CTF staff!
+- **svcardproxydevus.starbucks.com Subdomain take over** — `Starbucks` · `High` [↗](https://hackerone.com/reports/380158)
+  - You have left a dns record pointing to a dead cloudapp vm.
+- **GitHub import allows user to create child group under existing namespace** — `GitLab` · `High` [↗](https://hackerone.com/reports/301137)
+  - `CVE-2017-0919` When importing a GitHub repository on GitLab, a request is made to /import/github.
+- **Gaining access to private topics using quoting feature** — `Discourse` · `High` [↗](https://hackerone.com/reports/312647)
+  - Some topics have limited access to certain groups and users, and while there exists a validation for access on this topic, it can be bypassed by abusing a vulnerability in the "onebox" quoting feature.
+- **Subdomain takeover on developer.openapi.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/275714)
+  - Subdomain developer.openapi.starbucks.com is vulnerable to subdomain takeover via Mashery service.
+- **CI for [example.gov] can be logged in and accessible** — `GSA Bounty` · `Critical` [↗](https://hackerone.com/reports/311289)
+  - When anyone searched a public search engine for inurl:example.gov (where example.gov was one of the URLs in the TTS Bug Bounty scope), the search results included a CI/CD build results URL.
+- **subdomain takeover at news-static.semrush.com** — `Semrush` · `High` [↗](https://hackerone.com/reports/294201)
+  - **Summary:** The subdomain news-static.semrush.com can be taken over by attackers and abuse it for further attacks (Phishing, XSS Cross origin, malware, etc..).
+- **Unauthorized update of merchants' information via /php/merchant_details.php** — `Eternal` · `High` [↗](https://hackerone.com/reports/255651)
+  - I discovered an interesting file : https://www.zomato.com/php/merchant_details.php If I add in post content : action=update-merchant&merchant_id=95292&type=1&email=update@hotmail.fr&contact=update@hotmail.fr&name=update
+- **Bypass OTP verification when placing Order** — `Eternal` · `High` [↗](https://hackerone.com/reports/247158)
+  - Attacker was able to bypass the OTP verification needed while placing an order with a restaurant.
+- **Session Duplication due to Broken Access Control** — `WakaTime` · `High` [↗](https://hackerone.com/reports/247225)
+  - Due to improper validation of user before generating an API-KEY and improper measures taken at the time of password reset, it is possible to generate a parallel session at the attacker's end.
+- **Improper access control when an added email address is deleted from authentication** — `Weblate` · `High` [↗](https://hackerone.com/reports/223434)
+  - There is improper access control kind of vulnerability present in your web application.

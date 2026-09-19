@@ -1,0 +1,152 @@
+# Cross-site Scripting (XSS) - Generic
+
+_74 reports — High/Critical, disclosed_
+
+- ** Potential XSS Vulnerability in Acronis Login Callback URL** — `Acronis` · `High` [↗](https://hackerone.com/reports/2611305)
+  - The login callback URL, https://learn.acronis.com/portal/, is vulnerable to Cross-Site Scripting (XSS) attacks.
+- **XSS from Mastodon embeds** — `IRCCloud` · `High` [↗](https://hackerone.com/reports/1887917)
+  - By default, the IRCCloud web client embeds Mastodon toots when a link to one is sent.
+- **yelp.com XSS ATO (via login keylogger, link Google account)** — `Yelp` · `High` [↗](https://hackerone.com/reports/2010530)
+  - yelp.com reflects the content of the cookie guvo in the html returned to the user.
+- **XSS on rockstargames.com** — `Rockstar Games` · `High` [↗](https://hackerone.com/reports/212700)
+  - In this report, the researcher reported a reflected Cross-Site Scripting (XSS) vulnerability on the Max Payne 3 sub-site on rockstargames.com.
+- **Universal XSS through FIDO U2F register from subframe** — `Brave Software` · `High` [↗](https://hackerone.com/reports/993670)
+  - There are three weaknesses in Brave's FIDO U2F implementation.
+- **New XSS vector in ReaderMode with %READER-TITLE-NONCE%** — `Brave Software` · `Critical` [↗](https://hackerone.com/reports/1436142)
+  - Previously, script execution in ReaderMode pages was prohibited by CSP.
+- **XSS on internal: privileged origin through reader mode** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1438028)
+  - Brave iOS has two weaknesses described below.
+- **[accounts.reddit.com] Redirect parameter allows for XSS** — `Reddit` · `High` [↗](https://hackerone.com/reports/1962645)
+  - I was tampering with the dest parameter in accounts.reddit.com and found out it is vulnerable to Cross Site Scripting once the victim performs the log in.
+- **UXss on brave browser via scan QR Code** — `Brave Software` · `High` [↗](https://hackerone.com/reports/1884042)
+  - `CVE-2022-23258` I found UXss in your browser, and executed Xss on all open domains.
+- **CSP-bypass XSS in project settings page** — `GitLab` · `High` [↗](https://hackerone.com/reports/1588732)
+  - This javascript [function](https://gitlab.com/gitlab-org/gitlab/-/blob/85fbd72dc08bcedcb9fe80fad4df798e9527ded8/app/assets/javascripts/projects/settings/access_dropdown.js#L534) is vulnerable: deployKeyRowHtml(key, isActive) { const isActiveClass = isActive // '';
+- **XSS: `v-safe-html` is not safe enough** — `GitLab` · `High` [↗](https://hackerone.com/reports/1579645)
+  - v-safe-html directive uses Dompurify [to remove](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/9f1bcb1f7392d4d6d072f10197c2aab2c29c3287/src/directives/safe_html/constants.js#L3) data-remote', 'data-url', 'data-type', 'data-method' attributes from HTML tags.
+- **XSS in ZenTao integration affecting self hosted instances without strict CSP** — `GitLab` · `High` [↗](https://hackerone.com/reports/1542510)
+  - The ZenTao issue integration (premium feature) is susceptible to an XSS attack by delivering modified API responses to GitLab.
+- **Blind XSS in app.pullrequest.com/████████ via /reviews/ratings/{uuid}** — `HackerOne` · `High` [↗](https://hackerone.com/reports/1558010)
+  - While researching PullRequest yesterday, I saw some "review" endpoints in web archive of "app.pullrequest.com".
+- **Email templates XSS by filterXSS bypass** — `Judge.me` · `High` [↗](https://hackerone.com/reports/1404804)
+  - js-xss is used to prevent XSS on email templates previews but the custom onIgnoreTag function can be used to bypass this filter.
+- **Universal Cross-Site Scripting vulnerability** — `Proctorio` · `High` [↗](https://hackerone.com/reports/1326264)
+  - Sector7.nl notified Proctorio that there was a universal cross-site scripting vulnerability within the browser extension on June 17th, 2021.
+- **Android WebViews in Twitter app are vulnerable to UXSS due to configuration and CVE-2020-6506** — `X / xAI` · `High` [↗](https://hackerone.com/reports/906433)
+  - `CVE-2020-6506` CVSS score: 8.1 / High / CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N Twitter for Android is affected by a UXSS vulnerability due to its configuration of Android WebView and CVE-2020-6506.
+- **Subdomain takeover due to an unclaimed Amazon S3 bucket on ███** — `U.S. Dept Of Defense` · `Critical` [↗](https://hackerone.com/reports/918946)
+  - An unclaimed Amazon S3 bucket on █████████ gives an attacker the possibility to gain full control over this subdomain.
+- **Cross-Site Scripting (XSS) on www.starbucks.com | .co.uk login pages** — `Starbucks` · `High` [↗](https://hackerone.com/reports/881115)
+  - There is a cross-site scripting vulnerability on the login page of www.starbucks.com and various regions, due to improper escaping on the URL path.
+- **[www.zomato.com] Blind XSS on one of the Admin Dashboard** — `Eternal` · `High` [↗](https://hackerone.com/reports/724889)
+  - Thanks for the report @pandaaaa.
+- **Html Injection and Possible XSS via MathML** — `X / xAI` · `Critical` [↗](https://hackerone.com/reports/502926)
+  - Hi, I would like to report HTML Injection and possible cross site scripting (XSS) vulnerability using the MathML on Firefox.
+- **URL Advisor component in KIS products family is vulnerable to Universal XSS** — `Kaspersky` · `High` [↗](https://hackerone.com/reports/463915)
+  - In Microsoft Edge, URL Advisor UI is served as first-party content on every domain.
+- **[www.zomato.com] Blind XSS in one of the admin dashboard** — `Eternal` · `High` [↗](https://hackerone.com/reports/461272)
+  - Admin dasboard ████ from user has XSS Vul Post data: "><img src="http://<my_server_ip>/zomato.php?c=zomato_xss" />
+- **[Grab Android/iOS] Insecure deeplink leads to sensitive information disclosure** — `Grab` · `High` [↗](https://hackerone.com/reports/401793)
+  - A deeplink feature was found missing validation that led to sensitive information disclosure.
+- **[Android] HTML Injection in BatterySaveArticleRenderer WebView** — `Brave Software` · `High` [↗](https://hackerone.com/reports/176065)
+  - HTML Injection in BatterySaveArticleRenderer WebView.
+- **Account Takeover in Periscope TV** — `X / xAI` · `High` [↗](https://hackerone.com/reports/317476)
+  - When you login periscope.tv using twitter, and change the host header from www.periscope.tv to attacker.com/www.periscope.tv, the oauth redirect destination will be attacker.com/www.periscope.tv, thus allowing attacker to send the oauth authorize link to victim, and takeove
+- **[html-pages] Stored XSS in the filename when directories listing** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/330356)
+  - `CVE-2018-16481` I would like to report a Store XSS vulnerability in **html-pages** It allows executing malicious javascript code in the user's browser.
+- **XSS on https://www.starbucks.co.uk (can lead to credit card theft) (/shop/paymentmethod)** — `Starbucks` · `High` [↗](https://hackerone.com/reports/227486)
+  - Run Firefox (these steps *require* Firefox).
+- **The react-marked-markdown module allows XSS injection in href values.** — `Node.js third-party modules` · `Critical` [↗](https://hackerone.com/reports/344069)
+  - I would like to report XSS in react-marked-markdown.
+- **[cloudcmd] Stored XSS in the filename when directories listing** — `Node.js third-party modules` · `High` [↗](https://hackerone.com/reports/341044)
+  - I would like to report a Stored XSS issue in module **cloudcmd** It allows executing malicious javascript code in the user's browser.
+- **Html injection mycrypto.com** — `MyCrypto` · `High` [↗](https://hackerone.com/reports/324548)
+  - I remembered that a couple of months ago I found an HTML injection vulnerability on myetherwallet.com, I sent it, but my message was ignored.
+- **[informatica.com]- Cross Site scripting ** — `Informatica` · `High` [↗](https://hackerone.com/reports/204237)
+  - The researcher was able to find a reflected XSS in informatica.com.
+- **Stored XSS / Bypassing .htaccess protection in http://nodebb.ubnt.com/** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/202354)
+  - While I was looking at your renewn SSL certificated, I have noticed the following link : http://nodebb.ubnt.com/ I have seen that this link was protected by htaccess password, but I have decided to run a nmap scan.
+- **Store XSS on Informatica University via transcript (informatica.csod.com)** — `Informatica` · `High` [↗](https://hackerone.com/reports/219509)
+  - Vulnerable field: Training Description 4.
+- **Stored XSS on Admin Access Page - Email field** — `Revive Adserver` · `High` [↗](https://hackerone.com/reports/173501)
+  - The **Email** field is not sanitized on **Inventory > Admin Access** page resulting in to Stored Cross-Site Scripting vulnerability.
+- **Wordpress 4.7.2 - Two XSS in Media Upload when file too large.** — `WordPress` · `High` [↗](https://hackerone.com/reports/203515)
+  - Description ------------------- An attacker can inject a malicious script in to the filename which a victim tries to upload leading to XSS inside the administrators control panel.
+- **Cross-site Scripting (XSS) in /updates-pro/archive/** — `MapsMarker.com e.U.` · `Critical` [↗](https://hackerone.com/reports/235866)
+  - Hey guys.
+- **[kb.informatica.com] DOM based XSS in the bindBreadCrumb function** — `Informatica` · `High` [↗](https://hackerone.com/reports/189834)
+  - The ***bindBreadCrumb*** function, which is called after the document is loaded: $(document).ready(function () { bindBreadCrumb(); });
+- **MailPoet Newsletters <= 2.7.2 - Authenticated Reflected Cross-Site Scripting (XSS)** — `Eternal` · `High` [↗](https://hackerone.com/reports/200355)
+  - __Abstract__:- A Cross-Site Scripting vulnerability was found in the MailPoet Newsletters plugin.
+- **XSS in $shop$.myshopify.com/admin/ via twine template injection in "Shopify.API.Modal.input" method when using a malicious app** — `Shopify` · `High` [↗](https://hackerone.com/reports/217790)
+  - The Shopify [Embedded App SDK](https://help.shopify.com/api/sdks/merchant-apps/embedded-app-sdk) is used to facilitate limited interactions with parent page (/admin/apps/$id) from an embedded app within the shop admin interface.
+- **XSS in $shop$.myshopify.com/admin/ via "Button Objects" in malicious app** — `Shopify` · `High` [↗](https://hackerone.com/reports/217745)
+  - This report is similar in impact, exploitability and root-cause as report #205701 requiring an additional step of user-interaction.
+- **[marketplace.informatica.com] Search XSS** — `Informatica` · `High` [↗](https://hackerone.com/reports/200034)
+  - The search query parameter is put into Javascript to set the localStorage item: localStorage.setItem("searchTerm", "%foo%");
+- **[network.informatica.com] The login form XSS via the referer value** — `Informatica` · `High` [↗](https://hackerone.com/reports/190016)
+  - The **referer** parameter value https://network.informatica.com/login!input.jspa?referer=%ref% is inserted into the Javascript code if (pageURL.indexOf("login!input.jspa?referer=") > -1 // pageURL.indexOf("login.jspa?referer=") > -1) { finalPageURL='%ref%'; }
+- **[careers.informatica.com] Cross Site Script Vulnerability on informatica** — `Informatica` · `High` [↗](https://hackerone.com/reports/42537)
+  - Information:- Vulnerability resides on the Carriers page of informatica, where search bar of the carrier page failed to sanitized the users query and hence gives the XSS popup.
+- **Stored XSS in community.ubnt.com** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/179164)
+  - I have created two accounts one attacker account: vibhuti123_i other victim account: John_victim attacker account:vibhuti123_i who will create a malicious link after uploading svg file embeded with script and doing stored xss.Now attacker vibhuti123_i will send this stored xss m
+- **Bypass to postMessage origin validation via FTP** — `Slack` · `High` [↗](https://hackerone.com/reports/210654)
+  - @a1kmm- discovered a bypass to our postMessage origin check, wherein an attacker with existing MITM capabilities could use FTP to bypass validation and view XOXS tokens of victims on the local network.
+- **[marketplace.informatica.com]- Stored XSS on Image title and Edit Property** — `Informatica` · `High` [↗](https://hackerone.com/reports/202951)
+  - By uploading and image with the title of  "><svg onload=alert(1)>.jpg and allowing anyone to edit the Document under collaboration settings, XSS can be triggered by any user attempting to edit the document.
+- **[marketplace.informatica.com] Profile stored XSS** — `Informatica` · `High` [↗](https://hackerone.com/reports/190217)
+  - The user name and lastname are inserted into JS with quotes non-escaped: var pageNameDTM = "%name% %lastname%".replace(/[^a-zA-Z0-9 ]/g, "").replace(/ +/g, " ");
+- **[kb.informatica.com] Stored XSS** — `Informatica` · `High` [↗](https://hackerone.com/reports/170369)
+  - kb.informatica.org is vulnerable to stored XSS as it stores user input in users' sessions, then reflects this input back inside a JavaScript block without adequate escaping.
+- **Stored XSS via Discussion Title and Send as Email attribute in [marketplace.informatica.com]** — `Informatica` · `High` [↗](https://hackerone.com/reports/203912)
+  - Choose "Post message" to publish.
+- **[careers.informatica.com] XSS on "isJTN"** — `Informatica` · `High` [↗](https://hackerone.com/reports/190020)
+  - hi , i found XSS bug on parameter "isJTN=" at careers.informatica.com give you ability to run java script code tested on firefox 50.0.2 also on old version of google chrome in the last version , but if try this bug in chrome last version you will got a source code displayed on p
+- **upgrade Aspen on inside.gratipay.com to pick up CR injection fix** — `Gratipay` · `High` [↗](https://hackerone.com/reports/143139)
+  - 1) Using IE11, open DevTools and start network capture 2) visit the following URL: http://inside.gratipay.com/assets/%0dSet-Cookie:%20qwe=qwe%0dq 3) find a 'qwe' cookie set in the response
+- **Reflected XSS in U2F plugin by shipping the example endpoints** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/192786)
+  - While running a [RIPS scan](https://www.ripstech.com/) against our [instrumentalized source code](https://github.com/nextcloud/php-static-scanner-instrumentalization) it noticed that the file /apps/twofactor_u2f/vendor/yubico/u2flib-server/examples/localstorage/index.php echoes
+- **Stored cross-site scripting (XSS) on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/183971)
+  - A stored cross-site scripting vulnerability was found on a Department of Defense website which may trick a web user into executing a malicious script, potentially revealing a user's web session information or modify web content.
+- **[uk.informatica.com] XSS on uk.informatica..com** — `Informatica` · `High` [↗](https://hackerone.com/reports/143323)
+  - The following urls on uk.informatica.com:80 have XSS vulnerabilities, I have copied the POST header and data for both instances.
+- **Subdomain Takeover (moderator.ubnt.com)** — `Ubiquiti Inc.` · `High` [↗](https://hackerone.com/reports/181665)
+  - This report is same as #179110 One of your subdomain http://moderator.ubnt.com is pointing towards
+- **[marketplace.informatica.com] Persistent XSS through document title** — `Informatica` · `High` [↗](https://hackerone.com/reports/181816)
+  - Document titles are not properly escaped before being printed on https://marketplace.informatica.com/docs/ .
+- **Stored XSS in topics because of whitelisted_generic engine vulnerability** — `Discourse` · `High` [↗](https://hackerone.com/reports/197902)
+  - Though you now escape the OpenGraph data, the whitelisted_generic onebox engine decodes variables values back at lines: [202](https://github.com/discourse/onebox/blob/master/lib/onebox/engine/whitelisted_generic_onebox.rb#L202) and [207](https://github.com/discourse/onebox/blob/m
+- **XSS in topics because of bandcamp preview engine vulnerability** — `Discourse` · `High` [↗](https://hackerone.com/reports/197443)
+  - Wait for the preview engine to parse the link 4.
+- **Stored XSS in posts because of absence of oembed variables values escaping** — `Discourse` · `High` [↗](https://hackerone.com/reports/197914)
+  - The vulnerability exists because of absence of oembed variables values escaping.
+- **Persistent XSS in www.starbucks.com** — `Starbucks` · `High` [↗](https://hackerone.com/reports/188972)
+  - There is a persistent XSS in It is caused by loading scripts from:
+- **SQL Injection vulnerability on a DoD website** — `U.S. Dept Of Defense` · `High` [↗](https://hackerone.com/reports/186156)
+  - A Department of Defense webserver was vulnerable to a SQL injection attack that could have revealed sensitive financial information.
+- **XSS Vulnerability on Image link parser** — `Discourse` · `High` [↗](https://hackerone.com/reports/191909)
+  - I found a XSS (Cross-Site Scripting) vulnerability, and it is present in the markdown parser when it tries to parse an image URL.
+- **XSS vulnerability on Audio and Video parsers** — `Discourse` · `High` [↗](https://hackerone.com/reports/192223)
+  - Just like in the XSS vulnerability on Image parser, there is the same vulnerability on Audio (https://github.com/discourse/onebox/blob/394409ca319cc1a1cd31fefa50c9468c990531a3/lib/onebox/engine/audio_onebox.rb) and Video (https://github.com/discourse/onebox/blob/394409ca319cc1a1c
+- **DOM Based XSS in Discourse Search** — `Discourse` · `High` [↗](https://hackerone.com/reports/191890)
+  - @<script>prompt(1337)</script>gmail.com 4: Now in new windows that opens click on advance search and The XSS will Occur :) 5: Now copy the link and send to victim there the XSS will Occur To
+- **Store XSS** — `Slack` · `High` [↗](https://hackerone.com/reports/187410)
+  - I found a Store XSS.
+- **Stored XSS on new Calling plugin (spreed)** — `Nextcloud` · `High` [↗](https://hackerone.com/reports/190870)
+  - There's a stored xss vulnerability ....
+- **[now.informatica.com] Reflective XSS** — `Informatica` · `High` [↗](https://hackerone.com/reports/106678)
+  - XSS vulnerability lies on http://now.informatica.com/launch-next-bigdata-registration-inxpo.html?Source=homepage
+- **Public profile is vulnerable to stored XSS / Facebook Token can be stolen** — `DigitalSellz` · `High` [↗](https://hackerone.com/reports/175122)
+  - @robin_linus bypass our XSS protection system.
+- **[now.informatica.com] Reflective Xss** — `Informatica` · `High` [↗](https://hackerone.com/reports/81191)
+  - Company look up end point didn't properly sanitize input allowing XSS.
+- **Stored XSS On Statement** — `Gratipay` · `High` [↗](https://hackerone.com/reports/84740)
+  - Hello, I've Found a Stored Cross-Site Scripting (XSS) In [Gratipay.com](https://gratipay.com/) ..
+- **JSON keys are not properly escaped** — `Ruby on Rails` · `High` [↗](https://hackerone.com/reports/47280)
+  - `CVE-2015-3226` Rails does not escape hash keys properly in to_json when generating json.
+- **Markdown parsing issue enables insertion of malicious tags and event handlers** — `HackerOne` · `High` [↗](https://hackerone.com/reports/46916)
+  - When markdown is being presented as HTML, there seems to be a strange interaction between _ and @ that lets an attacker insert malicious tags.
+- **Improperly validated fields allows injection of arbitrary HTML via spoofed React objects** — `HackerOne` · `High` [↗](https://hackerone.com/reports/49652)
+  - **Note:** I haven't yet investigated the implications of this fully, so this may be more severe than I'm currently aware of.
+- **Vulnerability with the way \ escaped characters in <http://danlec.com> style links are rendered** — `HackerOne` · `High` [↗](https://hackerone.com/reports/46072)
+  - Sequences like <http://\<h1\>test\</h1\>> are rendered as http://<h1>test</h1> Obviously there's a whole variety of stuff that can be done when you can inject arbitrary HTML, even in spite of the CSP protection.
