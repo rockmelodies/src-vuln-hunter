@@ -51,7 +51,7 @@ git clone https://github.com/rockmelodies/src-vuln-hunter.git ~/.claude/skills/s
 SKILL.md                 五阶段工作流控制（含档位自适应）
 cc-switch/               cc-switch provider 配置说明
 references/
-  methodology/    五阶段流程、攻击优先级、绕过工具集、证据规则
+  methodology/    五阶段流程、攻击优先级、绕过工具集、证据规则、供应链审计
   playbooks/      19 类攻击 playbook，每类含真实 H1 案例与 payload
   industry/       银行/金融、电信/ISP 垂直场景 playbook
   dictionaries/   国产组件指纹与默认凭据

@@ -51,7 +51,7 @@ Works natively with [cc-switch](https://github.com/farion1231/cc-switch). Switch
 SKILL.md                 five-phase workflow (with tier adaptation)
 cc-switch/               cc-switch provider config guide
 references/
-  methodology/    phases, attack priority, bypass toolkit, evidence rules
+  methodology/    phases, attack priority, bypass toolkit, evidence rules, supply-chain audit
   playbooks/      19 attack playbooks, each with real H1 cases + payloads
   industry/       banking/finance, telecom/ISP vertical playbooks
   dictionaries/   Chinese vendor fingerprints & default credentials

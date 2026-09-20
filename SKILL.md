@@ -1,6 +1,6 @@
 ---
 name: src-hunter
-description: 实战 SRC / 众测 / Bug bounty 漏洞挖掘工作流 skill。5 阶段强制 checkpoint 方法论（intake → recon → enum → hunt → report）、19 类攻击 playbook（SQLi/XSS/RCE/SSRF/IDOR/CSRF/Path Traversal/File Upload/SSTI/XXE/Race/HTTP Smuggling/OAuth/JWT/SAML/GraphQL/Mobile/LLM/DoS）、结构化 payload 库、WAF/EDR 绕过变体、2743 份 HackerOne High/Critical 已披露案例（蒸馏为可检索 case card）、国产 OA/中间件指纹与默认凭据、银行/电信垂直 playbook。原生适配 cc-switch 多 provider 切换（Anthropic/DeepSeek/GLM/Qwen/Kimi），按上下文预算档位自动调节加载策略。当用户提到 "src 挖洞 / 漏洞挖掘 / bug bounty / 众测 / hackerone / SRC / 任意 X 漏洞 / 渗透测试" 或问 "如何挖某目标 / 怎么测某 API / 如何绕过 WAF" 时触发。
+description: 实战 SRC / 众测 / Bug bounty 漏洞挖掘工作流 skill。5 阶段强制 checkpoint 方法论（intake → recon → enum → hunt → report）、19 类攻击 playbook（SQLi/XSS/RCE/SSRF/IDOR/CSRF/Path Traversal/File Upload/SSTI/XXE/Race/HTTP Smuggling/OAuth/JWT/SAML/GraphQL/Mobile/LLM/DoS）、结构化 payload 库、WAF/EDR 绕过变体、2743 份 HackerOne High/Critical 已披露案例（蒸馏为可检索 case card）、国产 OA/中间件指纹与默认凭据、银行/电信垂直 playbook、第三方 skill/MCP 供应链安全审计。原生适配 cc-switch 多 provider 切换（Anthropic/DeepSeek/GLM/Qwen/Kimi），按上下文预算档位自动调节加载策略。当用户提到 "src 挖洞 / 漏洞挖掘 / bug bounty / 众测 / hackerone / SRC / 任意 X 漏洞 / 渗透测试" 或问 "如何挖某目标 / 怎么测某 API / 如何绕过 WAF / 这个 skill·MCP·工具是否安全能不能装" 时触发。
 argument-hint: "<target-or-program-or-phase>"
 level: 2
 ---
@@ -20,6 +20,7 @@ level: 2
 - "如何挖 / 怎么测 / 怎么打 + 某目标 / 某接口 / 某参数"
 - "WAF 绕过 / 任意账号 / 任意修改 / 密码重置 / 未授权访问 / 默认凭据"
 - 用户给一个 URL / API endpoint / APK 让你测
+- "审计 / 扫描 / 检查 这个 skill / MCP / 工具 是否安全、能不能装"
 
 **不应触发**：纯白盒源码审计 → `code-audit` skill；漏洞修复问答 → 通用对话；CTF → 通用对话。
 
@@ -139,11 +140,12 @@ level: 2
 
 **H1 案例检索**：需要看某类漏洞的真实案例 / 找思路时，Read `references/h1-reports/<weakness>.md`（弱点名对照见 `references/h1-reports/index.md`）。每个 case card 已提炼为「标题 · 程序 · 严重度 · CVE · 一句话根因 · 链接」，命中后如需完整报告再点链接看原文。
 
-**通用方法论**（仅在卡壳时 Read，不要预加载）：
+**通用方法论**（仅在需要时 Read，不要预加载）：
 - 不知道下一步打什么 → `references/methodology/01-attack-priority.md`
 - 被 WAF / EDR 拦 → `references/methodology/02-bypass-toolkit.md`
 - 怀疑自己幻觉 / 想检查证据链 → `references/methodology/03-evidence-discipline.md`
 - 找不到漏洞点 → `references/methodology/04-control-gap-hunting.md`
+- 安装/启用第三方 skill / MCP / 脚本前，或怀疑某工具不干净 → `references/methodology/06-supply-chain-audit.md`
 
 ---
 

@@ -4,6 +4,13 @@
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [2.1.0] - 2026-09-20
+
+### 新增
+
+- **供应链安全审计**：新增 `references/methodology/06-supply-chain-audit.md`，蒸馏自 `skill-security-audit` 技能——安装/启用第三方 skill / MCP / 脚本前的五维审计（静态危险模式、权限边界、网络行为、商业化附加层检测、风险分级），含 PUA 实战范式与报告模板。
+- `SKILL.md` 新增供应链审计触发词与路由入口；`README` 同步更新。
+
 ## [2.0.0] - 2026-09-20
 
 基于 [MyuriKanao/src-hunter-skill](https://github.com/MyuriKanao/src-hunter-skill)（MIT）的**蒸馏版**首发。

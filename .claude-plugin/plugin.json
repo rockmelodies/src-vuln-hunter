@@ -1,7 +1,7 @@
 {
   "name": "src-hunter",
   "description": "蒸馏版 SRC / 众测 / Bug bounty 漏洞挖掘工作流 skill 仓库（基于 MyuriKanao/src-hunter-skill 蒸馏，原生支持 cc-switch 多 provider 切换）",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": {
     "name": "rockmelodies",
     "email": "939555035@qq.com",
